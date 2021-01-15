@@ -1357,8 +1357,8 @@ Close.ImageRectSize = Vector2.new(36, 36)
 
 
 
-local VersionNum = 0.5
-local VersionFull = tostring(VersionNum).." | Patch 0.5"
+local VersionNum = 0.51
+local VersionFull = tostring(VersionNum).." | Patch 0.51"
 local VFeature = "New Players feature"
 
 local Admins = {
