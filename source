@@ -1331,6 +1331,7 @@ DomainDev.BorderSizePixel = 0
 DomainDev.Position = UDim2.new(0.516834974, 0, -0.13840194, 0)
 DomainDev.Size = UDim2.new(0.451336235, 0, 0.0426678397, 0)
 DomainDev.ZIndex = 1000
+DomainDev.Visible = false
 DomainDev.Font = Enum.Font.GothamSemibold
 DomainDev.Text = "Domain Developer"
 DomainDev.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -1527,7 +1528,7 @@ function Start()
 	Notify("Successfully booted DOMAIN","GothamBold")
 	Notify("DOMAINClient Anti-Kick active","GothamBold")
 	for _, Player in ipairs(game.Players:GetChildren()) do
-		AddToList(Player)
+		AddToList(Player,"Quick")
 	end
 end
 
@@ -1869,7 +1870,7 @@ function RefigurePlayerList(RemovedPlayerYOffset)
 	end
 end
 
-function AddToList(Player)
+function AddToList(Player,Type)
 	local NewPlr = List:FindFirstChild("Template"):Clone()
 	NewPlr.Parent = List
 	if Player.Name == game.Players.LocalPlayer.Name then
@@ -1886,8 +1887,13 @@ function AddToList(Player)
 	else
 		CurrentListPosition = CurrentListPosition + 0.036
 	end
-	NewPlr.Position = UDim2.new(1, 0, CurrentListPosition, 0)
-	NewPlr:TweenPosition(UDim2.new(0.03, 0, CurrentListPosition, 0),"Out", "Quint", 0.7)
+	if Type == "Quick" then
+		NewPlr.Position = UDim2.new(0.03, 0, CurrentListPosition, 0)
+	else
+		NewPlr.Position = UDim2.new(1, 0, CurrentListPosition, 0)
+		NewPlr:TweenPosition(UDim2.new(0.03, 0, CurrentListPosition, 0),"Out", "Quint", 0.7)
+	end
+	
 	NewPlr.Username.Text = Player.Name
 	
 	NewPlr.MouseEnter:Connect(function()
