@@ -347,6 +347,7 @@ Shadow.ImageTransparency = 0.750
 
 Players.Name = "Players"
 Players.Parent = Functions
+Players.Visible = false
 Players.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 Players.BorderSizePixel = 0
 Players.Position = UDim2.new(0.5, 0, 0.200000003, 0)
@@ -1473,9 +1474,7 @@ function Start()
 	end
 	end
 	Template_2.Visible = false
-	for _, Player in ipairs(game.Players:GetChildren()) do
-		AddToList(Player)
-	end
+	
 	Notify("Booting DOMAIN v"..tostring(VersionNum),"GothamBold")
 	UpdatePanel.feat.Text = VFeature
 	VersioPanel.Text.Text = "DOMAIN "..tostring(VersionNum)
@@ -1526,7 +1525,9 @@ function Start()
 	Info:TweenPosition(UDim2.new(0.9, 0, 0.2, 0),"Out","Quint",0.6)
 	Notify("Successfully booted DOMAIN","GothamBold")
 	Notify("DOMAINClient Anti-Kick active","GothamBold")
-	
+	for _, Player in ipairs(game.Players:GetChildren()) do
+		AddToList(Player)
+	end
 end
 
 local FeaturedExploits = {
@@ -1874,9 +1875,9 @@ function AddToList(Player)
 		NewPlr.Username.Font = "GothamBold"
 	end
 	NewPlr.Avatar.Image = game.Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-	if game.CreatorId == 0 then
+	--if game.CreatorId == 0 then
 		NewPlr.Size = UDim2.new(0.94, 0, 0.032, 0)
-	end
+	--end
 	NewPlr.Visible = true
 	NewPlr.Name = Player.Name
 	if CurrentListPosition == 1 then 
