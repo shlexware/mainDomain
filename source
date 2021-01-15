@@ -1,3 +1,5 @@
+
+
 -- Instances:
 
 local mainDomain = Instance.new("ScreenGui")
@@ -19,15 +21,15 @@ local Home = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
 local Icon_3 = Instance.new("ImageLabel")
-local Discord = Instance.new("TextButton")
+local Info = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
 local Icon_4 = Instance.new("ImageLabel")
-local Info = Instance.new("TextButton")
+local Shadow = Instance.new("ImageLabel")
+local Players = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 local Icon_5 = Instance.new("ImageLabel")
-local Shadow = Instance.new("ImageLabel")
 local Exploits_2 = Instance.new("Frame")
 local UICorner_8 = Instance.new("UICorner")
 local TemplateBanner = Instance.new("Frame")
@@ -111,24 +113,50 @@ local About = Instance.new("TextLabel")
 local UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint")
 local About_2 = Instance.new("TextLabel")
 local UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint")
-local Toggle = Instance.new("ImageButton")
-local Discord_2 = Instance.new("Frame")
-local UICorner_27 = Instance.new("UICorner")
-local Title_6 = Instance.new("TextLabel")
-local UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint")
-local Shadow_6 = Instance.new("ImageLabel")
-local Title1_2 = Instance.new("TextLabel")
-local UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint")
-local link = Instance.new("TextLabel")
-local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
 local Copy = Instance.new("TextButton")
-local UICorner_28 = Instance.new("UICorner")
+local UICorner_27 = Instance.new("UICorner")
+local UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint")
+local link = Instance.new("TextLabel")
+local UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint")
+local Title2 = Instance.new("TextLabel")
+local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
+local Toggle = Instance.new("ImageButton")
+local Players_2 = Instance.new("Frame")
+local Title_6 = Instance.new("TextLabel")
 local UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint")
+local UICorner_28 = Instance.new("UICorner")
+local Divider = Instance.new("Frame")
+local UICorner_29 = Instance.new("UICorner")
+local Divider_2 = Instance.new("Frame")
+local List = Instance.new("ScrollingFrame")
+local Template_2 = Instance.new("Frame")
+local Avatar = Instance.new("ImageLabel")
+local UICorner_30 = Instance.new("UICorner")
+local UICorner_31 = Instance.new("UICorner")
+local Username = Instance.new("TextLabel")
+local UITextSizeConstraint_25 = Instance.new("UITextSizeConstraint")
+local More = Instance.new("ImageButton")
+local Shadow_6 = Instance.new("ImageLabel")
+local Shadow_7 = Instance.new("ImageLabel")
+local AboutPlayer = Instance.new("Frame")
+local Avatar_2 = Instance.new("ImageLabel")
+local UICorner_32 = Instance.new("UICorner")
+local Premium = Instance.new("ImageLabel")
+local Divider_3 = Instance.new("Frame")
+local UserId = Instance.new("TextLabel")
+local UITextSizeConstraint_26 = Instance.new("UITextSizeConstraint")
+local CopyUsr = Instance.new("TextButton")
+local UITextSizeConstraint_27 = Instance.new("UITextSizeConstraint")
+local UICorner_33 = Instance.new("UICorner")
+local DomainDev = Instance.new("TextLabel")
+local UITextSizeConstraint_28 = Instance.new("UITextSizeConstraint")
+local Close = Instance.new("ImageButton")
 
 --Properties:
 
 mainDomain.Name = "mainDomain"
 mainDomain.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+mainDomain.ResetOnSpawn = false
 
 MediaMain.Name = "MediaMain"
 MediaMain.Parent = mainDomain
@@ -137,7 +165,7 @@ MediaMain.BackgroundTransparency = 1.000
 MediaMain.BorderSizePixel = 0
 MediaMain.Position = UDim2.new(0.0786458403, 0, 0.138699248, 0)
 MediaMain.Size = UDim2.new(0.841465175, 0, 0.993685126, 0)
-mainDomain.ResetOnSpawn = false
+MediaMain.ZIndex = 1000
 
 ShadowBG.Name = "ShadowBG"
 ShadowBG.Parent = MediaMain
@@ -273,39 +301,6 @@ Icon_3.Image = "rbxassetid://3926305904"
 Icon_3.ImageRectOffset = Vector2.new(964, 204)
 Icon_3.ImageRectSize = Vector2.new(36, 36)
 
-Discord.Name = "Discord"
-Discord.Parent = Functions
-Discord.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Discord.BorderSizePixel = 0
-Discord.Position = UDim2.new(0.5, 0, 0.200000003, 0)
-Discord.Size = UDim2.new(0.0727514178, 0, 0.510895193, 0)
-Discord.ZIndex = 1000
-Discord.Font = Enum.Font.GothamBold
-Discord.Text = "D"
-Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
-Discord.TextScaled = true
-Discord.TextSize = 14.000
-Discord.TextWrapped = true
-
-UICorner_6.CornerRadius = UDim.new(0, 12)
-UICorner_6.Parent = Discord
-
-UITextSizeConstraint_4.Parent = Discord
-UITextSizeConstraint_4.MaxTextSize = 21
-
-Icon_4.Name = "Icon"
-Icon_4.Parent = Discord
-Icon_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Icon_4.BackgroundTransparency = 1.000
-Icon_4.BorderSizePixel = 0
-Icon_4.Position = UDim2.new(0.139883563, 0, 0.139437169, 0)
-Icon_4.Size = UDim2.new(0.699998677, 0, 0.699998677, 0)
-Icon_4.ZIndex = 1000
-Icon_4.Image = "rbxassetid://6240829881"
-Icon_4.ImageRectOffset = Vector2.new(0, 0)
-Icon_4.ImageRectSize = Vector2.new(0, 0)
-Icon_4.Visible = false
-
 Info.Name = "Info"
 Info.Parent = Functions
 Info.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
@@ -320,23 +315,23 @@ Info.TextScaled = true
 Info.TextSize = 14.000
 Info.TextWrapped = true
 
-UICorner_7.CornerRadius = UDim.new(0, 12)
-UICorner_7.Parent = Info
+UICorner_6.CornerRadius = UDim.new(0, 12)
+UICorner_6.Parent = Info
 
-UITextSizeConstraint_5.Parent = Info
-UITextSizeConstraint_5.MaxTextSize = 21
+UITextSizeConstraint_4.Parent = Info
+UITextSizeConstraint_4.MaxTextSize = 21
 
-Icon_5.Name = "Icon"
-Icon_5.Parent = Info
-Icon_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Icon_5.BackgroundTransparency = 1.000
-Icon_5.BorderSizePixel = 0
-Icon_5.Position = UDim2.new(0.139883563, 0, 0.139437169, 0)
-Icon_5.Size = UDim2.new(0.699998677, 0, 0.699998677, 0)
-Icon_5.ZIndex = 1000
-Icon_5.Image = "rbxassetid://3926305904"
-Icon_5.ImageRectOffset = Vector2.new(524, 444)
-Icon_5.ImageRectSize = Vector2.new(36, 36)
+Icon_4.Name = "Icon"
+Icon_4.Parent = Info
+Icon_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_4.BackgroundTransparency = 1.000
+Icon_4.BorderSizePixel = 0
+Icon_4.Position = UDim2.new(0.139883563, 0, 0.139437169, 0)
+Icon_4.Size = UDim2.new(0.699998677, 0, 0.699998677, 0)
+Icon_4.ZIndex = 1000
+Icon_4.Image = "rbxassetid://3926305904"
+Icon_4.ImageRectOffset = Vector2.new(524, 444)
+Icon_4.ImageRectSize = Vector2.new(36, 36)
 
 Shadow.Name = "Shadow"
 Shadow.Parent = Functions
@@ -345,10 +340,43 @@ Shadow.BackgroundTransparency = 1.000
 Shadow.BorderSizePixel = 0
 Shadow.Position = UDim2.new(-0.0649442375, 0, -0.471037358, 0)
 Shadow.Size = UDim2.new(1.11987317, 0, 1.88568532, 0)
-Shadow.ZIndex = 0
+Shadow.ZIndex = 999
 Shadow.Image = "rbxassetid://3523728077"
 Shadow.ImageColor3 = Color3.fromRGB(33, 33, 33)
 Shadow.ImageTransparency = 0.750
+
+Players.Name = "Players"
+Players.Parent = Functions
+Players.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Players.BorderSizePixel = 0
+Players.Position = UDim2.new(0.5, 0, 0.200000003, 0)
+Players.Size = UDim2.new(0.0727514178, 0, 0.510895193, 0)
+Players.ZIndex = 1000
+Players.Font = Enum.Font.GothamBold
+Players.Text = ""
+Players.TextColor3 = Color3.fromRGB(255, 255, 255)
+Players.TextScaled = true
+Players.TextSize = 14.000
+Players.TextTransparency = 1.000
+Players.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 12)
+UICorner_7.Parent = Players
+
+UITextSizeConstraint_5.Parent = Players
+UITextSizeConstraint_5.MaxTextSize = 21
+
+Icon_5.Name = "Icon"
+Icon_5.Parent = Players
+Icon_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_5.BackgroundTransparency = 1.000
+Icon_5.BorderSizePixel = 0
+Icon_5.Position = UDim2.new(0.139883563, 0, 0.139437169, 0)
+Icon_5.Size = UDim2.new(0.699998677, 0, 0.699998677, 0)
+Icon_5.ZIndex = 1000
+Icon_5.Image = "rbxassetid://3926305904"
+Icon_5.ImageRectOffset = Vector2.new(144, 4)
+Icon_5.ImageRectSize = Vector2.new(24, 24)
 
 Exploits_2.Name = "Exploits"
 Exploits_2.Parent = MediaMain
@@ -1006,6 +1034,62 @@ About_2.TextYAlignment = Enum.TextYAlignment.Top
 UITextSizeConstraint_20.Parent = About_2
 UITextSizeConstraint_20.MaxTextSize = 18
 
+Copy.Name = "Copy"
+Copy.Parent = Info_2
+Copy.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Copy.BorderSizePixel = 0
+Copy.Position = UDim2.new(0.838911116, 0, 0.312548816, 0)
+Copy.Size = UDim2.new(0.126810566, 0, 0.149538115, 0)
+Copy.Font = Enum.Font.GothamSemibold
+Copy.Text = "Copy to Clipboard"
+Copy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Copy.TextScaled = true
+Copy.TextSize = 14.000
+Copy.TextWrapped = true
+
+UICorner_27.CornerRadius = UDim.new(0, 12)
+UICorner_27.Parent = Copy
+
+UITextSizeConstraint_21.Parent = Copy
+UITextSizeConstraint_21.MaxTextSize = 18
+
+link.Name = "link"
+link.Parent = Info_2
+link.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+link.BackgroundTransparency = 1.000
+link.BorderSizePixel = 0
+link.Position = UDim2.new(0.838911116, 0, 0.175615638, 0)
+link.Size = UDim2.new(0.132487968, 0, 0.0994273052, 0)
+link.Font = Enum.Font.Gotham
+link.Text = "d.gg/2"
+link.TextColor3 = Color3.fromRGB(255, 255, 255)
+link.TextScaled = true
+link.TextSize = 14.000
+link.TextWrapped = true
+link.TextXAlignment = Enum.TextXAlignment.Left
+link.TextYAlignment = Enum.TextYAlignment.Top
+
+UITextSizeConstraint_22.Parent = link
+UITextSizeConstraint_22.MaxTextSize = 18
+
+Title2.Name = "Title2"
+Title2.Parent = Info_2
+Title2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title2.BackgroundTransparency = 1.000
+Title2.BorderSizePixel = 0
+Title2.Position = UDim2.new(0.838468134, 0, 0.0541751459, 0)
+Title2.Size = UDim2.new(0.132600874, 0, 0.12478552, 0)
+Title2.Font = Enum.Font.GothamSemibold
+Title2.Text = "Join our discord server"
+Title2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title2.TextScaled = true
+Title2.TextSize = 14.000
+Title2.TextWrapped = true
+Title2.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_23.Parent = Title2
+UITextSizeConstraint_23.MaxTextSize = 18
+
 Toggle.Name = "Toggle"
 Toggle.Parent = MediaMain
 Toggle.BackgroundTransparency = 1.000
@@ -1018,122 +1102,289 @@ Toggle.Image = "rbxassetid://3926305904"
 Toggle.ImageRectOffset = Vector2.new(564, 284)
 Toggle.ImageRectSize = Vector2.new(36, 36)
 
-Discord_2.Name = "Discord"
-Discord_2.Parent = MediaMain
-Discord_2.AnchorPoint = Vector2.new(0.5, 0.5)
-Discord_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-Discord_2.BorderSizePixel = 0
-Discord_2.Position = UDim2.new(0.500331104, 0, 0.635861814, 0)
-Discord_2.Size = UDim2.new(0.956206441, 0, 0.223806754, 0)
-Discord_2.Visible = false
-
-UICorner_27.CornerRadius = UDim.new(0, 12)
-UICorner_27.Parent = Discord_2
+Players_2.Name = "Players"
+Players_2.Parent = MediaMain
+Players_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Players_2.BorderSizePixel = 0
+Players_2.ClipsDescendants = true
+Players_2.Position = UDim2.new(-0.075000003, 0, 0.158999994, 0)
+Players_2.Size = UDim2.new(0.185083181, 0, 0.407158077, 0)
+Players_2.ZIndex = 1000
 
 Title_6.Name = "Title"
-Title_6.Parent = Discord_2
+Title_6.Parent = Players_2
 Title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title_6.BackgroundTransparency = 1.000
 Title_6.BorderSizePixel = 0
-Title_6.Position = UDim2.new(-0.000245213509, 0, -0.20351918, 0)
-Title_6.Size = UDim2.new(0.234618038, 0, 0.202951029, 0)
-Title_6.ZIndex = 3
-Title_6.Font = Enum.Font.GothamBlack
-Title_6.Text = "Discord"
+Title_6.Position = UDim2.new(0.0668845177, 0, 0.0229069199, 0)
+Title_6.Size = UDim2.new(0.277032733, 0, 0.0593702905, 0)
+Title_6.ZIndex = 10001
+Title_6.Font = Enum.Font.GothamBold
+Title_6.Text = "Players"
 Title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title_6.TextScaled = true
 Title_6.TextSize = 14.000
 Title_6.TextWrapped = true
 Title_6.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_21.Parent = Title_6
-UITextSizeConstraint_21.MaxTextSize = 21
+UITextSizeConstraint_24.Parent = Title_6
+UITextSizeConstraint_24.MaxTextSize = 20
+
+UICorner_28.CornerRadius = UDim.new(0, 10)
+UICorner_28.Parent = Players_2
+
+Divider.Name = "Divider"
+Divider.Parent = Players_2
+Divider.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Divider.BorderSizePixel = 0
+Divider.Size = UDim2.new(1, 0, 0.105457805, 0)
+Divider.ZIndex = 1000
+
+UICorner_29.CornerRadius = UDim.new(0, 10)
+UICorner_29.Parent = Divider
+
+Divider_2.Name = "Divider"
+Divider_2.Parent = Divider
+Divider_2.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Divider_2.BorderSizePixel = 0
+Divider_2.Position = UDim2.new(0, 0, 0.73674798, 0)
+Divider_2.Size = UDim2.new(1, 0, 0.259287685, 0)
+Divider_2.ZIndex = 1000
+
+List.Name = "List"
+List.Parent = Players_2
+List.Active = true
+List.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+List.BackgroundTransparency = 1.000
+List.BorderSizePixel = 0
+List.Position = UDim2.new(0, 0, 0.147497475, 0)
+List.Size = UDim2.new(1, 0, 0.810578227, 0)
+List.ZIndex = 1000
+List.CanvasSize = UDim2.new(0, 0, 4, 0)
+List.ScrollBarThickness = 0
+
+Template_2.Name = "Template"
+Template_2.Parent = List
+Template_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Template_2.BorderSizePixel = 0
+Template_2.Position = UDim2.new(0.0300000608, 0, 0, 0)
+Template_2.Size = UDim2.new(0.939803898, 0, 0.145663947, 0)
+Template_2.ZIndex = 1001
+
+Avatar.Name = "Avatar"
+Avatar.Parent = Template_2
+Avatar.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Avatar.BackgroundTransparency = 0.800
+Avatar.BorderSizePixel = 0
+Avatar.Position = UDim2.new(0.0391427279, 0, 0.135806218, 0)
+Avatar.Size = UDim2.new(0.131542444, 0, 0.720558524, 0)
+Avatar.ZIndex = 1002
+Avatar.Image = "rbxassetid://6246676191"
+
+UICorner_30.CornerRadius = UDim.new(0, 60)
+UICorner_30.Parent = Avatar
+
+UICorner_31.CornerRadius = UDim.new(0, 10)
+UICorner_31.Parent = Template_2
+
+Username.Name = "Username"
+Username.Parent = Template_2
+Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username.BackgroundTransparency = 1.000
+Username.BorderSizePixel = 0
+Username.Position = UDim2.new(0.217064217, 0, 0.245321169, 0)
+Username.Size = UDim2.new(0.55756104, 0, 0.51131016, 0)
+Username.ZIndex = 1003
+Username.Font = Enum.Font.GothamSemibold
+Username.Text = "Username"
+Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username.TextScaled = true
+Username.TextSize = 14.000
+Username.TextWrapped = true
+Username.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_25.Parent = Username
+UITextSizeConstraint_25.MaxTextSize = 18
+
+More.Name = "More"
+More.Parent = Template_2
+More.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+More.BackgroundTransparency = 1.000
+More.BorderSizePixel = 0
+More.Position = UDim2.new(0.870552123, 0, 0.225920364, 0)
+More.Size = UDim2.new(0.104458071, 0, 0.569512546, 0)
+More.ZIndex = 1004
+More.Image = "rbxassetid://3926305904"
+More.ImageRectOffset = Vector2.new(764, 764)
+More.ImageRectSize = Vector2.new(36, 36)
 
 Shadow_6.Name = "Shadow"
-Shadow_6.Parent = Discord_2
+Shadow_6.Parent = Template_2
 Shadow_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Shadow_6.BackgroundTransparency = 1.000
 Shadow_6.BorderSizePixel = 0
-Shadow_6.Position = UDim2.new(-0.0481246822, 0, -0.43477425, 0)
-Shadow_6.Size = UDim2.new(1.09668899, 0, 1.84942102, 0)
-Shadow_6.ZIndex = 0
+Shadow_6.Position = UDim2.new(-0.0590620302, 0, -0.35959217, 0)
+Shadow_6.Size = UDim2.new(1.11987591, 0, 1.74896789, 0)
+Shadow_6.ZIndex = 999
 Shadow_6.Image = "rbxassetid://3523728077"
 Shadow_6.ImageColor3 = Color3.fromRGB(33, 33, 33)
 Shadow_6.ImageTransparency = 0.750
 
-Title1_2.Archivable = false
-Title1_2.Name = "Title1"
-Title1_2.Parent = Discord_2
-Title1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title1_2.BackgroundTransparency = 1.000
-Title1_2.BorderSizePixel = 0
-Title1_2.Position = UDim2.new(0.0131504675, 0, 0.0541751273, 0)
-Title1_2.Size = UDim2.new(0.126340881, 0, 0.157630607, 0)
-Title1_2.Font = Enum.Font.GothamBold
-Title1_2.Text = "shlex softworks"
-Title1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title1_2.TextScaled = true
-Title1_2.TextSize = 14.000
-Title1_2.TextWrapped = true
-Title1_2.TextXAlignment = Enum.TextXAlignment.Left
+Shadow_7.Name = "Shadow"
+Shadow_7.Parent = Players_2
+Shadow_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow_7.BackgroundTransparency = 1.000
+Shadow_7.BorderSizePixel = 0
+Shadow_7.Position = UDim2.new(-0.0568857305, 0, -0.281660795, 0)
+Shadow_7.Size = UDim2.new(1.11181474, 0, 1.58118665, 0)
+Shadow_7.ZIndex = 999
+Shadow_7.Image = "rbxassetid://3523728077"
+Shadow_7.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Shadow_7.ImageTransparency = 0.750
 
-UITextSizeConstraint_22.Parent = Title1_2
-UITextSizeConstraint_22.MaxTextSize = 20
+AboutPlayer.Name = "AboutPlayer"
+AboutPlayer.Parent = Players_2
+AboutPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AboutPlayer.BackgroundTransparency = 1.000
+AboutPlayer.BorderSizePixel = 0
+AboutPlayer.Position = UDim2.new(0, 0, 0.147, 0)
+AboutPlayer.Size = UDim2.new(1, 0, 0.81099999, 0)
+AboutPlayer.Visible = false
+AboutPlayer.ZIndex = 1000
 
-link.Name = "link"
-link.Parent = Discord_2
-link.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-link.BackgroundTransparency = 1.000
-link.BorderSizePixel = 0
-link.Position = UDim2.new(0.0131504582, 0, 0.18395029, 0)
-link.Size = UDim2.new(0.971194744, 0, 0.131735206, 0)
-link.Font = Enum.Font.Gotham
-link.Text = "d.gg/2"
-link.TextColor3 = Color3.fromRGB(255, 255, 255)
-link.TextScaled = true
-link.TextSize = 14.000
-link.TextWrapped = true
-link.TextXAlignment = Enum.TextXAlignment.Left
-link.TextYAlignment = Enum.TextYAlignment.Top
+Avatar_2.Name = "Avatar"
+Avatar_2.Parent = AboutPlayer
+Avatar_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Avatar_2.BorderSizePixel = 0
+Avatar_2.Position = UDim2.new(0.0468191653, 0, -0.0254207589, 0)
+Avatar_2.Size = UDim2.new(0.311459661, 0, 0.263058275, 0)
+Avatar_2.ZIndex = 1001
+Avatar_2.Image = "rbxassetid://6246676191"
 
-UITextSizeConstraint_23.Parent = link
-UITextSizeConstraint_23.MaxTextSize = 18
+UICorner_32.CornerRadius = UDim.new(0, 60)
+UICorner_32.Parent = Avatar_2
 
-Copy.Name = "Copy"
-Copy.Parent = Discord_2
-Copy.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Copy.BorderSizePixel = 0
-Copy.Position = UDim2.new(0.0129461689, 0, 0.312548816, 0)
-Copy.Size = UDim2.new(0.134099811, 0, 0.149538115, 0)
-Copy.Font = Enum.Font.GothamSemibold
-Copy.Text = "Copy to Clipboard"
-Copy.TextColor3 = Color3.fromRGB(255, 255, 255)
-Copy.TextScaled = true
-Copy.TextSize = 14.000
-Copy.TextWrapped = true
+Premium.Name = "Premium"
+Premium.Parent = AboutPlayer
+Premium.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Premium.BackgroundTransparency = 1.000
+Premium.BorderSizePixel = 0
+Premium.Position = UDim2.new(0.411339819, 0, 0.0508414917, 0)
+Premium.Size = UDim2.new(0.128770471, 0, 0.108759314, 0)
+Premium.ZIndex = 1001
+Premium.Image = "http://www.roblox.com/asset/?id=5817115909"
 
-UICorner_28.CornerRadius = UDim.new(0, 12)
-UICorner_28.Parent = Copy
+Divider_3.Name = "Divider"
+Divider_3.Parent = AboutPlayer
+Divider_3.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Divider_3.BorderSizePixel = 0
+Divider_3.Position = UDim2.new(0, 0, -0.0512235239, 0)
+Divider_3.Size = UDim2.new(1, 0, 0.362274498, 0)
+Divider_3.ZIndex = 1000
 
-UITextSizeConstraint_24.Parent = Copy
-UITextSizeConstraint_24.MaxTextSize = 18
+UserId.Name = "UserId"
+UserId.Parent = AboutPlayer
+UserId.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UserId.BackgroundTransparency = 1.000
+UserId.BorderSizePixel = 0
+UserId.Position = UDim2.new(0.0668845251, 0, 0.360767901, 0)
+UserId.Size = UDim2.new(0.597859621, 0, 0.0645099208, 0)
+UserId.ZIndex = 1000
+UserId.Font = Enum.Font.GothamSemibold
+UserId.Text = "UserId: 000000"
+UserId.TextColor3 = Color3.fromRGB(255, 255, 255)
+UserId.TextScaled = true
+UserId.TextSize = 14.000
+UserId.TextWrapped = true
+UserId.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_26.Parent = UserId
+UITextSizeConstraint_26.MaxTextSize = 20
+
+CopyUsr.Name = "CopyUsr"
+CopyUsr.Parent = AboutPlayer
+CopyUsr.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+CopyUsr.BorderSizePixel = 0
+CopyUsr.Position = UDim2.new(0.692254841, 0, 0.341030687, 0)
+CopyUsr.Size = UDim2.new(0.268609315, 0, 0.101479739, 0)
+CopyUsr.ZIndex = 1000
+CopyUsr.Font = Enum.Font.GothamSemibold
+CopyUsr.Text = "Copy"
+CopyUsr.TextColor3 = Color3.fromRGB(255, 255, 255)
+CopyUsr.TextScaled = true
+CopyUsr.TextSize = 14.000
+CopyUsr.TextWrapped = true
+
+UITextSizeConstraint_27.Parent = CopyUsr
+UITextSizeConstraint_27.MaxTextSize = 18
+
+UICorner_33.CornerRadius = UDim.new(0, 10)
+UICorner_33.Parent = CopyUsr
+
+DomainDev.Name = "DomainDev"
+DomainDev.Parent = AboutPlayer
+DomainDev.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DomainDev.BackgroundTransparency = 1.000
+DomainDev.BorderSizePixel = 0
+DomainDev.Position = UDim2.new(0.516834974, 0, -0.13840194, 0)
+DomainDev.Size = UDim2.new(0.451336235, 0, 0.0426678397, 0)
+DomainDev.ZIndex = 1000
+DomainDev.Font = Enum.Font.GothamSemibold
+DomainDev.Text = "Domain Developer"
+DomainDev.TextColor3 = Color3.fromRGB(255, 255, 255)
+DomainDev.TextScaled = true
+DomainDev.TextSize = 14.000
+DomainDev.TextWrapped = true
+DomainDev.TextXAlignment = Enum.TextXAlignment.Right
+
+UITextSizeConstraint_28.Parent = DomainDev
+UITextSizeConstraint_28.MaxTextSize = 20
+
+Close.Name = "Close"
+Close.Parent = AboutPlayer
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.872843087, 0, -0.0536660254, 0)
+Close.Size = UDim2.new(0.0928655565, 0, 0.0784340799, 0)
+Close.ZIndex = 10005
+Close.Image = "rbxassetid://3926305904"
+Close.ImageRectOffset = Vector2.new(924, 724)
+Close.ImageRectSize = Vector2.new(36, 36)
 
 
 
 
 
-local VersionNum = 0.432
-local VersionFull = tostring(VersionNum).." | Patch 0.432"
-local VFeature = "Added so tools don't cover up the toggle button"
+local VersionNum = 0.5
+local VersionFull = tostring(VersionNum).." | Patch 0.5"
+local VFeature = "New Players feature"
 
+local Admins = {
+	
+	Nich = 669686927,
+	Gofish = 262635913,
+	Chiller = 1015797562,
+	
+	
+}
+
+local Developers = {
+	
+	rivertropic = 304343782,
+	
+}
 
 local BannerSectionPos = 0
 local ExploitsOpen = false
+local PlayersOpen = false
 local MusicOpen = false
 local HomeOpen = false
-local DiscordOpen = false
 local InfoOpen = false
+local CurrentListPosition = 1
 local uiopened = false
+local UserIdVal = Instance.new("NumberValue")
+UserIdVal.Parent = AboutPlayer
 local db = false
 local DiscordLink = "https://discord.gg/jyySpgkFSp"
 local MusicSound
@@ -1215,11 +1466,15 @@ end
 function Start()
 	Text.Text = "WELCOME, "..string.upper(game.Players.LocalPlayer.Name).." TO DOMAIN"
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
-	for _, UiInstance in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+	for _, UiInstance in ipairs(game.Players.LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
 	if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain then
 		Notify("Removed previous interface","GothamBold")
 		UiInstance:Destroy()
 	end
+	end
+	Template_2.Visible = false
+	for _, Player in ipairs(game.Players:GetChildren()) do
+		AddToList(Player)
 	end
 	Notify("Booting DOMAIN v"..tostring(VersionNum),"GothamBold")
 	UpdatePanel.feat.Text = VFeature
@@ -1228,11 +1483,12 @@ function Start()
 	Exploits_2.TemplateBanner.Visible = false
 	Music.Position = Home.Position
 	Exploits.Position = Home.Position
+	Players.Position = Home.Position
 	Time.Position = UDim2.new(0.029,0,1,0)
 	Info.Position = UDim2.new(0.9,0,1,0)
 	Functions.Position = UDim2.new(0.277, 0, 1, 0)
 	local l = false
-	for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+	for _, Item in ipairs(game.Players.LocalPlayer:WaitForChild("Backpack"):GetChildren()) do
 		l = true
 		break
 	end
@@ -1252,7 +1508,7 @@ function Start()
 	Functions:TweenPosition(UDim2.new(0.277, 0, 0.781, 0),"Out", "Quint", 0.7)
 	Toggle:TweenPosition(UDim2.new(0.488, 0, 0.742, 0),"Out", "Quint", 0.7)
 	wait(0.2)
-	for _, UIIns in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+	for _, UIIns in ipairs(game.Players.LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
 		if string.find(UIIns.Name,"tool") or string.find(UIIns.Name,"hotbar") then
 			UIIns.Enabled = false
 		end
@@ -1261,6 +1517,8 @@ function Start()
 	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
 	tween:Play()
 	uiopened = true
+	Players:TweenPosition(UDim2.new(0.5, 0, 0.2, 0),"Out","Quint",0.6)
+	wait(0.15)
 	Music:TweenPosition(UDim2.new(0.4, 0, 0.2, 0),"Out","Quint",0.6)
 	wait(0.15)
 	Exploits:TweenPosition(UDim2.new(0.3, 0, 0.2, 0),"Out","Quint",0.6)
@@ -1355,6 +1613,9 @@ function ToggleUI()
 		end
 		if InfoOpen == true then
 			CloseInfo()
+		end
+		if PlayersOpen == true then
+			ClosePlayers()
 		end
 		for _, UIIns in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
 			if string.find(string.lower(UIIns.Name),"tool") or string.lower(UIIns.Name) == "toolbar" or string.lower(UIIns.Name) == "tools" then
@@ -1454,6 +1715,9 @@ function OpenInfo()
 	if InfoOpen == true then
 		CloseInfo()
 	end
+	if PlayersOpen == true then
+		ClosePlayers()
+	end
 	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
 	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 1})
 	tween:Play()
@@ -1502,6 +1766,9 @@ function OpenHome()
 	if InfoOpen == true then
 		CloseInfo()
 	end
+	if PlayersOpen == true then
+		ClosePlayers()
+	end
 	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
 	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 1})
 	tween:Play()
@@ -1535,6 +1802,220 @@ function CloseHome()
 	HomeOpen = false
 end
 
+function OpenPlayers()
+	db = true
+	Players_2.Position = UDim2.new(-0.3, 0, 0.159, 0)
+	Players_2.Size = UDim2.new(0.174, 0, 0.382, 0)
+	if ExploitsOpen == true then
+		CloseExploits()
+	end
+	if HomeOpen == true then
+		CloseHome()
+	end
+	if MusicOpen == true then
+		CloseMusic()
+	end
+	if InfoOpen == true then
+		CloseInfo()
+	end
+	if PlayersOpen == true then
+		ClosePlayers()
+	end
+	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 1})
+	tween:Play()
+	wait(0.25)
+	Toggle.Visible = false
+	Players_2.Visible = true
+	Players_2:TweenSizeAndPosition(UDim2.new(0.185, 0, 0.407, 0),UDim2.new(-0.075, 0, 0.159, 0),"Out", "Quint", 0.59)
+	wait(0.2)
+	local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Players_2.Shadow, transitionInfo, {ImageTransparency = 0.75})
+	tween:Play()
+	wait(0.4)
+	db = false
+	PlayersOpen = true
+end
+
+function ClosePlayers()
+	db = true
+	Toggle.Visible = true
+	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
+	tween:Play()
+
+	Players_2:TweenSizeAndPosition(UDim2.new(0.174, 0, 0.382, 0),UDim2.new(-0.3, 0, 0.159, 0),"In", "Quint", 0.59)
+	wait(0.2)
+	local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Players_2.Shadow, transitionInfo, {ImageTransparency = 1})
+	tween:Play()
+	wait(0.4)
+	Players_2.Visible = false
+	db = false
+	PlayersOpen = false
+end
+
+function RefigurePlayerList(RemovedPlayerYOffset)
+	wait(0.01)
+	
+	CurrentListPosition = CurrentListPosition - 0.033
+	for _, PlrAdded in ipairs(List:GetChildren()) do
+		if PlrAdded.Position.Y.Scale > RemovedPlayerYOffset then
+			PlrAdded:TweenPosition(UDim2.new(0.03, 0, PlrAdded.Position.Y.Scale-0.023, 0),"Out", "Quint", 0.6)
+			wait(0.001)
+		end
+	end
+end
+
+function AddToList(Player)
+	local NewPlr = List.Template:Clone()
+	NewPlr.Parent = List
+	if Player.Name == game.Players.LocalPlayer.Name then
+		NewPlr.Username.Font = "GothamBold"
+	end
+	NewPlr.Avatar.Image = game.Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+	if game.CreatorId == 0 then
+		NewPlr.Size = UDim2.new(0.94, 0, 0.032, 0)
+	end
+	NewPlr.Visible = true
+	NewPlr.Name = Player.Name
+	if CurrentListPosition == 1 then 
+		CurrentListPosition = 0
+	else
+		CurrentListPosition = CurrentListPosition + 0.033
+	end
+	NewPlr.Position = UDim2.new(1, 0, CurrentListPosition, 0)
+	NewPlr:TweenPosition(UDim2.new(0.03, 0, CurrentListPosition, 0),"Out", "Quint", 0.7)
+	NewPlr.Username.Text = Player.Name
+	
+	NewPlr.MouseEnter:Connect(function()
+		local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(NewPlr.More, transitionInfo, {ImageTransparency = 0})
+		tween:Play()
+		local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(NewPlr, transitionInfo, {BackgroundColor3 = Color3.fromRGB(57,57,57)})
+		tween:Play()
+	end)
+	NewPlr.MouseLeave:Connect(function()
+		local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(NewPlr.More, transitionInfo, {ImageTransparency = 1})
+		tween:Play()
+		local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(NewPlr, transitionInfo, {BackgroundColor3 = Color3.fromRGB(67,68,68)})
+		tween:Play()
+		
+	end)
+	NewPlr.More.MouseButton1Click:Connect(function()
+		OpenAboutPlayer(Player.Name)
+	end)
+end
+
+function PlayerRemoved(Player)
+		if List:FindFirstChild(Player.Name) then
+			local yoff = List:FindFirstChild(Player.Name).Position.Y.Scale
+			List:FindFirstChild(Player.Name):TweenPosition(UDim2.new(-1, 0, List:FindFirstChild(Player.Name).Position.Y.Scale, 0),"In", "Quint", 0.7)
+			wait(0.71)
+			List:FindFirstChild(Player.Name):Destroy()
+			RefigurePlayerList(yoff)
+		end
+end
+
+game.Players.PlayerRemoving:Connect(PlayerRemoved)
+
+game.Players.PlayerAdded:Connect(function(Player)
+	AddToList(Player)
+	if table.find(Developers,Player.UserId) then
+		Notify("Shlex has joined your server","GothamBold")
+	end
+	if table.find(Admins,Player.UserId) then
+		Notify("Domain Admin "..Player.Name.." has joined your server","GothamBold")
+	end
+end)
+
+function CheckPlayersForAdmins()
+	local vdev = false
+	local vadmin = false
+	for _, Player in ipairs(game.Players:GetChildren()) do
+		
+		for _, Dev in ipairs(Developers) do
+			if Player.UserId == Dev then
+				Panel.Text.Text = "DEVELOPER SHLEX IS IN GAME"
+				vdev = true
+				break
+			end
+		end
+		for _, Admin in ipairs(Admins) do
+			if Player.UserId == Admin then
+				Panel_2.Text.Text = "ADMIN "..Player.Name.." IS IN GAME"
+				vadmin = true
+				break
+			end
+		end
+	end
+	if vdev == false then
+		Panel.Text.Text = ""
+	end
+	if vadmin == false then
+		Panel_2.Text.Text = ""
+	end
+end
+
+function OpenAboutPlayer(PlayerName)
+	AboutPlayer.Visible = true
+	Players_2.AboutPlayer.Position = UDim2.new(0,0,-1,0)
+	List:TweenPosition(UDim2.new(0, 0, 1, 0),"In","Quint",0.5)
+	wait(0.2)
+	Players_2.AboutPlayer:TweenPosition(UDim2.new(0, 0, 0.147, 0),"Out","Quint",0.5)
+	if game.Players:FindFirstChild(PlayerName) then
+		local Player = game.Players:FindFirstChild(PlayerName)
+		AboutPlayer.Avatar.Image = game.Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+	UserIdVal.Value = Player.UserId
+	UserId.Text = "UserID: "..tostring(Player.UserId)
+	if Player.MembershipType == Enum.MembershipType.Premium then
+		Premium.Visible = true
+	else
+		Premium.Visible = false
+		end
+		Title_6.Text = Player.Name
+	for _, Dev in ipairs(Developers) do
+		if Player.UserId == Dev then
+			DomainDev.Visible = true
+			DomainDev.Text = "Domain Developer"
+		end
+	end
+	for _, Admin in ipairs(Admins) do
+		if Player.UserId == Admin then
+			DomainDev.Visible = true
+			DomainDev.Text = "Domain Administrator"
+		end
+	end
+	
+	else
+		-- Player left
+		Notify("Player left game, error","GothamBold")
+		if PlayersOpen then
+			ClosePlayers()
+		end
+	end
+	CopyUsr.MouseButton1Click:Connect(function()
+		if game.CreatorId ~= 0 then
+			setclipboard(UserIdVal.Value)
+		else
+			Notify("Studio","GothamSemibold")
+		end
+	end)
+	Close.MouseButton1Click:Connect(function()
+		List.Position = UDim2.new(0,0,1,0)
+		Players_2.AboutPlayer:TweenPosition(UDim2.new(0, 0, -1, 0),"In","Quint",0.5)
+		wait(0.2)
+		Title_6.Text = "Players"
+		List:TweenPosition(UDim2.new(0, 0, 0.147, 0),"Out","Quint",0.5)
+		wait(0.3)
+		AboutPlayer.Visible = false
+		
+	end)
+end
+
 function OpenExploits()
 	Exploits_2.Size = UDim2.new(0.853, 0, 0.322, 0)
 	Exploits_2.Position = UDim2.new(0.5, 0, 1.05, 0)
@@ -1550,6 +2031,9 @@ function OpenExploits()
 	end
 	if InfoOpen == true then
 		CloseInfo()
+	end
+	if PlayersOpen == true then
+		ClosePlayers()
 	end
 	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
 	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 1})
@@ -1600,6 +2084,9 @@ function OpenMusic()
 	if InfoOpen == true then
 		CloseInfo()
 	end
+	if PlayersOpen == true then
+		ClosePlayers()
+	end
 	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
 	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 1})
 	tween:Play()
@@ -1649,6 +2136,14 @@ Music.MouseButton1Click:Connect(function()
 		CloseMusic()
 	elseif MusicOpen == false and db == false then
 		OpenMusic()
+	end
+end)
+
+Players.MouseButton1Click:Connect(function()
+	if PlayersOpen == true and db == false then
+		ClosePlayers()
+	elseif PlayersOpen == false and db == false then
+		OpenPlayers()
 	end
 end)
 
