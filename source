@@ -347,7 +347,6 @@ Shadow.ImageTransparency = 0.750
 
 Players.Name = "Players"
 Players.Parent = Functions
-Players.Visible = false
 Players.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 Players.BorderSizePixel = 0
 Players.Position = UDim2.new(0.5, 0, 0.200000003, 0)
@@ -1105,6 +1104,7 @@ Toggle.ImageRectSize = Vector2.new(36, 36)
 
 Players_2.Name = "Players"
 Players_2.Parent = MediaMain
+Players_2.Visible = false
 Players_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 Players_2.BorderSizePixel = 0
 Players_2.ClipsDescendants = true
@@ -1859,10 +1859,10 @@ end
 function RefigurePlayerList(RemovedPlayerYOffset)
 	wait(0.01)
 	
-	CurrentListPosition = CurrentListPosition - 0.033
+	CurrentListPosition = CurrentListPosition - 0.036
 	for _, PlrAdded in ipairs(List:GetChildren()) do
 		if PlrAdded.Position.Y.Scale > RemovedPlayerYOffset then
-			PlrAdded:TweenPosition(UDim2.new(0.03, 0, PlrAdded.Position.Y.Scale-0.023, 0),"Out", "Quint", 0.6)
+			PlrAdded:TweenPosition(UDim2.new(0.03, 0, PlrAdded.Position.Y.Scale-0.036, 0),"Out", "Quint", 0.6)
 			wait(0.001)
 		end
 	end
@@ -1883,7 +1883,7 @@ function AddToList(Player)
 	if CurrentListPosition == 1 then 
 		CurrentListPosition = 0
 	else
-		CurrentListPosition = CurrentListPosition + 0.033
+		CurrentListPosition = CurrentListPosition + 0.036
 	end
 	NewPlr.Position = UDim2.new(1, 0, CurrentListPosition, 0)
 	NewPlr:TweenPosition(UDim2.new(0.03, 0, CurrentListPosition, 0),"Out", "Quint", 0.7)
