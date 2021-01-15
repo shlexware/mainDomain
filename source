@@ -1870,7 +1870,7 @@ function RefigurePlayerList(RemovedPlayerYOffset)
 end
 
 function AddToList(Player)
-	local NewPlr = List.Template:Clone()
+	local NewPlr = List:FindFirstChild("Template"):Clone()
 	NewPlr.Parent = List
 	if Player.Name == game.Players.LocalPlayer.Name then
 		NewPlr.Username.Font = "GothamBold"
@@ -2263,6 +2263,7 @@ end
 local TimeLabel = Functions.Time
 
 while wait(1) do
+	CheckPlayersForAdmins()
 	if Time.Position == UDim2.new(0.029,0,1,0) then
 		Time:TweenPosition(UDim2.new(0.029, 0, 0.335, 0),"Out","Quint",0.6)
 	end
