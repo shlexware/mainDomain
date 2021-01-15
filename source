@@ -1118,7 +1118,7 @@ Title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title_6.BackgroundTransparency = 1.000
 Title_6.BorderSizePixel = 0
 Title_6.Position = UDim2.new(0.0668845177, 0, 0.0229069199, 0)
-Title_6.Size = UDim2.new(0.277032733, 0, 0.0593702905, 0)
+Title_6.Size = UDim2.new(0.474, 0, 0.059, 0)
 Title_6.ZIndex = 10001
 Title_6.Font = Enum.Font.GothamBold
 Title_6.Text = "Players"
@@ -1985,22 +1985,18 @@ function OpenAboutPlayer(PlayerName)
 		Premium.Visible = false
 		end
 		Title_6.Text = Player.Name
-	for _, Dev in ipairs(Developers) do
-		if Player.UserId == Dev then
+		if table.find(Developers,Player.UserId) then
 			DomainDev.Visible = true
 				DomainDev.Text = "Domain Developer"
 			else
 				DomainDev.Visible = false
 		end
-	end
-	for _, Admin in ipairs(Admins) do
-		if Player.UserId == Admin then
+		if table.find(Admins,Player.UserId) then
 			DomainDev.Visible = true
-				DomainDev.Text = "Domain Administrator"
-			else
-				DomainDev.Visible = false
+			DomainDev.Text = "Domain Admin"
+		else
+			DomainDev.Visible = false
 		end
-	end
 	
 	else
 		-- Player left
