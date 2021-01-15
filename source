@@ -1,0 +1,1793 @@
+-- Instances:
+
+local mainDomain = Instance.new("ScreenGui")
+local MediaMain = Instance.new("Frame")
+local ShadowBG = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local Functions = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Music = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local Icon = Instance.new("ImageLabel")
+local Exploits = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local Icon_2 = Instance.new("ImageLabel")
+local Time = Instance.new("TextLabel")
+local Home = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local Icon_3 = Instance.new("ImageLabel")
+local Discord = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local Icon_4 = Instance.new("ImageLabel")
+local Info = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local Icon_5 = Instance.new("ImageLabel")
+local Shadow = Instance.new("ImageLabel")
+local Exploits_2 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TemplateBanner = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local ShadowBG_2 = Instance.new("ImageLabel")
+local UICorner_10 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local CustomBG = Instance.new("ImageLabel")
+local UICorner_11 = Instance.new("UICorner")
+local Action = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local Author = Instance.new("TextLabel")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local Title_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local Shadow_2 = Instance.new("ImageLabel")
+local nContainer = Instance.new("Frame")
+local Template = Instance.new("Frame")
+local Content = Instance.new("TextLabel")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+local UICorner_13 = Instance.new("UICorner")
+local Music_2 = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local Title_3 = Instance.new("TextLabel")
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+local SoundId = Instance.new("TextBox")
+local UICorner_15 = Instance.new("UICorner")
+local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
+local Play = Instance.new("TextButton")
+local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
+local UICorner_16 = Instance.new("UICorner")
+local RemBG = Instance.new("TextButton")
+local UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint")
+local UICorner_17 = Instance.new("UICorner")
+local Stop = Instance.new("TextButton")
+local UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint")
+local UICorner_18 = Instance.new("UICorner")
+local Shadow_3 = Instance.new("ImageLabel")
+local Home_2 = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local Title_4 = Instance.new("TextLabel")
+local UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint")
+local WelcomePanel = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner_20 = Instance.new("UICorner")
+local Text = Instance.new("TextLabel")
+local UpdatePanel = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_21 = Instance.new("UICorner")
+local Text_2 = Instance.new("TextLabel")
+local upd = Instance.new("TextLabel")
+local feat = Instance.new("TextLabel")
+local DisPanel = Instance.new("Frame")
+local UICorner_22 = Instance.new("UICorner")
+local Text_3 = Instance.new("TextLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local dlink = Instance.new("TextLabel")
+local VersioPanel = Instance.new("Frame")
+local UIGradient_4 = Instance.new("UIGradient")
+local UICorner_23 = Instance.new("UICorner")
+local Text_4 = Instance.new("TextLabel")
+local Panel = Instance.new("Frame")
+local UICorner_24 = Instance.new("UICorner")
+local Text_5 = Instance.new("TextLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+local Panel_2 = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local Text_6 = Instance.new("TextLabel")
+local UIGradient_6 = Instance.new("UIGradient")
+local Shadow_4 = Instance.new("ImageLabel")
+local Info_2 = Instance.new("Frame")
+local UICorner_26 = Instance.new("UICorner")
+local Title_5 = Instance.new("TextLabel")
+local UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint")
+local Shadow_5 = Instance.new("ImageLabel")
+local Title1 = Instance.new("TextLabel")
+local UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint")
+local About = Instance.new("TextLabel")
+local UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint")
+local About_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint")
+local Toggle = Instance.new("ImageButton")
+local Discord_2 = Instance.new("Frame")
+local UICorner_27 = Instance.new("UICorner")
+local Title_6 = Instance.new("TextLabel")
+local UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint")
+local Shadow_6 = Instance.new("ImageLabel")
+local Title1_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint")
+local link = Instance.new("TextLabel")
+local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
+local Copy = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+mainDomain.Name = "mainDomain"
+mainDomain.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+MediaMain.Name = "MediaMain"
+MediaMain.Parent = mainDomain
+MediaMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MediaMain.BackgroundTransparency = 1.000
+MediaMain.BorderSizePixel = 0
+MediaMain.Position = UDim2.new(0.0786458403, 0, 0.138699248, 0)
+MediaMain.Size = UDim2.new(0.841465175, 0, 0.993685126, 0)
+mainDomain.ResetOnSpawn = false
+
+ShadowBG.Name = "ShadowBG"
+ShadowBG.Parent = MediaMain
+ShadowBG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ShadowBG.BackgroundTransparency = 1.000
+ShadowBG.BorderSizePixel = 0
+ShadowBG.Position = UDim2.new(0, 0, 0.326565266, 0)
+ShadowBG.Size = UDim2.new(1, 0, 0.783774376, 0)
+ShadowBG.Visible = false
+ShadowBG.Image = "http://www.roblox.com/asset/?id=5602558289"
+ShadowBG.ImageColor3 = Color3.fromRGB(20, 20, 20)
+
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = ShadowBG
+
+Functions.Name = "Functions"
+Functions.Parent = MediaMain
+Functions.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Functions.BorderSizePixel = 0
+Functions.Position = UDim2.new(0.276523799, 0, 0.78057909, 0)
+Functions.Size = UDim2.new(0.448024958, 0, 0.0968273655, 0)
+Functions.ZIndex = 1000
+
+UICorner_2.CornerRadius = UDim.new(0, 12)
+UICorner_2.Parent = Functions
+
+Music.Name = "Music"
+Music.Parent = Functions
+Music.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Music.BorderSizePixel = 0
+Music.Position = UDim2.new(0.400000006, 0, 0.200000003, 0)
+Music.Size = UDim2.new(0.0727514178, 0, 0.510895193, 0)
+Music.ZIndex = 1000
+Music.Font = Enum.Font.GothamBold
+Music.Text = ""
+Music.TextColor3 = Color3.fromRGB(255, 255, 255)
+Music.TextScaled = true
+Music.TextSize = 14.000
+Music.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 12)
+UICorner_3.Parent = Music
+
+UITextSizeConstraint.Parent = Music
+UITextSizeConstraint.MaxTextSize = 21
+
+Icon.Name = "Icon"
+Icon.Parent = Music
+Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon.BackgroundTransparency = 1.000
+Icon.BorderSizePixel = 0
+Icon.Position = UDim2.new(0.139883563, 0, 0.139437169, 0)
+Icon.Size = UDim2.new(0.699998677, 0, 0.699998677, 0)
+Icon.ZIndex = 1000
+Icon.Image = "http://www.roblox.com/asset/?id=5840191250"
+
+Exploits.Name = "Exploits"
+Exploits.Parent = Functions
+Exploits.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Exploits.BorderSizePixel = 0
+Exploits.Position = UDim2.new(0.300000012, 0, 0.202999994, 0)
+Exploits.Size = UDim2.new(0.0729999989, 0, 0.510999978, 0)
+Exploits.ZIndex = 1000
+Exploits.Font = Enum.Font.GothamBold
+Exploits.Text = ""
+Exploits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exploits.TextScaled = true
+Exploits.TextSize = 14.000
+Exploits.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 12)
+UICorner_4.Parent = Exploits
+
+UITextSizeConstraint_2.Parent = Exploits
+UITextSizeConstraint_2.MaxTextSize = 21
+
+Icon_2.Name = "Icon"
+Icon_2.Parent = Exploits
+Icon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_2.BackgroundTransparency = 1.000
+Icon_2.BorderSizePixel = 0
+Icon_2.Position = UDim2.new(0.139881924, 0, 0.139438435, 0)
+Icon_2.Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
+Icon_2.ZIndex = 1000
+Icon_2.Image = "rbxassetid://3926305904"
+Icon_2.ImageRectOffset = Vector2.new(404, 844)
+Icon_2.ImageRectSize = Vector2.new(36, 36)
+
+Time.Name = "Time"
+Time.Parent = Functions
+Time.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Time.BackgroundTransparency = 1.000
+Time.BorderSizePixel = 0
+Time.Position = UDim2.new(0.0287630614, 0, 0.334852695, 0)
+Time.Size = UDim2.new(0.0996169001, 0, 0.234624863, 0)
+Time.ZIndex = 1000
+Time.Font = Enum.Font.GothamSemibold
+Time.Text = "00:00"
+Time.TextColor3 = Color3.fromRGB(255, 255, 255)
+Time.TextScaled = true
+Time.TextSize = 14.000
+Time.TextWrapped = true
+
+Home.Name = "Home"
+Home.Parent = Functions
+Home.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0.200000003, 0, 0.200000003, 0)
+Home.Size = UDim2.new(0.0727514178, 0, 0.510895193, 0)
+Home.ZIndex = 1000
+Home.Font = Enum.Font.GothamBold
+Home.Text = ""
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextScaled = true
+Home.TextSize = 14.000
+Home.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 12)
+UICorner_5.Parent = Home
+
+UITextSizeConstraint_3.Parent = Home
+UITextSizeConstraint_3.MaxTextSize = 21
+
+Icon_3.Name = "Icon"
+Icon_3.Parent = Home
+Icon_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_3.BackgroundTransparency = 1.000
+Icon_3.BorderSizePixel = 0
+Icon_3.Position = UDim2.new(0.139883563, 0, 0.139437169, 0)
+Icon_3.Size = UDim2.new(0.699998677, 0, 0.699998677, 0)
+Icon_3.ZIndex = 1000
+Icon_3.Image = "rbxassetid://3926305904"
+Icon_3.ImageRectOffset = Vector2.new(964, 204)
+Icon_3.ImageRectSize = Vector2.new(36, 36)
+
+Discord.Name = "Discord"
+Discord.Parent = Functions
+Discord.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Discord.BorderSizePixel = 0
+Discord.Position = UDim2.new(0.5, 0, 0.200000003, 0)
+Discord.Size = UDim2.new(0.0727514178, 0, 0.510895193, 0)
+Discord.ZIndex = 1000
+Discord.Font = Enum.Font.GothamBold
+Discord.Text = "D"
+Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
+Discord.TextScaled = true
+Discord.TextSize = 14.000
+Discord.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 12)
+UICorner_6.Parent = Discord
+
+UITextSizeConstraint_4.Parent = Discord
+UITextSizeConstraint_4.MaxTextSize = 21
+
+Icon_4.Name = "Icon"
+Icon_4.Parent = Discord
+Icon_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_4.BackgroundTransparency = 1.000
+Icon_4.BorderSizePixel = 0
+Icon_4.Position = UDim2.new(0.139883563, 0, 0.139437169, 0)
+Icon_4.Size = UDim2.new(0.699998677, 0, 0.699998677, 0)
+Icon_4.ZIndex = 1000
+Icon_4.Image = "rbxassetid://6240829881"
+Icon_4.ImageRectOffset = Vector2.new(0, 0)
+Icon_4.ImageRectSize = Vector2.new(0, 0)
+Icon_4.Visible = false
+
+Info.Name = "Info"
+Info.Parent = Functions
+Info.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Info.BorderSizePixel = 0
+Info.Position = UDim2.new(0.899999976, 0, 0.200000003, 0)
+Info.Size = UDim2.new(0.0727514178, 0, 0.510895193, 0)
+Info.ZIndex = 1000
+Info.Font = Enum.Font.GothamBold
+Info.Text = ""
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info.TextScaled = true
+Info.TextSize = 14.000
+Info.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 12)
+UICorner_7.Parent = Info
+
+UITextSizeConstraint_5.Parent = Info
+UITextSizeConstraint_5.MaxTextSize = 21
+
+Icon_5.Name = "Icon"
+Icon_5.Parent = Info
+Icon_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_5.BackgroundTransparency = 1.000
+Icon_5.BorderSizePixel = 0
+Icon_5.Position = UDim2.new(0.139883563, 0, 0.139437169, 0)
+Icon_5.Size = UDim2.new(0.699998677, 0, 0.699998677, 0)
+Icon_5.ZIndex = 1000
+Icon_5.Image = "rbxassetid://3926305904"
+Icon_5.ImageRectOffset = Vector2.new(524, 444)
+Icon_5.ImageRectSize = Vector2.new(36, 36)
+
+Shadow.Name = "Shadow"
+Shadow.Parent = Functions
+Shadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow.BackgroundTransparency = 1.000
+Shadow.BorderSizePixel = 0
+Shadow.Position = UDim2.new(-0.0649442375, 0, -0.471037358, 0)
+Shadow.Size = UDim2.new(1.11987317, 0, 1.88568532, 0)
+Shadow.ZIndex = 0
+Shadow.Image = "rbxassetid://3523728077"
+Shadow.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Shadow.ImageTransparency = 0.750
+
+Exploits_2.Name = "Exploits"
+Exploits_2.Parent = MediaMain
+Exploits_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Exploits_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Exploits_2.BorderSizePixel = 0
+Exploits_2.Position = UDim2.new(0.500331104, 0, 0.568300247, 0)
+Exploits_2.Size = UDim2.new(0.956206441, 0, 0.360386193, 0)
+Exploits_2.Visible = false
+
+UICorner_8.CornerRadius = UDim.new(0, 12)
+UICorner_8.Parent = Exploits_2
+
+TemplateBanner.Name = "TemplateBanner"
+TemplateBanner.Parent = Exploits_2
+TemplateBanner.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+TemplateBanner.BorderSizePixel = 0
+TemplateBanner.Position = UDim2.new(0.0250000004, 0, 0.0649999976, 0)
+TemplateBanner.Size = UDim2.new(0.123989441, 0, 0.870303035, 0)
+
+UICorner_9.CornerRadius = UDim.new(0, 12)
+UICorner_9.Parent = TemplateBanner
+
+ShadowBG_2.Name = "ShadowBG"
+ShadowBG_2.Parent = TemplateBanner
+ShadowBG_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ShadowBG_2.BackgroundTransparency = 1.000
+ShadowBG_2.BorderSizePixel = 0
+ShadowBG_2.Rotation = 180.000
+ShadowBG_2.Size = UDim2.new(1, 0, 1, 0)
+ShadowBG_2.ZIndex = 3
+ShadowBG_2.Image = "http://www.roblox.com/asset/?id=5602558289"
+ShadowBG_2.ImageColor3 = Color3.fromRGB(20, 20, 20)
+ShadowBG_2.ImageTransparency = 0.100
+
+UICorner_10.CornerRadius = UDim.new(0, 12)
+UICorner_10.Parent = ShadowBG_2
+
+Title.Name = "Title"
+Title.Parent = TemplateBanner
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0654608533, 0, 0.0506359227, 0)
+Title.Size = UDim2.new(0.856757224, 0, 0.0613640584, 0)
+Title.ZIndex = 3
+Title.Font = Enum.Font.GothamBold
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_6.Parent = Title
+UITextSizeConstraint_6.MaxTextSize = 21
+
+CustomBG.Name = "CustomBG"
+CustomBG.Parent = TemplateBanner
+CustomBG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CustomBG.BackgroundTransparency = 1.000
+CustomBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
+CustomBG.BorderSizePixel = 0
+CustomBG.Size = UDim2.new(1, 0, 1, 0)
+
+UICorner_11.CornerRadius = UDim.new(0, 12)
+UICorner_11.Parent = CustomBG
+
+Action.Name = "Action"
+Action.Parent = TemplateBanner
+Action.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Action.BackgroundTransparency = 0.850
+Action.BorderSizePixel = 0
+Action.Position = UDim2.new(0.057109151, 0, 0.81194973, 0)
+Action.Size = UDim2.new(0.878602266, 0, 0.147975966, 0)
+Action.ZIndex = 5
+Action.Font = Enum.Font.GothamSemibold
+Action.Text = "Execute"
+Action.TextColor3 = Color3.fromRGB(255, 255, 255)
+Action.TextScaled = true
+Action.TextSize = 14.000
+Action.TextWrapped = true
+
+UICorner_12.CornerRadius = UDim.new(0, 12)
+UICorner_12.Parent = Action
+
+UITextSizeConstraint_7.Parent = Action
+UITextSizeConstraint_7.MaxTextSize = 20
+
+Author.Name = "Author"
+Author.Parent = TemplateBanner
+Author.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Author.BackgroundTransparency = 1.000
+Author.BorderSizePixel = 0
+Author.Position = UDim2.new(0.0649998561, 0, 0.111999944, 0)
+Author.Size = UDim2.new(0.788442433, 0, 0.0675033778, 0)
+Author.ZIndex = 3
+Author.Font = Enum.Font.Gotham
+Author.Text = "username"
+Author.TextColor3 = Color3.fromRGB(255, 255, 255)
+Author.TextScaled = true
+Author.TextSize = 14.000
+Author.TextWrapped = true
+Author.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_8.Parent = Author
+UITextSizeConstraint_8.MaxTextSize = 18
+
+Title_2.Name = "Title"
+Title_2.Parent = Exploits_2
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(-0.000245215575, 0, -0.128507346, 0)
+Title_2.Size = UDim2.new(0.234618038, 0, 0.128473058, 0)
+Title_2.ZIndex = 3
+Title_2.Font = Enum.Font.GothamBlack
+Title_2.Text = "Featured Exploits"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_9.Parent = Title_2
+UITextSizeConstraint_9.MaxTextSize = 21
+
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = Exploits_2
+Shadow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow_2.BackgroundTransparency = 1.000
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Position = UDim2.new(-0.0481246822, 0, -0.43477425, 0)
+Shadow_2.Size = UDim2.new(1.09668899, 0, 1.84942102, 0)
+Shadow_2.ZIndex = 0
+Shadow_2.Image = "rbxassetid://3523728077"
+Shadow_2.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Shadow_2.ImageTransparency = 0.750
+
+nContainer.Name = "nContainer"
+nContainer.Parent = MediaMain
+nContainer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nContainer.BackgroundTransparency = 1.000
+nContainer.BorderSizePixel = 0
+nContainer.Position = UDim2.new(0.343847811, 0, 0.202594623, 0)
+nContainer.Size = UDim2.new(0.312642217, 0, 0.436531633, 0)
+
+Template.Name = "Template"
+Template.Parent = nContainer
+Template.AnchorPoint = Vector2.new(0.5, 0.5)
+Template.BackgroundColor3 = Color3.fromRGB(0, 140, 103)
+Template.BackgroundTransparency = 1.000
+Template.BorderSizePixel = 0
+Template.Position = UDim2.new(0.5, 0, 0.949999988, 0)
+Template.Size = UDim2.new(1, 0, 0.0585898906, 0)
+Template.ZIndex = 100
+
+Content.Name = "Content"
+Content.Parent = Template
+Content.AnchorPoint = Vector2.new(0.5, 0.5)
+Content.BackgroundColor3 = Color3.fromRGB(0, 115, 84)
+Content.BackgroundTransparency = 1.000
+Content.BorderSizePixel = 0
+Content.Position = UDim2.new(0.5, 0, 0.5, 0)
+Content.Size = UDim2.new(0.964835048, 0, 1, 0)
+Content.ZIndex = 100
+Content.Font = Enum.Font.GothamBold
+Content.Text = ""
+Content.TextColor3 = Color3.fromRGB(255, 255, 255)
+Content.TextScaled = true
+Content.TextSize = 16.000
+Content.TextTransparency = 1.000
+Content.TextWrapped = true
+
+UITextSizeConstraint_10.Parent = Content
+UITextSizeConstraint_10.MaxTextSize = 16
+
+UICorner_13.CornerRadius = UDim.new(0, 10)
+UICorner_13.Parent = Content
+
+Music_2.Name = "Music"
+Music_2.Parent = MediaMain
+Music_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Music_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Music_2.BorderSizePixel = 0
+Music_2.Position = UDim2.new(0.500331104, 0, 0.635861814, 0)
+Music_2.Size = UDim2.new(0.956206441, 0, 0.223806754, 0)
+Music_2.Visible = false
+
+UICorner_14.CornerRadius = UDim.new(0, 12)
+UICorner_14.Parent = Music_2
+
+Title_3.Name = "Title"
+Title_3.Parent = Music_2
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(-0.000245213509, 0, -0.20351918, 0)
+Title_3.Size = UDim2.new(0.234618038, 0, 0.202951029, 0)
+Title_3.ZIndex = 3
+Title_3.Font = Enum.Font.GothamBlack
+Title_3.Text = "Music System"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+Title_3.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_11.Parent = Title_3
+UITextSizeConstraint_11.MaxTextSize = 21
+
+SoundId.Name = "SoundId"
+SoundId.Parent = Music_2
+SoundId.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+SoundId.BorderSizePixel = 0
+SoundId.Position = UDim2.new(0.316637278, 0, 0.255434364, 0)
+SoundId.Size = UDim2.new(0.222563684, 0, 0.204603508, 0)
+SoundId.Font = Enum.Font.GothamSemibold
+SoundId.PlaceholderText = "SoundId"
+SoundId.Text = ""
+SoundId.TextColor3 = Color3.fromRGB(255, 255, 255)
+SoundId.TextScaled = true
+SoundId.TextSize = 14.000
+SoundId.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(0, 12)
+UICorner_15.Parent = SoundId
+
+UITextSizeConstraint_12.Parent = SoundId
+UITextSizeConstraint_12.MaxTextSize = 20
+
+Play.Name = "Play"
+Play.Parent = Music_2
+Play.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Play.BorderSizePixel = 0
+Play.Position = UDim2.new(0.555112123, 0, 0.255434364, 0)
+Play.Size = UDim2.new(0.129394159, 0, 0.204603508, 0)
+Play.Font = Enum.Font.GothamBold
+Play.Text = "Play"
+Play.TextColor3 = Color3.fromRGB(255, 255, 255)
+Play.TextScaled = true
+Play.TextSize = 14.000
+Play.TextWrapped = true
+
+UITextSizeConstraint_13.Parent = Play
+UITextSizeConstraint_13.MaxTextSize = 20
+
+UICorner_16.CornerRadius = UDim.new(0, 12)
+UICorner_16.Parent = Play
+
+RemBG.Name = "RemBG"
+RemBG.Parent = Music_2
+RemBG.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+RemBG.BorderSizePixel = 0
+RemBG.Position = UDim2.new(0.316637278, 0, 0.533695102, 0)
+RemBG.Size = UDim2.new(0.222563714, 0, 0.204603508, 0)
+RemBG.Font = Enum.Font.GothamBold
+RemBG.Text = "Find and remove game music"
+RemBG.TextColor3 = Color3.fromRGB(255, 255, 255)
+RemBG.TextScaled = true
+RemBG.TextSize = 14.000
+RemBG.TextWrapped = true
+
+UITextSizeConstraint_14.Parent = RemBG
+UITextSizeConstraint_14.MaxTextSize = 20
+
+UICorner_17.CornerRadius = UDim.new(0, 12)
+UICorner_17.Parent = RemBG
+
+Stop.Name = "Stop"
+Stop.Parent = Music_2
+Stop.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Stop.BorderSizePixel = 0
+Stop.Position = UDim2.new(0.555112123, 0, 0.533695102, 0)
+Stop.Size = UDim2.new(0.129394159, 0, 0.204603508, 0)
+Stop.Font = Enum.Font.GothamBold
+Stop.Text = "Stop"
+Stop.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stop.TextScaled = true
+Stop.TextSize = 14.000
+Stop.TextWrapped = true
+
+UITextSizeConstraint_15.Parent = Stop
+UITextSizeConstraint_15.MaxTextSize = 20
+
+UICorner_18.CornerRadius = UDim.new(0, 12)
+UICorner_18.Parent = Stop
+
+Shadow_3.Name = "Shadow"
+Shadow_3.Parent = Music_2
+Shadow_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow_3.BackgroundTransparency = 1.000
+Shadow_3.BorderSizePixel = 0
+Shadow_3.Position = UDim2.new(-0.0481246822, 0, -0.43477425, 0)
+Shadow_3.Size = UDim2.new(1.09668899, 0, 1.84942102, 0)
+Shadow_3.ZIndex = 0
+Shadow_3.Image = "rbxassetid://3523728077"
+Shadow_3.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Shadow_3.ImageTransparency = 0.750
+
+Home_2.Name = "Home"
+Home_2.Parent = MediaMain
+Home_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Home_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Home_2.BorderSizePixel = 0
+Home_2.Position = UDim2.new(0.500331104, 0, 0.569232941, 0)
+Home_2.Size = UDim2.new(0.956206441, 0, 0.360386193, 0)
+Home_2.Visible = false
+
+UICorner_19.CornerRadius = UDim.new(0, 12)
+UICorner_19.Parent = Home_2
+
+Title_4.Name = "Title"
+Title_4.Parent = Home_2
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.BorderSizePixel = 0
+Title_4.Position = UDim2.new(-0.000245215575, 0, -0.128507346, 0)
+Title_4.Size = UDim2.new(0.234618038, 0, 0.128473058, 0)
+Title_4.ZIndex = 3
+Title_4.Font = Enum.Font.GothamBlack
+Title_4.Text = "Home"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+Title_4.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_16.Parent = Title_4
+UITextSizeConstraint_16.MaxTextSize = 21
+
+WelcomePanel.Name = "WelcomePanel"
+WelcomePanel.Parent = Home_2
+WelcomePanel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WelcomePanel.BorderSizePixel = 0
+WelcomePanel.Position = UDim2.new(0.0219970066, 0, 0.0906633809, 0)
+WelcomePanel.Size = UDim2.new(0.402122289, 0, 0.3889229, 0)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(15, 119, 255))}
+UIGradient.Rotation = 100
+UIGradient.Parent = WelcomePanel
+
+UICorner_20.CornerRadius = UDim.new(0, 12)
+UICorner_20.Parent = WelcomePanel
+
+Text.Name = "Text"
+Text.Parent = WelcomePanel
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.BorderSizePixel = 0
+Text.Position = UDim2.new(0.0273511428, 0, 0.133592173, 0)
+Text.Size = UDim2.new(0.903388321, 0, 0.186107069, 0)
+Text.Font = Enum.Font.GothamBlack
+Text.Text = "WELCOME TO DOMAIN"
+Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text.TextScaled = true
+Text.TextSize = 14.000
+Text.TextWrapped = true
+Text.TextXAlignment = Enum.TextXAlignment.Left
+
+UpdatePanel.Name = "UpdatePanel"
+UpdatePanel.Parent = Home_2
+UpdatePanel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UpdatePanel.BorderSizePixel = 0
+UpdatePanel.Position = UDim2.new(0.442528039, 0, 0.0906633809, 0)
+UpdatePanel.Size = UDim2.new(0.211852968, 0, 0.849885046, 0)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 170, 127)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(46, 255, 214))}
+UIGradient_2.Rotation = 23
+UIGradient_2.Parent = UpdatePanel
+
+UICorner_21.CornerRadius = UDim.new(0, 12)
+UICorner_21.Parent = UpdatePanel
+
+Text_2.Name = "Text"
+Text_2.Parent = UpdatePanel
+Text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_2.BackgroundTransparency = 1.000
+Text_2.BorderSizePixel = 0
+Text_2.Position = UDim2.new(0.0487248637, 0, 0.0459417105, 0)
+Text_2.Size = UDim2.new(0.621630788, 0, 0.113289267, 0)
+Text_2.Font = Enum.Font.GothamBlack
+Text_2.Text = "LATEST UPDATE"
+Text_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_2.TextScaled = true
+Text_2.TextSize = 14.000
+Text_2.TextWrapped = true
+Text_2.TextXAlignment = Enum.TextXAlignment.Left
+
+upd.Name = "upd"
+upd.Parent = UpdatePanel
+upd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+upd.BackgroundTransparency = 1.000
+upd.BorderSizePixel = 0
+upd.Position = UDim2.new(0.0487249047, 0, 0.158610359, 0)
+upd.Size = UDim2.new(0.91293782, 0, 0.0701911822, 0)
+upd.Font = Enum.Font.GothamSemibold
+upd.Text = "0.00 | 01/01 | Title"
+upd.TextColor3 = Color3.fromRGB(255, 255, 255)
+upd.TextScaled = true
+upd.TextSize = 14.000
+upd.TextWrapped = true
+upd.TextXAlignment = Enum.TextXAlignment.Left
+
+feat.Name = "feat"
+feat.Parent = UpdatePanel
+feat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+feat.BackgroundTransparency = 1.000
+feat.BorderSizePixel = 0
+feat.Position = UDim2.new(0.0426139869, 0, 0.280414313, 0)
+feat.Size = UDim2.new(0.91293782, 0, 0.0701911822, 0)
+feat.Font = Enum.Font.Gotham
+feat.Text = "- feature"
+feat.TextColor3 = Color3.fromRGB(255, 255, 255)
+feat.TextScaled = true
+feat.TextSize = 14.000
+feat.TextWrapped = true
+feat.TextXAlignment = Enum.TextXAlignment.Left
+
+DisPanel.Name = "DisPanel"
+DisPanel.Parent = Home_2
+DisPanel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DisPanel.BorderSizePixel = 0
+DisPanel.Position = UDim2.new(0.672849536, 0, 0.0906633213, 0)
+DisPanel.Size = UDim2.new(0.311141819, 0, 0.3889229, 0)
+
+UICorner_22.CornerRadius = UDim.new(0, 12)
+UICorner_22.Parent = DisPanel
+
+Text_3.Name = "Text"
+Text_3.Parent = DisPanel
+Text_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_3.BackgroundTransparency = 1.000
+Text_3.BorderSizePixel = 0
+Text_3.Position = UDim2.new(0.0476375185, 0, 0.0939195827, 0)
+Text_3.Size = UDim2.new(0.903388381, 0, 0.186036006, 0)
+Text_3.Font = Enum.Font.GothamBlack
+Text_3.Text = "JOIN OUR DISCORD"
+Text_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_3.TextScaled = true
+Text_3.TextSize = 14.000
+Text_3.TextWrapped = true
+Text_3.TextXAlignment = Enum.TextXAlignment.Right
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(179, 190, 222)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(187, 187, 188))}
+UIGradient_3.Parent = DisPanel
+
+dlink.Name = "dlink"
+dlink.Parent = DisPanel
+dlink.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dlink.BackgroundTransparency = 1.000
+dlink.BorderSizePixel = 0
+dlink.Position = UDim2.new(0.0474130437, 0, 0.279955506, 0)
+dlink.Size = UDim2.new(0.903388381, 0, 0.146464333, 0)
+dlink.Font = Enum.Font.GothamSemibold
+dlink.Text = "https://discord.gg/YerdqPHR"
+dlink.TextColor3 = Color3.fromRGB(255, 255, 255)
+dlink.TextScaled = true
+dlink.TextSize = 14.000
+dlink.TextWrapped = true
+dlink.TextXAlignment = Enum.TextXAlignment.Right
+
+VersioPanel.Name = "VersioPanel"
+VersioPanel.Parent = Home_2
+VersioPanel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VersioPanel.BorderSizePixel = 0
+VersioPanel.Position = UDim2.new(0.200808257, 0, 0.549161136, 0)
+VersioPanel.Size = UDim2.new(0.223311067, 0, 0.3889229, 0)
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(232, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient_4.Rotation = 74
+UIGradient_4.Parent = VersioPanel
+
+UICorner_23.CornerRadius = UDim.new(0, 12)
+UICorner_23.Parent = VersioPanel
+
+Text_4.Name = "Text"
+Text_4.Parent = VersioPanel
+Text_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_4.BackgroundTransparency = 1.000
+Text_4.BorderSizePixel = 0
+Text_4.Position = UDim2.new(0.0481988899, 0, 0.693065882, 0)
+Text_4.Size = UDim2.new(0.903388441, 0, 0.186107069, 0)
+Text_4.Font = Enum.Font.GothamBlack
+Text_4.Text = "DOMAIN v0.00"
+Text_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_4.TextScaled = true
+Text_4.TextSize = 14.000
+Text_4.TextWrapped = true
+Text_4.TextXAlignment = Enum.TextXAlignment.Right
+
+Panel.Name = "Panel"
+Panel.Parent = Home_2
+Panel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Panel.BorderSizePixel = 0
+Panel.Position = UDim2.new(0.0219969973, 0, 0.549161077, 0)
+Panel.Size = UDim2.new(0.162478819, 0, 0.3889229, 0)
+
+UICorner_24.CornerRadius = UDim.new(0, 12)
+UICorner_24.Parent = Panel
+
+Text_5.Name = "Text"
+Text_5.Parent = Panel
+Text_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_5.BackgroundTransparency = 1.000
+Text_5.BorderSizePixel = 0
+Text_5.Position = UDim2.new(0.0273511428, 0, 0.133592173, 0)
+Text_5.Size = UDim2.new(0.903388381, 0, 0.186107069, 0)
+Text_5.Font = Enum.Font.GothamBlack
+Text_5.Text = ""
+Text_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_5.TextScaled = true
+Text_5.TextSize = 14.000
+Text_5.TextWrapped = true
+Text_5.TextXAlignment = Enum.TextXAlignment.Right
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(102, 45, 113)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(197, 66, 110))}
+UIGradient_5.Parent = Panel
+
+Panel_2.Name = "Panel"
+Panel_2.Parent = Home_2
+Panel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Panel_2.BorderSizePixel = 0
+Panel_2.Position = UDim2.new(0.672849536, 0, 0.567718089, 0)
+Panel_2.Size = UDim2.new(0.311141789, 0, 0.372299641, 0)
+
+UICorner_25.CornerRadius = UDim.new(0, 12)
+UICorner_25.Parent = Panel_2
+
+Text_6.Name = "Text"
+Text_6.Parent = Panel_2
+Text_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_6.BackgroundTransparency = 1.000
+Text_6.BorderSizePixel = 0
+Text_6.Position = UDim2.new(0.0273511428, 0, 0.133592173, 0)
+Text_6.Size = UDim2.new(0.903388381, 0, 0.186107069, 0)
+Text_6.Font = Enum.Font.GothamBlack
+Text_6.Text = ""
+Text_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_6.TextScaled = true
+Text_6.TextSize = 14.000
+Text_6.TextWrapped = true
+Text_6.TextXAlignment = Enum.TextXAlignment.Left
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(45, 168, 182)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(64, 96, 161))}
+UIGradient_6.Parent = Panel_2
+
+Shadow_4.Name = "Shadow"
+Shadow_4.Parent = Home_2
+Shadow_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow_4.BackgroundTransparency = 1.000
+Shadow_4.BorderSizePixel = 0
+Shadow_4.Position = UDim2.new(-0.0589226447, 0, -0.544152915, 0)
+Shadow_4.Size = UDim2.new(1.11309063, 0, 2.11666632, 0)
+Shadow_4.ZIndex = 0
+Shadow_4.Image = "rbxassetid://3523728077"
+Shadow_4.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Shadow_4.ImageTransparency = 0.750
+
+Info_2.Name = "Info"
+Info_2.Parent = MediaMain
+Info_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Info_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Info_2.BorderSizePixel = 0
+Info_2.Position = UDim2.new(0.500331104, 0, 0.635861814, 0)
+Info_2.Size = UDim2.new(0.956206441, 0, 0.223806754, 0)
+Info_2.Visible = false
+
+UICorner_26.CornerRadius = UDim.new(0, 12)
+UICorner_26.Parent = Info_2
+
+Title_5.Name = "Title"
+Title_5.Parent = Info_2
+Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.BackgroundTransparency = 1.000
+Title_5.BorderSizePixel = 0
+Title_5.Position = UDim2.new(-0.000245213509, 0, -0.20351918, 0)
+Title_5.Size = UDim2.new(0.234618038, 0, 0.202951029, 0)
+Title_5.ZIndex = 3
+Title_5.Font = Enum.Font.GothamBlack
+Title_5.Text = "About"
+Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.TextScaled = true
+Title_5.TextSize = 14.000
+Title_5.TextWrapped = true
+Title_5.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_17.Parent = Title_5
+UITextSizeConstraint_17.MaxTextSize = 21
+
+Shadow_5.Name = "Shadow"
+Shadow_5.Parent = Info_2
+Shadow_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow_5.BackgroundTransparency = 1.000
+Shadow_5.BorderSizePixel = 0
+Shadow_5.Position = UDim2.new(-0.0481246822, 0, -0.43477425, 0)
+Shadow_5.Size = UDim2.new(1.09668899, 0, 1.84942102, 0)
+Shadow_5.ZIndex = 0
+Shadow_5.Image = "rbxassetid://3523728077"
+Shadow_5.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Shadow_5.ImageTransparency = 0.750
+
+Title1.Name = "Title1"
+Title1.Parent = Info_2
+Title1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title1.BackgroundTransparency = 1.000
+Title1.BorderSizePixel = 0
+Title1.Position = UDim2.new(0.0131504778, 0, 0.0541751273, 0)
+Title1.Size = UDim2.new(0.10922996, 0, 0.12478552, 0)
+Title1.Font = Enum.Font.GothamSemibold
+Title1.Text = "DOMAIN, by shlex"
+Title1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title1.TextScaled = true
+Title1.TextSize = 14.000
+Title1.TextWrapped = true
+Title1.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_18.Parent = Title1
+UITextSizeConstraint_18.MaxTextSize = 18
+
+About.Name = "About"
+About.Parent = Info_2
+About.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+About.BackgroundTransparency = 1.000
+About.BorderSizePixel = 0
+About.Position = UDim2.new(0.0170343053, 0, 0.834500492, 0)
+About.Size = UDim2.new(0.34714821, 0, 0.0896133482, 0)
+About.Font = Enum.Font.Gotham
+About.Text = "Assets of the Featured Exploits section are chosen by DOMAIN developers."
+About.TextColor3 = Color3.fromRGB(255, 255, 255)
+About.TextScaled = true
+About.TextSize = 14.000
+About.TextWrapped = true
+About.TextXAlignment = Enum.TextXAlignment.Left
+About.TextYAlignment = Enum.TextYAlignment.Top
+
+UITextSizeConstraint_19.Parent = About
+UITextSizeConstraint_19.MaxTextSize = 18
+
+About_2.Name = "About"
+About_2.Parent = Info_2
+About_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+About_2.BackgroundTransparency = 1.000
+About_2.BorderSizePixel = 0
+About_2.Position = UDim2.new(0.0131504675, 0, 0.175027579, 0)
+About_2.Size = UDim2.new(0.971194744, 0, 0.140657902, 0)
+About_2.Font = Enum.Font.Gotham
+About_2.Text = "Found a bug or issue? Let us know in our Discord Server."
+About_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+About_2.TextScaled = true
+About_2.TextSize = 14.000
+About_2.TextWrapped = true
+About_2.TextXAlignment = Enum.TextXAlignment.Left
+About_2.TextYAlignment = Enum.TextYAlignment.Top
+
+UITextSizeConstraint_20.Parent = About_2
+UITextSizeConstraint_20.MaxTextSize = 18
+
+Toggle.Name = "Toggle"
+Toggle.Parent = MediaMain
+Toggle.BackgroundTransparency = 1.000
+Toggle.BorderSizePixel = 0
+Toggle.LayoutOrder = 9
+Toggle.Position = UDim2.new(0.488061011, 0, 0.741958499, 0)
+Toggle.Size = UDim2.new(0.0250568893, 0, 0.0377567224, 0)
+Toggle.ZIndex = 2
+Toggle.Image = "rbxassetid://3926305904"
+Toggle.ImageRectOffset = Vector2.new(564, 284)
+Toggle.ImageRectSize = Vector2.new(36, 36)
+
+Discord_2.Name = "Discord"
+Discord_2.Parent = MediaMain
+Discord_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Discord_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Discord_2.BorderSizePixel = 0
+Discord_2.Position = UDim2.new(0.500331104, 0, 0.635861814, 0)
+Discord_2.Size = UDim2.new(0.956206441, 0, 0.223806754, 0)
+Discord_2.Visible = false
+
+UICorner_27.CornerRadius = UDim.new(0, 12)
+UICorner_27.Parent = Discord_2
+
+Title_6.Name = "Title"
+Title_6.Parent = Discord_2
+Title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_6.BackgroundTransparency = 1.000
+Title_6.BorderSizePixel = 0
+Title_6.Position = UDim2.new(-0.000245213509, 0, -0.20351918, 0)
+Title_6.Size = UDim2.new(0.234618038, 0, 0.202951029, 0)
+Title_6.ZIndex = 3
+Title_6.Font = Enum.Font.GothamBlack
+Title_6.Text = "Discord"
+Title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_6.TextScaled = true
+Title_6.TextSize = 14.000
+Title_6.TextWrapped = true
+Title_6.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_21.Parent = Title_6
+UITextSizeConstraint_21.MaxTextSize = 21
+
+Shadow_6.Name = "Shadow"
+Shadow_6.Parent = Discord_2
+Shadow_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow_6.BackgroundTransparency = 1.000
+Shadow_6.BorderSizePixel = 0
+Shadow_6.Position = UDim2.new(-0.0481246822, 0, -0.43477425, 0)
+Shadow_6.Size = UDim2.new(1.09668899, 0, 1.84942102, 0)
+Shadow_6.ZIndex = 0
+Shadow_6.Image = "rbxassetid://3523728077"
+Shadow_6.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Shadow_6.ImageTransparency = 0.750
+
+Title1_2.Archivable = false
+Title1_2.Name = "Title1"
+Title1_2.Parent = Discord_2
+Title1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title1_2.BackgroundTransparency = 1.000
+Title1_2.BorderSizePixel = 0
+Title1_2.Position = UDim2.new(0.0131504675, 0, 0.0541751273, 0)
+Title1_2.Size = UDim2.new(0.126340881, 0, 0.157630607, 0)
+Title1_2.Font = Enum.Font.GothamBold
+Title1_2.Text = "shlex softworks"
+Title1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title1_2.TextScaled = true
+Title1_2.TextSize = 14.000
+Title1_2.TextWrapped = true
+Title1_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_22.Parent = Title1_2
+UITextSizeConstraint_22.MaxTextSize = 20
+
+link.Name = "link"
+link.Parent = Discord_2
+link.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+link.BackgroundTransparency = 1.000
+link.BorderSizePixel = 0
+link.Position = UDim2.new(0.0131504582, 0, 0.18395029, 0)
+link.Size = UDim2.new(0.971194744, 0, 0.131735206, 0)
+link.Font = Enum.Font.Gotham
+link.Text = "d.gg/2"
+link.TextColor3 = Color3.fromRGB(255, 255, 255)
+link.TextScaled = true
+link.TextSize = 14.000
+link.TextWrapped = true
+link.TextXAlignment = Enum.TextXAlignment.Left
+link.TextYAlignment = Enum.TextYAlignment.Top
+
+UITextSizeConstraint_23.Parent = link
+UITextSizeConstraint_23.MaxTextSize = 18
+
+Copy.Name = "Copy"
+Copy.Parent = Discord_2
+Copy.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Copy.BorderSizePixel = 0
+Copy.Position = UDim2.new(0.0129461689, 0, 0.312548816, 0)
+Copy.Size = UDim2.new(0.134099811, 0, 0.149538115, 0)
+Copy.Font = Enum.Font.GothamSemibold
+Copy.Text = "Copy to Clipboard"
+Copy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Copy.TextScaled = true
+Copy.TextSize = 14.000
+Copy.TextWrapped = true
+
+UICorner_28.CornerRadius = UDim.new(0, 12)
+UICorner_28.Parent = Copy
+
+UITextSizeConstraint_24.Parent = Copy
+UITextSizeConstraint_24.MaxTextSize = 18
+
+
+
+
+
+local VersionNum = 0.432
+local VersionFull = tostring(VersionNum).." | Patch 0.432"
+local VFeature = "Added so tools don't cover up the toggle button"
+
+
+local BannerSectionPos = 0
+local ExploitsOpen = false
+local MusicOpen = false
+local HomeOpen = false
+local DiscordOpen = false
+local InfoOpen = false
+local uiopened = false
+local db = false
+local DiscordLink = "https://discord.gg/jyySpgkFSp"
+local MusicSound
+local NotifStack = {}
+
+function figureNotifs(Stack,Container)
+
+	local stacksize = 0
+
+	local i = #Stack
+	while i > 0 do
+		local gui = Stack[i]
+		if gui then
+			if stacksize == 0 then
+				stacksize = 0.95
+			else
+				stacksize = stacksize - 0.075
+			end
+			local desiredpos = UDim2.new(0.5,0,stacksize,0)
+			if gui.Position ~= desiredpos then
+				gui:TweenPosition(desiredpos,"Out","Quint",0.3,true)
+			end
+		end
+		i = i-1
+	end
+end
+
+function Notify(Content,Font)
+	spawn(function()
+		local notificationContainer = nContainer
+		local Notification = notificationContainer:WaitForChild('Template')	
+		local notifClone = Notification:Clone()
+		local notifContent = notifClone:WaitForChild('Content')
+		if Font == "GothamSemiBold" then
+			Font = "GothamSemibold"
+		end
+		notifContent.Font = Font
+		notifContent.TextTransparency = 1
+		notifContent.BackgroundTransparency = 1
+		notifClone.Name = 'Notif Clone'
+		notifClone.Visible = true
+		notifContent.Text = Content
+		notifClone.Parent = nContainer
+		notifClone.Position = UDim2.new(0.5,0,1.2,0)
+		wait(0.001)
+		notifContent.Size = UDim2.new(0, math.max(18, notifContent.TextBounds.X * 1.2),1, 0)
+		wait(0.5)
+		notifClone:TweenPosition(UDim2.new(0.5,0,0.95,0),'Out','Quint',0.3,true)
+		local transitionInfo = TweenInfo.new(0.35, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(notifContent, transitionInfo, {TextTransparency = 0})
+		tween:Play()
+		local transitionInfo = TweenInfo.new(0.35, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(notifContent, transitionInfo, {TextStrokeTransparency = 0.8})
+		tween:Play()
+		table.insert(NotifStack,notifClone)
+		figureNotifs(NotifStack,notificationContainer)
+
+
+		wait(7)
+		for a,b in pairs(NotifStack) do
+			if b == notifClone then
+				table.remove(NotifStack,a)
+			end
+		end
+		wait(0.05)
+		notifClone:TweenPosition(UDim2.new(0.5,0,notifClone.Position.Y.Scale+0.1,0),'Out','Quint',0.3,true)
+		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(notifContent, transitionInfo, {TextTransparency = 1})
+		tween:Play()
+		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(notifContent, transitionInfo, {TextStrokeTransparency = 1})
+		tween:Play()
+		wait(0.305)
+		notifClone:Destroy()
+		figureNotifs(NotifStack,notificationContainer)
+	end)
+end
+
+function Start()
+	Text.Text = "WELCOME, "..string.upper(game.Players.LocalPlayer.Name).." TO DOMAIN"
+	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
+	for _, UiInstance in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+	if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain then
+		Notify("Removed previous interface","GothamBold")
+		UiInstance:Destroy()
+	end
+	end
+	Notify("Booting DOMAIN v"..tostring(VersionNum),"GothamBold")
+	UpdatePanel.feat.Text = VFeature
+	VersioPanel.Text.Text = "DOMAIN "..tostring(VersionNum)
+	UpdatePanel.upd.Text = VersionFull 
+	Exploits_2.TemplateBanner.Visible = false
+	Music.Position = Home.Position
+	Exploits.Position = Home.Position
+	Time.Position = UDim2.new(0.029,0,1,0)
+	Info.Position = UDim2.new(0.9,0,1,0)
+	Functions.Position = UDim2.new(0.277, 0, 1, 0)
+	local l = false
+	for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+		l = true
+		break
+	end
+	for _, Item2 in ipairs(game.Players.LocalPlayer.Character:GetChildren()) do
+		if Item2.ClassName == "Tool" then
+			l = true
+			break
+		end
+	end
+	if l == true then
+		Toggle.Position = UDim2.new(0.488, 0, 0.77, 0)
+	else
+		Toggle.Position = UDim2.new(0.488, 0, 0.829, 0)
+	end
+	Toggle.ImageTransparency = 1
+	wait(2.5)
+	Functions:TweenPosition(UDim2.new(0.277, 0, 0.781, 0),"Out", "Quint", 0.7)
+	Toggle:TweenPosition(UDim2.new(0.488, 0, 0.742, 0),"Out", "Quint", 0.7)
+	wait(0.2)
+	for _, UIIns in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+		if string.find(UIIns.Name,"tool") or string.find(UIIns.Name,"hotbar") then
+			UIIns.Enabled = false
+		end
+	end
+	local transitionInfo = TweenInfo.new(0.9, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
+	tween:Play()
+	uiopened = true
+	Music:TweenPosition(UDim2.new(0.4, 0, 0.2, 0),"Out","Quint",0.6)
+	wait(0.15)
+	Exploits:TweenPosition(UDim2.new(0.3, 0, 0.2, 0),"Out","Quint",0.6)
+	wait(0.3)
+	Info:TweenPosition(UDim2.new(0.9, 0, 0.2, 0),"Out","Quint",0.6)
+	Notify("Successfully booted DOMAIN","GothamBold")
+	Notify("DOMAINClient Anti-Kick active","GothamBold")
+	
+end
+
+local FeaturedExploits = {
+	
+	BarrierRemover = {
+		Name = "BarrierRemover",
+		Author = "shlex",
+		ImageID = 0,
+		Colour = Color3.fromRGB(0, 170, 127),
+		Code = "https://pastebin.com/raw/HqFgVGXn",
+	},
+	
+	InfiniteYield = {
+		Name = "Infinite Yield",
+		Author = "Yiffer",
+		ImageID = 0,
+		Colour = Color3.fromRGB(28, 107, 255),
+		Code = "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",	
+	},
+	ezhub = {
+		Name = "EZHub",
+		Author = "EZ Industries",
+		ImageID = 0,
+		Colour = Color3.fromRGB(255, 177, 20),
+		Code = "https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua"
+	},
+	saveinst = {
+		Name = "SaveInstance",
+		Author = "Synapse X",
+		ImageID = 0,
+		Colour = Color3.fromRGB(71, 116, 170),
+		Code = "https://pastebin.com/raw/euzqMZgq"
+	},
+	
+	
+}
+
+function LoadExploitSection()
+	for _, FeaturedExploit in pairs(FeaturedExploits) do
+		local banner = TemplateBanner:Clone()
+		banner.Title.Text = FeaturedExploit.Name
+		banner.Author.Text = FeaturedExploit.Author
+		banner.Name = FeaturedExploit.Name
+		if BannerSectionPos == 0 then
+			BannerSectionPos = 0.025
+		else
+			BannerSectionPos = BannerSectionPos + 0.15
+		end
+		banner.Parent = TemplateBanner.Parent
+		banner.Visible = true
+		banner.Position = UDim2.new(BannerSectionPos, 0, 0.065, 0)
+		if FeaturedExploit.ImageID ~= 0 then
+			banner.CustomBG.Image = "rbxassetid://"..FeaturedExploit.ImageID
+		else
+			if FeaturedExploit.Colour ~= Color3.fromRGB(0,0,0) then
+				banner.BackgroundColor3 = FeaturedExploit.Colour
+			end
+		end
+	end
+	for _, Exploit in ipairs(Exploits_2:GetChildren()) do
+		if Exploit:FindFirstChild("Action") and Exploit.Name ~= "TemplateBanner" then
+			Exploit.Action.MouseButton1Click:Connect(function()
+				for _, FeaturedExploit in pairs(FeaturedExploits) do
+					if FeaturedExploit.Name == Exploit.Name then
+						ExecuteExploit(FeaturedExploit.Code)
+						Notify("Successfully booted "..FeaturedExploit.Name,"GothamBold")
+					end
+				end
+			end)
+		end
+	end
+end
+
+function ToggleUI()
+	if uiopened == true then
+		if ExploitsOpen == true then
+			CloseExploits()
+		end
+		if HomeOpen == true then
+			CloseHome()
+		end
+		if MusicOpen == true then
+			CloseMusic()
+		end
+		if InfoOpen == true then
+			CloseInfo()
+		end
+		for _, UIIns in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+			if string.find(string.lower(UIIns.Name),"tool") or string.lower(UIIns.Name) == "toolbar" or string.lower(UIIns.Name) == "tools" then
+				UIIns.Enabled = false
+			end
+		end
+		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
+	local transitionInfo = TweenInfo.new(0.7, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {Rotation = 180})
+	tween:Play()
+	
+	Functions:TweenPosition(UDim2.new(0.277, 0, 1, 0),"In", "Quint", 0.7)
+		wait(0.37)
+		local l = false
+		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			l = true
+			break
+		end
+		for _, Item2 in ipairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if Item2.ClassName == "Tool" then
+				l = true
+				break
+			end
+		end
+		if l == true then
+			Toggle:TweenPosition(UDim2.new(0.488, 0, 0.77, 0),"Out", "Quint", 0.7)
+		else
+			Toggle:TweenPosition(UDim2.new(0.488, 0, 0.829, 0),"Out", "Quint", 0.7)
+		end
+		
+		wait(0.71)
+		local l = false
+		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			l = true
+			break
+		end
+		for _, Item2 in ipairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if Item2.ClassName == "Tool" then
+				l = true
+				break
+			end
+		end
+		if l == true then
+			Toggle.Position = UDim2.new(0.488, 0, 0.77, 0)
+		else
+			Toggle.Position = UDim2.new(0.488, 0, 0.829, 0)
+		end
+	uiopened = false
+	elseif uiopened == false then
+		
+		for _, UIIns in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+			if string.find(string.lower(UIIns.Name),"tool") or string.lower(UIIns.Name) == "toolbar" or string.lower(UIIns.Name) == "tools" then
+				UIIns.Enabled = true
+			end
+		end
+		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
+		Music.Position = Home.Position
+		Exploits.Position = Home.Position
+		Time.Position = UDim2.new(0.029,0,1,0)
+		Info.Position = UDim2.new(0.9,0,1,0)
+		local transitionInfo = TweenInfo.new(0.7, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {Rotation = 0})
+		tween:Play()
+		Toggle:TweenPosition(UDim2.new(0.488, 0, 0.742, 0),"Out", "Quint", 0.7)
+		Functions:TweenPosition(UDim2.new(0.277, 0, 0.781, 0),"Out", "Quint", 0.7)
+		wait(0.1)	
+		Time:TweenPosition(UDim2.new(0.029, 0, 0.335, 0),"Out","Quint",0.6)
+		wait(0.05)
+		Music:TweenPosition(UDim2.new(0.4, 0, 0.2, 0),"Out","Quint",0.6)
+		wait(0.15)
+		Exploits:TweenPosition(UDim2.new(0.3, 0, 0.2, 0),"Out","Quint",0.6)
+		wait(0.3)
+		Info:TweenPosition(UDim2.new(0.9, 0, 0.2, 0),"Out","Quint",0.6)
+		wait(0.7)
+		Toggle.Position = UDim2.new(0.488, 0, 0.742, 0)
+		uiopened = true
+	end
+end
+
+function ExecuteExploit(Code)
+	loadstring(game:HttpGet(Code, true))()
+end
+
+function OpenInfo()
+	db = true
+	Info_2.Position = UDim2.new(0.5, 0, 1.05, 0)
+	Info_2.Size = UDim2.new(0.843, 0, 0.197, 0)
+	if ExploitsOpen == true then
+		CloseExploits()
+	end
+	if HomeOpen == true then
+		CloseHome()
+	end
+	if MusicOpen == true then
+		CloseMusic()
+	end
+	if InfoOpen == true then
+		CloseInfo()
+	end
+	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 1})
+	tween:Play()
+	wait(0.25)
+	Toggle.Visible = false
+	Info_2.Visible = true
+	Info_2:TweenSizeAndPosition(UDim2.new(0.956, 0 ,0.224, 0),UDim2.new(0.5, 0, 0.636, 0),"Out", "Quint", 0.59)
+	wait(0.4)
+	local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Info_2.Shadow, transitionInfo, {ImageTransparency = 0.75})
+	tween:Play()
+	wait(0.2)
+	db = false
+	InfoOpen = true
+end
+function CloseInfo()
+	db = true
+	Toggle.Visible = true
+	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
+	tween:Play()
+	Info_2:TweenSizeAndPosition(UDim2.new(0.843, 0, 0.197, 0),UDim2.new(0.5, 0, 1.05, 0),"In", "Quint", 0.59)
+	wait(0.2)
+	local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Info_2.Shadow, transitionInfo, {ImageTransparency = 1})
+	tween:Play()
+	wait(0.4)
+	Info_2.Visible = false
+	db = false
+	InfoOpen = false
+end
+
+function OpenHome()
+	db = true
+	Home_2.Position = UDim2.new(0.5, 0, 1.05, 0)
+	Home_2.Size = UDim2.new(0.894, 0, 0.337, 0)
+	if ExploitsOpen == true then
+		CloseExploits()
+	end
+	if HomeOpen == true then
+		CloseHome()
+	end
+	if MusicOpen == true then
+		CloseMusic()
+	end
+	if InfoOpen == true then
+		CloseInfo()
+	end
+	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 1})
+	tween:Play()
+	wait(0.25)
+	Toggle.Visible = false
+	Home_2.Visible = true
+	Home_2:TweenSizeAndPosition(UDim2.new(0.956, 0 ,0.36, 0),UDim2.new(0.5, 0, 0.569, 0),"Out", "Quint", 0.59)
+	wait(0.4)
+	local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Home_2.Shadow, transitionInfo, {ImageTransparency = 0.75})
+	tween:Play()
+	wait(0.2)
+	db = false
+	HomeOpen = true
+end
+function CloseHome()
+	db = true
+	Toggle.Visible = true
+	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
+	tween:Play()
+	
+	Home_2:TweenSizeAndPosition(UDim2.new(0.894, 0, 0.337, 0),UDim2.new(0.5, 0, 1.05, 0),"In", "Quint", 0.59)
+	wait(0.2)
+	local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Home_2.Shadow, transitionInfo, {ImageTransparency = 1})
+	tween:Play()
+	wait(0.4)
+	Home_2.Visible = false
+	db = false
+	HomeOpen = false
+end
+
+function OpenExploits()
+	Exploits_2.Size = UDim2.new(0.853, 0, 0.322, 0)
+	Exploits_2.Position = UDim2.new(0.5, 0, 1.05, 0)
+	db = true
+	if ExploitsOpen == true then
+		CloseExploits()
+	end
+	if HomeOpen == true then
+		CloseHome()
+	end
+	if MusicOpen == true then
+		CloseMusic()
+	end
+	if InfoOpen == true then
+		CloseInfo()
+	end
+	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 1})
+	tween:Play()
+	wait(0.25)
+	Toggle.Visible = false
+	Exploits_2.Visible = true
+	Exploits_2:TweenSizeAndPosition(UDim2.new(0.956, 0, 0.36, 0),UDim2.new(0.5, 0, 0.568, 0),"Out", "Quint", 0.59)
+	wait(0.4)
+	local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Exploits_2.Shadow, transitionInfo, {ImageTransparency = 0.75})
+	tween:Play()
+	wait(0.2)
+	db = false
+	ExploitsOpen = true
+end
+
+function CloseExploits()
+	db = true
+	Toggle.Visible = true
+	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
+	tween:Play()
+	Exploits_2:TweenSizeAndPosition(UDim2.new(0.853, 0, 0.322, 0),UDim2.new(0.5, 0, 1.05, 0),"In", "Quint", 0.59)
+	wait(0.2)
+	local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Exploits_2.Shadow, transitionInfo, {ImageTransparency = 1})
+	tween:Play()
+	wait(0.4)
+	Exploits_2.Visible = false
+	db = false
+	ExploitsOpen = false
+end
+
+function OpenMusic()
+	Music_2.Position = UDim2.new(0.5, 0, 1.05, 0)
+	Music_2.Size = UDim2.new(0.843, 0, 0.197, 0)
+	db = true
+	if ExploitsOpen == true then
+		CloseExploits()
+	end
+	if HomeOpen == true then
+		CloseHome()
+	end
+	if MusicOpen == true then
+		CloseMusic()
+	end
+	if InfoOpen == true then
+		CloseInfo()
+	end
+	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 1})
+	tween:Play()
+	wait(0.25)
+	Toggle.Visible = false
+	Music_2.Visible = true
+	Music_2:TweenSizeAndPosition(UDim2.new(0.956, 0 ,0.224, 0),UDim2.new(0.5, 0, 0.636, 0),"Out", "Quint", 0.59)
+	wait(0.4)
+	local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Music_2.Shadow, transitionInfo, {ImageTransparency = 0.75})
+	tween:Play()
+	wait(0.2)
+	db = false
+	MusicOpen = true
+end
+function CloseMusic()
+	db = true
+	Toggle.Visible = true
+	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
+	tween:Play()
+	Music_2:TweenSizeAndPosition(UDim2.new(0.843, 0, 0.197, 0),UDim2.new(0.5, 0, 1.05, 0),"In", "Quint", 0.59)
+	wait(0.2)
+	local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(Music_2.Shadow, transitionInfo, {ImageTransparency = 1})
+	tween:Play()
+	wait(0.4)
+	Music_2.Visible = false
+	db = false
+	MusicOpen = false
+end
+
+
+
+Toggle.MouseButton1Click:Connect(ToggleUI)
+
+Exploits.MouseButton1Click:Connect(function()
+	if ExploitsOpen == true and db == false then
+		CloseExploits()
+	elseif ExploitsOpen == false and db == false then
+		OpenExploits()
+	end
+end)
+
+Music.MouseButton1Click:Connect(function()
+	if MusicOpen == true and db == false then
+		CloseMusic()
+	elseif MusicOpen == false and db == false then
+		OpenMusic()
+	end
+end)
+
+Info.MouseButton1Click:Connect(function()
+	if InfoOpen == true and db == false then
+		CloseInfo()
+	elseif InfoOpen == false and db == false then
+		OpenInfo()
+	end
+end)
+
+Home.MouseButton1Click:Connect(function()
+	if HomeOpen == true and db == false then
+		CloseHome()
+	elseif HomeOpen == false and db == false then
+		OpenHome()
+	end
+end)
+
+
+Copy.MouseButton1Click:Connect(function()
+	if game.CreatorId ~= 0 then
+	setclipboard(DiscordLink)
+	Copy.Text = "Copied"
+	wait(1)
+	Copy.Text = "Copy to Clipboard"
+	end	
+end)
+
+Play.MouseButton1Click:Connect(function()
+	if tonumber(SoundId.Text) then
+		if not MediaMain:FindFirstChildWhichIsA("Sound") then
+			MusicSound = Instance.new("Sound",MediaMain)
+			MusicSound.Volume = 0.5
+			MusicSound.SoundId = "rbxassetid://"..tonumber(SoundId.Text)
+			SoundId.Text = ""
+			MusicSound.TimePosition = 0
+			MusicSound:Play()
+			Notify("Now Playing Music, tap Stop to end","GothamBold")
+		elseif MediaMain:FindFirstChildWhichIsA("Sound") then
+			MediaMain:FindFirstChildWhichIsA("Sound").Volume = 0.5
+			MediaMain:FindFirstChildWhichIsA("Sound").SoundId = "rbxassetid://"..tonumber(SoundId.Text)
+			MediaMain:FindFirstChildWhichIsA("Sound").TimePosition = 0
+			MediaMain:FindFirstChildWhichIsA("Sound"):Play()
+			Notify("Now Playing Music","GothamBold")
+		end
+	end
+end)
+
+Stop.MouseButton1Click:Connect(function()
+	if not MediaMain:FindFirstChildWhichIsA("Sound") then
+		Notify("Couldn't find music to pause","GothamSemibold")
+	else
+		MediaMain:FindFirstChildWhichIsA("Sound").Volume = 0
+		Notify("Removed Music","GothamBold")
+	end
+end)
+
+RemBG.MouseButton1Click:Connect(function()
+	local FoundInstance = false
+	for _, Object in ipairs(workspace:GetChildren()) do
+		if Object.ClassName == "Sound" and string.find(string.lower(Object.Name),"music") or string.find(string.lower(Object.Name),"sound") or string.find(string.lower(Object.Name),"bg") then
+			Object.Volume = 0
+			FoundInstance = true
+		end
+	end
+	if FoundInstance == false then
+		Notify("Error finding music instance","GothamBold")
+	else
+		Notify("Found music instance, and changed volume to 0","GothamBold")
+		FoundInstance = false
+	end
+end)
+
+game.Players.LocalPlayer.Backpack.ChildAdded:Connect(function(item)
+	if item.ClassName == "Tool" then
+		if uiopened == false then
+			Toggle:TweenPosition(UDim2.new(0.488, 0, 0.77, 0),"Out", "Quint", 0.4, true)
+		end
+	end
+end)
+
+game.Players.LocalPlayer.Backpack.ChildRemoved:Connect(function()
+	local Tools = false
+	for _, Child in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+		if Child.ClassName == "Tool" then
+			-- Still tools, keep current location
+			Tools = true
+		end
+	end
+	for _, Child in ipairs(game.Players.LocalPlayer.Character:GetChildren()) do
+		if Child.ClassName == "Tool" then
+			Tools = true
+		end
+	end
+	if Tools == false then
+		if uiopened == false then
+			Toggle:TweenPosition(UDim2.new(0.488, 0, 0.829, 0),"Out", "Quint", 0.4, true)
+		end
+	end
+end)
+
+Start()
+LoadExploitSection()
+
+local function getTime()
+	local date = os.date("*t")
+	return ("%02d:%02d"):format(((date.hour % 24) - 1) % 12 + 1, date.min)
+end
+
+local TimeLabel = Functions.Time
+
+while wait(1) do
+	if Time.Position == UDim2.new(0.029,0,1,0) then
+		Time:TweenPosition(UDim2.new(0.029, 0, 0.335, 0),"Out","Quint",0.6)
+	end
+	local currentHour = os.date("*t")["hour"]
+	TimeLabel.Text = getTime()
+end
+
+if game.CreatorId ~= 0 then
+local mt = getrawmetatable(game)
+local old = mt.__namecall
+local protect = newcclosure or protect_function
+
+if not protect then
+	protect = function(f) return f end
+end
+
+setreadonly(mt, false)
+mt.__namecall = protect(function(self, ...)
+	local method = getnamecallmethod()
+	if method == "Kick" then
+		Notify("We stopped this game from kicking you locally","GothamBold")
+		wait(9e9)
+		return
+	end
+	return old(self, ...)
+end)
+
+hookfunction(game.Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
+end
