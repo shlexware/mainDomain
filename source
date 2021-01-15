@@ -1209,6 +1209,7 @@ UITextSizeConstraint_25.MaxTextSize = 18
 
 More.Name = "More"
 More.Parent = Template_2
+More.ImageTransparency = 1
 More.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 More.BackgroundTransparency = 1.000
 More.BorderSizePixel = 0
@@ -1981,13 +1982,17 @@ function OpenAboutPlayer(PlayerName)
 	for _, Dev in ipairs(Developers) do
 		if Player.UserId == Dev then
 			DomainDev.Visible = true
-			DomainDev.Text = "Domain Developer"
+				DomainDev.Text = "Domain Developer"
+			else
+				DomainDev.Visible = false
 		end
 	end
 	for _, Admin in ipairs(Admins) do
 		if Player.UserId == Admin then
 			DomainDev.Visible = true
-			DomainDev.Text = "Domain Administrator"
+				DomainDev.Text = "Domain Administrator"
+			else
+				DomainDev.Visible = false
 		end
 	end
 	
