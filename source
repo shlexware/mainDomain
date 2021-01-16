@@ -1,5 +1,5 @@
 
-
+wait(1)
 -- Instances:
 
 local mainDomain = Instance.new("ScreenGui")
@@ -1475,7 +1475,7 @@ function Start()
 	end
 	end
 	Template_2.Visible = false
-	
+	Time.TextTransparency = 1
 	Notify("Booting DOMAIN v"..tostring(VersionNum),"GothamBold")
 	UpdatePanel.feat.Text = VFeature
 	VersioPanel.Text.Text = "DOMAIN "..tostring(VersionNum)
@@ -1483,6 +1483,7 @@ function Start()
 	Exploits_2.TemplateBanner.Visible = false
 	Music.Position = Home.Position
 	Exploits.Position = Home.Position
+	link.Text = DiscordLink
 	Players.Position = Home.Position
 	Time.Position = UDim2.new(0.029,0,1,0)
 	Info.Position = UDim2.new(0.9,0,1,0)
@@ -1517,6 +1518,8 @@ function Start()
 	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
 	tween:Play()
 	uiopened = true
+	Time:TweenPosition(UDim2.new(0.029, 0, 0.335, 0),"Out","Quint",0.6)
+	wait(0.05)
 	Players:TweenPosition(UDim2.new(0.5, 0, 0.2, 0),"Out","Quint",0.6)
 	wait(0.15)
 	Music:TweenPosition(UDim2.new(0.4, 0, 0.2, 0),"Out","Quint",0.6)
@@ -2296,8 +2299,10 @@ local TimeLabel = Functions.Time
 
 while wait(1) do
 	CheckPlayersForAdmins()
-	if Time.Position == UDim2.new(0.029,0,1,0) then
-		Time:TweenPosition(UDim2.new(0.029, 0, 0.335, 0),"Out","Quint",0.6)
+	if Time.TextTransparency ~= 0 then
+		local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(Time, transitionInfo, {TextTransparency = 0})
+		tween:Play()
 	end
 	local currentHour = os.date("*t")["hour"]
 	TimeLabel.Text = getTime()
