@@ -1927,6 +1927,7 @@ function AddToList(Player,Type)
 	NewPlr.Username.Text = Player.Name
 
 	NewPlr.MouseEnter:Connect(function()
+		NewPlr.More.Visible = true
 		local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
 		local tween = game:GetService("TweenService"):Create(NewPlr.More, transitionInfo, {ImageTransparency = 0})
 		tween:Play()
@@ -1935,6 +1936,7 @@ function AddToList(Player,Type)
 		tween:Play()
 	end)
 	NewPlr.MouseLeave:Connect(function()
+		NewPlr.More.Visible = true
 		local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
 		local tween = game:GetService("TweenService"):Create(NewPlr.More, transitionInfo, {ImageTransparency = 1})
 		tween:Play()
