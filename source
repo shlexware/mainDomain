@@ -1,5 +1,5 @@
 
-wait(1)
+wait(2)
 -- Instances:
 
 local mainDomain = Instance.new("ScreenGui")
@@ -1363,18 +1363,18 @@ local VersionFull = tostring(VersionNum).." | Patch 0.52"
 local VFeature = "New Players feature - bug fixes"
 
 local Admins = {
-	
+
 	Nich = 669686927,
 	Gofish = 262635913,
 	Chiller = 1015797562,
-	
-	
+
+
 }
 
 local Developers = {
-	
+
 	rivertropic = 304343782,
-	
+
 }
 
 local BannerSectionPos = 0
@@ -1469,10 +1469,10 @@ function Start()
 	Text.Text = "WELCOME, "..string.upper(game.Players.LocalPlayer.Name).." TO DOMAIN"
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
 	for _, UiInstance in ipairs(game.Players.LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
-	if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain then
-		Notify("Removed previous interface","GothamBold")
-		UiInstance:Destroy()
-	end
+		if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain then
+			Notify("Removed previous interface","GothamBold")
+			UiInstance:Destroy()
+		end
 	end
 	Template_2.Visible = false
 	Time.TextTransparency = 1
@@ -1535,7 +1535,7 @@ function Start()
 end
 
 local FeaturedExploits = {
-	
+
 	BarrierRemover = {
 		Name = "BarrierRemover",
 		Author = "shlex",
@@ -1543,7 +1543,7 @@ local FeaturedExploits = {
 		Colour = Color3.fromRGB(0, 170, 127),
 		Code = "https://pastebin.com/raw/HqFgVGXn",
 	},
-	
+
 	InfiniteYield = {
 		Name = "Infinite Yield",
 		Author = "Yiffer",
@@ -1565,8 +1565,8 @@ local FeaturedExploits = {
 		Colour = Color3.fromRGB(71, 116, 170),
 		Code = "https://pastebin.com/raw/euzqMZgq"
 	},
-	
-	
+
+
 }
 
 function LoadExploitSection()
@@ -1625,11 +1625,11 @@ function ToggleUI()
 			end
 		end
 		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
-	local transitionInfo = TweenInfo.new(0.7, Enum.EasingStyle.Quint)
-	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {Rotation = 180})
-	tween:Play()
-	
-	Functions:TweenPosition(UDim2.new(0.277, 0, 1, 0),"In", "Quint", 0.7)
+		local transitionInfo = TweenInfo.new(0.7, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {Rotation = 180})
+		tween:Play()
+
+		Functions:TweenPosition(UDim2.new(0.277, 0, 1, 0),"In", "Quint", 0.7)
 		wait(0.37)
 		local l = false
 		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
@@ -1647,7 +1647,7 @@ function ToggleUI()
 		else
 			Toggle:TweenPosition(UDim2.new(0.488, 0, 0.829, 0),"Out", "Quint", 0.7)
 		end
-		
+
 		wait(0.71)
 		local l = false
 		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
@@ -1665,9 +1665,9 @@ function ToggleUI()
 		else
 			Toggle.Position = UDim2.new(0.488, 0, 0.829, 0)
 		end
-	uiopened = false
+		uiopened = false
 	elseif uiopened == false then
-		
+
 		for _, UIIns in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
 			if string.find(string.lower(UIIns.Name),"tool") or string.lower(UIIns.Name) == "toolbar" or string.lower(UIIns.Name) == "tools" then
 				UIIns.Enabled = true
@@ -1786,7 +1786,7 @@ function CloseHome()
 	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
 	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
 	tween:Play()
-	
+
 	Home_2:TweenSizeAndPosition(UDim2.new(0.894, 0, 0.337, 0),UDim2.new(0.5, 0, 1.05, 0),"In", "Quint", 0.59)
 	wait(0.2)
 	local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
@@ -1828,7 +1828,7 @@ end
 
 function RefigurePlayerList(RemovedPlayerYOffset)
 	wait(0.01)
-	
+
 	CurrentListPosition = CurrentListPosition - 0.036
 	for _, PlrAdded in ipairs(List:GetChildren()) do
 		if PlrAdded.Position.Y.Scale > RemovedPlayerYOffset then
@@ -1846,7 +1846,7 @@ function AddToList(Player,Type)
 	end
 	NewPlr.Avatar.Image = game.Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
 	--if game.CreatorId == 0 then
-		NewPlr.Size = UDim2.new(0.94, 0, 0.032, 0)
+	NewPlr.Size = UDim2.new(0.94, 0, 0.032, 0)
 	--end
 	NewPlr.Visible = true
 	NewPlr.Name = Player.Name
@@ -1861,9 +1861,9 @@ function AddToList(Player,Type)
 		NewPlr.Position = UDim2.new(1, 0, CurrentListPosition, 0)
 		NewPlr:TweenPosition(UDim2.new(0.03, 0, CurrentListPosition, 0),"Out", "Quint", 0.7)
 	end
-	
+
 	NewPlr.Username.Text = Player.Name
-	
+
 	NewPlr.MouseEnter:Connect(function()
 		local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
 		local tween = game:GetService("TweenService"):Create(NewPlr.More, transitionInfo, {ImageTransparency = 0})
@@ -1879,7 +1879,7 @@ function AddToList(Player,Type)
 		local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
 		local tween = game:GetService("TweenService"):Create(NewPlr, transitionInfo, {BackgroundColor3 = Color3.fromRGB(67,68,68)})
 		tween:Play()
-		
+
 	end)
 	NewPlr.More.MouseButton1Click:Connect(function()
 		OpenAboutPlayer(Player.Name)
@@ -1887,13 +1887,13 @@ function AddToList(Player,Type)
 end
 
 function PlayerRemoved(Player)
-		if List:FindFirstChild(Player.Name) then
-			local yoff = List:FindFirstChild(Player.Name).Position.Y.Scale
-			List:FindFirstChild(Player.Name):TweenPosition(UDim2.new(-1, 0, List:FindFirstChild(Player.Name).Position.Y.Scale, 0),"In", "Quint", 0.7)
-			wait(0.71)
-			List:FindFirstChild(Player.Name):Destroy()
-			RefigurePlayerList(yoff)
-		end
+	if List:FindFirstChild(Player.Name) then
+		local yoff = List:FindFirstChild(Player.Name).Position.Y.Scale
+		List:FindFirstChild(Player.Name):TweenPosition(UDim2.new(-1, 0, List:FindFirstChild(Player.Name).Position.Y.Scale, 0),"In", "Quint", 0.7)
+		wait(0.71)
+		List:FindFirstChild(Player.Name):Destroy()
+		RefigurePlayerList(yoff)
+	end
 end
 
 game.Players.PlayerRemoving:Connect(PlayerRemoved)
@@ -1912,7 +1912,7 @@ function CheckPlayersForAdmins()
 	local vdev = false
 	local vadmin = false
 	for _, Player in ipairs(game.Players:GetChildren()) do
-		
+
 		for _, Dev in ipairs(Developers) do
 			if Player.UserId == Dev then
 				Panel.Text.Text = "DEVELOPER SHLEX IS IN GAME"
@@ -1945,16 +1945,16 @@ function OpenAboutPlayer(PlayerName)
 	if game.Players:FindFirstChild(PlayerName) then
 		local Player = game.Players:FindFirstChild(PlayerName)
 		AboutPlayer.Avatar.Image = game.Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-	UserIdVal.Value = Player.UserId
-	UserId.Text = "UserID: "..tostring(Player.UserId)
-	if Player.MembershipType == Enum.MembershipType.Premium then
-		Premium.Visible = true
-	else
-		Premium.Visible = false
-	end
+		UserIdVal.Value = Player.UserId
+		UserId.Text = "UserID: "..tostring(Player.UserId)
+		if Player.MembershipType == Enum.MembershipType.Premium then
+			Premium.Visible = true
+		else
+			Premium.Visible = false
+		end
 		Title_6.Text = Player.Name
-		
-	
+
+
 	else
 		-- Player left
 		Notify("Player left game, error","GothamBold")
@@ -1995,7 +1995,7 @@ function OpenAboutPlayer(PlayerName)
 		List:TweenPosition(UDim2.new(0, 0, 0.147, 0),"Out","Quint",0.5)
 		wait(0.3)
 		AboutPlayer.Visible = false
-		
+
 	end)
 end
 
@@ -2143,10 +2143,10 @@ end)
 
 Copy.MouseButton1Click:Connect(function()
 	if game.CreatorId ~= 0 then
-	setclipboard(DiscordLink)
-	Copy.Text = "Copied"
-	wait(1)
-	Copy.Text = "Copy to Clipboard"
+		setclipboard(DiscordLink)
+		Copy.Text = "Copied"
+		wait(1)
+		Copy.Text = "Copy to Clipboard"
 	end	
 end)
 
