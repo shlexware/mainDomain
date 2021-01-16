@@ -727,7 +727,7 @@ Text.BorderSizePixel = 0
 Text.Position = UDim2.new(0.0273511428, 0, 0.133592173, 0)
 Text.Size = UDim2.new(0.903388321, 0, 0.186107069, 0)
 Text.Font = Enum.Font.GothamBlack
-Text.Text = "WELCOME TO DOMAIN"
+Text.Text = "Welcome to Domain"
 Text.TextColor3 = Color3.fromRGB(255, 255, 255)
 Text.TextScaled = true
 Text.TextSize = 14.000
@@ -756,7 +756,7 @@ Text_2.BorderSizePixel = 0
 Text_2.Position = UDim2.new(0.0487248637, 0, 0.0459417105, 0)
 Text_2.Size = UDim2.new(0.621630788, 0, 0.113289267, 0)
 Text_2.Font = Enum.Font.GothamBlack
-Text_2.Text = "LATEST UPDATE"
+Text_2.Text = "Latest Release"
 Text_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Text_2.TextScaled = true
 Text_2.TextSize = 14.000
@@ -811,7 +811,7 @@ Text_3.BorderSizePixel = 0
 Text_3.Position = UDim2.new(0.0476375185, 0, 0.0939195827, 0)
 Text_3.Size = UDim2.new(0.903388381, 0, 0.186036006, 0)
 Text_3.Font = Enum.Font.GothamBlack
-Text_3.Text = "JOIN OUR DISCORD"
+Text_3.Text = "Join our Discord"
 Text_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 Text_3.TextScaled = true
 Text_3.TextSize = 14.000
@@ -858,7 +858,7 @@ Text_4.BorderSizePixel = 0
 Text_4.Position = UDim2.new(0.0481988899, 0, 0.693065882, 0)
 Text_4.Size = UDim2.new(0.903388441, 0, 0.186107069, 0)
 Text_4.Font = Enum.Font.GothamBlack
-Text_4.Text = "DOMAIN v0.00"
+Text_4.Text = "Domain v0.00"
 Text_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 Text_4.TextScaled = true
 Text_4.TextSize = 14.000
@@ -1357,9 +1357,9 @@ Close.ImageRectSize = Vector2.new(36, 36)
 
 
 
-local VersionNum = 0.52
-local VersionFull = tostring(VersionNum).." | Patch 0.52"
-local VFeature = "New Players feature - bug fixes"
+local VersionNum = 0.55
+local VersionFull = tostring(VersionNum).." | Patch 0.55"
+local VFeature = "Home Redesign"
 
 local Admins = {
 
@@ -1465,7 +1465,7 @@ function Notify(Content,Font)
 end
 
 function Start()
-	Text.Text = "WELCOME, "..string.upper(game.Players.LocalPlayer.Name).." TO DOMAIN"
+	Text.Text = "Hi "..game.Players.LocalPlayer.Name..","
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
 	for _, UiInstance in ipairs(game.Players.LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
 		if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain then
@@ -1475,9 +1475,9 @@ function Start()
 	end
 	Template_2.Visible = false
 	Time.TextTransparency = 1
-	Notify("Booting DOMAIN v"..tostring(VersionNum),"GothamBold")
+	Notify("Booting Domain","GothamBold")
 	UpdatePanel.feat.Text = VFeature
-	VersioPanel.Text.Text = "DOMAIN "..tostring(VersionNum)
+	VersioPanel.Text.Text = "Domain "..tostring(VersionNum)
 	UpdatePanel.upd.Text = VersionFull 
 	Exploits_2.TemplateBanner.Visible = false
 	Music.Position = Home.Position
@@ -1487,35 +1487,16 @@ function Start()
 	Time.Position = UDim2.new(0.029,0,1,0)
 	Info.Position = UDim2.new(0.9,0,1,0)
 	Functions.Position = UDim2.new(0.277, 0, 1, 0)
-	local l = false
-	for _, Item in ipairs(game.Players.LocalPlayer:WaitForChild("Backpack"):GetChildren()) do
-		l = true
-		break
-	end
-	for _, Item2 in ipairs(game.Players.LocalPlayer.Character:GetChildren()) do
-		if Item2.ClassName == "Tool" then
-			l = true
-			break
-		end
-	end
-	if l == true then
-		Toggle.Position = UDim2.new(0.488, 0, 0.77, 0)
-	else
-		Toggle.Position = UDim2.new(0.488, 0, 0.829, 0)
-	end
 	Toggle.ImageTransparency = 1
-	wait(2.5)
+	wait(1.5)
 	Functions:TweenPosition(UDim2.new(0.277, 0, 0.781, 0),"Out", "Quint", 0.7)
-	Toggle:TweenPosition(UDim2.new(0.488, 0, 0.742, 0),"Out", "Quint", 0.7)
-	wait(0.2)
-	for _, UIIns in ipairs(game.Players.LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
-		if string.find(UIIns.Name,"tool") or string.find(UIIns.Name,"hotbar") then
-			UIIns.Enabled = false
-		end
-	end
+	Toggle.Position = UDim2.new(0.488, 0, 0.742, 0)
 	local transitionInfo = TweenInfo.new(0.9, Enum.EasingStyle.Quint)
 	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
 	tween:Play()
+	wait(0.2)
+
+	
 	uiopened = true
 	Time:TweenPosition(UDim2.new(0.029, 0, 0.335, 0),"Out","Quint",0.6)
 	wait(0.05)
@@ -1526,11 +1507,18 @@ function Start()
 	Exploits:TweenPosition(UDim2.new(0.3, 0, 0.2, 0),"Out","Quint",0.6)
 	wait(0.3)
 	Info:TweenPosition(UDim2.new(0.9, 0, 0.2, 0),"Out","Quint",0.6)
-	Notify("Successfully booted DOMAIN","GothamBold")
+	
 	Notify("DOMAINClient Anti-Kick active","GothamBold")
 	for _, Player in ipairs(game.Players:GetChildren()) do
 		AddToList(Player,"Quick")
 	end
+	wait(3)
+	for _, UIIns in ipairs(game.Players.LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
+		if string.find(UIIns.Name,"tool") or string.find(UIIns.Name,"hotbar") then
+			UIIns.Enabled = false
+		end
+	end
+	Notify("Successfully booted Domain v"..tostring(VersionNum),"GothamBold")
 end
 
 local FeaturedExploits = {
