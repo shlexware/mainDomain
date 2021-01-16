@@ -1,5 +1,4 @@
 
-wait(2)
 -- Instances:
 
 local mainDomain = Instance.new("ScreenGui")
