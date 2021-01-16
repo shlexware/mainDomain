@@ -680,6 +680,7 @@ Home_2.Parent = MediaMain
 Home_2.AnchorPoint = Vector2.new(0.5, 0.5)
 Home_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 Home_2.BorderSizePixel = 0
+Home_2.Visible = false
 Home_2.Position = UDim2.new(0.500331104, 0, 0.569232941, 0)
 Home_2.Size = UDim2.new(0.956206441, 0, 0.360386193, 0)
 Home_2.ZIndex = 5
