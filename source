@@ -1280,7 +1280,7 @@ More.BackgroundTransparency = 1.000
 More.BorderSizePixel = 0
 More.Position = UDim2.new(0.870552123, 0, 0.225920364, 0)
 More.Size = UDim2.new(0.104458071, 0, 0.569512546, 0)
-More.ZIndex = 1004
+More.ZIndex = 1000
 More.Image = "rbxassetid://3926305904"
 More.ImageRectOffset = Vector2.new(764, 764)
 More.ImageRectSize = Vector2.new(36, 36)
@@ -1531,6 +1531,7 @@ function Notify(Content,Font)
 end
 
 function Start()
+	More.ImageTransparency = 1
 	Text.Text = "Hi "..game.Players.LocalPlayer.Name..","
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
 	for _, UiInstance in ipairs(game.Players.LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
@@ -1880,19 +1881,27 @@ function ClosePlayers()
 end
 
 function RefigurePlayerList(RemovedPlayerYOffset)
-	wait(0.01)
-
-	CurrentListPosition = CurrentListPosition - 0.036
+CurrentListPosition = CurrentListPosition - 0.036
 	for _, PlrAdded in ipairs(List:GetChildren()) do
+		PlrAdded.Parent = List
 		if PlrAdded.Position.Y.Scale > RemovedPlayerYOffset then
+			wait(0.001)
 			PlrAdded:TweenPosition(UDim2.new(0.03, 0, PlrAdded.Position.Y.Scale-0.036, 0),"Out", "Quint", 0.6)
 			wait(0.001)
 		end
 	end
 end
 
+
 function AddToList(Player,Type)
-	local NewPlr = List:FindFirstChild("Template"):Clone()
+	print(Player.Name)
+	if List:FindFirstChild(Player.Name) then
+		return
+	end
+	if not List:FindFirstChild("Template") then
+		return
+	end
+	local NewPlr = Template_2:Clone()
 	NewPlr.Parent = List
 	if Player.Name == game.Players.LocalPlayer.Name then
 		NewPlr.Username.Font = "GothamBold"
@@ -1942,8 +1951,6 @@ end
 function PlayerRemoved(Player)
 	if List:FindFirstChild(Player.Name) then
 		local yoff = List:FindFirstChild(Player.Name).Position.Y.Scale
-		List:FindFirstChild(Player.Name):TweenPosition(UDim2.new(-1, 0, List:FindFirstChild(Player.Name).Position.Y.Scale, 0),"In", "Quint", 0.7)
-		wait(0.71)
 		List:FindFirstChild(Player.Name):Destroy()
 		RefigurePlayerList(yoff)
 	end
@@ -1962,30 +1969,31 @@ game.Players.PlayerAdded:Connect(function(Player)
 end)
 
 function CheckPlayersForAdmins()
+	wait(3)
 	local vdev = false
 	local vadmin = false
 	for _, Player in ipairs(game.Players:GetChildren()) do
 
 		for _, Dev in ipairs(Developers) do
 			if Player.UserId == Dev then
-				Panel.Text.Text = "DEVELOPER SHLEX IS IN GAME"
+				Text_5.Text = "Shlex is in your server"
 				vdev = true
 				break
 			end
 		end
 		for _, Admin in ipairs(Admins) do
 			if Player.UserId == Admin then
-				Panel_2.Text.Text = "ADMIN "..Player.Name.." IS IN GAME"
+				Text_6.Text = "Admin "..Player.Name.." is in the game"
 				vadmin = true
 				break
 			end
 		end
 	end
 	if vdev == false then
-		Panel.Text.Text = ""
+		Text_5.Text = ""
 	end
 	if vadmin == false then
-		Panel_2.Text.Text = ""
+		Text_6.Text = ""
 	end
 end
 
