@@ -151,6 +151,11 @@ local UICorner_33 = Instance.new("UICorner")
 local DomainDev = Instance.new("TextLabel")
 local UITextSizeConstraint_28 = Instance.new("UITextSizeConstraint")
 local Close = Instance.new("ImageButton")
+local TeleportTo = Instance.new("TextButton")
+local UITextSizeConstraint_29 = Instance.new("UITextSizeConstraint")
+local UICorner_34 = Instance.new("UICorner")
+local Rank = Instance.new("TextLabel")
+local UITextSizeConstraint_30 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
@@ -680,10 +685,10 @@ Home_2.Parent = MediaMain
 Home_2.AnchorPoint = Vector2.new(0.5, 0.5)
 Home_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 Home_2.BorderSizePixel = 0
-Home_2.Visible = false
 Home_2.Position = UDim2.new(0.500331104, 0, 0.569232941, 0)
 Home_2.Size = UDim2.new(0.956206441, 0, 0.360386193, 0)
-Home_2.ZIndex = 5
+Home_2.Visible = false
+Home_2.ZIndex = 1000
 
 UICorner_19.CornerRadius = UDim.new(0, 12)
 UICorner_19.Parent = Home_2
@@ -695,7 +700,7 @@ Title_4.BackgroundTransparency = 1.000
 Title_4.BorderSizePixel = 0
 Title_4.Position = UDim2.new(-0.000245215575, 0, -0.128507346, 0)
 Title_4.Size = UDim2.new(0.234618038, 0, 0.128473058, 0)
-Title_4.ZIndex = 3
+Title_4.ZIndex = 1005
 Title_4.Font = Enum.Font.GothamBlack
 Title_4.Text = "Home"
 Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -713,7 +718,7 @@ WelcomePanel.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 WelcomePanel.BorderSizePixel = 0
 WelcomePanel.Position = UDim2.new(0.0219970066, 0, 0.0906633809, 0)
 WelcomePanel.Size = UDim2.new(0.402122289, 0, 0.3889229, 0)
-WelcomePanel.ZIndex = 7
+WelcomePanel.ZIndex = 1002
 
 UICorner_20.CornerRadius = UDim.new(0, 12)
 UICorner_20.Parent = WelcomePanel
@@ -725,7 +730,7 @@ Text.BackgroundTransparency = 1.000
 Text.BorderSizePixel = 0
 Text.Position = UDim2.new(0.0273511428, 0, 0.133592173, 0)
 Text.Size = UDim2.new(0.903388321, 0, 0.186107069, 0)
-Text.ZIndex = 8
+Text.ZIndex = 1003
 Text.Font = Enum.Font.GothamBold
 Text.Text = "Welcome to Domain"
 Text.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -740,8 +745,9 @@ Shadow_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Shadow_4.BackgroundTransparency = 1.000
 Shadow_4.BorderSizePixel = 0
 Shadow_4.Position = UDim2.new(-0.0547022484, 0, -0.420277208, 0)
+Shadow_4.Selectable = true
 Shadow_4.Size = UDim2.new(1.10048127, 0, 1.7728461, 0)
-Shadow_4.ZIndex = 6
+Shadow_4.ZIndex = 1001
 Shadow_4.Image = "rbxassetid://3523728077"
 Shadow_4.ImageColor3 = Color3.fromRGB(62, 62, 62)
 Shadow_4.ImageTransparency = 0.750
@@ -752,7 +758,7 @@ UpdatePanel.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 UpdatePanel.BorderSizePixel = 0
 UpdatePanel.Position = UDim2.new(0.442528039, 0, 0.0906633809, 0)
 UpdatePanel.Size = UDim2.new(0.211852968, 0, 0.849885046, 0)
-UpdatePanel.ZIndex = 7
+UpdatePanel.ZIndex = 1002
 
 UICorner_21.CornerRadius = UDim.new(0, 12)
 UICorner_21.Parent = UpdatePanel
@@ -764,7 +770,7 @@ Text_2.BackgroundTransparency = 1.000
 Text_2.BorderSizePixel = 0
 Text_2.Position = UDim2.new(0.0487248637, 0, 0.0459417105, 0)
 Text_2.Size = UDim2.new(0.621630788, 0, 0.113289267, 0)
-Text_2.ZIndex = 8
+Text_2.ZIndex = 1003
 Text_2.Font = Enum.Font.GothamBold
 Text_2.Text = "Latest Release"
 Text_2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -780,7 +786,7 @@ upd.BackgroundTransparency = 1.000
 upd.BorderSizePixel = 0
 upd.Position = UDim2.new(0.0487249047, 0, 0.158610359, 0)
 upd.Size = UDim2.new(0.91293782, 0, 0.0701911822, 0)
-upd.ZIndex = 8
+upd.ZIndex = 1003
 upd.Font = Enum.Font.GothamSemibold
 upd.Text = "0.00 | 01/01 | Title"
 upd.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -796,7 +802,7 @@ feat.BackgroundTransparency = 1.000
 feat.BorderSizePixel = 0
 feat.Position = UDim2.new(0.0426139869, 0, 0.280414313, 0)
 feat.Size = UDim2.new(0.91293782, 0, 0.0701911822, 0)
-feat.ZIndex = 8
+feat.ZIndex = 1003
 feat.Font = Enum.Font.Gotham
 feat.Text = "- feature"
 feat.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -811,8 +817,9 @@ Shadow_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Shadow_5.BackgroundTransparency = 1.000
 Shadow_5.BorderSizePixel = 0
 Shadow_5.Position = UDim2.new(-0.0579572991, 0, -0.354796797, 0)
+Shadow_5.Selectable = true
 Shadow_5.Size = UDim2.new(1.11601365, 0, 1.70649219, 0)
-Shadow_5.ZIndex = 6
+Shadow_5.ZIndex = 1001
 Shadow_5.Image = "rbxassetid://3523728077"
 Shadow_5.ImageColor3 = Color3.fromRGB(62, 62, 62)
 Shadow_5.ImageTransparency = 0.750
@@ -823,7 +830,7 @@ DisPanel.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 DisPanel.BorderSizePixel = 0
 DisPanel.Position = UDim2.new(0.672849536, 0, 0.0906633213, 0)
 DisPanel.Size = UDim2.new(0.311141819, 0, 0.3889229, 0)
-DisPanel.ZIndex = 7
+DisPanel.ZIndex = 1002
 
 UICorner_22.CornerRadius = UDim.new(0, 12)
 UICorner_22.Parent = DisPanel
@@ -835,7 +842,7 @@ Text_3.BackgroundTransparency = 1.000
 Text_3.BorderSizePixel = 0
 Text_3.Position = UDim2.new(0.0476375185, 0, 0.0939195827, 0)
 Text_3.Size = UDim2.new(0.903388381, 0, 0.186036006, 0)
-Text_3.ZIndex = 8
+Text_3.ZIndex = 1003
 Text_3.Font = Enum.Font.GothamBold
 Text_3.Text = "Join our Discord"
 Text_3.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -851,7 +858,7 @@ dlink.BackgroundTransparency = 1.000
 dlink.BorderSizePixel = 0
 dlink.Position = UDim2.new(0.0474130437, 0, 0.279955506, 0)
 dlink.Size = UDim2.new(0.903388381, 0, 0.146464333, 0)
-dlink.ZIndex = 8
+dlink.ZIndex = 1003
 dlink.Font = Enum.Font.GothamSemibold
 dlink.Text = "https://discord.gg/YerdqPHR"
 dlink.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -867,7 +874,7 @@ Shadow_6.BackgroundTransparency = 1.000
 Shadow_6.BorderSizePixel = 0
 Shadow_6.Position = UDim2.new(-0.0421360172, 0, -0.371244073, 0)
 Shadow_6.Size = UDim2.new(1.09358752, 0, 1.72381246, 0)
-Shadow_6.ZIndex = 6
+Shadow_6.ZIndex = 1001
 Shadow_6.Image = "rbxassetid://3523728077"
 Shadow_6.ImageColor3 = Color3.fromRGB(62, 62, 62)
 Shadow_6.ImageTransparency = 0.750
@@ -878,7 +885,7 @@ VersioPanel.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 VersioPanel.BorderSizePixel = 0
 VersioPanel.Position = UDim2.new(0.200808257, 0, 0.549161136, 0)
 VersioPanel.Size = UDim2.new(0.223311067, 0, 0.3889229, 0)
-VersioPanel.ZIndex = 7
+VersioPanel.ZIndex = 1002
 
 UICorner_23.CornerRadius = UDim.new(0, 12)
 UICorner_23.Parent = VersioPanel
@@ -890,7 +897,7 @@ Text_4.BackgroundTransparency = 1.000
 Text_4.BorderSizePixel = 0
 Text_4.Position = UDim2.new(0.0481988899, 0, 0.693065882, 0)
 Text_4.Size = UDim2.new(0.903388441, 0, 0.186107069, 0)
-Text_4.ZIndex = 8
+Text_4.ZIndex = 1003
 Text_4.Font = Enum.Font.GothamBold
 Text_4.Text = "Domain v0.00"
 Text_4.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -905,8 +912,9 @@ Shadow_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Shadow_7.BackgroundTransparency = 1.000
 Shadow_7.BorderSizePixel = 0
 Shadow_7.Position = UDim2.new(-0.0533836037, 0, -0.340182304, 0)
+Shadow_7.Selectable = true
 Shadow_7.Size = UDim2.new(1.10315049, 0, 1.71548128, 0)
-Shadow_7.ZIndex = 6
+Shadow_7.ZIndex = 1001
 Shadow_7.Image = "rbxassetid://3523728077"
 Shadow_7.ImageColor3 = Color3.fromRGB(62, 62, 62)
 Shadow_7.ImageTransparency = 0.750
@@ -917,7 +925,7 @@ Panel.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 Panel.BorderSizePixel = 0
 Panel.Position = UDim2.new(0.0219969973, 0, 0.549161077, 0)
 Panel.Size = UDim2.new(0.162478819, 0, 0.3889229, 0)
-Panel.ZIndex = 7
+Panel.ZIndex = 1002
 
 UICorner_24.CornerRadius = UDim.new(0, 12)
 UICorner_24.Parent = Panel
@@ -929,7 +937,7 @@ Text_5.BackgroundTransparency = 1.000
 Text_5.BorderSizePixel = 0
 Text_5.Position = UDim2.new(0.0273511428, 0, 0.133592173, 0)
 Text_5.Size = UDim2.new(0.903388381, 0, 0.186107069, 0)
-Text_5.ZIndex = 8
+Text_5.ZIndex = 1003
 Text_5.Font = Enum.Font.GothamBold
 Text_5.Text = ""
 Text_5.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -944,8 +952,9 @@ Shadow_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Shadow_8.BackgroundTransparency = 1.000
 Shadow_8.BorderSizePixel = 0
 Shadow_8.Position = UDim2.new(-0.0649442822, 0, -0.340182304, 0)
+Shadow_8.Selectable = true
 Shadow_8.Size = UDim2.new(1.13124442, 0, 1.71548092, 0)
-Shadow_8.ZIndex = 6
+Shadow_8.ZIndex = 1001
 Shadow_8.Image = "rbxassetid://3523728077"
 Shadow_8.ImageColor3 = Color3.fromRGB(62, 62, 62)
 Shadow_8.ImageTransparency = 0.750
@@ -956,7 +965,7 @@ Panel_2.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 Panel_2.BorderSizePixel = 0
 Panel_2.Position = UDim2.new(0.672849536, 0, 0.567718089, 0)
 Panel_2.Size = UDim2.new(0.311141789, 0, 0.372299641, 0)
-Panel_2.ZIndex = 7
+Panel_2.ZIndex = 1002
 
 UICorner_25.CornerRadius = UDim.new(0, 12)
 UICorner_25.Parent = Panel_2
@@ -968,7 +977,7 @@ Text_6.BackgroundTransparency = 1.000
 Text_6.BorderSizePixel = 0
 Text_6.Position = UDim2.new(0.0273511428, 0, 0.133592173, 0)
 Text_6.Size = UDim2.new(0.903388381, 0, 0.186107069, 0)
-Text_6.ZIndex = 8
+Text_6.ZIndex = 1003
 Text_6.Font = Enum.Font.GothamBold
 Text_6.Text = ""
 Text_6.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -983,8 +992,9 @@ Shadow_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Shadow_9.BackgroundTransparency = 1.000
 Shadow_9.BorderSizePixel = 0
 Shadow_9.Position = UDim2.new(-0.0421360247, 0, -0.236723438, 0)
+Shadow_9.Selectable = true
 Shadow_9.Size = UDim2.new(1.09358752, 0, 1.62358546, 0)
-Shadow_9.ZIndex = 6
+Shadow_9.ZIndex = 1001
 Shadow_9.Image = "rbxassetid://3523728077"
 Shadow_9.ImageColor3 = Color3.fromRGB(62, 62, 62)
 Shadow_9.ImageTransparency = 0.750
@@ -996,7 +1006,7 @@ Shadow_10.BackgroundTransparency = 1.000
 Shadow_10.BorderSizePixel = 0
 Shadow_10.Position = UDim2.new(-0.0563334115, 0, -0.55968082, 0)
 Shadow_10.Size = UDim2.new(1.11309063, 0, 2.11666632, 0)
-Shadow_10.ZIndex = 0
+Shadow_10.ZIndex = 999
 Shadow_10.Image = "rbxassetid://3523728077"
 Shadow_10.ImageColor3 = Color3.fromRGB(33, 33, 33)
 Shadow_10.ImageTransparency = 0.750
@@ -1280,7 +1290,7 @@ More.BackgroundTransparency = 1.000
 More.BorderSizePixel = 0
 More.Position = UDim2.new(0.870552123, 0, 0.225920364, 0)
 More.Size = UDim2.new(0.104458071, 0, 0.569512546, 0)
-More.ZIndex = 1008
+More.ZIndex = 1010
 More.Image = "rbxassetid://3926305904"
 More.ImageRectOffset = Vector2.new(764, 764)
 More.ImageRectSize = Vector2.new(36, 36)
@@ -1419,13 +1429,52 @@ Close.Image = "rbxassetid://3926305904"
 Close.ImageRectOffset = Vector2.new(924, 724)
 Close.ImageRectSize = Vector2.new(36, 36)
 
+TeleportTo.Name = "TeleportTo"
+TeleportTo.Parent = AboutPlayer
+TeleportTo.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+TeleportTo.BorderSizePixel = 0
+TeleportTo.Position = UDim2.new(0.591928005, 0, 0.911585271, 0)
+TeleportTo.Size = UDim2.new(0.365820289, 0, 0.101479739, 0)
+TeleportTo.ZIndex = 1000
+TeleportTo.Font = Enum.Font.GothamSemibold
+TeleportTo.Text = "Teleport"
+TeleportTo.TextColor3 = Color3.fromRGB(255, 255, 255)
+TeleportTo.TextScaled = true
+TeleportTo.TextSize = 14.000
+TeleportTo.TextWrapped = true
+
+UITextSizeConstraint_29.Parent = TeleportTo
+UITextSizeConstraint_29.MaxTextSize = 18
+
+UICorner_34.CornerRadius = UDim.new(0, 10)
+UICorner_34.Parent = TeleportTo
+
+Rank.Name = "Rank"
+Rank.Parent = AboutPlayer
+Rank.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rank.BackgroundTransparency = 1.000
+Rank.BorderSizePixel = 0
+Rank.Position = UDim2.new(0.411339849, 0, 0.17152454, 0)
+Rank.Size = UDim2.new(0.534705043, 0, 0.0645099208, 0)
+Rank.ZIndex = 1000
+Rank.Font = Enum.Font.GothamSemibold
+Rank.Text = "Rank"
+Rank.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rank.TextScaled = true
+Rank.TextSize = 14.000
+Rank.TextWrapped = true
+Rank.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_30.Parent = Rank
+UITextSizeConstraint_30.MaxTextSize = 20
 
 
 
 
-local VersionNum = 0.557
-local VersionFull = tostring(VersionNum).." | Playerlist fix"
-local VFeature = "More button fixed"
+
+local VersionNum = 0.559
+local VersionFull = tostring(VersionNum).." | Playerlist +"
+local VFeature = "Added player features"
 
 local Admins = {
 
@@ -1880,6 +1929,8 @@ function CloseHome()
 	HomeOpen = false
 end
 
+
+
 function OpenPlayers()
 	db = true
 	Players_2.Position = UDim2.new(-0.3, 0, 0.159, 0)
@@ -1920,6 +1971,16 @@ CurrentListPosition = CurrentListPosition - 0.036
 	end
 end
 
+
+function Teleport(Player)
+	if game.Players:FindFirstChild(Player.Name) then
+	local targetplayer = game.Workspace:WaitForChild(Player.Name).HumanoidRootPart
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(targetplayer.Position.X, targetplayer.Position.Y, targetplayer.Position.Z)
+		Notify("Teleported you to "..Player.Name)
+	else
+		Notify("Player is no longer in game","GothamBold")
+	end
+end
 
 function AddToList(Player,Type)
 	if List:FindFirstChild(Player.Name) then
@@ -2044,8 +2105,22 @@ function OpenAboutPlayer(PlayerName)
 			Premium.Visible = false
 		end
 		Title_6.Text = Player.Name
-
-
+		if game.CreatorType == Enum.CreatorType.Group then
+			Rank.Visible = true
+			Rank.Text = Player:GetRoleInGroup(game.CreatorId)
+		else
+			Rank.Visible = false
+		end
+		TeleportTo.MouseButton1Click:Connect(function()
+			Teleport(Player)
+		end)
+		CopyUsr.MouseButton1Click:Connect(function()
+			if game.CreatorId ~= 0 then
+				setclipboard(UserIdVal.Value)
+			else
+				Notify("Studio","GothamSemibold")
+			end
+		end)
 	else
 		-- Player left
 		Notify("Player left game, error","GothamBold")
@@ -2071,13 +2146,7 @@ function OpenAboutPlayer(PlayerName)
 			AboutPlayer.DomainDev.Visible = false
 		end
 	end
-	CopyUsr.MouseButton1Click:Connect(function()
-		if game.CreatorId ~= 0 then
-			setclipboard(UserIdVal.Value)
-		else
-			Notify("Studio","GothamSemibold")
-		end
-	end)
+
 	Close.MouseButton1Click:Connect(function()
 		List.Position = UDim2.new(0,0,1,0)
 		Players_2.AboutPlayer:TweenPosition(UDim2.new(0, 0, -1, 0),"In","Quint",0.5)
@@ -2088,6 +2157,7 @@ function OpenAboutPlayer(PlayerName)
 		AboutPlayer.Visible = false
 
 	end)
+	
 end
 
 function OpenExploits()
@@ -2190,6 +2260,8 @@ end
 
 
 Toggle.MouseButton1Click:Connect(ToggleUI)
+
+
 
 Exploits.MouseButton1Click:Connect(function()
 	if ExploitsOpen == true and db == false then
