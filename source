@@ -1444,6 +1444,7 @@ local Developers = {
 
 local BannerSectionPos = 0
 local ExploitsOpen = false
+local TimeLabel = Functions.Time
 local PlayersOpen = false
 local MusicOpen = false
 local HomeOpen = false
@@ -1529,6 +1530,12 @@ function Notify(Content,Font)
 		figureNotifs(NotifStack,notificationContainer)
 	end)
 end
+local function getTime()
+	local date = os.date("*t")
+	return ("%02d:%02d"):format(((date.hour % 24) - 1) % 12 + 1, date.min)
+end
+
+
 
 function Start()
 	More.ImageTransparency = 1
@@ -1562,7 +1569,13 @@ function Start()
 	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
 	tween:Play()
 	wait(0.2)
-
+	if Time.TextTransparency ~= 0 then
+		local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(Time, transitionInfo, {TextTransparency = 0})
+		tween:Play()
+	end
+	local currentHour = os.date("*t")["hour"]
+	TimeLabel.Text = getTime()
 	
 	uiopened = true
 	Time:TweenPosition(UDim2.new(0.029, 0, 0.335, 0),"Out","Quint",0.6)
@@ -2356,12 +2369,7 @@ if game.CreatorId ~= 0 then
 	hookfunction(game.Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
 end
 
-local function getTime()
-	local date = os.date("*t")
-	return ("%02d:%02d"):format(((date.hour % 24) - 1) % 12 + 1, date.min)
-end
 
-local TimeLabel = Functions.Time
 
 while wait(1) do
 	CheckPlayersForAdmins()
