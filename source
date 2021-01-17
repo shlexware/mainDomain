@@ -1691,7 +1691,7 @@ function ToggleUI()
 				UIIns.Enabled = false
 			end
 		end
-		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
+		
 		local transitionInfo = TweenInfo.new(0.7, Enum.EasingStyle.Quint)
 		local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {Rotation = 180})
 		tween:Play()
@@ -1714,8 +1714,10 @@ function ToggleUI()
 		else
 			Toggle:TweenPosition(UDim2.new(0.488, 0, 0.829, 0),"Out", "Quint", 0.7)
 		end
-
-		wait(0.71)
+		
+		wait(0.31)
+		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
+		wait(0.4)
 		local l = false
 		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 			l = true
@@ -1732,6 +1734,7 @@ function ToggleUI()
 		else
 			Toggle.Position = UDim2.new(0.488, 0, 0.829, 0)
 		end
+		
 		uiopened = false
 	elseif uiopened == false then
 
