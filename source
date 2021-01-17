@@ -1913,7 +1913,6 @@ end
 
 
 function AddToList(Player,Type)
-	print(Player.Name)
 	if List:FindFirstChild(Player.Name) then
 		return
 	end
@@ -1921,6 +1920,9 @@ function AddToList(Player,Type)
 		return
 	end
 	local NewPlr = Template_2:Clone()
+	if table.find(Developers,Player.UserId) or table.find(Admins,Player.UserId) then
+		CheckPlayersForAdmins()
+	end
 	NewPlr.Parent = List
 	if Player.Name == game.Players.LocalPlayer.Name then
 		NewPlr.Username.Font = "GothamBold"
@@ -1982,15 +1984,16 @@ game.Players.PlayerRemoving:Connect(PlayerRemoved)
 game.Players.PlayerAdded:Connect(function(Player)
 	AddToList(Player)
 	if table.find(Developers,Player.UserId) then
+		wait(2)
 		Notify("Shlex has joined your server","GothamBold")
 	end
 	if table.find(Admins,Player.UserId) then
+		wait(2)
 		Notify("Domain Admin "..Player.Name.." has joined your server","GothamBold")
 	end
 end)
 
 function CheckPlayersForAdmins()
-	wait(3)
 	local vdev = false
 	local vadmin = false
 	for _, Player in ipairs(game.Players:GetChildren()) do
