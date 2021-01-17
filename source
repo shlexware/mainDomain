@@ -1407,7 +1407,7 @@ DomainDev.Position = UDim2.new(0.516834974, 0, -0.13840194, 0)
 DomainDev.Size = UDim2.new(0.451336235, 0, 0.0426678397, 0)
 DomainDev.ZIndex = 1010
 DomainDev.Font = Enum.Font.GothamSemibold
-DomainDev.Text = "Domain Developer"
+DomainDev.Text = "Domain "
 DomainDev.TextColor3 = Color3.fromRGB(255, 255, 255)
 DomainDev.TextScaled = true
 DomainDev.TextSize = 14.000
@@ -2104,6 +2104,24 @@ function OpenAboutPlayer(PlayerName)
 		else
 			Premium.Visible = false
 		end
+		for _, adm in pairs(Admins) do
+			if adm == UserIdVal.Value then
+				AboutPlayer.DomainDev.Visible = true
+				AboutPlayer.DomainDev.Text = "Domain Admin"
+				DomainDev.Visible = true
+			elseif adm ~= UserIdVal.Value then
+				AboutPlayer.DomainDev.Visible = false
+			end
+		end
+		for _, dev in pairs(Developers) do
+			if dev == UserIdVal.Value then
+				AboutPlayer.DomainDev.Visible = true
+				AboutPlayer.DomainDev.Text = "Domain Developer"
+				DomainDev.Visible = true
+			elseif dev ~= UserIdVal.Value then
+				AboutPlayer.DomainDev.Visible = false
+			end
+		end
 		Title_6.Text = Player.Name
 		if game.CreatorType == Enum.CreatorType.Group then
 			Rank.Visible = true
@@ -2128,24 +2146,9 @@ function OpenAboutPlayer(PlayerName)
 			ClosePlayers()
 		end
 	end
-	for _, dev in pairs(Developers) do
-		if dev == UserIdVal.Value then
-			AboutPlayer.DomainDev.Visible = true
-			AboutPlayer.DomainDev.Text = "Domain Developer"
-		elseif dev ~= UserIdVal.Value then
-			AboutPlayer.DomainDev.Visible = false
-		end
-	end
+		
 
-	for _, adm in pairs(Admins) do
-		if adm == UserIdVal.Value then
-			AboutPlayer.DomainDev.Visible = true
-			AboutPlayer.DomainDev.Text = "Domain Admin"
-			DomainDev.Visible = true
-		elseif adm ~= UserIdVal.Value then
-			AboutPlayer.DomainDev.Visible = false
-		end
-	end
+	
 
 	Close.MouseButton1Click:Connect(function()
 		List.Position = UDim2.new(0,0,1,0)
