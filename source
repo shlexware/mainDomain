@@ -1424,7 +1424,7 @@ Close.ImageRectSize = Vector2.new(36, 36)
 
 
 local VersionNum = 0.554
-local VersionFull = tostring(VersionNum).." | Patch 0.554"
+local VersionFull = tostring(VersionNum).." | Fix"
 local VFeature = "Animation fix"
 
 local Admins = {
