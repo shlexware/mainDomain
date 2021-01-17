@@ -1280,7 +1280,7 @@ More.BackgroundTransparency = 1.000
 More.BorderSizePixel = 0
 More.Position = UDim2.new(0.870552123, 0, 0.225920364, 0)
 More.Size = UDim2.new(0.104458071, 0, 0.569512546, 0)
-More.ZIndex = 1000
+More.ZIndex = 1008
 More.Image = "rbxassetid://3926305904"
 More.ImageRectOffset = Vector2.new(764, 764)
 More.ImageRectSize = Vector2.new(36, 36)
@@ -1423,9 +1423,9 @@ Close.ImageRectSize = Vector2.new(36, 36)
 
 
 
-local VersionNum = 0.554
-local VersionFull = tostring(VersionNum).." | Fix"
-local VFeature = "Animation fix"
+local VersionNum = 0.557
+local VersionFull = tostring(VersionNum).." | Playerlist fix"
+local VFeature = "More button fixed"
 
 local Admins = {
 
