@@ -1423,9 +1423,9 @@ Close.ImageRectSize = Vector2.new(36, 36)
 
 
 
-local VersionNum = 0.55
-local VersionFull = tostring(VersionNum).." | Patch 0.55"
-local VFeature = "Home Redesign"
+local VersionNum = 0.554
+local VersionFull = tostring(VersionNum).." | Patch 0.554"
+local VFeature = "Animation fix"
 
 local Admins = {
 
@@ -1729,6 +1729,7 @@ function ToggleUI()
 		end
 		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
 		Music.Position = Home.Position
+		Players.Position = Home.Position
 		Exploits.Position = Home.Position
 		Time.Position = UDim2.new(0.029,0,1,0)
 		Info.Position = UDim2.new(0.9,0,1,0)
@@ -1740,6 +1741,8 @@ function ToggleUI()
 		wait(0.1)	
 		Time:TweenPosition(UDim2.new(0.029, 0, 0.335, 0),"Out","Quint",0.6)
 		wait(0.05)
+		Players:TweenPosition(UDim2.new(0.5, 0, 0.2, 0),"Out","Quint",0.6)
+		wait(0.15)
 		Music:TweenPosition(UDim2.new(0.4, 0, 0.2, 0),"Out","Quint",0.6)
 		wait(0.15)
 		Exploits:TweenPosition(UDim2.new(0.3, 0, 0.2, 0),"Out","Quint",0.6)
