@@ -2750,6 +2750,7 @@ end)
 
 game.Players.LocalPlayer.Backpack.ChildRemoved:Connect(function()
 	Tools = false
+	wait(0.1)
 	for _, Child in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 		if Child.ClassName == "Tool" then
 			-- Still tools, keep current location
