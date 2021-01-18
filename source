@@ -1646,9 +1646,9 @@ UITextSizeConstraint_34.MaxTextSize = 18
 
 
 SaveSettings = false
-VersionNum = 0.57
-VersionFull = tostring(VersionNum).." | Settings prep"
-VFeature = "Fixed bugs, and preperation for settings feature"
+VersionNum = 0.576
+VersionFull = tostring(VersionNum).." | TP fixed"
+VFeature = "Teleporting fixed"
 
 Admins = {
 
@@ -2428,18 +2428,7 @@ function OpenAboutPlayer(PlayerName)
 		else
 			Rank.Visible = false
 		end
-		TeleportTo.MouseButton1Click:Connect(function()
-			Player = nil
-			Player = game:GetService("Players"):FindFirstChild(PlayerName)
-			Teleport(Player)
-		end)
-		CopyUsr.MouseButton1Click:Connect(function()
-			if game.CreatorId ~= 0 then
-				setclipboard(UserIdVal.Value)
-			else
-				Notify("Studio","GothamSemibold")
-			end
-		end)
+		
 	else
 		-- Player left
 		Notify("Player left game, error","GothamBold")
@@ -2574,7 +2563,18 @@ end
 
 Toggle.MouseButton1Click:Connect(ToggleUI)
 
-
+TeleportTo.MouseButton1Click:Connect(function()
+	local PlayerName = Players_2.Title.Text
+	local Player = game:GetService("Players"):FindFirstChild(PlayerName)
+	Teleport(Player)
+end)
+CopyUsr.MouseButton1Click:Connect(function()
+	if game.CreatorId ~= 0 then
+		setclipboard(UserIdVal.Value)
+	else
+		Notify("Studio","GothamSemibold")
+	end
+end)
 
 Exploits.MouseButton1Click:Connect(function()
 	if ExploitsOpen == true and db == false then
@@ -2712,13 +2712,13 @@ LoadExploitSection()
 
 UserInputService = game:GetService("UserInputService")
 
-gui = Players_2
-draggui = Players_2.Divider
+local gui = Players_2
+local draggui = Players_2.Divider
 
-dragging = 0
-dragInput = 0
-dragStart = 0
-startPos = 0
+local dragging = 0
+local dragInput = 0
+local dragStart = 0
+local startPos = 0
 
 local function update(input)
 	local delta = input.Position - dragStart
