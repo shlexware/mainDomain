@@ -1,7 +1,10 @@
 -- Domain
 
 -- Instances:
+
+local UsingAutoExecute = false
 if not game:IsLoaded() then
+	UsingAutoExecute = true
 	repeat wait(1) until game:IsLoaded() 
 end
 
@@ -1852,13 +1855,35 @@ function Start()
 	Info.Position = UDim2.new(0.9,0,1,0)
 	Functions.Position = UDim2.new(0.277, 0, 1, 0)
 	Toggle.ImageTransparency = 1
+	
+	if UsingAutoExecute == false then
 	wait(1.5)
 	Functions:TweenPosition(UDim2.new(0.277, 0, 0.781, 0),"Out", "Quint", 0.7)
 	Toggle.Position = UDim2.new(0.488, 0, 0.742, 0)
 	local transitionInfo = TweenInfo.new(0.9, Enum.EasingStyle.Quint)
 	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
 	tween:Play()
-	wait(0.2)
+		wait(0.2)
+	else
+		Toggle.ImageTransparency = 0
+		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
+		local l = false
+		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			l = true
+			break
+		end
+		for _, Item2 in ipairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if Item2.ClassName == "Tool" then
+				l = true
+				break
+			end
+		end
+		if l == true then
+			Toggle.Position = UDim2.new(0.488, 0, 0.77, 0)
+		else
+			Toggle.Position = UDim2.new(0.488, 0, 0.829, 0)
+		end
+	end
 	if Time.TextTransparency ~= 0 then
 		local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
 		local tween = game:GetService("TweenService"):Create(Time, transitionInfo, {TextTransparency = 0})
