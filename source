@@ -1865,6 +1865,7 @@ function Start()
 	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
 	tween:Play()
 		wait(0.2)
+		uiopened = true
 	else
 		Toggle.ImageTransparency = 0
 		Toggle.Rotation = 180
@@ -1894,7 +1895,7 @@ function Start()
 	local currentHour = os.date("*t")["hour"]
 	TimeLabel.Text = getTime()
 	
-	uiopened = true
+	
 	Time:TweenPosition(UDim2.new(0.029, 0, 0.335, 0),"Out","Quint",0.6)
 	wait(0.05)
 	Functions.Settings:TweenPosition(UDim2.new(0.6, 0, 0.2, 0),"Out","Quint",0.6)
