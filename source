@@ -1652,7 +1652,7 @@ UITextSizeConstraint_34.MaxTextSize = 18
 
 
 SaveSettings = false
-VersionNum = 0.59
+VersionNum = 0.6
 VersionFull = tostring(VersionNum).." | Smart auto execute"
 VFeature = "Detects if you're using auto exec"
 
@@ -1678,11 +1678,11 @@ AntiExploits = {
 		Locations = {game.Players.LocalPlayer.PlayerScripts:FindFirstChild("goodbye"),game.Players.LocalPlayer.PlayerScripts:FindFirstChild("hello")}
 	},
 	Pastriez = {
-		PlaceId = 0,
+		PlaceId = 3243063589,
 		Locations = {game.Players.LocalPlayer.PlayerScripts:FindFirstChild("AntiWeld"),game.Players.LocalPlayer.PlayerScripts:FindFirstChild("AntiVR")}
 	},
 	Cortado = {
-		PlaceId = 0,
+		PlaceId = 3522042406,
 		Locations = {game.Players.LocalPlayer.PlayerScripts:FindFirstChild("B"),game.Players.LocalPlayer.PlayerGui:FindFirstChild("ADEL")}
 	},
 	
