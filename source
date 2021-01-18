@@ -1652,9 +1652,9 @@ UITextSizeConstraint_34.MaxTextSize = 18
 
 
 SaveSettings = false
-VersionNum = 0.576
-VersionFull = tostring(VersionNum).." | TP fixed"
-VFeature = "Teleporting fixed"
+VersionNum = 0.59
+VersionFull = tostring(VersionNum).." | Smart auto execute"
+VFeature = "Detects if you're using auto exec"
 
 Admins = {
 
@@ -1865,6 +1865,7 @@ function Start()
 	tween:Play()
 		wait(0.2)
 	else
+		print("using auto")
 		Toggle.ImageTransparency = 0
 		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
 		local l = false
