@@ -2319,9 +2319,7 @@ CurrentListPosition = CurrentListPosition - 0.036
 	for _, PlrAdded in ipairs(List:GetChildren()) do
 		PlrAdded.Parent = List
 		if PlrAdded.Position.Y.Scale > RemovedPlayerYOffset then
-			wait(0.001)
-			PlrAdded:TweenPosition(UDim2.new(0.03, 0, PlrAdded.Position.Y.Scale-0.036, 0),"Out", "Quint", 0.6)
-			wait(0.001)
+			PlrAdded.Position = UDim2.new(0.03, 0, PlrAdded.Position.Y.Scale-0.036, 0)
 		end
 	end
 end
