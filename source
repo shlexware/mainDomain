@@ -1859,14 +1859,15 @@ function Start()
 	if UsingAutoExecute == false then
 	wait(1.5)
 	Functions:TweenPosition(UDim2.new(0.277, 0, 0.781, 0),"Out", "Quint", 0.7)
-	Toggle.Position = UDim2.new(0.488, 0, 0.742, 0)
+		Toggle.Position = UDim2.new(0.488, 0, 0.742, 0)
+		
 	local transitionInfo = TweenInfo.new(0.9, Enum.EasingStyle.Quint)
 	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
 	tween:Play()
 		wait(0.2)
 	else
-		print("using auto")
 		Toggle.ImageTransparency = 0
+		Toggle.Rotation = 180
 		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
 		local l = false
 		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
