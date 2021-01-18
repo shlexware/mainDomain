@@ -2,7 +2,7 @@
 
 -- Instances:
 if not game:IsLoaded() then
-	wait()
+	repeat wait(1) until game:IsLoaded() 
 end
 
 local mainDomain = Instance.new("ScreenGui")
