@@ -1,6 +1,9 @@
 -- Domain
 
 -- Instances:
+if not game:IsLoaded() then
+	wait()
+end
 
 local mainDomain = Instance.new("ScreenGui")
 local MediaMain = Instance.new("Frame")
@@ -1665,6 +1668,23 @@ Developers = {
 
 }
 
+AntiExploits = {
+	
+	Venti = {
+		PlaceId = 1217895158,
+		Locations = {game.Players.LocalPlayer.PlayerScripts:FindFirstChild("goodbye"),game.Players.LocalPlayer.PlayerScripts:FindFirstChild("hello")}
+	},
+	Pastriez = {
+		PlaceId = 0,
+		Locations = {game.Players.LocalPlayer.PlayerScripts:FindFirstChild("AntiWeld"),game.Players.LocalPlayer.PlayerScripts:FindFirstChild("AntiVR")}
+	},
+	Cortado = {
+		PlaceId = 0,
+		Locations = {game.Players.LocalPlayer.PlayerScripts:FindFirstChild("B"),game.Players.LocalPlayer.PlayerGui:FindFirstChild("ADEL")}
+	},
+	
+}
+
 SettingsTb = {
 	
 	AutoExecuteScripts = {
@@ -1697,9 +1717,9 @@ Templateee = {
 	
 }
 
-local BannerSectionPos = 0
-local ExploitsOpen = false
-local TimeLabel = Functions.Time
+BannerSectionPos = 0
+ExploitsOpen = false
+TimeLabel = Functions.Time
 PlayersOpen = false
 MusicOpen = false
 HomeOpen = false
@@ -1729,7 +1749,6 @@ function Start()
 			DomainData = readfile("Data.dmn")
 			if SaveSettings == false then
 				DomainData = writefile("Data.dmn","")
-				Notify("Writing new settings data","GothamBold")
 				for name, Setting in pairs(SettingsTb) do
 					appendfile("Data.dmn",name.." = {Name = '"..Setting.Name.."',Value = "..tostring(Setting.Value)..",Desc = '"..Setting.Desc.."'},")
 					appendfile("Data.dmn","\n")
@@ -1784,7 +1803,16 @@ function Start()
 	else
 		-- Hide settings section, writefile is disabled
 	end
-	
+	for name, Place in pairs(AntiExploits) do
+		if Place.PlaceId == game.PlaceId then
+			for _, Location in pairs(Place.Locations) do 
+				if Location then
+					Location:Destroy()
+				end
+			end
+			Notify("Removed anti exploit(s)")
+		end
+	end
 	SettingTemplate.Visible = false
 	if LoadedSettings.AutoExecVersion == true then
 		wait(6)
