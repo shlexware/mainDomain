@@ -30,132 +30,151 @@ local Players = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 local Icon_5 = Instance.new("ImageLabel")
-local Exploits_2 = Instance.new("Frame")
+local Settings = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
-local TemplateBanner = Instance.new("Frame")
-local UICorner_9 = Instance.new("UICorner")
-local ShadowBG_2 = Instance.new("ImageLabel")
-local UICorner_10 = Instance.new("UICorner")
-local Title = Instance.new("TextLabel")
 local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
-local CustomBG = Instance.new("ImageLabel")
+local Icon_6 = Instance.new("ImageLabel")
+local Exploits_2 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local TemplateBanner = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local ShadowBG_2 = Instance.new("ImageLabel")
 local UICorner_11 = Instance.new("UICorner")
-local Action = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
 local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
-local Author = Instance.new("TextLabel")
+local CustomBG = Instance.new("ImageLabel")
+local UICorner_12 = Instance.new("UICorner")
+local Action = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
 local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
-local Title_2 = Instance.new("TextLabel")
+local Author = Instance.new("TextLabel")
 local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local Title_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
 local Shadow_2 = Instance.new("ImageLabel")
 local nContainer = Instance.new("Frame")
 local Template = Instance.new("Frame")
 local Content = Instance.new("TextLabel")
-local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
-local UICorner_13 = Instance.new("UICorner")
-local Music_2 = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
-local Title_3 = Instance.new("TextLabel")
 local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
-local SoundId = Instance.new("TextBox")
+local UICorner_14 = Instance.new("UICorner")
+local Music_2 = Instance.new("Frame")
 local UICorner_15 = Instance.new("UICorner")
+local Title_3 = Instance.new("TextLabel")
 local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
-local Play = Instance.new("TextButton")
-local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
+local SoundId = Instance.new("TextBox")
 local UICorner_16 = Instance.new("UICorner")
-local RemBG = Instance.new("TextButton")
+local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
+local Play = Instance.new("TextButton")
 local UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint")
 local UICorner_17 = Instance.new("UICorner")
-local Stop = Instance.new("TextButton")
+local RemBG = Instance.new("TextButton")
 local UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint")
 local UICorner_18 = Instance.new("UICorner")
+local Stop = Instance.new("TextButton")
+local UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint")
+local UICorner_19 = Instance.new("UICorner")
 local Shadow_3 = Instance.new("ImageLabel")
 local Home_2 = Instance.new("Frame")
-local UICorner_19 = Instance.new("UICorner")
-local Title_4 = Instance.new("TextLabel")
-local UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint")
-local WelcomePanel = Instance.new("Frame")
 local UICorner_20 = Instance.new("UICorner")
+local Title_4 = Instance.new("TextLabel")
+local UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint")
+local WelcomePanel = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
 local Text = Instance.new("TextLabel")
 local Shadow_4 = Instance.new("ImageLabel")
 local UpdatePanel = Instance.new("Frame")
-local UICorner_21 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
 local Text_2 = Instance.new("TextLabel")
 local upd = Instance.new("TextLabel")
 local feat = Instance.new("TextLabel")
 local Shadow_5 = Instance.new("ImageLabel")
 local DisPanel = Instance.new("Frame")
-local UICorner_22 = Instance.new("UICorner")
+local UICorner_23 = Instance.new("UICorner")
 local Text_3 = Instance.new("TextLabel")
 local dlink = Instance.new("TextLabel")
 local Shadow_6 = Instance.new("ImageLabel")
 local VersioPanel = Instance.new("Frame")
-local UICorner_23 = Instance.new("UICorner")
+local UICorner_24 = Instance.new("UICorner")
 local Text_4 = Instance.new("TextLabel")
 local Shadow_7 = Instance.new("ImageLabel")
 local PlayersPanel = Instance.new("Frame")
-local UICorner_24 = Instance.new("UICorner")
+local UICorner_25 = Instance.new("UICorner")
 local Text_5 = Instance.new("TextLabel")
 local Shadow_8 = Instance.new("ImageLabel")
 local Panel = Instance.new("Frame")
-local UICorner_25 = Instance.new("UICorner")
+local UICorner_26 = Instance.new("UICorner")
 local Text_6 = Instance.new("TextLabel")
 local Shadow_9 = Instance.new("ImageLabel")
 local Shadow_10 = Instance.new("ImageLabel")
 local Info_2 = Instance.new("Frame")
-local UICorner_26 = Instance.new("UICorner")
+local UICorner_27 = Instance.new("UICorner")
 local Title_5 = Instance.new("TextLabel")
-local UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint")
 local Shadow_11 = Instance.new("ImageLabel")
 local Title1 = Instance.new("TextLabel")
-local UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint")
-local About = Instance.new("TextLabel")
 local UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint")
-local About_2 = Instance.new("TextLabel")
+local About = Instance.new("TextLabel")
 local UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint")
-local Copy = Instance.new("TextButton")
-local UICorner_27 = Instance.new("UICorner")
+local About_2 = Instance.new("TextLabel")
 local UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint")
-local link = Instance.new("TextLabel")
+local Copy = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
 local UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint")
-local Title2 = Instance.new("TextLabel")
+local link = Instance.new("TextLabel")
 local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
+local Title2 = Instance.new("TextLabel")
+local UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint")
 local Toggle = Instance.new("ImageButton")
 local Players_2 = Instance.new("Frame")
 local Title_6 = Instance.new("TextLabel")
-local UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint")
-local UICorner_28 = Instance.new("UICorner")
-local Divider = Instance.new("Frame")
+local UITextSizeConstraint_25 = Instance.new("UITextSizeConstraint")
 local UICorner_29 = Instance.new("UICorner")
+local Divider = Instance.new("Frame")
+local UICorner_30 = Instance.new("UICorner")
 local Divider_2 = Instance.new("Frame")
 local List = Instance.new("ScrollingFrame")
 local Template_2 = Instance.new("Frame")
 local Avatar = Instance.new("ImageLabel")
-local UICorner_30 = Instance.new("UICorner")
 local UICorner_31 = Instance.new("UICorner")
+local UICorner_32 = Instance.new("UICorner")
 local Username = Instance.new("TextLabel")
-local UITextSizeConstraint_25 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_26 = Instance.new("UITextSizeConstraint")
 local More = Instance.new("ImageButton")
 local Shadow_12 = Instance.new("ImageLabel")
 local Shadow_13 = Instance.new("ImageLabel")
 local AboutPlayer = Instance.new("Frame")
 local Avatar_2 = Instance.new("ImageLabel")
-local UICorner_32 = Instance.new("UICorner")
+local UICorner_33 = Instance.new("UICorner")
 local Premium = Instance.new("ImageLabel")
 local Divider_3 = Instance.new("Frame")
 local UserId = Instance.new("TextLabel")
-local UITextSizeConstraint_26 = Instance.new("UITextSizeConstraint")
-local CopyUsr = Instance.new("TextButton")
 local UITextSizeConstraint_27 = Instance.new("UITextSizeConstraint")
-local UICorner_33 = Instance.new("UICorner")
-local DomainDev = Instance.new("TextLabel")
+local CopyUsr = Instance.new("TextButton")
 local UITextSizeConstraint_28 = Instance.new("UITextSizeConstraint")
+local UICorner_34 = Instance.new("UICorner")
 local Close = Instance.new("ImageButton")
 local TeleportTo = Instance.new("TextButton")
 local UITextSizeConstraint_29 = Instance.new("UITextSizeConstraint")
-local UICorner_34 = Instance.new("UICorner")
+local UICorner_35 = Instance.new("UICorner")
 local Rank = Instance.new("TextLabel")
 local UITextSizeConstraint_30 = Instance.new("UITextSizeConstraint")
+local DomainDev = Instance.new("TextLabel")
+local UITextSizeConstraint_31 = Instance.new("UITextSizeConstraint")
+local SettingsArea = Instance.new("Frame")
+local UICorner_36 = Instance.new("UICorner")
+local Title_7 = Instance.new("TextLabel")
+local UITextSizeConstraint_32 = Instance.new("UITextSizeConstraint")
+local Shadow_14 = Instance.new("ImageLabel")
+local List_2 = Instance.new("ScrollingFrame")
+local SettingTemplate = Instance.new("Frame")
+local Slider = Instance.new("Frame")
+local UICorner_37 = Instance.new("UICorner")
+local Dot = Instance.new("Frame")
+local UICorner_38 = Instance.new("UICorner")
+local SettingTitle = Instance.new("TextLabel")
+local UITextSizeConstraint_33 = Instance.new("UITextSizeConstraint")
+local SettingDesc = Instance.new("TextLabel")
+local UITextSizeConstraint_34 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
@@ -383,6 +402,39 @@ Icon_5.Image = "rbxassetid://3926305904"
 Icon_5.ImageRectOffset = Vector2.new(144, 4)
 Icon_5.ImageRectSize = Vector2.new(24, 24)
 
+Settings.Name = "Settings"
+Settings.Parent = Functions
+Settings.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.600000024, 0, 0.200000003, 0)
+Settings.Size = UDim2.new(0.0727514178, 0, 0.510895193, 0)
+Settings.ZIndex = 1000
+Settings.Font = Enum.Font.GothamBold
+Settings.Text = ""
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextScaled = true
+Settings.TextSize = 14.000
+Settings.TextTransparency = 1.000
+Settings.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 12)
+UICorner_8.Parent = Settings
+
+UITextSizeConstraint_6.Parent = Settings
+UITextSizeConstraint_6.MaxTextSize = 21
+
+Icon_6.Name = "Icon"
+Icon_6.Parent = Settings
+Icon_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_6.BackgroundTransparency = 1.000
+Icon_6.BorderSizePixel = 0
+Icon_6.Position = UDim2.new(0.139883563, 0, 0.139437169, 0)
+Icon_6.Size = UDim2.new(0.699998677, 0, 0.699998677, 0)
+Icon_6.ZIndex = 1000
+Icon_6.Image = "rbxassetid://3926307971"
+Icon_6.ImageRectOffset = Vector2.new(324, 124)
+Icon_6.ImageRectSize = Vector2.new(36, 36)
+
 Exploits_2.Name = "Exploits"
 Exploits_2.Parent = MediaMain
 Exploits_2.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -392,8 +444,8 @@ Exploits_2.Position = UDim2.new(0.500331104, 0, 0.568300247, 0)
 Exploits_2.Size = UDim2.new(0.956206441, 0, 0.360386193, 0)
 Exploits_2.Visible = false
 
-UICorner_8.CornerRadius = UDim.new(0, 12)
-UICorner_8.Parent = Exploits_2
+UICorner_9.CornerRadius = UDim.new(0, 12)
+UICorner_9.Parent = Exploits_2
 
 TemplateBanner.Name = "TemplateBanner"
 TemplateBanner.Parent = Exploits_2
@@ -402,8 +454,8 @@ TemplateBanner.BorderSizePixel = 0
 TemplateBanner.Position = UDim2.new(0.0250000004, 0, 0.0649999976, 0)
 TemplateBanner.Size = UDim2.new(0.123989441, 0, 0.870303035, 0)
 
-UICorner_9.CornerRadius = UDim.new(0, 12)
-UICorner_9.Parent = TemplateBanner
+UICorner_10.CornerRadius = UDim.new(0, 12)
+UICorner_10.Parent = TemplateBanner
 
 ShadowBG_2.Name = "ShadowBG"
 ShadowBG_2.Parent = TemplateBanner
@@ -416,8 +468,8 @@ ShadowBG_2.Image = "http://www.roblox.com/asset/?id=5602558289"
 ShadowBG_2.ImageColor3 = Color3.fromRGB(20, 20, 20)
 ShadowBG_2.ImageTransparency = 0.100
 
-UICorner_10.CornerRadius = UDim.new(0, 12)
-UICorner_10.Parent = ShadowBG_2
+UICorner_11.CornerRadius = UDim.new(0, 12)
+UICorner_11.Parent = ShadowBG_2
 
 Title.Name = "Title"
 Title.Parent = TemplateBanner
@@ -434,8 +486,8 @@ Title.TextSize = 14.000
 Title.TextWrapped = true
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_6.Parent = Title
-UITextSizeConstraint_6.MaxTextSize = 21
+UITextSizeConstraint_7.Parent = Title
+UITextSizeConstraint_7.MaxTextSize = 21
 
 CustomBG.Name = "CustomBG"
 CustomBG.Parent = TemplateBanner
@@ -445,8 +497,8 @@ CustomBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
 CustomBG.BorderSizePixel = 0
 CustomBG.Size = UDim2.new(1, 0, 1, 0)
 
-UICorner_11.CornerRadius = UDim.new(0, 12)
-UICorner_11.Parent = CustomBG
+UICorner_12.CornerRadius = UDim.new(0, 12)
+UICorner_12.Parent = CustomBG
 
 Action.Name = "Action"
 Action.Parent = TemplateBanner
@@ -463,11 +515,11 @@ Action.TextScaled = true
 Action.TextSize = 14.000
 Action.TextWrapped = true
 
-UICorner_12.CornerRadius = UDim.new(0, 12)
-UICorner_12.Parent = Action
+UICorner_13.CornerRadius = UDim.new(0, 12)
+UICorner_13.Parent = Action
 
-UITextSizeConstraint_7.Parent = Action
-UITextSizeConstraint_7.MaxTextSize = 20
+UITextSizeConstraint_8.Parent = Action
+UITextSizeConstraint_8.MaxTextSize = 20
 
 Author.Name = "Author"
 Author.Parent = TemplateBanner
@@ -485,8 +537,8 @@ Author.TextSize = 14.000
 Author.TextWrapped = true
 Author.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_8.Parent = Author
-UITextSizeConstraint_8.MaxTextSize = 18
+UITextSizeConstraint_9.Parent = Author
+UITextSizeConstraint_9.MaxTextSize = 18
 
 Title_2.Name = "Title"
 Title_2.Parent = Exploits_2
@@ -504,8 +556,8 @@ Title_2.TextSize = 14.000
 Title_2.TextWrapped = true
 Title_2.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_9.Parent = Title_2
-UITextSizeConstraint_9.MaxTextSize = 21
+UITextSizeConstraint_10.Parent = Title_2
+UITextSizeConstraint_10.MaxTextSize = 21
 
 Shadow_2.Name = "Shadow"
 Shadow_2.Parent = Exploits_2
@@ -554,11 +606,11 @@ Content.TextSize = 16.000
 Content.TextTransparency = 1.000
 Content.TextWrapped = true
 
-UITextSizeConstraint_10.Parent = Content
-UITextSizeConstraint_10.MaxTextSize = 16
+UITextSizeConstraint_11.Parent = Content
+UITextSizeConstraint_11.MaxTextSize = 16
 
-UICorner_13.CornerRadius = UDim.new(0, 10)
-UICorner_13.Parent = Content
+UICorner_14.CornerRadius = UDim.new(0, 10)
+UICorner_14.Parent = Content
 
 Music_2.Name = "Music"
 Music_2.Parent = MediaMain
@@ -569,8 +621,8 @@ Music_2.Position = UDim2.new(0.500331104, 0, 0.635861814, 0)
 Music_2.Size = UDim2.new(0.956206441, 0, 0.223806754, 0)
 Music_2.Visible = false
 
-UICorner_14.CornerRadius = UDim.new(0, 12)
-UICorner_14.Parent = Music_2
+UICorner_15.CornerRadius = UDim.new(0, 12)
+UICorner_15.Parent = Music_2
 
 Title_3.Name = "Title"
 Title_3.Parent = Music_2
@@ -588,8 +640,8 @@ Title_3.TextSize = 14.000
 Title_3.TextWrapped = true
 Title_3.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_11.Parent = Title_3
-UITextSizeConstraint_11.MaxTextSize = 21
+UITextSizeConstraint_12.Parent = Title_3
+UITextSizeConstraint_12.MaxTextSize = 21
 
 SoundId.Name = "SoundId"
 SoundId.Parent = Music_2
@@ -605,11 +657,11 @@ SoundId.TextScaled = true
 SoundId.TextSize = 14.000
 SoundId.TextWrapped = true
 
-UICorner_15.CornerRadius = UDim.new(0, 12)
-UICorner_15.Parent = SoundId
+UICorner_16.CornerRadius = UDim.new(0, 12)
+UICorner_16.Parent = SoundId
 
-UITextSizeConstraint_12.Parent = SoundId
-UITextSizeConstraint_12.MaxTextSize = 20
+UITextSizeConstraint_13.Parent = SoundId
+UITextSizeConstraint_13.MaxTextSize = 20
 
 Play.Name = "Play"
 Play.Parent = Music_2
@@ -624,11 +676,11 @@ Play.TextScaled = true
 Play.TextSize = 14.000
 Play.TextWrapped = true
 
-UITextSizeConstraint_13.Parent = Play
-UITextSizeConstraint_13.MaxTextSize = 20
+UITextSizeConstraint_14.Parent = Play
+UITextSizeConstraint_14.MaxTextSize = 20
 
-UICorner_16.CornerRadius = UDim.new(0, 12)
-UICorner_16.Parent = Play
+UICorner_17.CornerRadius = UDim.new(0, 12)
+UICorner_17.Parent = Play
 
 RemBG.Name = "RemBG"
 RemBG.Parent = Music_2
@@ -643,11 +695,11 @@ RemBG.TextScaled = true
 RemBG.TextSize = 14.000
 RemBG.TextWrapped = true
 
-UITextSizeConstraint_14.Parent = RemBG
-UITextSizeConstraint_14.MaxTextSize = 20
+UITextSizeConstraint_15.Parent = RemBG
+UITextSizeConstraint_15.MaxTextSize = 20
 
-UICorner_17.CornerRadius = UDim.new(0, 12)
-UICorner_17.Parent = RemBG
+UICorner_18.CornerRadius = UDim.new(0, 12)
+UICorner_18.Parent = RemBG
 
 Stop.Name = "Stop"
 Stop.Parent = Music_2
@@ -662,11 +714,11 @@ Stop.TextScaled = true
 Stop.TextSize = 14.000
 Stop.TextWrapped = true
 
-UITextSizeConstraint_15.Parent = Stop
-UITextSizeConstraint_15.MaxTextSize = 20
+UITextSizeConstraint_16.Parent = Stop
+UITextSizeConstraint_16.MaxTextSize = 20
 
-UICorner_18.CornerRadius = UDim.new(0, 12)
-UICorner_18.Parent = Stop
+UICorner_19.CornerRadius = UDim.new(0, 12)
+UICorner_19.Parent = Stop
 
 Shadow_3.Name = "Shadow"
 Shadow_3.Parent = Music_2
@@ -690,8 +742,8 @@ Home_2.Size = UDim2.new(0.956206441, 0, 0.360386193, 0)
 Home_2.Visible = false
 Home_2.ZIndex = 1000
 
-UICorner_19.CornerRadius = UDim.new(0, 12)
-UICorner_19.Parent = Home_2
+UICorner_20.CornerRadius = UDim.new(0, 12)
+UICorner_20.Parent = Home_2
 
 Title_4.Name = "Title"
 Title_4.Parent = Home_2
@@ -709,8 +761,8 @@ Title_4.TextSize = 14.000
 Title_4.TextWrapped = true
 Title_4.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_16.Parent = Title_4
-UITextSizeConstraint_16.MaxTextSize = 21
+UITextSizeConstraint_17.Parent = Title_4
+UITextSizeConstraint_17.MaxTextSize = 21
 
 WelcomePanel.Name = "WelcomePanel"
 WelcomePanel.Parent = Home_2
@@ -720,8 +772,8 @@ WelcomePanel.Position = UDim2.new(0.0219970066, 0, 0.0906633809, 0)
 WelcomePanel.Size = UDim2.new(0.402122289, 0, 0.3889229, 0)
 WelcomePanel.ZIndex = 1002
 
-UICorner_20.CornerRadius = UDim.new(0, 12)
-UICorner_20.Parent = WelcomePanel
+UICorner_21.CornerRadius = UDim.new(0, 12)
+UICorner_21.Parent = WelcomePanel
 
 Text.Name = "Text"
 Text.Parent = WelcomePanel
@@ -760,8 +812,8 @@ UpdatePanel.Position = UDim2.new(0.442528039, 0, 0.0906633809, 0)
 UpdatePanel.Size = UDim2.new(0.211852968, 0, 0.849885046, 0)
 UpdatePanel.ZIndex = 1002
 
-UICorner_21.CornerRadius = UDim.new(0, 12)
-UICorner_21.Parent = UpdatePanel
+UICorner_22.CornerRadius = UDim.new(0, 12)
+UICorner_22.Parent = UpdatePanel
 
 Text_2.Name = "Text"
 Text_2.Parent = UpdatePanel
@@ -832,8 +884,8 @@ DisPanel.Position = UDim2.new(0.672849536, 0, 0.0906633213, 0)
 DisPanel.Size = UDim2.new(0.311141819, 0, 0.3889229, 0)
 DisPanel.ZIndex = 1002
 
-UICorner_22.CornerRadius = UDim.new(0, 12)
-UICorner_22.Parent = DisPanel
+UICorner_23.CornerRadius = UDim.new(0, 12)
+UICorner_23.Parent = DisPanel
 
 Text_3.Name = "Text"
 Text_3.Parent = DisPanel
@@ -887,8 +939,8 @@ VersioPanel.Position = UDim2.new(0.200808257, 0, 0.549161136, 0)
 VersioPanel.Size = UDim2.new(0.223311067, 0, 0.3889229, 0)
 VersioPanel.ZIndex = 1002
 
-UICorner_23.CornerRadius = UDim.new(0, 12)
-UICorner_23.Parent = VersioPanel
+UICorner_24.CornerRadius = UDim.new(0, 12)
+UICorner_24.Parent = VersioPanel
 
 Text_4.Name = "Text"
 Text_4.Parent = VersioPanel
@@ -927,8 +979,8 @@ PlayersPanel.Position = UDim2.new(0.0219969973, 0, 0.549161077, 0)
 PlayersPanel.Size = UDim2.new(0.162478819, 0, 0.3889229, 0)
 PlayersPanel.ZIndex = 1002
 
-UICorner_24.CornerRadius = UDim.new(0, 12)
-UICorner_24.Parent = PlayersPanel
+UICorner_25.CornerRadius = UDim.new(0, 12)
+UICorner_25.Parent = PlayersPanel
 
 Text_5.Name = "Text"
 Text_5.Parent = PlayersPanel
@@ -967,8 +1019,8 @@ Panel.Position = UDim2.new(0.672849536, 0, 0.567718089, 0)
 Panel.Size = UDim2.new(0.311141789, 0, 0.372299641, 0)
 Panel.ZIndex = 1002
 
-UICorner_25.CornerRadius = UDim.new(0, 12)
-UICorner_25.Parent = Panel
+UICorner_26.CornerRadius = UDim.new(0, 12)
+UICorner_26.Parent = Panel
 
 Text_6.Name = "Text"
 Text_6.Parent = Panel
@@ -1020,8 +1072,8 @@ Info_2.Position = UDim2.new(0.500331104, 0, 0.635861814, 0)
 Info_2.Size = UDim2.new(0.956206441, 0, 0.223806754, 0)
 Info_2.Visible = false
 
-UICorner_26.CornerRadius = UDim.new(0, 12)
-UICorner_26.Parent = Info_2
+UICorner_27.CornerRadius = UDim.new(0, 12)
+UICorner_27.Parent = Info_2
 
 Title_5.Name = "Title"
 Title_5.Parent = Info_2
@@ -1039,8 +1091,8 @@ Title_5.TextSize = 14.000
 Title_5.TextWrapped = true
 Title_5.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_17.Parent = Title_5
-UITextSizeConstraint_17.MaxTextSize = 21
+UITextSizeConstraint_18.Parent = Title_5
+UITextSizeConstraint_18.MaxTextSize = 21
 
 Shadow_11.Name = "Shadow"
 Shadow_11.Parent = Info_2
@@ -1069,8 +1121,8 @@ Title1.TextSize = 14.000
 Title1.TextWrapped = true
 Title1.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_18.Parent = Title1
-UITextSizeConstraint_18.MaxTextSize = 18
+UITextSizeConstraint_19.Parent = Title1
+UITextSizeConstraint_19.MaxTextSize = 18
 
 About.Name = "About"
 About.Parent = Info_2
@@ -1088,8 +1140,8 @@ About.TextWrapped = true
 About.TextXAlignment = Enum.TextXAlignment.Left
 About.TextYAlignment = Enum.TextYAlignment.Top
 
-UITextSizeConstraint_19.Parent = About
-UITextSizeConstraint_19.MaxTextSize = 18
+UITextSizeConstraint_20.Parent = About
+UITextSizeConstraint_20.MaxTextSize = 18
 
 About_2.Name = "About"
 About_2.Parent = Info_2
@@ -1107,8 +1159,8 @@ About_2.TextWrapped = true
 About_2.TextXAlignment = Enum.TextXAlignment.Left
 About_2.TextYAlignment = Enum.TextYAlignment.Top
 
-UITextSizeConstraint_20.Parent = About_2
-UITextSizeConstraint_20.MaxTextSize = 18
+UITextSizeConstraint_21.Parent = About_2
+UITextSizeConstraint_21.MaxTextSize = 18
 
 Copy.Name = "Copy"
 Copy.Parent = Info_2
@@ -1123,11 +1175,11 @@ Copy.TextScaled = true
 Copy.TextSize = 14.000
 Copy.TextWrapped = true
 
-UICorner_27.CornerRadius = UDim.new(0, 12)
-UICorner_27.Parent = Copy
+UICorner_28.CornerRadius = UDim.new(0, 12)
+UICorner_28.Parent = Copy
 
-UITextSizeConstraint_21.Parent = Copy
-UITextSizeConstraint_21.MaxTextSize = 18
+UITextSizeConstraint_22.Parent = Copy
+UITextSizeConstraint_22.MaxTextSize = 18
 
 link.Name = "link"
 link.Parent = Info_2
@@ -1145,8 +1197,8 @@ link.TextWrapped = true
 link.TextXAlignment = Enum.TextXAlignment.Left
 link.TextYAlignment = Enum.TextYAlignment.Top
 
-UITextSizeConstraint_22.Parent = link
-UITextSizeConstraint_22.MaxTextSize = 18
+UITextSizeConstraint_23.Parent = link
+UITextSizeConstraint_23.MaxTextSize = 18
 
 Title2.Name = "Title2"
 Title2.Parent = Info_2
@@ -1163,8 +1215,8 @@ Title2.TextSize = 14.000
 Title2.TextWrapped = true
 Title2.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_23.Parent = Title2
-UITextSizeConstraint_23.MaxTextSize = 18
+UITextSizeConstraint_24.Parent = Title2
+UITextSizeConstraint_24.MaxTextSize = 18
 
 Toggle.Name = "Toggle"
 Toggle.Parent = MediaMain
@@ -1204,11 +1256,11 @@ Title_6.TextSize = 14.000
 Title_6.TextWrapped = true
 Title_6.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_24.Parent = Title_6
-UITextSizeConstraint_24.MaxTextSize = 20
+UITextSizeConstraint_25.Parent = Title_6
+UITextSizeConstraint_25.MaxTextSize = 20
 
-UICorner_28.CornerRadius = UDim.new(0, 10)
-UICorner_28.Parent = Players_2
+UICorner_29.CornerRadius = UDim.new(0, 10)
+UICorner_29.Parent = Players_2
 
 Divider.Name = "Divider"
 Divider.Parent = Players_2
@@ -1217,8 +1269,8 @@ Divider.BorderSizePixel = 0
 Divider.Size = UDim2.new(1, 0, 0.105457805, 0)
 Divider.ZIndex = 1000
 
-UICorner_29.CornerRadius = UDim.new(0, 10)
-UICorner_29.Parent = Divider
+UICorner_30.CornerRadius = UDim.new(0, 10)
+UICorner_30.Parent = Divider
 
 Divider_2.Name = "Divider"
 Divider_2.Parent = Divider
@@ -1258,11 +1310,11 @@ Avatar.Size = UDim2.new(0.131542444, 0, 0.720558524, 0)
 Avatar.ZIndex = 1002
 Avatar.Image = "rbxassetid://6246676191"
 
-UICorner_30.CornerRadius = UDim.new(0, 60)
-UICorner_30.Parent = Avatar
+UICorner_31.CornerRadius = UDim.new(0, 60)
+UICorner_31.Parent = Avatar
 
-UICorner_31.CornerRadius = UDim.new(0, 10)
-UICorner_31.Parent = Template_2
+UICorner_32.CornerRadius = UDim.new(0, 10)
+UICorner_32.Parent = Template_2
 
 Username.Name = "Username"
 Username.Parent = Template_2
@@ -1280,8 +1332,8 @@ Username.TextSize = 14.000
 Username.TextWrapped = true
 Username.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_25.Parent = Username
-UITextSizeConstraint_25.MaxTextSize = 18
+UITextSizeConstraint_26.Parent = Username
+UITextSizeConstraint_26.MaxTextSize = 18
 
 More.Name = "More"
 More.Parent = Template_2
@@ -1338,8 +1390,8 @@ Avatar_2.Size = UDim2.new(0.311459661, 0, 0.263058275, 0)
 Avatar_2.ZIndex = 1001
 Avatar_2.Image = "rbxassetid://6246676191"
 
-UICorner_32.CornerRadius = UDim.new(0, 60)
-UICorner_32.Parent = Avatar_2
+UICorner_33.CornerRadius = UDim.new(0, 60)
+UICorner_33.Parent = Avatar_2
 
 Premium.Name = "Premium"
 Premium.Parent = AboutPlayer
@@ -1375,8 +1427,8 @@ UserId.TextSize = 14.000
 UserId.TextWrapped = true
 UserId.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_26.Parent = UserId
-UITextSizeConstraint_26.MaxTextSize = 20
+UITextSizeConstraint_27.Parent = UserId
+UITextSizeConstraint_27.MaxTextSize = 20
 
 CopyUsr.Name = "CopyUsr"
 CopyUsr.Parent = AboutPlayer
@@ -1392,30 +1444,11 @@ CopyUsr.TextScaled = true
 CopyUsr.TextSize = 14.000
 CopyUsr.TextWrapped = true
 
-UITextSizeConstraint_27.Parent = CopyUsr
-UITextSizeConstraint_27.MaxTextSize = 18
+UITextSizeConstraint_28.Parent = CopyUsr
+UITextSizeConstraint_28.MaxTextSize = 18
 
-UICorner_33.CornerRadius = UDim.new(0, 10)
-UICorner_33.Parent = CopyUsr
-
-DomainDev.Name = "DomainDev"
-DomainDev.Parent = AboutPlayer
-DomainDev.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DomainDev.BackgroundTransparency = 1.000
-DomainDev.BorderSizePixel = 0
-DomainDev.Position = UDim2.new(0.516834974, 0, -0.13840194, 0)
-DomainDev.Size = UDim2.new(0.451336235, 0, 0.0426678397, 0)
-DomainDev.ZIndex = 1010
-DomainDev.Font = Enum.Font.GothamSemibold
-DomainDev.Text = "Domain "
-DomainDev.TextColor3 = Color3.fromRGB(255, 255, 255)
-DomainDev.TextScaled = true
-DomainDev.TextSize = 14.000
-DomainDev.TextWrapped = true
-DomainDev.TextXAlignment = Enum.TextXAlignment.Right
-
-UITextSizeConstraint_28.Parent = DomainDev
-UITextSizeConstraint_28.MaxTextSize = 20
+UICorner_34.CornerRadius = UDim.new(0, 10)
+UICorner_34.Parent = CopyUsr
 
 Close.Name = "Close"
 Close.Parent = AboutPlayer
@@ -1446,8 +1479,8 @@ TeleportTo.TextWrapped = true
 UITextSizeConstraint_29.Parent = TeleportTo
 UITextSizeConstraint_29.MaxTextSize = 18
 
-UICorner_34.CornerRadius = UDim.new(0, 10)
-UICorner_34.Parent = TeleportTo
+UICorner_35.CornerRadius = UDim.new(0, 10)
+UICorner_35.Parent = TeleportTo
 
 Rank.Name = "Rank"
 Rank.Parent = AboutPlayer
@@ -1468,15 +1501,156 @@ Rank.TextXAlignment = Enum.TextXAlignment.Left
 UITextSizeConstraint_30.Parent = Rank
 UITextSizeConstraint_30.MaxTextSize = 20
 
+DomainDev.Name = "DomainDev"
+DomainDev.Parent = AboutPlayer
+DomainDev.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DomainDev.BackgroundTransparency = 1.000
+DomainDev.BorderSizePixel = 0
+DomainDev.Position = UDim2.new(0.516834974, 0, -0.13840194, 0)
+DomainDev.Size = UDim2.new(0.451336235, 0, 0.0426678397, 0)
+DomainDev.ZIndex = 1010
+DomainDev.Font = Enum.Font.GothamSemibold
+DomainDev.Text = "Domain Developer"
+DomainDev.TextColor3 = Color3.fromRGB(255, 255, 255)
+DomainDev.TextScaled = true
+DomainDev.TextSize = 14.000
+DomainDev.TextWrapped = true
+DomainDev.TextXAlignment = Enum.TextXAlignment.Right
+
+UITextSizeConstraint_31.Parent = DomainDev
+UITextSizeConstraint_31.MaxTextSize = 20
+
+SettingsArea.Name = "SettingsArea"
+SettingsArea.Parent = MediaMain
+SettingsArea.AnchorPoint = Vector2.new(0.5, 0.5)
+SettingsArea.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+SettingsArea.BorderSizePixel = 0
+SettingsArea.Position = UDim2.new(0.500331104, 0, 0.635861814, 0)
+SettingsArea.Size = UDim2.new(0.956206441, 0, 0.223806754, 0)
+SettingsArea.Visible = false
+SettingsArea.ZIndex = 999
+
+UICorner_36.CornerRadius = UDim.new(0, 12)
+UICorner_36.Parent = SettingsArea
+
+Title_7.Name = "Title"
+Title_7.Parent = SettingsArea
+Title_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_7.BackgroundTransparency = 1.000
+Title_7.BorderSizePixel = 0
+Title_7.Position = UDim2.new(-0.000245213509, 0, -0.20351918, 0)
+Title_7.Size = UDim2.new(0.234618038, 0, 0.202951029, 0)
+Title_7.ZIndex = 999
+Title_7.Font = Enum.Font.GothamBlack
+Title_7.Text = "Settings"
+Title_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_7.TextScaled = true
+Title_7.TextSize = 14.000
+Title_7.TextWrapped = true
+Title_7.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_32.Parent = Title_7
+UITextSizeConstraint_32.MaxTextSize = 21
+
+Shadow_14.Name = "Shadow"
+Shadow_14.Parent = SettingsArea
+Shadow_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow_14.BackgroundTransparency = 1.000
+Shadow_14.BorderSizePixel = 0
+Shadow_14.Position = UDim2.new(-0.0481246822, 0, -0.43477425, 0)
+Shadow_14.Size = UDim2.new(1.09668899, 0, 1.84942102, 0)
+Shadow_14.ZIndex = 998
+Shadow_14.Image = "rbxassetid://3523728077"
+Shadow_14.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Shadow_14.ImageTransparency = 0.750
+
+List_2.Name = "List"
+List_2.Parent = SettingsArea
+List_2.Active = true
+List_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+List_2.BackgroundTransparency = 1.000
+List_2.BorderSizePixel = 0
+List_2.Size = UDim2.new(1, 0, 1, 0)
+List_2.ZIndex = 1001
+List_2.CanvasSize = UDim2.new(0, 0, 8, 0)
+List_2.ScrollBarThickness = 0
+
+SettingTemplate.Name = "SettingTemplate"
+SettingTemplate.Parent = List_2
+SettingTemplate.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+SettingTemplate.BorderSizePixel = 0
+SettingTemplate.Position = UDim2.new(0, 0, 0.00899999961, 0)
+SettingTemplate.Size = UDim2.new(1, 0, 0.021031674, 0)
+SettingTemplate.ZIndex = 1002
+
+Slider.Name = "Slider"
+Slider.Parent = SettingTemplate
+Slider.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Slider.BorderSizePixel = 0
+Slider.Position = UDim2.new(0.961252332, 0, 0.222609073, 0)
+Slider.Size = UDim2.new(0.0297574569, 0, 0.545202196, 0)
+Slider.ZIndex = 1005
+
+UICorner_37.CornerRadius = UDim.new(5, 0)
+UICorner_37.Parent = Slider
+
+Dot.Name = "Dot"
+Dot.Parent = Slider
+Dot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Dot.BorderSizePixel = 0
+Dot.Size = UDim2.new(0.488657594, 0, 1, 0)
+Dot.ZIndex = 1005
+
+UICorner_38.CornerRadius = UDim.new(5, 0)
+UICorner_38.Parent = Dot
+
+SettingTitle.Name = "SettingTitle"
+SettingTitle.Parent = SettingTemplate
+SettingTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingTitle.BackgroundTransparency = 1.000
+SettingTitle.BorderSizePixel = 0
+SettingTitle.Position = UDim2.new(0.00841499399, 0, 0.210208386, 0)
+SettingTitle.Size = UDim2.new(0.0938349441, 0, 0.566878736, 0)
+SettingTitle.ZIndex = 1003
+SettingTitle.Font = Enum.Font.GothamBold
+SettingTitle.Text = "Setting"
+SettingTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+SettingTitle.TextScaled = true
+SettingTitle.TextSize = 14.000
+SettingTitle.TextWrapped = true
+SettingTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_33.Parent = SettingTitle
+UITextSizeConstraint_33.MaxTextSize = 18
+
+SettingDesc.Name = "SettingDesc"
+SettingDesc.Parent = SettingTemplate
+SettingDesc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingDesc.BackgroundTransparency = 1.000
+SettingDesc.BorderSizePixel = 0
+SettingDesc.Position = UDim2.new(0.108747736, 0, 0.210208401, 0)
+SettingDesc.Size = UDim2.new(0.589028418, 0, 0.566878736, 0)
+SettingDesc.ZIndex = 1003
+SettingDesc.Font = Enum.Font.GothamSemibold
+SettingDesc.Text = "Details, This is details, all about the details. Details."
+SettingDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
+SettingDesc.TextScaled = true
+SettingDesc.TextSize = 14.000
+SettingDesc.TextWrapped = true
+SettingDesc.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_34.Parent = SettingDesc
+UITextSizeConstraint_34.MaxTextSize = 18
 
 
 
 
-local VersionNum = 0.559
-local VersionFull = tostring(VersionNum).." | Playerlist +"
-local VFeature = "Added player features"
+SaveSettings = false
+VersionNum = 0.57
+VersionFull = tostring(VersionNum).." | Settings prep"
+VFeature = "Fixed bugs, and preperation for settings feature"
 
-local Admins = {
+Admins = {
 
 	Nich = 669686927,
 	Gofish = 262635913,
@@ -1485,108 +1659,136 @@ local Admins = {
 
 }
 
-local Developers = {
+Developers = {
 
 	rivertropic = 304343782,
 
 }
 
+SettingsTb = {
+	
+	AutoExecuteScripts = {
+		
+		Name = "Execute scripts",
+		Value = false,
+		Desc = "On startup, Domain will search for scripts and if they are for the game you're in, it will execute it automatically.",
+		
+	},
+	AutoExecVersion = {
+
+		Name = "Auto execute",
+		Value = false,
+		Desc = "On startup, Domain will be hidden.",
+
+	},
+	
+	
+}
+
+LoadedSettings = {}
+
+BackgroundExploits = {
+	
+Templateee = {
+	Name = "",
+	PlaceId = 0,
+	Loadstring = "",
+},
+	
+}
+
 local BannerSectionPos = 0
 local ExploitsOpen = false
 local TimeLabel = Functions.Time
-local PlayersOpen = false
-local MusicOpen = false
-local HomeOpen = false
-local InfoOpen = false
-local CurrentListPosition = 1
-local uiopened = false
-local UserIdVal = Instance.new("NumberValue")
+PlayersOpen = false
+MusicOpen = false
+HomeOpen = false
+SettingsOpen = false
+InfoOpen = false
+SettingPosition = 0
+CurrentListPosition = 1
+uiopened = false
+UserIdVal = Instance.new("NumberValue")
 UserIdVal.Parent = AboutPlayer
-local db = false
-local DiscordLink = "https://discord.gg/jyySpgkFSp"
-local MusicSound
-local NotifStack = {}
-
-function figureNotifs(Stack,Container)
-
-	local stacksize = 0
-
-	local i = #Stack
-	while i > 0 do
-		local gui = Stack[i]
-		if gui then
-			if stacksize == 0 then
-				stacksize = 0.95
-			else
-				stacksize = stacksize - 0.075
-			end
-			local desiredpos = UDim2.new(0.5,0,stacksize,0)
-			if gui.Position ~= desiredpos then
-				gui:TweenPosition(desiredpos,"Out","Quint",0.3,true)
-			end
-		end
-		i = i-1
-	end
-end
-
-function Notify(Content,Font)
-	spawn(function()
-		local notificationContainer = nContainer
-		local Notification = notificationContainer:WaitForChild('Template')	
-		local notifClone = Notification:Clone()
-		local notifContent = notifClone:WaitForChild('Content')
-		if Font == "GothamSemiBold" then
-			Font = "GothamSemibold"
-		end
-		notifContent.Font = Font
-		notifContent.TextTransparency = 1
-		notifContent.BackgroundTransparency = 1
-		notifClone.Name = 'Notif Clone'
-		notifClone.Visible = true
-		notifContent.Text = Content
-		notifClone.Parent = nContainer
-		notifClone.Position = UDim2.new(0.5,0,1.2,0)
-		wait(0.001)
-		notifContent.Size = UDim2.new(0, math.max(18, notifContent.TextBounds.X * 1.2),1, 0)
-		wait(0.5)
-		notifClone:TweenPosition(UDim2.new(0.5,0,0.95,0),'Out','Quint',0.3,true)
-		local transitionInfo = TweenInfo.new(0.35, Enum.EasingStyle.Quint)
-		local tween = game:GetService("TweenService"):Create(notifContent, transitionInfo, {TextTransparency = 0})
-		tween:Play()
-		local transitionInfo = TweenInfo.new(0.35, Enum.EasingStyle.Quint)
-		local tween = game:GetService("TweenService"):Create(notifContent, transitionInfo, {TextStrokeTransparency = 0.8})
-		tween:Play()
-		table.insert(NotifStack,notifClone)
-		figureNotifs(NotifStack,notificationContainer)
+db = false
+DiscordLink = "https://discord.gg/jyySpgkFSp"
+MusicSound = {}
+DomainData = {}
+NotifStack = {}
 
 
-		wait(7)
-		for a,b in pairs(NotifStack) do
-			if b == notifClone then
-				table.remove(NotifStack,a)
-			end
-		end
-		wait(0.05)
-		notifClone:TweenPosition(UDim2.new(0.5,0,notifClone.Position.Y.Scale+0.1,0),'Out','Quint',0.3,true)
-		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
-		local tween = game:GetService("TweenService"):Create(notifContent, transitionInfo, {TextTransparency = 1})
-		tween:Play()
-		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
-		local tween = game:GetService("TweenService"):Create(notifContent, transitionInfo, {TextStrokeTransparency = 1})
-		tween:Play()
-		wait(0.305)
-		notifClone:Destroy()
-		figureNotifs(NotifStack,notificationContainer)
-	end)
-end
-local function getTime()
-	local date = os.date("*t")
-	return ("%02d:%02d"):format(((date.hour % 24) - 1) % 12 + 1, date.min)
-end
 
 
 
 function Start()
+	
+	if writefileCheck then
+		local IsFile = isfile("Data.dmn")
+		
+		if IsFile then
+			DomainData = readfile("Data.dmn")
+			if SaveSettings == false then
+				DomainData = writefile("Data.dmn","")
+				Notify("Writing new settings data","GothamBold")
+				for name, Setting in pairs(SettingsTb) do
+					appendfile("Data.dmn",name.." = {Name = '"..Setting.Name.."',Value = "..tostring(Setting.Value)..",Desc = '"..Setting.Desc.."'},")
+					appendfile("Data.dmn","\n")
+				end
+				DomainData = readfile("Data.dmn")
+			else
+				DomainData = readfile("Data.dmn")
+				Notify("Found settings data","GothamBold")
+			end
+		else
+			Notify("Writing new settings data","GothamBold")
+			DomainData = writefile("Data.dmn","")
+			for name, Setting in pairs(SettingsTb) do
+				appendfile("Data.dmn",name.." = {Name = '"..Setting.Name.."',Value = "..tostring(Setting.Value)..",Desc = '"..Setting.Desc.."'},")
+				appendfile("Data.dmn","\n")
+			end
+			DomainData = readfile("Data.dmn")
+		end
+	end
+	
+	LoadedSettings = DomainData
+	
+	for _, BGExploits in pairs(BackgroundExploits) do
+		if BGExploits.PlaceId == game.PlaceId then
+			-- This exploit supports this game.
+			if LoadedSettings.AutoExecuteScripts.Value == true then
+				ExecuteExploit(BGExploits.Loadstring)
+			end
+			break -- End checking for more.
+		else
+			-- Couldn't find any exploits, let them know
+		end
+	end
+	if writefileCheck then
+	for _, Setting in pairs(SettingsTb) do
+			local NewSetting = SettingsArea.List.SettingTemplate:Clone()
+			NewSetting.Parent = SettingsArea.List
+			if SettingPosition == 0 then
+				SettingPosition = 0.009
+			else
+				SettingPosition = SettingPosition + 0.023
+			end
+			NewSetting.Visible = true
+		NewSetting.Position = UDim2.new(0,0,SettingPosition,0)
+		NewSetting.Name = Setting.Name
+		NewSetting.SettingTitle.Text = Setting.Name
+		NewSetting.SettingDesc.Text = Setting.Desc
+		if Setting.Value == true then
+			-- Make the slider be true otherwise don't
+		end
+		end
+	else
+		-- Hide settings section, writefile is disabled
+	end
+	
+	SettingTemplate.Visible = false
+	if LoadedSettings.AutoExecVersion == true then
+		wait(6)
+	end
 	Text_5.Text = #game.Players:GetChildren().."/"..game.Players.MaxPlayers.." Players"
 	local textnum = math.random(1,3)
 	if textnum == 3 then
@@ -1616,6 +1818,7 @@ function Start()
 	Music.Position = Home.Position
 	Exploits.Position = Home.Position
 	link.Text = DiscordLink
+	Functions.Settings.Position = Home.Position
 	Players.Position = Home.Position
 	Time.Position = UDim2.new(0.029,0,1,0)
 	Info.Position = UDim2.new(0.9,0,1,0)
@@ -1639,6 +1842,8 @@ function Start()
 	uiopened = true
 	Time:TweenPosition(UDim2.new(0.029, 0, 0.335, 0),"Out","Quint",0.6)
 	wait(0.05)
+	Functions.Settings:TweenPosition(UDim2.new(0.6, 0, 0.2, 0),"Out","Quint",0.6)
+	wait(0.15)
 	Players:TweenPosition(UDim2.new(0.5, 0, 0.2, 0),"Out","Quint",0.6)
 	wait(0.15)
 	Music:TweenPosition(UDim2.new(0.4, 0, 0.2, 0),"Out","Quint",0.6)
@@ -1731,6 +1936,15 @@ function LoadExploitSection()
 	end
 end
 
+function writefileCheck() -- Checks if exploit can writefile
+	if writefile then
+		return true
+	end
+end
+
+
+
+
 function ToggleUI()
 	if uiopened == true then
 		if ExploitsOpen == true then
@@ -1806,6 +2020,7 @@ function ToggleUI()
 		Music.Position = Home.Position
 		Players.Position = Home.Position
 		Exploits.Position = Home.Position
+		Functions.Settings.Position = Home.Position
 		Time.Position = UDim2.new(0.029,0,1,0)
 		Info.Position = UDim2.new(0.9,0,1,0)
 		local transitionInfo = TweenInfo.new(0.7, Enum.EasingStyle.Quint)
@@ -1816,6 +2031,8 @@ function ToggleUI()
 		wait(0.1)	
 		Time:TweenPosition(UDim2.new(0.029, 0, 0.335, 0),"Out","Quint",0.6)
 		wait(0.05)
+		Functions.Settings:TweenPosition(UDim2.new(0.6, 0, 0.2, 0),"Out","Quint",0.6)
+		wait(0.15)
 		Players:TweenPosition(UDim2.new(0.5, 0, 0.2, 0),"Out","Quint",0.6)
 		wait(0.15)
 		Music:TweenPosition(UDim2.new(0.4, 0, 0.2, 0),"Out","Quint",0.6)
@@ -1945,6 +2162,84 @@ function OpenPlayers()
 	wait(0.4)
 	db = false
 	PlayersOpen = true
+end
+
+function figureNotifs(Stack,Container)
+
+	local stacksize = 0
+
+	local i = #Stack
+	while i > 0 do
+		local gui = Stack[i]
+		if gui then
+			if stacksize == 0 then
+				stacksize = 0.95
+			else
+				stacksize = stacksize - 0.075
+			end
+			local desiredpos = UDim2.new(0.5,0,stacksize,0)
+			if gui.Position ~= desiredpos then
+				gui:TweenPosition(desiredpos,"Out","Quint",0.3,true)
+			end
+		end
+		i = i-1
+	end
+end
+
+function Notify(Content,Font)
+	spawn(function()
+		local notificationContainer = nContainer
+		local Notification = notificationContainer:WaitForChild('Template')	
+		local notifClone = Notification:Clone()
+		local notifContent = notifClone:WaitForChild('Content')
+		if Font == "GothamSemiBold" then
+			Font = "GothamSemibold"
+		end
+		notifContent.Font = Font
+		notifContent.TextTransparency = 1
+		notifContent.BackgroundTransparency = 1
+		notifClone.Name = 'Notif Clone'
+		notifClone.Visible = true
+		notifContent.Text = Content
+		notifClone.Parent = nContainer
+		notifClone.Position = UDim2.new(0.5,0,1.2,0)
+		wait(0.001)
+		notifContent.Size = UDim2.new(0, math.max(18, notifContent.TextBounds.X * 1.2),1, 0)
+		wait(0.5)
+		notifClone:TweenPosition(UDim2.new(0.5,0,0.95,0),'Out','Quint',0.3,true)
+		local transitionInfo = TweenInfo.new(0.35, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(notifContent, transitionInfo, {TextTransparency = 0})
+		tween:Play()
+		local transitionInfo = TweenInfo.new(0.35, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(notifContent, transitionInfo, {TextStrokeTransparency = 0.8})
+		tween:Play()
+		table.insert(NotifStack,notifClone)
+		figureNotifs(NotifStack,notificationContainer)
+
+
+		wait(7)
+		for a,b in pairs(NotifStack) do
+			if b == notifClone then
+				table.remove(NotifStack,a)
+			end
+		end
+		wait(0.05)
+		notifClone:TweenPosition(UDim2.new(0.5,0,notifClone.Position.Y.Scale+0.1,0),'Out','Quint',0.3,true)
+		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(notifContent, transitionInfo, {TextTransparency = 1})
+		tween:Play()
+		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(notifContent, transitionInfo, {TextStrokeTransparency = 1})
+		tween:Play()
+		wait(0.305)
+		notifClone:Destroy()
+		figureNotifs(NotifStack,notificationContainer)
+	end)
+end
+
+function getTime()
+	date = os.date("*t")
+	return ("%02d:%02d"):format(((date.hour % 24) - 1) % 12 + 1, date.min)
 end
 
 function ClosePlayers()
@@ -2262,6 +2557,15 @@ function CloseMusic()
 end
 
 
+function OpenSettings()
+	Notify("This feature is coming soon","GothamBold")
+	wait(3)
+end
+
+function CloseSettings()
+	
+end
+
 
 Toggle.MouseButton1Click:Connect(ToggleUI)
 
@@ -2288,6 +2592,14 @@ Players.MouseButton1Click:Connect(function()
 		ClosePlayers()
 	elseif PlayersOpen == false and db == false then
 		OpenPlayers()
+	end
+end)
+
+Functions.Settings.MouseButton1Click:Connect(function()
+	if SettingsOpen == true and db == false then
+		CloseSettings()
+	elseif SettingsOpen == false and db == false then
+		OpenSettings()
 	end
 end)
 
@@ -2371,7 +2683,7 @@ game.Players.LocalPlayer.Backpack.ChildAdded:Connect(function(item)
 end)
 
 game.Players.LocalPlayer.Backpack.ChildRemoved:Connect(function()
-	local Tools = false
+	Tools = false
 	for _, Child in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 		if Child.ClassName == "Tool" then
 			-- Still tools, keep current location
@@ -2393,15 +2705,15 @@ end)
 Start()
 LoadExploitSection()
 
-local UserInputService = game:GetService("UserInputService")
+UserInputService = game:GetService("UserInputService")
 
-local gui = Players_2
-local draggui = Players_2.Divider
+gui = Players_2
+draggui = Players_2.Divider
 
-local dragging
-local dragInput
-local dragStart
-local startPos
+dragging = 0
+dragInput = 0
+dragStart = 0
+startPos = 0
 
 local function update(input)
 	local delta = input.Position - dragStart
@@ -2435,9 +2747,9 @@ UserInputService.InputChanged:Connect(function(input)
 end)
 
 if game.CreatorId ~= 0 then
-	local mt = getrawmetatable(game)
-	local old = mt.__namecall
-	local protect = newcclosure or protect_function
+	mt = getrawmetatable(game)
+	old = mt.__namecall
+	protect = newcclosure or protect_function
 
 	if not protect then
 		protect = function(f) return f end
