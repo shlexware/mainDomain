@@ -1863,14 +1863,21 @@ function Start()
 		
 	local transitionInfo = TweenInfo.new(0.9, Enum.EasingStyle.Quint)
 	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 0})
-	tween:Play()
+		tween:Play()
+		
 		wait(0.2)
+		if Time.TextTransparency ~= 0 then
+			local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(Time, transitionInfo, {TextTransparency = 0})
+			tween:Play()
+		end
 		uiopened = true
 	else
 		Toggle.ImageTransparency = 0
 		Toggle.Rotation = 180
 		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
 		local l = false
+		wait(1)
 		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 			l = true
 			break
