@@ -2426,6 +2426,7 @@ function OpenAboutPlayer(PlayerName)
 			Rank.Visible = false
 		end
 		TeleportTo.MouseButton1Click:Connect(function()
+			Player = game:GetService("Players"):FindFirstChild(PlayerName)
 			Teleport(Player)
 		end)
 		CopyUsr.MouseButton1Click:Connect(function()
