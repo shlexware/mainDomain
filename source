@@ -1965,7 +1965,7 @@ function LoadExploitSection()
 		if BannerSectionPos == 0 then
 			BannerSectionPos = 0.025
 		else
-			BannerSectionPos = BannerSectionPos + 0.15
+			BannerSectionPos = BannerSectionPos + 0.13
 		end
 		banner.Parent = TemplateBanner.Parent
 		banner.Visible = true
