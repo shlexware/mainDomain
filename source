@@ -2188,6 +2188,9 @@ end
 
 function Notify(Content,Font)
 	spawn(function()
+		if not Font then
+			Font = "GothamBold"
+		end
 		local notificationContainer = nContainer
 		local Notification = notificationContainer:WaitForChild('Template')	
 		local notifClone = Notification:Clone()
