@@ -1856,7 +1856,6 @@ function Start()
 	end
 	More.ImageTransparency = 1
 	
-	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
 	for _, UiInstance in ipairs(game:GetService("CoreGui"):GetChildren()) do
 		if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain then
 			Notify("Removed previous interface","GothamBold")
@@ -1899,7 +1898,6 @@ function Start()
 	else
 		Toggle.ImageTransparency = 0
 		Toggle.Rotation = 180
-		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
 		local l = false
 		wait(1)
 		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
@@ -2076,7 +2074,6 @@ function ToggleUI()
 		end
 		
 		wait(0.31)
-		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
 		wait(0.4)
 		local l = false
 		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
@@ -2103,7 +2100,6 @@ function ToggleUI()
 				UIIns.Enabled = true
 			end
 		end
-		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
 		Music.Position = Home.Position
 		Players.Position = Home.Position
 		Exploits.Position = Home.Position
