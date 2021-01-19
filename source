@@ -2806,17 +2806,17 @@ UserInputService = game:GetService("UserInputService")
 local gui = Players_2
 local draggui = Players_2.Divider
 
-local dragging = 0
-local dragInput = 0
+local dragging
+local dragInput
 local dragStart = Vector3.new(0,0,0)
-local startPos = 0
+local startPos
 
 function update(input)
 	local delta = input.Position - dragStart
 	gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 end
 
-draggui.InputBegan:Connect(function(input)
+gui.InputBegan:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 		dragging = true
 		dragStart = input.Position
@@ -2830,7 +2830,7 @@ draggui.InputBegan:Connect(function(input)
 	end
 end)
 
-draggui.InputChanged:Connect(function(input)
+gui.InputChanged:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 		dragInput = input
 	end
