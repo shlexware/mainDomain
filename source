@@ -185,7 +185,7 @@ local UITextSizeConstraint_34 = Instance.new("UITextSizeConstraint")
 --Properties:
 
 mainDomain.Name = "mainDomain"
-mainDomain.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+mainDomain.Parent = game:GetService("CoreGui")
 mainDomain.ResetOnSpawn = false
 
 MediaMain.Name = "MediaMain"
@@ -1238,6 +1238,7 @@ Toggle.ImageRectSize = Vector2.new(36, 36)
 
 Players_2.Name = "Players"
 Players_2.Parent = MediaMain
+Players_2.Active = true
 Players_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 Players_2.BorderSizePixel = 0
 Players_2.ClipsDescendants = true
@@ -1744,7 +1745,7 @@ NotifStack = {}
 
 
 function Start()
-	
+	mainDomain.Parent = game:GetService("CoreGui")
 	if writefileCheck then
 		local IsFile = isfile("Data.dmn")
 		
@@ -1833,7 +1834,7 @@ function Start()
 	More.ImageTransparency = 1
 	
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
-	for _, UiInstance in ipairs(game.Players.LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
+	for _, UiInstance in ipairs(game:GetService("CoreGui"):GetChildren()) do
 		if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain then
 			Notify("Removed previous interface","GothamBold")
 			UiInstance:Destroy()
