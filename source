@@ -2808,7 +2808,7 @@ local draggui = Players_2.Divider
 
 local dragging = 0
 local dragInput = 0
-local dragStart = 0
+local dragStart = Vector3.new(0,0,0)
 local startPos = 0
 
 function update(input)
