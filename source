@@ -1941,12 +1941,7 @@ function Start()
 	for _, Player in ipairs(game.Players:GetChildren()) do
 		AddToList(Player,"Quick")
 	end
-	wait(3)
-	for _, UIIns in ipairs(game.Players.LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
-		if string.find(UIIns.Name,"tool") or string.find(UIIns.Name,"hotbar") then
-			UIIns.Enabled = false
-		end
-	end
+	wait(1.4)
 	Notify("Successfully booted Domain v"..tostring(VersionNum),"GothamBold")
 end
 
@@ -2044,11 +2039,7 @@ function ToggleUI()
 		if InfoOpen == true then
 			CloseInfo()
 		end
-		for _, UIIns in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
-			if string.find(string.lower(UIIns.Name),"tool") or string.lower(UIIns.Name) == "toolbar" or string.lower(UIIns.Name) == "tools" then
-				UIIns.Enabled = true
-			end
-		end
+
 		
 		local transitionInfo = TweenInfo.new(0.7, Enum.EasingStyle.Quint)
 		local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {Rotation = 180})
@@ -2094,12 +2085,6 @@ function ToggleUI()
 		
 		uiopened = false
 	elseif uiopened == false then
-
-		for _, UIIns in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
-			if string.find(string.lower(UIIns.Name),"tool") or string.lower(UIIns.Name) == "toolbar" or string.lower(UIIns.Name) == "tools" then
-				UIIns.Enabled = false
-			end
-		end
 		Music.Position = Home.Position
 		Players.Position = Home.Position
 		Exploits.Position = Home.Position
