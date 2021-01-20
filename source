@@ -2049,7 +2049,7 @@ function LoadExploitSection()
 end
 
 function writefileCheck() -- Checks if exploit can writefile
-	if writefile then
+	if writefile and isfile and readfile then
 		return true
 	end
 end
