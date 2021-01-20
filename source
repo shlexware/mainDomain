@@ -12,6 +12,8 @@ end
 
 -- Instances:
 
+
+
 local mainDomain = Instance.new("ScreenGui")
 local MediaMain = Instance.new("Frame")
 local ShadowBG = Instance.new("ImageLabel")
@@ -175,21 +177,33 @@ local UITextSizeConstraint_32 = Instance.new("UITextSizeConstraint")
 local Kill = Instance.new("TextButton")
 local UITextSizeConstraint_33 = Instance.new("UITextSizeConstraint")
 local UICorner_36 = Instance.new("UICorner")
-local SettingsArea = Instance.new("Frame")
+local SearchBox = Instance.new("TextBox")
 local UICorner_37 = Instance.new("UICorner")
-local Title_7 = Instance.new("TextLabel")
 local UITextSizeConstraint_34 = Instance.new("UITextSizeConstraint")
+local SearchList = Instance.new("ScrollingFrame")
+local Template_3 = Instance.new("Frame")
+local Avatar_3 = Instance.new("ImageLabel")
+local UICorner_38 = Instance.new("UICorner")
+local UICorner_39 = Instance.new("UICorner")
+local Username_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_35 = Instance.new("UITextSizeConstraint")
+local More_2 = Instance.new("ImageButton")
 local Shadow_14 = Instance.new("ImageLabel")
+local SettingsArea = Instance.new("Frame")
+local UICorner_40 = Instance.new("UICorner")
+local Title_7 = Instance.new("TextLabel")
+local UITextSizeConstraint_36 = Instance.new("UITextSizeConstraint")
+local Shadow_15 = Instance.new("ImageLabel")
 local List_2 = Instance.new("ScrollingFrame")
 local SettingTemplate = Instance.new("Frame")
 local Slider = Instance.new("Frame")
-local UICorner_38 = Instance.new("UICorner")
+local UICorner_41 = Instance.new("UICorner")
 local Dot = Instance.new("Frame")
-local UICorner_39 = Instance.new("UICorner")
+local UICorner_42 = Instance.new("UICorner")
 local SettingTitle = Instance.new("TextLabel")
-local UITextSizeConstraint_35 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_37 = Instance.new("UITextSizeConstraint")
 local SettingDesc = Instance.new("TextLabel")
-local UITextSizeConstraint_36 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_38 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
@@ -1575,6 +1589,107 @@ UITextSizeConstraint_33.MaxTextSize = 18
 UICorner_36.CornerRadius = UDim.new(0, 10)
 UICorner_36.Parent = Kill
 
+SearchBox.Name = "SearchBox"
+SearchBox.Parent = Players_2
+SearchBox.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+SearchBox.BorderSizePixel = 0
+SearchBox.Position = UDim2.new(0.448126316, 0, 0.0105643906, 0)
+SearchBox.Size = UDim2.new(0.521677613, 0, 0.0810632855, 0)
+SearchBox.ZIndex = 10001
+SearchBox.Font = Enum.Font.GothamSemibold
+SearchBox.PlaceholderText = "Search"
+SearchBox.Text = ""
+SearchBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+SearchBox.TextScaled = true
+SearchBox.TextSize = 14.000
+SearchBox.TextWrapped = true
+
+UICorner_37.CornerRadius = UDim.new(0, 10)
+UICorner_37.Parent = SearchBox
+
+UITextSizeConstraint_34.Parent = SearchBox
+UITextSizeConstraint_34.MaxTextSize = 18
+
+SearchList.Name = "SearchList"
+SearchList.Parent = Players_2
+SearchList.Active = true
+SearchList.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SearchList.BackgroundTransparency = 1.000
+SearchList.BorderSizePixel = 0
+SearchList.Position = UDim2.new(0, 0, 0.147497475, 0)
+SearchList.Size = UDim2.new(1, 0, 0.810578227, 0)
+SearchList.Visible = false
+SearchList.ZIndex = 1000
+SearchList.CanvasSize = UDim2.new(0, 0, 4, 0)
+SearchList.ScrollBarThickness = 0
+
+Template_3.Name = "Template"
+Template_3.Parent = SearchList
+Template_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Template_3.BorderSizePixel = 0
+Template_3.Position = UDim2.new(0.0300000608, 0, 0, 0)
+Template_3.Size = UDim2.new(0.939803898, 0, 0.145663947, 0)
+Template_3.ZIndex = 1001
+
+Avatar_3.Name = "Avatar"
+Avatar_3.Parent = Template_3
+Avatar_3.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Avatar_3.BackgroundTransparency = 0.800
+Avatar_3.BorderSizePixel = 0
+Avatar_3.Position = UDim2.new(0.0391427279, 0, 0.135806218, 0)
+Avatar_3.Size = UDim2.new(0.131542444, 0, 0.720558524, 0)
+Avatar_3.ZIndex = 1002
+Avatar_3.Image = "rbxassetid://6246676191"
+
+UICorner_38.CornerRadius = UDim.new(0, 60)
+UICorner_38.Parent = Avatar_3
+
+UICorner_39.CornerRadius = UDim.new(0, 10)
+UICorner_39.Parent = Template_3
+
+Username_2.Name = "Username"
+Username_2.Parent = Template_3
+Username_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username_2.BackgroundTransparency = 1.000
+Username_2.BorderSizePixel = 0
+Username_2.Position = UDim2.new(0.217064217, 0, 0.245321169, 0)
+Username_2.Size = UDim2.new(0.55756104, 0, 0.51131016, 0)
+Username_2.ZIndex = 1003
+Username_2.Font = Enum.Font.GothamSemibold
+Username_2.Text = "Username"
+Username_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username_2.TextScaled = true
+Username_2.TextSize = 14.000
+Username_2.TextWrapped = true
+Username_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_35.Parent = Username_2
+UITextSizeConstraint_35.MaxTextSize = 18
+
+More_2.Name = "More"
+More_2.Parent = Template_3
+More_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+More_2.BackgroundTransparency = 1.000
+More_2.BorderSizePixel = 0
+More_2.Position = UDim2.new(0.870552123, 0, 0.225920364, 0)
+More_2.Size = UDim2.new(0.104458071, 0, 0.569512546, 0)
+More_2.ZIndex = 1010
+More_2.Image = "rbxassetid://3926305904"
+More_2.ImageRectOffset = Vector2.new(764, 764)
+More_2.ImageRectSize = Vector2.new(36, 36)
+
+Shadow_14.Name = "Shadow"
+Shadow_14.Parent = Template_3
+Shadow_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow_14.BackgroundTransparency = 1.000
+Shadow_14.BorderSizePixel = 0
+Shadow_14.Position = UDim2.new(-0.0590620302, 0, -0.35959217, 0)
+Shadow_14.Size = UDim2.new(1.11987591, 0, 1.74896789, 0)
+Shadow_14.ZIndex = 999
+Shadow_14.Image = "rbxassetid://3523728077"
+Shadow_14.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Shadow_14.ImageTransparency = 0.750
+
 SettingsArea.Name = "SettingsArea"
 SettingsArea.Parent = MediaMain
 SettingsArea.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1585,8 +1700,8 @@ SettingsArea.Size = UDim2.new(0.956206441, 0, 0.223806754, 0)
 SettingsArea.Visible = false
 SettingsArea.ZIndex = 999
 
-UICorner_37.CornerRadius = UDim.new(0, 12)
-UICorner_37.Parent = SettingsArea
+UICorner_40.CornerRadius = UDim.new(0, 12)
+UICorner_40.Parent = SettingsArea
 
 Title_7.Name = "Title"
 Title_7.Parent = SettingsArea
@@ -1604,20 +1719,20 @@ Title_7.TextSize = 14.000
 Title_7.TextWrapped = true
 Title_7.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_34.Parent = Title_7
-UITextSizeConstraint_34.MaxTextSize = 21
+UITextSizeConstraint_36.Parent = Title_7
+UITextSizeConstraint_36.MaxTextSize = 21
 
-Shadow_14.Name = "Shadow"
-Shadow_14.Parent = SettingsArea
-Shadow_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Shadow_14.BackgroundTransparency = 1.000
-Shadow_14.BorderSizePixel = 0
-Shadow_14.Position = UDim2.new(-0.0481246822, 0, -0.43477425, 0)
-Shadow_14.Size = UDim2.new(1.09668899, 0, 1.84942102, 0)
-Shadow_14.ZIndex = 998
-Shadow_14.Image = "rbxassetid://3523728077"
-Shadow_14.ImageColor3 = Color3.fromRGB(33, 33, 33)
-Shadow_14.ImageTransparency = 0.750
+Shadow_15.Name = "Shadow"
+Shadow_15.Parent = SettingsArea
+Shadow_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow_15.BackgroundTransparency = 1.000
+Shadow_15.BorderSizePixel = 0
+Shadow_15.Position = UDim2.new(-0.0481246822, 0, -0.43477425, 0)
+Shadow_15.Size = UDim2.new(1.09668899, 0, 1.84942102, 0)
+Shadow_15.ZIndex = 998
+Shadow_15.Image = "rbxassetid://3523728077"
+Shadow_15.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Shadow_15.ImageTransparency = 0.750
 
 List_2.Name = "List"
 List_2.Parent = SettingsArea
@@ -1646,8 +1761,8 @@ Slider.Position = UDim2.new(0.961252332, 0, 0.222609073, 0)
 Slider.Size = UDim2.new(0.0297574569, 0, 0.545202196, 0)
 Slider.ZIndex = 1005
 
-UICorner_38.CornerRadius = UDim.new(5, 0)
-UICorner_38.Parent = Slider
+UICorner_41.CornerRadius = UDim.new(5, 0)
+UICorner_41.Parent = Slider
 
 Dot.Name = "Dot"
 Dot.Parent = Slider
@@ -1656,8 +1771,8 @@ Dot.BorderSizePixel = 0
 Dot.Size = UDim2.new(0.488657594, 0, 1, 0)
 Dot.ZIndex = 1005
 
-UICorner_39.CornerRadius = UDim.new(5, 0)
-UICorner_39.Parent = Dot
+UICorner_42.CornerRadius = UDim.new(5, 0)
+UICorner_42.Parent = Dot
 
 SettingTitle.Name = "SettingTitle"
 SettingTitle.Parent = SettingTemplate
@@ -1675,8 +1790,8 @@ SettingTitle.TextSize = 14.000
 SettingTitle.TextWrapped = true
 SettingTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_35.Parent = SettingTitle
-UITextSizeConstraint_35.MaxTextSize = 18
+UITextSizeConstraint_37.Parent = SettingTitle
+UITextSizeConstraint_37.MaxTextSize = 18
 
 SettingDesc.Name = "SettingDesc"
 SettingDesc.Parent = SettingTemplate
@@ -1694,15 +1809,15 @@ SettingDesc.TextSize = 14.000
 SettingDesc.TextWrapped = true
 SettingDesc.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_36.Parent = SettingDesc
-UITextSizeConstraint_36.MaxTextSize = 18
+UITextSizeConstraint_38.Parent = SettingDesc
+UITextSizeConstraint_38.MaxTextSize = 18
 
 
 
 SaveSettings = false
-VersionNum = 0.625
-VersionFull = tostring(VersionNum).." | Kill function"
-VFeature = "Kill players in playerlist"
+VersionNum = 0.63
+VersionFull = tostring(VersionNum).." | Search feature"
+VFeature = "Search for players in the playerlist"
 
 Admins = {
 
@@ -1782,6 +1897,7 @@ SettingsOpen = false
 InfoOpen = false
 SettingPosition = 0
 CurrentListPosition = 1
+CurrentSearchPosition = 1
 uiopened = false
 UserIdVal = Instance.new("NumberValue")
 UserIdVal.Parent = AboutPlayer
@@ -1801,6 +1917,7 @@ function Start()
 	else
 		mainDomain.Parent = game.Players.LocalPlayer.PlayerGui
 	end
+	Players_2.SearchList.Template.Visible = false
 	MediaMain.Players.AboutPlayer.Visible = false
 	MediaMain.Players.List.Visible = true
 	if game.CreatorId ~= 0 then
@@ -1892,6 +2009,7 @@ end
 		Notify("This is version "..tostring(VersionNum),"GothamBold")		
 	end
 	More.ImageTransparency = 1
+	More_2.ImageTransparency = 1
 	if game.CreatorId ~= 0 then
 	for _, UiInstance in ipairs(game:GetService("CoreGui"):GetChildren()) do
 		if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain then
@@ -2353,6 +2471,7 @@ end
 
 function ClosePlayers()
 	db = true
+	
 	Players_2:TweenSizeAndPosition(UDim2.new(0.174, 0, 0.382, 0),UDim2.new(-0.3, 0, 0.159, 0),"In", "Quint", 0.59)
 	wait(0.2)
 	local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
@@ -2361,6 +2480,9 @@ function ClosePlayers()
 	wait(0.4)
 	Players_2.Visible = false
 	db = false
+	SearchBox.Text = ""
+	Players_2.List.Visible = true
+	Players_2.SearchList.Visible = false
 	PlayersOpen = false
 end
 
@@ -2507,6 +2629,59 @@ function AddToList(Player,Type)
 	end)
 end
 
+function AddToListSearch(Player)
+	
+	if SearchList:FindFirstChild(Player.Name) then
+		return
+	end
+	if not SearchList:FindFirstChild("Template") then
+		return
+	end
+	local NewPlr = SearchList.Template:Clone()
+	NewPlr.Parent = SearchList
+	if Player.Name == game.Players.LocalPlayer.Name then
+		NewPlr.Username.Font = "GothamBold"
+	end
+	NewPlr.Avatar.Image = game.Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+	--if game.CreatorId == 0 then
+	NewPlr.Size = UDim2.new(0.94, 0, 0.032, 0)
+	--end
+	NewPlr.Visible = true
+	NewPlr.Name = Player.Name
+	if CurrentSearchPosition == 1 then 
+		CurrentSearchPosition = 0
+	else
+		CurrentSearchPosition = CurrentSearchPosition + 0.036
+	end
+		NewPlr.Position = UDim2.new(1, 0, CurrentListPosition, 0)
+		NewPlr.Position = UDim2.new(0.03, 0, CurrentListPosition, 0)
+
+	NewPlr.Username.Text = Player.Name
+
+	NewPlr.MouseEnter:Connect(function()
+		NewPlr.More.Visible = true
+		local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(NewPlr.More, transitionInfo, {ImageTransparency = 0})
+		tween:Play()
+		local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(NewPlr, transitionInfo, {BackgroundColor3 = Color3.fromRGB(57,57,57)})
+		tween:Play()
+	end)
+	NewPlr.MouseLeave:Connect(function()
+		NewPlr.More.Visible = true
+		local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(NewPlr.More, transitionInfo, {ImageTransparency = 1})
+		tween:Play()
+		local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(NewPlr, transitionInfo, {BackgroundColor3 = Color3.fromRGB(67,68,68)})
+		tween:Play()
+
+	end)
+	NewPlr.More.MouseButton1Click:Connect(function()
+		OpenAboutPlayer(Player.Name)
+	end)
+end
+
 function PlayerRemoved(Player)
 	if List:FindFirstChild(Player.Name) then
 		local yoff = List:FindFirstChild(Player.Name).Position.Y.Scale
@@ -2560,6 +2735,13 @@ function OpenAboutPlayer(PlayerName)
 	AboutPlayer.Visible = true
 	Players_2.AboutPlayer.Position = UDim2.new(0,0,-1,0)
 	List:TweenPosition(UDim2.new(0, 0, 1, 0),"In","Quint",0.5)
+	SearchList:TweenPosition(UDim2.new(0, 0, 1, 0),"In","Quint",0.5)
+	local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(SearchBox, transitionInfo, {BackgroundTransparency = 1})
+	tween:Play()
+	local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(SearchBox, transitionInfo, {TextTransparency = 1})
+	tween:Play()
 	wait(0.2)
 	Players_2.AboutPlayer:TweenPosition(UDim2.new(0, 0, 0.147, 0),"Out","Quint",0.5)
 	if game.Players:FindFirstChild(PlayerName) then
@@ -2620,11 +2802,20 @@ function OpenAboutPlayer(PlayerName)
 	
 
 	Close.MouseButton1Click:Connect(function()
+		
 		List.Position = UDim2.new(0,0,1,0)
+		SearchList.Position = UDim2.new(0,0,1,0)
 		Players_2.AboutPlayer:TweenPosition(UDim2.new(0, 0, -1, 0),"In","Quint",0.5)
 		wait(0.2)
 		Title_6.Text = "Players"
 		List:TweenPosition(UDim2.new(0, 0, 0.147, 0),"Out","Quint",0.5)
+		SearchList:TweenPosition(UDim2.new(0, 0, 0.147, 0),"Out","Quint",0.5)
+		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(SearchBox, transitionInfo, {BackgroundTransparency = 0})
+		tween:Play()
+		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(SearchBox, transitionInfo, {TextTransparency = 0})
+		tween:Play()
 		wait(0.3)
 		AboutPlayer.Visible = false
 
@@ -2741,6 +2932,29 @@ end
 
 
 Toggle.MouseButton1Click:Connect(ToggleUI)
+
+SearchBox.FocusLost:Connect(function()
+	local Searched = SearchBox.Text
+	if Searched == "" or Searched == nil then
+		Players_2.List.Visible = true
+		Players_2.SearchList.Visible = false
+	else
+		Players_2.List.Visible = false
+		Players_2.SearchList.Visible = true
+		for _, Player in ipairs(game.Players:GetChildren()) do
+			if string.find(Player.Name,Searched) or string.find(Searched,Player.Name) then
+				AddToListSearch(Player)
+			else
+				for _, PlayerItem in ipairs(Players_2.SearchList:GetChildren()) do
+					if PlayerItem.Name == Player.Name then
+						PlayerItem:Destroy()
+					end
+				end
+			end
+		end
+	end
+	
+end)
 
 TeleportTo.MouseButton1Click:Connect(function()
 	local PlayerName = Players_2.Title.Text
