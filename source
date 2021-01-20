@@ -9,6 +9,7 @@ if not game:IsLoaded() then
 end
 
 
+
 -- Instances:
 
 local mainDomain = Instance.new("ScreenGui")
@@ -171,21 +172,24 @@ local DomainDev = Instance.new("TextLabel")
 local UITextSizeConstraint_31 = Instance.new("UITextSizeConstraint")
 local RankDisplay = Instance.new("TextLabel")
 local UITextSizeConstraint_32 = Instance.new("UITextSizeConstraint")
-local SettingsArea = Instance.new("Frame")
-local UICorner_36 = Instance.new("UICorner")
-local Title_7 = Instance.new("TextLabel")
+local Kill = Instance.new("TextButton")
 local UITextSizeConstraint_33 = Instance.new("UITextSizeConstraint")
+local UICorner_36 = Instance.new("UICorner")
+local SettingsArea = Instance.new("Frame")
+local UICorner_37 = Instance.new("UICorner")
+local Title_7 = Instance.new("TextLabel")
+local UITextSizeConstraint_34 = Instance.new("UITextSizeConstraint")
 local Shadow_14 = Instance.new("ImageLabel")
 local List_2 = Instance.new("ScrollingFrame")
 local SettingTemplate = Instance.new("Frame")
 local Slider = Instance.new("Frame")
-local UICorner_37 = Instance.new("UICorner")
-local Dot = Instance.new("Frame")
 local UICorner_38 = Instance.new("UICorner")
+local Dot = Instance.new("Frame")
+local UICorner_39 = Instance.new("UICorner")
 local SettingTitle = Instance.new("TextLabel")
-local UITextSizeConstraint_34 = Instance.new("UITextSizeConstraint")
-local SettingDesc = Instance.new("TextLabel")
 local UITextSizeConstraint_35 = Instance.new("UITextSizeConstraint")
+local SettingDesc = Instance.new("TextLabel")
+local UITextSizeConstraint_36 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
@@ -1551,6 +1555,26 @@ RankDisplay.TextXAlignment = Enum.TextXAlignment.Left
 UITextSizeConstraint_32.Parent = RankDisplay
 UITextSizeConstraint_32.MaxTextSize = 18
 
+Kill.Name = "Kill"
+Kill.Parent = AboutPlayer
+Kill.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Kill.BorderSizePixel = 0
+Kill.Position = UDim2.new(0.307668775, 0, 0.911585271, 0)
+Kill.Size = UDim2.new(0.253229737, 0, 0.101479739, 0)
+Kill.ZIndex = 1000
+Kill.Font = Enum.Font.GothamSemibold
+Kill.Text = "Kill"
+Kill.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kill.TextScaled = true
+Kill.TextSize = 14.000
+Kill.TextWrapped = true
+
+UITextSizeConstraint_33.Parent = Kill
+UITextSizeConstraint_33.MaxTextSize = 18
+
+UICorner_36.CornerRadius = UDim.new(0, 10)
+UICorner_36.Parent = Kill
+
 SettingsArea.Name = "SettingsArea"
 SettingsArea.Parent = MediaMain
 SettingsArea.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1561,8 +1585,8 @@ SettingsArea.Size = UDim2.new(0.956206441, 0, 0.223806754, 0)
 SettingsArea.Visible = false
 SettingsArea.ZIndex = 999
 
-UICorner_36.CornerRadius = UDim.new(0, 12)
-UICorner_36.Parent = SettingsArea
+UICorner_37.CornerRadius = UDim.new(0, 12)
+UICorner_37.Parent = SettingsArea
 
 Title_7.Name = "Title"
 Title_7.Parent = SettingsArea
@@ -1580,8 +1604,8 @@ Title_7.TextSize = 14.000
 Title_7.TextWrapped = true
 Title_7.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_33.Parent = Title_7
-UITextSizeConstraint_33.MaxTextSize = 21
+UITextSizeConstraint_34.Parent = Title_7
+UITextSizeConstraint_34.MaxTextSize = 21
 
 Shadow_14.Name = "Shadow"
 Shadow_14.Parent = SettingsArea
@@ -1622,8 +1646,8 @@ Slider.Position = UDim2.new(0.961252332, 0, 0.222609073, 0)
 Slider.Size = UDim2.new(0.0297574569, 0, 0.545202196, 0)
 Slider.ZIndex = 1005
 
-UICorner_37.CornerRadius = UDim.new(5, 0)
-UICorner_37.Parent = Slider
+UICorner_38.CornerRadius = UDim.new(5, 0)
+UICorner_38.Parent = Slider
 
 Dot.Name = "Dot"
 Dot.Parent = Slider
@@ -1632,8 +1656,8 @@ Dot.BorderSizePixel = 0
 Dot.Size = UDim2.new(0.488657594, 0, 1, 0)
 Dot.ZIndex = 1005
 
-UICorner_38.CornerRadius = UDim.new(5, 0)
-UICorner_38.Parent = Dot
+UICorner_39.CornerRadius = UDim.new(5, 0)
+UICorner_39.Parent = Dot
 
 SettingTitle.Name = "SettingTitle"
 SettingTitle.Parent = SettingTemplate
@@ -1651,8 +1675,8 @@ SettingTitle.TextSize = 14.000
 SettingTitle.TextWrapped = true
 SettingTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_34.Parent = SettingTitle
-UITextSizeConstraint_34.MaxTextSize = 18
+UITextSizeConstraint_35.Parent = SettingTitle
+UITextSizeConstraint_35.MaxTextSize = 18
 
 SettingDesc.Name = "SettingDesc"
 SettingDesc.Parent = SettingTemplate
@@ -1670,15 +1694,15 @@ SettingDesc.TextSize = 14.000
 SettingDesc.TextWrapped = true
 SettingDesc.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_35.Parent = SettingDesc
-UITextSizeConstraint_35.MaxTextSize = 18
+UITextSizeConstraint_36.Parent = SettingDesc
+UITextSizeConstraint_36.MaxTextSize = 18
 
 
 
 SaveSettings = false
-VersionNum = 0.6
-VersionFull = tostring(VersionNum).." | Smart auto execute"
-VFeature = "Detects if you're using auto exec"
+VersionNum = 0.62
+VersionFull = tostring(VersionNum).." | Kill function"
+VFeature = "Kill players in playerlist"
 
 Admins = {
 
@@ -1768,7 +1792,14 @@ NotifStack = {}
 
 
 function Start()
-	mainDomain.Parent = game:GetService("CoreGui")
+	if game.CreatorId ~= 0 then
+		mainDomain.Parent = game:GetService("CoreGui")
+	else
+		mainDomain.Parent = game.Players.LocalPlayer.PlayerGui
+	end
+	MediaMain.Players.AboutPlayer.Visible = false
+	MediaMain.Players.List.Visible = true
+	if game.CreatorId ~= 0 then
 	if writefileCheck then
 		local IsFile = isfile("Data.dmn")
 		
@@ -1795,7 +1826,7 @@ function Start()
 			DomainData = readfile("Data.dmn")
 		end
 	end
-	
+end	
 	LoadedSettings = DomainData
 	
 	for _, BGExploits in pairs(BackgroundExploits) do
@@ -1855,11 +1886,12 @@ function Start()
 		Notify("This is version "..tostring(VersionNum),"GothamBold")		
 	end
 	More.ImageTransparency = 1
-	
+	if game.CreatorId ~= 0 then
 	for _, UiInstance in ipairs(game:GetService("CoreGui"):GetChildren()) do
 		if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain then
 			Notify("Removed previous interface","GothamBold")
 			UiInstance:Destroy()
+		end
 		end
 	end
 	Template_2.Visible = false
@@ -2347,6 +2379,71 @@ function Teleport(Player)
 	end
 end
 
+-- Credit to Infinite Yield developers for FindRoot, FindTools, Attach and Kill functions
+function FindRoot(Character)
+	local rootPart = Character:FindFirstChild('HumanoidRootPart') or Character:FindFirstChild('Torso') or Character:FindFirstChild('UpperTorso')
+	return rootPart
+end
+
+function FindTools(Player)
+	if Player:FindFirstChildOfClass("Backpack"):FindFirstChildOfClass('Tool') or Player.Character:FindFirstChildOfClass('Tool') then
+		return true
+	end
+end
+
+function Attach(Player)
+	local LocalPlayer = game.Players.LocalPlayer
+	if FindTools(LocalPlayer) then
+		local char = LocalPlayer.Character
+		local tchar = Player.Character
+		local hum = LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+		local hrp = FindRoot(LocalPlayer.Character)
+		local hrp2 = FindRoot(Player.Character)
+		hum.Name = "1"
+		local newHum = hum:Clone()
+		newHum.Parent = char
+		newHum.Name = "Humanoid"
+		wait()
+		hum:Destroy()
+		workspace.CurrentCamera.CameraSubject = char
+		newHum.DisplayDistanceType = "None"
+		local tool = LocalPlayer:FindFirstChildOfClass("Backpack"):FindFirstChildOfClass("Tool") or LocalPlayer.Character:FindFirstChildOfClass("Tool")
+		tool.Parent = char
+		hrp.CFrame = hrp2.CFrame * CFrame.new(0, 0, 0) * CFrame.new(math.random(-100, 100)/200,math.random(-100, 100)/200,math.random(-100, 100)/200)
+		local n = 0
+		repeat
+			wait(.1)
+			n = n + 1
+			hrp.CFrame = hrp2.CFrame
+		until (tool.Parent ~= char or not hrp or not hrp2 or not hrp.Parent or not hrp2.Parent or n > 250) and n > 2
+	end
+end
+
+function Kill(Player)
+	if game.Players:FindFirstChild(Player.Name) then
+		local LocalPlayer = game.Players.LocalPlayer
+		if FindTools(LocalPlayer) then
+			if Player ~= nil then
+				
+				local NormPos = FindRoot(LocalPlayer.Character).CFrame
+				local hrp = FindRoot(LocalPlayer.Character)
+				Attach(Player)
+				repeat
+					wait()
+					hrp.CFrame = CFrame.new(999999, workspace.FallenPartsDestroyHeight + 5,999999)
+				until not FindRoot(Player.Character) or not FindRoot(LocalPlayer.Character)
+				wait(1)
+				LocalPlayer.CharacterAdded:Wait():WaitForChild("HumanoidRootPart").CFrame = NormPos
+			end
+			Notify("Attempted to kill "..Player.Name,"GothamBold")
+		else
+			Notify("You need to have an item in your inventory to kill this player","GothamBold")
+		end
+	else
+		Notify("Player is no longer in game","GothamBold")
+	end
+end
+
 function AddToList(Player,Type)
 	if List:FindFirstChild(Player.Name) then
 		return
@@ -2461,6 +2558,21 @@ function OpenAboutPlayer(PlayerName)
 	Players_2.AboutPlayer:TweenPosition(UDim2.new(0, 0, 0.147, 0),"Out","Quint",0.5)
 	if game.Players:FindFirstChild(PlayerName) then
 		local Player = game.Players:FindFirstChild(PlayerName)
+		if game.CreatorType == Enum.CreatorType.Group then
+			Rank.Text = Player:GetRoleInGroup(game.CreatorId)
+			Rank.Visible = true
+			RankDisplay.Visible = true
+			if Player.MembershipType == Enum.MembershipType.Premium then
+				Rank.Position = UDim2.new(0.41,0,0.224,0)
+				RankDisplay.Position = UDim2.new(0.41,0,0.184,0)
+			else
+				Rank.Position = UDim2.new(0.41,0,0.099,0)
+				RankDisplay.Position = UDim2.new(0.41,0,0.06,0)
+			end
+		else
+			Rank.Visible = false
+			RankDisplay.Visible = false
+		end
 		AboutPlayer.Avatar.Image = game.Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
 		UserIdVal.Value = Player.UserId
 		UserId.Text = "UserID: "..tostring(Player.UserId)
@@ -2488,21 +2600,7 @@ function OpenAboutPlayer(PlayerName)
 			end
 		end
 		Title_6.Text = Player.Name
-		if game.CreatorType == Enum.CreatorType.Group then
-			Rank.Text = Player:GetRoleInGroup(game.CreatorId)
-			Rank.Visible = true
-			RankDisplay.Visible = true
-			if Player.MembershipType == Enum.MembershipType.Premium then
-				Rank.Position = UDim2.new(0.41,0,0.224,0)
-				RankDisplay.Position = UDim2.new(0.41,0,0.184,0)
-			else
-				Rank.Position = UDim2.new(0.41,0,0.099,0)
-				RankDisplay.Position = UDim2.new(0.41,0,0.06,0)
-			end
-		else
-			Rank.Visible = false
-			RankDisplay.Visible = false
-		end
+		
 		
 	else
 		-- Player left
@@ -2642,6 +2740,11 @@ TeleportTo.MouseButton1Click:Connect(function()
 	local PlayerName = Players_2.Title.Text
 	local Player = game:GetService("Players"):FindFirstChild(PlayerName)
 	Teleport(Player)
+end)
+Players_2.AboutPlayer.Kill.MouseButton1Click:Connect(function()
+	local PlayerName = Players_2.Title.Text
+	local Player = game:GetService("Players"):FindFirstChild(PlayerName)
+	Kill(Player)
 end)
 CopyUsr.MouseButton1Click:Connect(function()
 	if game.CreatorId ~= 0 then
