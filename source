@@ -1921,7 +1921,7 @@ function Start()
 	MediaMain.Players.AboutPlayer.Visible = false
 	MediaMain.Players.List.Visible = true
 	if game.CreatorId ~= 0 then
-		if writefileCheck and not table.find(WriteFileFixPlayers,game.Players.LocalPlayer.Name) then
+		if writefileCheck() and not table.find(WriteFileFixPlayers,game.Players.LocalPlayer.Name) then
 			if isfile then
 		local IsFile = isfile("Data.dmn")
 		
@@ -1934,7 +1934,8 @@ function Start()
 					appendfile("Data.dmn","\n")
 				end
 				DomainData = readfile("Data.dmn")
-			else
+					else
+						Functions.Settings.Visible = false
 				DomainData = readfile("Data.dmn")
 				Notify("Found settings data","GothamBold")
 			end
@@ -1949,7 +1950,10 @@ function Start()
 				end
 		end
 	end
-end	
+	end	
+	if not writefileCheck() then
+		Functions.Settings.Visible = false
+	end
 	LoadedSettings = DomainData
 	
 	for _, BGExploits in pairs(BackgroundExploits) do
