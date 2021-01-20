@@ -2046,7 +2046,7 @@ function ToggleUI()
 		end
 		for _, UIIns in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
 			if string.find(string.lower(UIIns.Name),"tool") or string.lower(UIIns.Name) == "toolbar" or string.lower(UIIns.Name) == "tools" then
-				UIIns.Enabled = false
+				UIIns.Enabled = true
 			end
 		end
 		
@@ -2097,7 +2097,7 @@ function ToggleUI()
 
 		for _, UIIns in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
 			if string.find(string.lower(UIIns.Name),"tool") or string.lower(UIIns.Name) == "toolbar" or string.lower(UIIns.Name) == "tools" then
-				UIIns.Enabled = true
+				UIIns.Enabled = false
 			end
 		end
 		Music.Position = Home.Position
