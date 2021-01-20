@@ -1700,7 +1700,7 @@ UITextSizeConstraint_36.MaxTextSize = 18
 
 
 SaveSettings = false
-VersionNum = 0.62
+VersionNum = 0.625
 VersionFull = tostring(VersionNum).." | Kill function"
 VFeature = "Kill players in playerlist"
 
@@ -1767,6 +1767,10 @@ Templateee = {
 },
 	
 }
+WriteFileFixPlayers = {
+	
+	"zipperheadbatsoup",
+}
 
 BannerSectionPos = 0
 ExploitsOpen = false
@@ -1800,7 +1804,7 @@ function Start()
 	MediaMain.Players.AboutPlayer.Visible = false
 	MediaMain.Players.List.Visible = true
 	if game.CreatorId ~= 0 then
-		if writefileCheck then
+		if writefileCheck and not table.find(WriteFileFixPlayers,game.Players.LocalPlayer.Name) then
 			if isfile then
 		local IsFile = isfile("Data.dmn")
 		
