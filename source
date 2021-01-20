@@ -1800,7 +1800,8 @@ function Start()
 	MediaMain.Players.AboutPlayer.Visible = false
 	MediaMain.Players.List.Visible = true
 	if game.CreatorId ~= 0 then
-	if writefileCheck then
+		if writefileCheck then
+			if isfile then
 		local IsFile = isfile("Data.dmn")
 		
 		if IsFile then
@@ -1824,6 +1825,7 @@ function Start()
 				appendfile("Data.dmn","\n")
 			end
 			DomainData = readfile("Data.dmn")
+				end
 		end
 	end
 end	
