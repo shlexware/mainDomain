@@ -3234,10 +3234,10 @@ UserInputService = game:GetService("UserInputService")
 gui = Players_2
 draggui = Players_2.Divider
 
-local dragging
-local dragInput
+dragging = nil
+dragInput = nil
 local dragStart = Vector3.new(0,0,0)
-local startPos
+startPos = nil
 
 function update(input)
 	local delta = input.Position - dragStart
