@@ -3046,10 +3046,15 @@ end
 Toggle.MouseButton1Click:Connect(ToggleUI)
 
 SearchBox.FocusLost:Connect(function()
-	
+	CurrentSearchPosition = 1
+	for _, PlayerItem in ipairs(Players_2.SearchList:GetChildren()) do
+		if PlayerItem.Name ~= "Template" then
+			PlayerItem:Destroy()
+		end
+	end
 	local Searched = SearchBox.Text
 	if Searched == "" or Searched == nil then
-		CurrentSearchPosition = 1
+		
 		Players_2.List.Visible = true
 		Players_2.SearchList.Visible = false
 	else
