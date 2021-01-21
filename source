@@ -2657,8 +2657,7 @@ function AddToListSearch(Player)
 	else
 		CurrentSearchPosition = CurrentSearchPosition + 0.036
 	end
-		NewPlr.Position = UDim2.new(1, 0, CurrentListPosition, 0)
-		NewPlr.Position = UDim2.new(0.03, 0, CurrentListPosition, 0)
+		NewPlr.Position = UDim2.new(0.03, 0, CurrentSearchPosition, 0)
 
 	NewPlr.Username.Text = Player.Name
 
