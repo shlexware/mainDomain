@@ -3046,9 +3046,10 @@ end
 Toggle.MouseButton1Click:Connect(ToggleUI)
 
 SearchBox.FocusLost:Connect(function()
-	CurrentSearchPosition = 1
+	
 	local Searched = SearchBox.Text
 	if Searched == "" or Searched == nil then
+		CurrentSearchPosition = 1
 		Players_2.List.Visible = true
 		Players_2.SearchList.Visible = false
 	else
