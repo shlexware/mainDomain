@@ -3182,7 +3182,7 @@ Stop.MouseButton1Click:Connect(function()
 end)
 
 RemBG.MouseButton1Click:Connect(function()
-	local FoundInstance = false
+	FoundInstance = false
 	for _, Object in ipairs(workspace:GetChildren()) do
 		if Object.ClassName == "Sound" and string.find(string.lower(Object.Name),"music") or string.find(string.lower(Object.Name),"sound") or string.find(string.lower(Object.Name),"bg") then
 			Object.Volume = 0
@@ -3231,8 +3231,8 @@ LoadExploitSection()
 
 UserInputService = game:GetService("UserInputService")
 
-local gui = Players_2
-local draggui = Players_2.Divider
+gui = Players_2
+draggui = Players_2.Divider
 
 local dragging
 local dragInput
@@ -3281,7 +3281,7 @@ if game.CreatorId ~= 0 then
 
 	setreadonly(mt, false)
 	mt.__namecall = protect(function(self, ...)
-		local method = getnamecallmethod()
+		method = getnamecallmethod()
 		if method == "Kick" then
 			Notify("We stopped this game from kicking you locally","GothamBold")
 			wait(9e9)
@@ -3293,7 +3293,7 @@ if game.CreatorId ~= 0 then
 	hookfunction(game.Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
 end
 if game.CreatorId ~= 0 then
-local GC = getconnections or get_signal_cons
+GC = getconnections or get_signal_cons
 if GC then
 	for i,v in pairs(GC(Players.LocalPlayer.Idled)) do
 		if v["Disable"] then
@@ -3316,7 +3316,7 @@ while wait(1) do
 		local tween = game:GetService("TweenService"):Create(Time, transitionInfo, {TextTransparency = 0})
 		tween:Play()
 	end
-	local currentHour = os.date("*t")["hour"]
+	urrentHour = os.date("*t")["hour"]
 	TimeLabel.Text = getTime()
 end
 
