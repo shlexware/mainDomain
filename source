@@ -1875,10 +1875,10 @@ LoadedSettings = {}
 
 BackgroundExploits = {
 	
-Templateee = {
-	Name = "",
-	PlaceId = 0,
-	Loadstring = "",
+WizardTycoon = {
+	Name = "Wizard Tycoon Doors",
+	PlaceId = 281489669,
+	Loadstring = "https://pastebin.com/raw/zv81LudV",
 },
 	
 }
@@ -1923,7 +1923,7 @@ function Start()
 	if game.CreatorId ~= 0 then
 		if writefileCheck() and not table.find(WriteFileFixPlayers,game.Players.LocalPlayer.Name) then
 			if isfile then
-		local IsFile = isfile("Data.dmn")
+		IsFile = isfile("Data.dmn")
 		
 		if IsFile then
 			DomainData = readfile("Data.dmn")
@@ -2097,11 +2097,11 @@ function Start()
 	wait(0.3)
 	Info:TweenPosition(UDim2.new(0.9, 0, 0.2, 0),"Out","Quint",0.6)
 	
-	Notify("DOMAINClient Anti-Kick active","GothamBold")
+	Notify("DomainClient Anti-Kick and Anti-Afk active","GothamBold")
 	for _, Player in ipairs(game.Players:GetChildren()) do
 		AddToList(Player,"Quick")
 	end
-	wait(1.4)
+	wait(1.25)
 	Notify("Successfully booted Domain v"..tostring(VersionNum),"GothamBold")
 end
 
@@ -3292,7 +3292,20 @@ if game.CreatorId ~= 0 then
 
 	hookfunction(game.Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
 end
-
+if game.CreatorId ~= 0 then
+local GC = getconnections or get_signal_cons
+if GC then
+	for i,v in pairs(GC(Players.LocalPlayer.Idled)) do
+		if v["Disable"] then
+			v["Disable"](v)
+		elseif v["Disconnect"] then
+			v["Disconnect"](v)
+		end
+	end
+else
+	Notify("Your exploit does not support this command (missing getconnections)")
+end
+end
 
 
 while wait(1) do
