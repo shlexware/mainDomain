@@ -3046,6 +3046,7 @@ end
 Toggle.MouseButton1Click:Connect(ToggleUI)
 
 SearchBox.FocusLost:Connect(function()
+	CurrentSearchPosition = 1
 	local Searched = SearchBox.Text
 	if Searched == "" or Searched == nil then
 		Players_2.List.Visible = true
@@ -3054,15 +3055,15 @@ SearchBox.FocusLost:Connect(function()
 		Players_2.List.Visible = false
 		Players_2.SearchList.Visible = true
 		for _, Player in ipairs(game.Players:GetChildren()) do
-			if string.find(Player.Name,Searched) or string.find(Searched,Player.Name) then
-				AddToListSearch(Player)
-			else
+			if not string.find(string.lower(Player.Name),string.lower(Searched)) and not string.find(string.lower(Searched),string.lower(Player.Name)) then
 				for _, PlayerItem in ipairs(Players_2.SearchList:GetChildren()) do
 					if PlayerItem.Name == Player.Name then
 						PlayerItem:Destroy()
 						CurrentSearchPosition = CurrentSearchPosition - 0.036
 					end
 				end
+			else
+				AddToListSearch(Player)
 			end
 		end
 	end
