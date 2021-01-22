@@ -3361,6 +3361,12 @@ mainDomain.RemBG.MouseButton1Click:Connect(function()
 			FoundInstance = true
 		end
 	end
+	for _, Object in ipairs(game.Players.LocalPlayer.PlayerScripts:GetChildren()) do
+		if Object.ClassName == "Sound" and string.find(string.lower(Object.Name),"music") or string.find(string.lower(Object.Name),"sound") or string.find(string.lower(Object.Name),"bg") then
+			Object.Volume = 0
+			FoundInstance = true
+		end
+	end
 	if FoundInstance == false then
 		Notify("Error finding music instance","GothamBold")
 	else
