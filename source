@@ -1823,8 +1823,8 @@ mainDomain.UITextSizeConstraint_38.MaxTextSize = 18
 
 mainDomain.PromptExploit.Name = "PromptExploit"
 mainDomain.PromptExploit.Parent = mainDomain.MediaMain
-mainDomain.PromptExploit.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
-mainDomain.PromptExploit.BackgroundTransparency = 0.700
+mainDomain.PromptExploit.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+mainDomain.PromptExploit.BackgroundTransparency = 0
 mainDomain.PromptExploit.BorderSizePixel = 0
 mainDomain.PromptExploit.Position = UDim2.new(-0.0736562461, 0, 0.282600164, 0)
 mainDomain.PromptExploit.Size = UDim2.new(0.179704532, 0, 0.160718009, 0)
@@ -1856,8 +1856,8 @@ mainDomain.UICorner_43.Parent = mainDomain.PromptExploit
 
 mainDomain.Yes.Name = "Yes"
 mainDomain.Yes.Parent = mainDomain.PromptExploit
-mainDomain.Yes.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-mainDomain.Yes.BackgroundTransparency = 0.700
+mainDomain.Yes.BackgroundColor3 = Color3.fromRGB(54,54,54)
+mainDomain.Yes.BackgroundTransparency = 0
 mainDomain.Yes.BorderSizePixel = 0
 mainDomain.Yes.Position = UDim2.new(0.04133185, 0, 0.723753333, 0)
 mainDomain.Yes.Size = UDim2.new(0.273084134, 0, 0.204753682, 0)
@@ -1877,8 +1877,8 @@ mainDomain.UICorner_44.Parent = mainDomain.Yes
 
 mainDomain.No.Name = "No"
 mainDomain.No.Parent = mainDomain.PromptExploit
-mainDomain.No.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-mainDomain.No.BackgroundTransparency = 0.700
+mainDomain.No.BackgroundColor3 = Color3.fromRGB(54,54,54)
+mainDomain.No.BackgroundTransparency = 0
 mainDomain.No.BorderSizePixel = 0
 mainDomain.No.Position = UDim2.new(0.343246609, 0, 0.723753333, 0)
 mainDomain.No.Size = UDim2.new(0.24931173, 0, 0.204753682, 0)
@@ -1952,18 +1952,18 @@ BackgroundExploits = {
 
 	WizardTycoon = {
 		Name = "Wizard Tycoon Doors",
-		PlaceId = 281489669,
+		PlaceIds = {281489669},
 		Loadstring = "https://pastebin.com/raw/zv81LudV",
 	},
 	Ragdolleng = {
 		Name = "Ragdoll Engine UI",
-		PlaceId = 2041312716,
+		PlaceIds = {2041312716},
 		Loadstring = "https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/RagdollEngineGUI.lua",
 	},
-	Redwood= {
-		Name = "Redwood Prison UI",
-		PlaceId = 402122991,
-		Loadstring = "game:GetObjects(rbxassetid://6272702774)[1].Source",
+	cafegameslol = {
+		Name = "BarirerRemover",
+		PlaceIds = {1217895158,3243063589,718328620,610172644,738548299,5580097107,323925323,3522042406,2075082966},
+		Loadstring = "https://pastebin.com/raw/HqFgVGXn",
 	},
 	
 	
@@ -2216,10 +2216,11 @@ function Start()
 	for _, Player in ipairs(game.Players:GetChildren()) do
 		AddToList(Player,"Quick")
 	end
-	wait(1.25)
+	wait(0.4)
 	Notify("Successfully booted Domain v"..tostring(VersionNum),"GothamBold")
+	wait(0.2)
 	for _, BGExploits in pairs(BackgroundExploits) do
-		if BGExploits.PlaceId == game.PlaceId then
+		if table.find(BGExploits.PlaceIds,game.PlaceId) or table.find(game.PlaceId,BGExploits.PlaceIds) then
 			-- This exploit supports this game.
 			--if LoadedSettings.AutoExecuteScripts.Value == true then
 			--	ExecuteExploit(BGExploits.Loadstring)
@@ -2382,8 +2383,7 @@ function ToggleUI()
 			mainDomain.Toggle:TweenPosition(UDim2.new(0.488, 0, 0.829, 0),"Out", "Quint", 0.7)
 		end
 
-		wait(0.31)
-		wait(0.4)
+		wait(0.71)
 		local l = false
 		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 			l = true
