@@ -2887,7 +2887,7 @@ end
 
 game.Players.LocalPlayer.Chatted:Connect(function(Message) 
 	for _, Word in ipairs(AWords) do
-		if string.find(Word,Message) then
+		if string.find(Message,Word) then
 			PromptWords()
 		end
 	end
