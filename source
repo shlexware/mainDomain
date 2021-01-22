@@ -2177,7 +2177,7 @@ function Start()
 	end
 	mainDomain.Template_2.Visible = false
 	mainDomain.Time.TextTransparency = 1
-	Notify("Booting Domain","GothamBold")
+	Notify("Welcome, "..game.Players.LocalPlayer.Name,"GothamBold")
 	mainDomain.UpdatePanel.feat.Text = VFeature
 	mainDomain.VersioPanel.Text.Text = "Domain "..tostring(VersionNum)
 	mainDomain.UpdatePanel.upd.Text = VersionFull 
