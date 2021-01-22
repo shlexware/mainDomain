@@ -1946,6 +1946,10 @@ Admins = {
 
 
 }
+DomainShowcase = {
+	FO10 = 434928087,
+}
+
 
 Developers = {
 
@@ -2958,6 +2962,15 @@ function OpenAboutPlayer(PlayerName)
 				mainDomain.AboutPlayer.DomainDev.Text = "Domain Admin"
 				mainDomain.DomainDev.Visible = true
 			elseif adm ~= UserIdVal.Value then
+				mainDomain.AboutPlayer.DomainDev.Visible = false
+			end
+		end
+		for _, shw in pairs(DomainShowcase) do
+			if shw == UserIdVal.Value then
+				mainDomain.AboutPlayer.DomainDev.Visible = true
+				mainDomain.AboutPlayer.DomainDev.Text = "Domain Showcaser"
+				mainDomain.DomainDev.Visible = true
+			elseif shw ~= UserIdVal.Value then
 				mainDomain.AboutPlayer.DomainDev.Visible = false
 			end
 		end
