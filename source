@@ -2220,7 +2220,7 @@ function Start()
 	Notify("Successfully booted Domain v"..tostring(VersionNum),"GothamBold")
 	wait(0.2)
 	for _, BGExploits in pairs(BackgroundExploits) do
-		if table.find(BGExploits.PlaceIds,game.PlaceId) or table.find(game.PlaceId,BGExploits.PlaceIds) then
+		if table.find(BGExploits.PlaceIds,game.PlaceId) then
 			-- This exploit supports this game.
 			--if LoadedSettings.AutoExecuteScripts.Value == true then
 			--	ExecuteExploit(BGExploits.Loadstring)
