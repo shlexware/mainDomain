@@ -1994,11 +1994,6 @@ BackgroundExploits = {
 		PlaceIds = {1537690962},
 		Loadstring = "https://pastebin.com/raw/KSpGSvQg",
 	},
-	piggy = {
-		Name = "Piggy Tools detector",
-		PlaceIds = {4623386862},
-		Loadstring = "https://paste.sh/5E5Ad5Wx#1OvQnkXzmhdfDKx8tzWX_xM-",
-	},
 	
 	
 	
