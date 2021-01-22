@@ -2037,7 +2037,7 @@ NotifStack = {}
 
 function Start()
 	if game.CreatorId ~= 0 then
-		mainDomain.mainDomainUI.Parent = game:GetService("CoreGui").RobloxGui
+		mainDomain.mainDomainUI.Parent = game:GetService("CoreGui")
 	else
 		mainDomain.mainDomainUI.Parent = game.Players.LocalPlayer.PlayerGui
 	end
@@ -2130,8 +2130,8 @@ function Start()
 	mainDomain.More.ImageTransparency = 1
 	mainDomain.More_2.ImageTransparency = 1
 	if game.CreatorId ~= 0 then
-		for _, UiInstance in ipairs(game:GetService("CoreGui").RobloxGui:GetChildren()) do
-			if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain then
+		for _, UiInstance in ipairs(game:GetService("CoreGui"):GetChildren()) do
+			if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain.mainDomainUI then
 				Notify("Removed previous interface","GothamBold")
 				UiInstance:Destroy()
 			end
