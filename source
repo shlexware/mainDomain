@@ -553,7 +553,7 @@ mainDomain.UICorner_12.Parent = mainDomain.CustomBG
 
 mainDomain.Action.Name = "Action"
 mainDomain.Action.Parent = mainDomain.TemplateBanner
-mainDomain.Action.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.Action.BackgroundColor3 = Color3.fromRGB(0,0,0)
 mainDomain.Action.BackgroundTransparency = 0.850
 mainDomain.Action.BorderSizePixel = 0
 mainDomain.Action.Position = UDim2.new(0.057109151, 0, 0.81194973, 0)
