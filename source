@@ -2329,6 +2329,7 @@ function Start()
 	
 end
 function checktools(player)
+	wait(0.05)
 	if player:FindFirstChildOfClass("Backpack"):FindFirstChildOfClass('Tool') or player.Character:FindFirstChildOfClass('Tool') then
 		return true
 	end
