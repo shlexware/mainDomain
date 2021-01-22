@@ -10,7 +10,7 @@ end
 
 
 -- Instances:
-wait(2)
+
 local mainDomain = {
 	mainDomainUI = Instance.new("ScreenGui"),
 	MediaMain = Instance.new("Frame"),
@@ -1955,6 +1955,18 @@ BackgroundExploits = {
 		PlaceId = 281489669,
 		Loadstring = "https://pastebin.com/raw/zv81LudV",
 	},
+	Ragdolleng = {
+		Name = "Ragdoll Engine UI",
+		PlaceId = 2041312716,
+		Loadstring = "https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/RagdollEngineGUI.lua",
+	},
+	Redwood= {
+		Name = "Redwood Prison UI",
+		PlaceId = 402122991,
+		Loadstring = "game:GetObjects(rbxassetid://6272702774)[1].Source",
+	},
+	
+	
 
 }
 WriteFileFixPlayers = {
