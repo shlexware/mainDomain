@@ -1974,6 +1974,32 @@ BackgroundExploits = {
 		PlaceIds = {1217895158,3243063589,718328620,610172644,738548299,5580097107,323925323,3522042406,2075082966},
 		Loadstring = "https://pastebin.com/raw/HqFgVGXn",
 	},
+	arsenal = {
+		Name = "Arsenal UI",
+		PlaceIds = {286090429},
+		Loadstring = "https://raw.githubusercontent.com/NougatBitz/DuckHub/master/Main.lua",
+	},
+	towerofhell = {
+		Name = "Remove Anti-Fly",
+		PlaceIds = {1962086868},
+		Loadstring = "https://pastebin.com/raw/AQjt4X9H",
+	},
+	murdermystery = {
+		Name = "MM2 Customised ESP",
+		PlaceIds = {142823291},
+		Loadstring = "https://pastebin.com/raw/NjzcBZXC",
+	},
+	beesim = {
+		Name = "BSS Auto-farm UI",
+		PlaceIds = {1537690962},
+		Loadstring = "https://pastebin.com/raw/KSpGSvQg",
+	},
+	piggy = {
+		Name = "Piggy Tools detector",
+		PlaceIds = {4623386862},
+		Loadstring = "https://pastebin.com/raw/b6tT3Jpn",
+	},
+	
 	
 	
 
