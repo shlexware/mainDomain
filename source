@@ -2165,8 +2165,8 @@ function Start()
 	if game.Players.LocalPlayer.UserId == Developers.rivertropic then
 		Notify("This is version "..tostring(VersionNum),"GothamBold")		
 	end
-	mainDomain.More.ImageTransparency = 1
-	mainDomain.More_2.ImageTransparency = 1
+	mainDomain.More.ImageTransparency = 0.7
+	mainDomain.More_2.ImageTransparency = 0.7
 	if game.CreatorId ~= 0 then
 		for _, UiInstance in ipairs(game:GetService("CoreGui"):GetChildren()) do
 			if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain.mainDomain then
