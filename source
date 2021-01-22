@@ -1900,9 +1900,9 @@ mainDomain.UICorner_45.Parent = mainDomain.No
 
 
 SaveSettings = false
-VersionNum = 0.63
-VersionFull = tostring(VersionNum).." | Search feature"
-VFeature = "Search for players in the playerlist"
+VersionNum = 0.634
+VersionFull = tostring(VersionNum).." | Background Exploits"
+VFeature = "Automatically find exploits for the game you're in."
 
 Admins = {
 
@@ -2128,9 +2128,9 @@ function Start()
 	mainDomain.Template_2.Visible = false
 	mainDomain.Time.TextTransparency = 1
 	Notify("Booting Domain","GothamBold")
-	--mainDomain.UpdatePanel.feat.Text = VFeature
-	--mainDomain.VersioPanel.Text.Text = "Domain "..tostring(VersionNum)
-	--mainDomain.UpdatePanel.upd.Text = VersionFull 
+	mainDomain.UpdatePanel.feat.Text = VFeature
+	mainDomain.VersioPanel.Text.Text = "Domain "..tostring(VersionNum)
+	mainDomain.UpdatePanel.upd.Text = VersionFull 
 	mainDomain.Exploits_2.TemplateBanner.Visible = false
 	mainDomain.Music.Position = mainDomain.Home.Position
 	mainDomain.Exploits.Position = mainDomain.Home.Position
@@ -2489,7 +2489,7 @@ function OpenHome()
 		CloseInfo()
 	end
 	local transitionInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quint)
-	local tween = game:GetService("TweenService"):Create(Toggle, transitionInfo, {ImageTransparency = 1})
+	local tween = game:GetService("TweenService"):Create(mainDomain.Toggle, transitionInfo, {ImageTransparency = 1})
 	tween:Play()
 	wait(0.25)
 	mainDomain.Toggle.Visible = false
@@ -2497,7 +2497,7 @@ function OpenHome()
 	mainDomain.Home_2:TweenSizeAndPosition(UDim2.new(0.956, 0 ,0.36, 0),UDim2.new(0.5, 0, 0.569, 0),"Out", "Quint", 0.59)
 	wait(0.4)
 	local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
-	local tween = game:GetService("TweenService"):Create(Home_2.Shadow, transitionInfo, {ImageTransparency = 0.75})
+	local tween = game:GetService("TweenService"):Create(mainDomain.Home_2.Shadow, transitionInfo, {ImageTransparency = 0.75})
 	tween:Play()
 	wait(0.2)
 	db = false
