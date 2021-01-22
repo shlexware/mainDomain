@@ -2238,25 +2238,20 @@ function Start()
 	mainDomain.Info:TweenPosition(UDim2.new(0.9, 0, 0.2, 0),"Out","Quint",0.6)
 
 	Notify("DomainClient Anti-Kick and Anti-Afk active","GothamBold")
-	for _, Player in ipairs(game.Players:GetChildren()) do
-		AddToList(Player,"Quick")
-	end
-	wait(0.4)
-	Notify("Successfully booted Domain v"..tostring(VersionNum),"GothamBold")
-	wait(0.2)
 	for _, BGExploits in pairs(BackgroundExploits) do
 		if table.find(BGExploits.PlaceIds,game.PlaceId) then
 			-- This exploit supports this game.
-			--if LoadedSettings.AutoExecuteScripts.Value == true then
-			--	ExecuteExploit(BGExploits.Loadstring)
-			--else
 			PromptExecute(BGExploits.Name,BGExploits.Loadstring)
-			--end
-			break -- End checking for more.
-		else
-			-- Couldn't find any exploits, let them know
+			break 
 		end
 	end
+	wait(0.4)
+	Notify("Successfully booted Domain v"..tostring(VersionNum),"GothamBold")
+	for _, Player in ipairs(game.Players:GetChildren()) do
+		AddToList(Player,"Quick")
+	end
+	
+	
 end
 function checktools(player)
 	if player:FindFirstChildOfClass("Backpack"):FindFirstChildOfClass('Tool') or player.Character:FindFirstChildOfClass('Tool') then
