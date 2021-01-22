@@ -2209,8 +2209,10 @@ function Start()
 		end
 		uiopened = true
 	else
+		
 		mainDomain.Toggle.ImageTransparency = 0
 		mainDomain.Toggle.Rotation = 180
+		wait(1.3)
 		if checktools(game.Players.LocalPlayer) then
 			mainDomain.Toggle.Position = UDim2.new(0.488, 0, 0.77, 0)
 		else
