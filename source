@@ -10,7 +10,7 @@ end
 
 
 -- Instances:
-
+wait(2)
 local mainDomain = {
 	mainDomainUI = Instance.new("ScreenGui"),
 	MediaMain = Instance.new("Frame"),
