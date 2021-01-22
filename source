@@ -11,6 +11,8 @@ end
 
 -- Instances:
 
+
+
 local mainDomain = {
 	mainDomain = Instance.new("ScreenGui"),
 	MediaMain = Instance.new("Frame"),
@@ -187,7 +189,7 @@ local mainDomain = {
 	UITextSizeConstraint_35 = Instance.new("UITextSizeConstraint"),
 	More_2 = Instance.new("ImageButton"),
 	Shadow_14 = Instance.new("ImageLabel"),
-	UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint"),
+	UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint"),
 	SettingsArea = Instance.new("Frame"),
 	UICorner_40 = Instance.new("UICorner"),
 	Title_7 = Instance.new("TextLabel"),
@@ -213,6 +215,16 @@ local mainDomain = {
 	No = Instance.new("TextButton"),
 	UITextSizeConstraint_41 = Instance.new("UITextSizeConstraint"),
 	UICorner_45 = Instance.new("UICorner"),
+	PromptV2 = Instance.new("Frame"),
+	Question_2 = Instance.new("TextLabel"),
+	UITextSizeConstraint_42 = Instance.new("UITextSizeConstraint"),
+	UICorner_46 = Instance.new("UICorner"),
+	Yes_2 = Instance.new("TextButton"),
+	UITextSizeConstraint_43 = Instance.new("UITextSizeConstraint"),
+	UICorner_47 = Instance.new("UICorner"),
+	No_2 = Instance.new("TextButton"),
+	UITextSizeConstraint_44 = Instance.new("UITextSizeConstraint"),
+	UICorner_48 = Instance.new("UICorner"),
 }
 
 --Properties:
@@ -248,7 +260,7 @@ mainDomain.Functions.Name = "Functions"
 mainDomain.Functions.Parent = mainDomain.MediaMain
 mainDomain.Functions.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 mainDomain.Functions.BorderSizePixel = 0
-mainDomain.Functions.Position = UDim2.new(0.276523799, 0, 0.78057909, 0)
+mainDomain.Functions.Position = UDim2.new(0.27700001, 0, 0.781000018, 0)
 mainDomain.Functions.Size = UDim2.new(0.448024958, 0, 0.0968273655, 0)
 mainDomain.Functions.ZIndex = 1000
 
@@ -541,7 +553,7 @@ mainDomain.UICorner_12.Parent = mainDomain.CustomBG
 
 mainDomain.Action.Name = "Action"
 mainDomain.Action.Parent = mainDomain.TemplateBanner
-mainDomain.Action.BackgroundColor3 = Color3.fromRGB(0,0,0)
+mainDomain.Action.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 mainDomain.Action.BackgroundTransparency = 0.850
 mainDomain.Action.BorderSizePixel = 0
 mainDomain.Action.Position = UDim2.new(0.057109151, 0, 0.81194973, 0)
@@ -650,7 +662,6 @@ mainDomain.UITextSizeConstraint_11.MaxTextSize = 16
 
 mainDomain.UICorner_14.CornerRadius = UDim.new(0, 10)
 mainDomain.UICorner_14.Parent = mainDomain.Content
-
 
 mainDomain.Music_2.Name = "Music"
 mainDomain.Music_2.Parent = mainDomain.MediaMain
@@ -1258,7 +1269,6 @@ mainDomain.Title2.TextXAlignment = Enum.TextXAlignment.Left
 mainDomain.UITextSizeConstraint_24.Parent = mainDomain.Title2
 mainDomain.UITextSizeConstraint_24.MaxTextSize = 18
 
-
 mainDomain.Toggle.Name = "Toggle"
 mainDomain.Toggle.Parent = mainDomain.MediaMain
 mainDomain.Toggle.BackgroundTransparency = 1.000
@@ -1299,7 +1309,7 @@ mainDomain.Title_6.TextWrapped = true
 mainDomain.Title_6.TextXAlignment = Enum.TextXAlignment.Left
 
 mainDomain.UITextSizeConstraint_25.Parent = mainDomain.Title_6
-mainDomain.UITextSizeConstraint_25.MaxTextSize = 20
+mainDomain.UITextSizeConstraint_25.MaxTextSize = 18
 
 mainDomain.UICorner_29.CornerRadius = UDim.new(0, 10)
 mainDomain.UICorner_29.Parent = mainDomain.Players_2
@@ -1702,8 +1712,8 @@ mainDomain.Shadow_14.Image = "rbxassetid://3523728077"
 mainDomain.Shadow_14.ImageColor3 = Color3.fromRGB(33, 33, 33)
 mainDomain.Shadow_14.ImageTransparency = 0.750
 
-mainDomain.UIAspectRatioConstraint_7.Parent = mainDomain.Players_2
-mainDomain.UIAspectRatioConstraint_7.AspectRatio = 0.685
+mainDomain.UIAspectRatioConstraint.Parent = mainDomain.Players_2
+mainDomain.UIAspectRatioConstraint.AspectRatio = 0.685
 
 mainDomain.SettingsArea.Name = "SettingsArea"
 mainDomain.SettingsArea.Parent = mainDomain.MediaMain
@@ -1827,7 +1837,6 @@ mainDomain.SettingDesc.TextXAlignment = Enum.TextXAlignment.Left
 mainDomain.UITextSizeConstraint_38.Parent = mainDomain.SettingDesc
 mainDomain.UITextSizeConstraint_38.MaxTextSize = 18
 
-
 mainDomain.PromptExploit.Name = "PromptExploit"
 mainDomain.PromptExploit.Parent = mainDomain.MediaMain
 mainDomain.PromptExploit.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
@@ -1899,6 +1908,78 @@ mainDomain.UITextSizeConstraint_41.MaxTextSize = 18
 
 mainDomain.UICorner_45.CornerRadius = UDim.new(0, 10)
 mainDomain.UICorner_45.Parent = mainDomain.No
+
+mainDomain.PromptV2.Name = "PromptV2"
+mainDomain.PromptV2.Parent = mainDomain.MediaMain
+mainDomain.PromptV2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+mainDomain.PromptV2.BorderSizePixel = 0
+mainDomain.PromptV2.Position = UDim2.new(-0.0736562461, 0, 0.282600164, 0)
+mainDomain.PromptV2.Size = UDim2.new(0.179704532, 0, 0.160718009, 0)
+mainDomain.PromptV2.Visible = false
+mainDomain.PromptV2.ZIndex = 1000
+
+mainDomain.Question_2.Name = "Question"
+mainDomain.Question_2.Parent = mainDomain.PromptV2
+mainDomain.Question_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.Question_2.BackgroundTransparency = 1.000
+mainDomain.Question_2.BorderSizePixel = 0
+mainDomain.Question_2.Position = UDim2.new(0.06458354, 0, 0.0962690637, 0)
+mainDomain.Question_2.Size = UDim2.new(0.870283425, 0, 0.477529198, 0)
+mainDomain.Question_2.ZIndex = 1001
+mainDomain.Question_2.Font = Enum.Font.GothamBold
+mainDomain.Question_2.Text = "We think you may want to go in a different server, would you like to server hop?"
+mainDomain.Question_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.Question_2.TextScaled = true
+mainDomain.Question_2.TextSize = 14.000
+mainDomain.Question_2.TextWrapped = true
+mainDomain.Question_2.TextXAlignment = Enum.TextXAlignment.Left
+mainDomain.Question_2.TextYAlignment = Enum.TextYAlignment.Top
+
+mainDomain.UITextSizeConstraint_42.Parent = mainDomain.Question_2
+mainDomain.UITextSizeConstraint_42.MaxTextSize = 19
+
+mainDomain.UICorner_46.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_46.Parent = mainDomain.PromptV2
+
+mainDomain.Yes_2.Name = "Yes"
+mainDomain.Yes_2.Parent = mainDomain.PromptV2
+mainDomain.Yes_2.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+mainDomain.Yes_2.BorderSizePixel = 0
+mainDomain.Yes_2.Position = UDim2.new(0.04133185, 0, 0.723753333, 0)
+mainDomain.Yes_2.Size = UDim2.new(0.273084134, 0, 0.204753682, 0)
+mainDomain.Yes_2.ZIndex = 1001
+mainDomain.Yes_2.Font = Enum.Font.GothamSemibold
+mainDomain.Yes_2.Text = "Yes"
+mainDomain.Yes_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.Yes_2.TextScaled = true
+mainDomain.Yes_2.TextSize = 14.000
+mainDomain.Yes_2.TextWrapped = true
+
+mainDomain.UITextSizeConstraint_43.Parent = mainDomain.Yes_2
+mainDomain.UITextSizeConstraint_43.MaxTextSize = 18
+
+mainDomain.UICorner_47.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_47.Parent = mainDomain.Yes_2
+
+mainDomain.No_2.Name = "No"
+mainDomain.No_2.Parent = mainDomain.PromptV2
+mainDomain.No_2.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+mainDomain.No_2.BorderSizePixel = 0
+mainDomain.No_2.Position = UDim2.new(0.343246609, 0, 0.723753333, 0)
+mainDomain.No_2.Size = UDim2.new(0.24931173, 0, 0.204753682, 0)
+mainDomain.No_2.ZIndex = 1001
+mainDomain.No_2.Font = Enum.Font.GothamSemibold
+mainDomain.No_2.Text = "No"
+mainDomain.No_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.No_2.TextScaled = true
+mainDomain.No_2.TextSize = 14.000
+mainDomain.No_2.TextWrapped = true
+
+mainDomain.UITextSizeConstraint_44.Parent = mainDomain.No_2
+mainDomain.UITextSizeConstraint_44.MaxTextSize = 18
+
+mainDomain.UICorner_48.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_48.Parent = mainDomain.No_2
 
 
 
@@ -1994,11 +2075,10 @@ BackgroundExploits = {
 		PlaceIds = {1537690962},
 		Loadstring = "https://pastebin.com/raw/KSpGSvQg",
 	},
-	
-	
-	
-
 }
+
+AWords = {"hate ","stupid","idiot","dumb"}
+
 WriteFileFixPlayers = {
 
 	"zipperheadbatsoup",
@@ -2254,6 +2334,82 @@ function checktools(player)
 	end
 end
 
+function PromptWords()
+
+	mainDomain.PromptV2.No.TextTransparency = 1
+	mainDomain.PromptV2.Question.TextTransparency = 1
+	mainDomain.PromptV2.Yes.TextTransparency = 1
+	mainDomain.PromptV2.Yes.Size = UDim2.new(0,0,0.205,0)
+	mainDomain.PromptV2.No.Size = UDim2.new(0,0,0.205,0)
+	mainDomain.PromptV2.Size = UDim2.new(0, 0, 0.161, 0)
+	mainDomain.PromptV2.Question.Text = "We think you may want to go in a different server, would you like to server hop?"
+	mainDomain.PromptV2.Visible = true
+	mainDomain.PromptV2:TweenSize(UDim2.new(0.18, 0, 0.161, 0),"Out", "Quint", 0.6)
+	wait(0.2)
+	local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(mainDomain.PromptV2.Question, transitionInfo, {TextTransparency = 0})
+	tween:Play()
+	wait(0.15)
+	mainDomain.PromptV2.Yes:TweenSize(UDim2.new(0.273, 0, 0.205, 0),"Out", "Quint", 0.3)
+	wait(0.05)
+	mainDomain.PromptV2.No:TweenSize(UDim2.new(0.249, 0, 0.205, 0),"Out", "Quint", 0.3)
+	wait(0.05)
+	local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(mainDomain.PromptV2.Yes, transitionInfo, {TextTransparency = 0})
+	tween:Play()
+	local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+	local tween = game:GetService("TweenService"):Create(mainDomain.PromptV2.No, transitionInfo, {TextTransparency = 0})
+	tween:Play()
+	mainDomain.PromptV2.Yes.MouseButton1Click:Connect(function()
+		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(mainDomain.PromptV2.Question, transitionInfo, {TextTransparency = 1})
+		tween:Play()
+		mainDomain.PromptV2.Yes:TweenSize(UDim2.new(0, 0, 0.205, 0),"Out", "Quint", 0.3)
+		mainDomain.PromptV2.No:TweenSize(UDim2.new(0, 0, 0.205, 0),"Out", "Quint", 0.3)
+		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(mainDomain.PromptV2.Yes, transitionInfo, {TextTransparency = 1})
+		tween:Play()
+		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(mainDomain.PromptV2.No, transitionInfo, {TextTransparency = 1})
+		tween:Play()
+		wait(0.2)
+		mainDomain.PromptV2:TweenSize(UDim2.new(0.18, 0, 0, 0),"Out", "Quint", 0.6)
+		wait(0.61)
+		mainDomain.PromptV2.Visible = false
+		Serverhop()
+	end)
+	mainDomain.PromptV2.No.MouseButton1Click:Connect(function()
+		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(mainDomain.PromptV2.Question, transitionInfo, {TextTransparency = 1})
+		tween:Play()
+		mainDomain.PromptV2.Yes:TweenSize(UDim2.new(0, 0, 0.205, 0),"Out", "Quint", 0.3)
+		mainDomain.PromptV2.No:TweenSize(UDim2.new(0, 0, 0.205, 0),"Out", "Quint", 0.3)
+		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(mainDomain.PromptV2.Yes, transitionInfo, {TextTransparency = 1})
+		tween:Play()
+		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+		local tween = game:GetService("TweenService"):Create(mainDomain.PromptV2.No, transitionInfo, {TextTransparency = 1})
+		tween:Play()
+		wait(0.2)
+		mainDomain.PromptV2:TweenSize(UDim2.new(0.18, 0, 0, 0),"Out", "Quint", 0.6)
+		wait(0.61)
+		mainDomain.PromptV2.Visible = false
+	end)
+end
+
+function Serverhop()
+	local x = {}
+	for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
+		if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
+			x[#x + 1] = v.id
+		end
+	end
+	if #x > 0 then
+		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
+	else
+		return Notify("We couldn't find another server","GothamBold")
+	end
+end
 
 function PromptExecute(ExploitName,ExploitLoadstring)
 
@@ -2728,6 +2884,14 @@ function Kill(Player)
 		Notify("Player is no longer in game","GothamBold")
 	end
 end
+
+game.Players.LocalPlayer.Chatted:Connect(function(Message) 
+	for _, Word in ipairs(AWords) do
+		if string.find(Word,Message) then
+			PromptWords()
+		end
+	end
+end)
 
 function AddToList(Player,Type)
 	if mainDomain.List:FindFirstChild(Player.Name) then
