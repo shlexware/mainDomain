@@ -2329,7 +2329,7 @@ function LoadExploitSection()
 	for _, FeaturedExploit in pairs(FeaturedExploits) do
 		local banner = mainDomain.TemplateBanner:Clone()
 		banner.Title.Text = FeaturedExploit.Name
-		banner.Author.Text = FeaturedExploit.Author
+		banner.Author.Text = "By "..FeaturedExploit.Author
 		banner.Name = FeaturedExploit.Name
 		if BannerSectionPos == 0 then
 			BannerSectionPos = 0.025
