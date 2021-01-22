@@ -1997,7 +1997,7 @@ BackgroundExploits = {
 	piggy = {
 		Name = "Piggy Tools detector",
 		PlaceIds = {4623386862},
-		Loadstring = "https://pastebin.com/raw/b6tT3Jpn",
+		Loadstring = "https://paste.sh/5E5Ad5Wx#1OvQnkXzmhdfDKx8tzWX_xM-",
 	},
 	
 	
