@@ -44,7 +44,6 @@ local mainDomain = {
 	UICorner_8 = Instance.new("UICorner"),
 	UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint"),
 	Icon_6 = Instance.new("ImageLabel"),
-	UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint"),
 	Exploits_2 = Instance.new("Frame"),
 	UICorner_9 = Instance.new("UICorner"),
 	TemplateBanner = Instance.new("Frame"),
@@ -63,13 +62,11 @@ local mainDomain = {
 	Title_2 = Instance.new("TextLabel"),
 	UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint"),
 	Shadow_2 = Instance.new("ImageLabel"),
-	UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint"),
 	nContainer = Instance.new("Frame"),
 	Template = Instance.new("Frame"),
 	Content = Instance.new("TextLabel"),
 	UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint"),
 	UICorner_14 = Instance.new("UICorner"),
-	UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint"),
 	Music_2 = Instance.new("Frame"),
 	UICorner_15 = Instance.new("UICorner"),
 	Title_3 = Instance.new("TextLabel"),
@@ -87,7 +84,6 @@ local mainDomain = {
 	UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint"),
 	UICorner_19 = Instance.new("UICorner"),
 	Shadow_3 = Instance.new("ImageLabel"),
-	UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint"),
 	Home_2 = Instance.new("Frame"),
 	UICorner_20 = Instance.new("UICorner"),
 	Title_4 = Instance.new("TextLabel"),
@@ -120,7 +116,6 @@ local mainDomain = {
 	Text_6 = Instance.new("TextLabel"),
 	Shadow_9 = Instance.new("ImageLabel"),
 	Shadow_10 = Instance.new("ImageLabel"),
-	UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint"),
 	Info_2 = Instance.new("Frame"),
 	UICorner_27 = Instance.new("UICorner"),
 	Title_5 = Instance.new("TextLabel"),
@@ -139,7 +134,6 @@ local mainDomain = {
 	UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint"),
 	Title2 = Instance.new("TextLabel"),
 	UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint"),
-	UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint"),
 	Toggle = Instance.new("ImageButton"),
 	Players_2 = Instance.new("Frame"),
 	Title_6 = Instance.new("TextLabel"),
@@ -209,7 +203,6 @@ local mainDomain = {
 	UITextSizeConstraint_37 = Instance.new("UITextSizeConstraint"),
 	SettingDesc = Instance.new("TextLabel"),
 	UITextSizeConstraint_38 = Instance.new("UITextSizeConstraint"),
-	UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint"),
 	PromptExploit = Instance.new("Frame"),
 	Question = Instance.new("TextLabel"),
 	UITextSizeConstraint_39 = Instance.new("UITextSizeConstraint"),
@@ -220,8 +213,6 @@ local mainDomain = {
 	No = Instance.new("TextButton"),
 	UITextSizeConstraint_41 = Instance.new("UITextSizeConstraint"),
 	UICorner_45 = Instance.new("UICorner"),
-	UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint"),
-	UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint"),
 }
 
 --Properties:
@@ -483,9 +474,6 @@ mainDomain.Icon_6.Image = "rbxassetid://3926307971"
 mainDomain.Icon_6.ImageRectOffset = Vector2.new(324, 124)
 mainDomain.Icon_6.ImageRectSize = Vector2.new(36, 36)
 
-mainDomain.UIAspectRatioConstraint.Parent = mainDomain.Functions
-mainDomain.UIAspectRatioConstraint.AspectRatio = 6.972
-
 mainDomain.Exploits_2.Name = "Exploits"
 mainDomain.Exploits_2.Parent = mainDomain.MediaMain
 mainDomain.Exploits_2.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -622,9 +610,6 @@ mainDomain.Shadow_2.Image = "rbxassetid://3523728077"
 mainDomain.Shadow_2.ImageColor3 = Color3.fromRGB(33, 33, 33)
 mainDomain.Shadow_2.ImageTransparency = 0.750
 
-mainDomain.UIAspectRatioConstraint_2.Parent = mainDomain.Exploits_2
-mainDomain.UIAspectRatioConstraint_2.AspectRatio = 3.998
-
 mainDomain.nContainer.Name = "nContainer"
 mainDomain.nContainer.Parent = mainDomain.MediaMain
 mainDomain.nContainer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -666,8 +651,6 @@ mainDomain.UITextSizeConstraint_11.MaxTextSize = 16
 mainDomain.UICorner_14.CornerRadius = UDim.new(0, 10)
 mainDomain.UICorner_14.Parent = mainDomain.Content
 
-mainDomain.UIAspectRatioConstraint_3.Parent = mainDomain.nContainer
-mainDomain.UIAspectRatioConstraint_3.AspectRatio = 1.079
 
 mainDomain.Music_2.Name = "Music"
 mainDomain.Music_2.Parent = mainDomain.MediaMain
@@ -788,9 +771,6 @@ mainDomain.Shadow_3.ZIndex = 0
 mainDomain.Shadow_3.Image = "rbxassetid://3523728077"
 mainDomain.Shadow_3.ImageColor3 = Color3.fromRGB(33, 33, 33)
 mainDomain.Shadow_3.ImageTransparency = 0.750
-
-mainDomain.UIAspectRatioConstraint_4.Parent = mainDomain.Music_2
-mainDomain.UIAspectRatioConstraint_4.AspectRatio = 6.438
 
 mainDomain.Home_2.Name = "Home"
 mainDomain.Home_2.Parent = mainDomain.MediaMain
@@ -1123,9 +1103,6 @@ mainDomain.Shadow_10.Image = "rbxassetid://3523728077"
 mainDomain.Shadow_10.ImageColor3 = Color3.fromRGB(33, 33, 33)
 mainDomain.Shadow_10.ImageTransparency = 0.750
 
-mainDomain.UIAspectRatioConstraint_5.Parent = mainDomain.Home_2
-mainDomain.UIAspectRatioConstraint_5.AspectRatio = 3.998
-
 mainDomain.Info_2.Name = "Info"
 mainDomain.Info_2.Parent = mainDomain.MediaMain
 mainDomain.Info_2.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1281,8 +1258,6 @@ mainDomain.Title2.TextXAlignment = Enum.TextXAlignment.Left
 mainDomain.UITextSizeConstraint_24.Parent = mainDomain.Title2
 mainDomain.UITextSizeConstraint_24.MaxTextSize = 18
 
-mainDomain.UIAspectRatioConstraint_6.Parent = mainDomain.Info_2
-mainDomain.UIAspectRatioConstraint_6.AspectRatio = 6.438
 
 mainDomain.Toggle.Name = "Toggle"
 mainDomain.Toggle.Parent = mainDomain.MediaMain
@@ -1852,8 +1827,6 @@ mainDomain.SettingDesc.TextXAlignment = Enum.TextXAlignment.Left
 mainDomain.UITextSizeConstraint_38.Parent = mainDomain.SettingDesc
 mainDomain.UITextSizeConstraint_38.MaxTextSize = 18
 
-mainDomain.UIAspectRatioConstraint_8.Parent = mainDomain.SettingsArea
-mainDomain.UIAspectRatioConstraint_8.AspectRatio = 6.438
 
 mainDomain.PromptExploit.Name = "PromptExploit"
 mainDomain.PromptExploit.Parent = mainDomain.MediaMain
@@ -1927,8 +1900,6 @@ mainDomain.UITextSizeConstraint_41.MaxTextSize = 18
 mainDomain.UICorner_45.CornerRadius = UDim.new(0, 10)
 mainDomain.UICorner_45.Parent = mainDomain.No
 
-mainDomain.UIAspectRatioConstraint_10.Parent = mainDomain.MediaMain
-mainDomain.UIAspectRatioConstraint_10.AspectRatio = 1.507
 
 
 
