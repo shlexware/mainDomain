@@ -2173,19 +2173,7 @@ function Start()
 	else
 		mainDomain.Toggle.ImageTransparency = 0
 		mainDomain.Toggle.Rotation = 180
-		local l = false
-		wait(1)
-		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-			l = true
-			break
-		end
-		for _, Item2 in ipairs(game.Players.LocalPlayer.Character:GetChildren()) do
-			if Item2.ClassName == "Tool" then
-				l = true
-				break
-			end
-		end
-		if l == true then
+		if checktools(game.Players.LocalPlayer) then
 			mainDomain.Toggle.Position = UDim2.new(0.488, 0, 0.77, 0)
 		else
 			mainDomain.Toggle.Position = UDim2.new(0.488, 0, 0.829, 0)
@@ -2233,7 +2221,11 @@ function Start()
 		end
 	end
 end
-
+function checktools(player)
+	if player:FindFirstChildOfClass("Backpack"):FindFirstChildOfClass('Tool') or player.Character:FindFirstChildOfClass('Tool') then
+		return true
+	end
+end
 
 
 function PromptExecute(ExploitName,ExploitLoadstring)
@@ -2366,36 +2358,16 @@ function ToggleUI()
 
 		mainDomain.Functions:TweenPosition(UDim2.new(0.277, 0, 1, 0),"In", "Quint", 0.7)
 		wait(0.37)
-		local l = false
-		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-			l = true
-			break
-		end
-		for _, Item2 in ipairs(game.Players.LocalPlayer.Character:GetChildren()) do
-			if Item2.ClassName == "Tool" then
-				l = true
-				break
-			end
-		end
-		if l == true then
+
+		if checktools(game.Players.LocalPlayer) then
 			mainDomain.Toggle:TweenPosition(UDim2.new(0.488, 0, 0.77, 0),"Out", "Quint", 0.7)
 		else
 			mainDomain.Toggle:TweenPosition(UDim2.new(0.488, 0, 0.829, 0),"Out", "Quint", 0.7)
 		end
 
 		wait(0.71)
-		local l = false
-		for _, Item in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-			l = true
-			break
-		end
-		for _, Item2 in ipairs(game.Players.LocalPlayer.Character:GetChildren()) do
-			if Item2.ClassName == "Tool" then
-				l = true
-				break
-			end
-		end
-		if l == true then
+
+		if checktools(game.Players.LocalPlayer) then
 			mainDomain.Toggle.Position = UDim2.new(0.488, 0, 0.77, 0)
 		else
 			mainDomain.Toggle.Position = UDim2.new(0.488, 0, 0.829, 0)
@@ -2670,21 +2642,16 @@ function Teleport(Player)
 	end
 end
 
--- Credit to Infinite Yield developers for FindRoot, FindTools, Attach and Kill functions
+-- Credit to Infinite Yield developers for FindRoot, Attach and Kill functions
 function FindRoot(Character)
 	local rootPart = Character:FindFirstChild('HumanoidRootPart') or Character:FindFirstChild('Torso') or Character:FindFirstChild('UpperTorso')
 	return rootPart
 end
 
-function FindTools(Player)
-	if Player:FindFirstChildOfClass("Backpack"):FindFirstChildOfClass('Tool') or Player.Character:FindFirstChildOfClass('Tool') then
-		return true
-	end
-end
 
 function Attach(Player)
 	local LocalPlayer = game.Players.LocalPlayer
-	if FindTools(LocalPlayer) then
+	if checktools(LocalPlayer) then
 		local char = LocalPlayer.Character
 		local tchar = Player.Character
 		local hum = LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
@@ -2713,7 +2680,7 @@ end
 function Kill(Player)
 	if game.Players:FindFirstChild(Player.Name) then
 		local LocalPlayer = game.Players.LocalPlayer
-		if FindTools(LocalPlayer) then
+		if checktools(LocalPlayer) then
 			if Player ~= nil then
 
 				local NormPos = FindRoot(LocalPlayer.Character).CFrame
@@ -3359,7 +3326,7 @@ mainDomain.RemBG.MouseButton1Click:Connect(function()
 end)
 
 game.Players.LocalPlayer.Backpack.ChildAdded:Connect(function(item)
-	if item.ClassName == "Tool" then
+	if checktools(game.Players.LocalPlayer) then
 		if uiopened == false then
 			mainDomain.Toggle:TweenPosition(UDim2.new(0.488, 0, 0.77, 0),"Out", "Quint", 0.4, true)
 		end
@@ -3367,20 +3334,7 @@ game.Players.LocalPlayer.Backpack.ChildAdded:Connect(function(item)
 end)
 
 game.Players.LocalPlayer.Backpack.ChildRemoved:Connect(function()
-	Tools = false
-	wait(0.1)
-	for _, Child in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-		if Child.ClassName == "Tool" then
-			-- Still tools, keep current location
-			Tools = true
-		end
-	end
-	for _, Child in ipairs(game.Players.LocalPlayer.Character:GetChildren()) do
-		if Child.ClassName == "Tool" then
-			Tools = true
-		end
-	end
-	if Tools == false then
+	if not checktools(game.Players.LocalPlayer) then
 		if uiopened == false then
 			mainDomain.Toggle:TweenPosition(UDim2.new(0.488, 0, 0.829, 0),"Out", "Quint", 0.4, true)
 		end
