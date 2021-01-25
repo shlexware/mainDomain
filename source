@@ -7,7 +7,9 @@ if not game:IsLoaded() then
 	UsingAutoExecute = true
 	repeat wait(1) until game:IsLoaded() 
 end
-
+if game.PlaceId == 292439477 then
+	wait(5)
+end
 
 -- Instances:
 
