@@ -2045,6 +2045,11 @@ BackgroundExploits = {
 		PlaceIds = {281489669},
 		Loadstring = "https://pastebin.com/raw/zv81LudV",
 	},
+	animebattlearena = {
+		Name = "ABA UI",
+		PlaceIds = {1458767429},
+		Loadstring = "https://raw.githubusercontent.com/travislmao/pub-scripts/main/abagui",
+	},
 	Ragdolleng = {
 		Name = "Ragdoll Engine UI",
 		PlaceIds = {2041312716},
@@ -2077,7 +2082,7 @@ BackgroundExploits = {
 	},
 }
 
-AWords = {"hate ","stupid","idiot","dumb"}
+AWords = {"hate ","stupid","idiot","dumb","serverhop","change server","change game"}
 
 WriteFileFixPlayers = {
 
@@ -3510,13 +3515,13 @@ end)
 mainDomain.RemBG.MouseButton1Click:Connect(function()
 	FoundInstance = false
 	for _, Object in ipairs(workspace:GetChildren()) do
-		if Object.ClassName == "Sound" and string.find(string.lower(Object.Name),"music") or string.find(string.lower(Object.Name),"sound") or string.find(string.lower(Object.Name),"bg") then
+		if Object.ClassName == "Sound" then
 			Object.Volume = 0
 			FoundInstance = true
 		end
 	end
 	for _, Object in ipairs(game.Players.LocalPlayer.PlayerScripts:GetChildren()) do
-		if Object.ClassName == "Sound" and string.find(string.lower(Object.Name),"music") or string.find(string.lower(Object.Name),"sound") or string.find(string.lower(Object.Name),"bg") then
+		if Object.ClassName == "Sound" then
 			Object.Volume = 0
 			FoundInstance = true
 		end
