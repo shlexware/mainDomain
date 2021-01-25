@@ -1986,9 +1986,9 @@ mainDomain.UICorner_48.Parent = mainDomain.No_2
 
 
 SaveSettings = false
-VersionNum = 0.634
+VersionNum = 0.637
 VersionFull = tostring(VersionNum).." | Background Exploits"
-VFeature = "Automatically find exploits for the game you're in."
+VFeature = "Additional exploits added."
 
 Admins = {
 
@@ -2023,6 +2023,14 @@ AntiExploits = {
 		PlaceId = 3522042406,
 		Locations = {game.Players.LocalPlayer.PlayerScripts:FindFirstChild("B"),game.Players.LocalPlayer.PlayerGui:FindFirstChild("ADEL")}
 	},
+	CustomDuels = {
+		PlaceId = 2609668898,
+		Locations = {game.Players.LocalPlayer.PlayerScripts:FindFirstChild("Anti"),game.Players.LocalPlayer.PlayerGui:FindFirstChild("Monitor")}
+	},
+	towerofhell = {
+		PlaceId = 2609668898,
+		Locations = {game.Players.LocalPlayer.PlayerScripts:FindFirstChild("LocalScript"),game.Players.LocalPlayer.PlayerGui:FindFirstChild("LocalScript2")}
+	},
 
 }
 
@@ -2056,7 +2064,7 @@ BackgroundExploits = {
 		Loadstring = "https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/RagdollEngineGUI.lua",
 	},
 	cafegameslol = {
-		Name = "BarirerRemover",
+		Name = "BarrierRemover",
 		PlaceIds = {1217895158,3243063589,718328620,610172644,738548299,5580097107,323925323,3522042406,2075082966},
 		Loadstring = "https://pastebin.com/raw/HqFgVGXn",
 	},
@@ -2064,11 +2072,6 @@ BackgroundExploits = {
 		Name = "Arsenal UI",
 		PlaceIds = {286090429},
 		Loadstring = "https://raw.githubusercontent.com/NougatBitz/DuckHub/master/Main.lua",
-	},
-	towerofhell = {
-		Name = "Remove Anti-Fly",
-		PlaceIds = {1962086868},
-		Loadstring = "https://pastebin.com/raw/AQjt4X9H",
 	},
 	murdermystery = {
 		Name = "MM2 Customised ESP",
@@ -2080,9 +2083,26 @@ BackgroundExploits = {
 		PlaceIds = {1537690962},
 		Loadstring = "https://pastebin.com/raw/KSpGSvQg",
 	},
+	ninjalegends = {
+		Name = "Autofarm UI",
+		PlaceIds = {3956818381},
+		Loadstring = "https://pastebin.com/raw/Q39hYJ8V",
+	},
+	sabersim = {
+		Name = "Saber Simulator UI",
+		PlaceIds = {3823781113},
+		Loadstring = "https://pastebin.com/raw/yjM31T6G",
+	},
+	pf = {
+		Name = "PF Silent Aim",
+		PlaceIds = {292439477},
+		Loadstring = "https://pastebin.com/raw/1sDVeQfs",
+	},
+	
+	
 }
 
-AWords = {"hate ","stupid","idiot","dumb","serverhop","change server","change game"}
+AWords = {"hate ","stupid","idiot","dumb","serverhop","change server","change game","in a different game","other game"}
 
 WriteFileFixPlayers = {
 
@@ -2289,12 +2309,8 @@ function Start()
 		
 		mainDomain.Toggle.ImageTransparency = 0
 		mainDomain.Toggle.Rotation = 180
-		wait(1.3)
-		if checktools(game.Players.LocalPlayer) then
-			mainDomain.Toggle.Position = UDim2.new(0.488, 0, 0.77, 0)
-		else
-			mainDomain.Toggle.Position = UDim2.new(0.488, 0, 0.829, 0)
-		end
+		mainDomain.Toggle.Position = UDim2.new(1,0,1,0)
+		
 	end
 	if  mainDomain.Time.TextTransparency ~= 0 then
 		local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
@@ -2330,13 +2346,21 @@ function Start()
 	for _, Player in ipairs(game.Players:GetChildren()) do
 		AddToList(Player,"Quick")
 	end
-	
-	
+	if UsingAutoExecute == true then
+		wait(1.3)
+		if checktools(game.Players.LocalPlayer) then
+			mainDomain.Toggle.Position = UDim2.new(0.488, 0, 0.77, 0)
+		else
+			mainDomain.Toggle.Position = UDim2.new(0.488, 0, 0.829, 0)
+		end
+	end
 end
 function checktools(player)
 	wait(0.05)
+	if player then
 	if player:FindFirstChildOfClass("Backpack"):FindFirstChildOfClass('Tool') or player.Character:FindFirstChildOfClass('Tool') then
 		return true
+		end
 	end
 end
 
