@@ -2491,6 +2491,7 @@ function PromptExecute(ExploitName,ExploitLoadstring)
 	
 	
 	local function Input(input, gameProcessedEvent)
+	if mainDomain.No.TextTransparency == 0 then
 		if IsNKeyDown() then
 			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
 			local tween = game:GetService("TweenService"):Create(mainDomain.Question, transitionInfo, {TextTransparency = 1})
@@ -2524,6 +2525,7 @@ function PromptExecute(ExploitName,ExploitLoadstring)
 			wait(0.61)
 			mainDomain.PromptExploit.Visible = false
 			ExecuteExploit(ExploitLoadstring)
+			end
 		end
 	end
 
@@ -3688,16 +3690,10 @@ end)
 
 game.Players.LocalPlayer.Backpack.ChildAdded:Connect(function(item)
 	if item.ClassName == "Tool" then
-	if checktools(game.Players.LocalPlayer) then
-		if uiopened == false then
-			mainDomain.Toggle:TweenPosition(UDim2.new(0.488, 0, 0.77, 0),"Out", "Quint", 0.4, true)
-			else
-				if item.Name then
-					Notify(item.Name.." added to backpack")
-					else
-					Notify("Tool added to backpack")
-				end
-		end
+		if checktools(game.Players.LocalPlayer) then
+			if uiopened == false then
+				mainDomain.Toggle:TweenPosition(UDim2.new(0.488, 0, 0.77, 0),"Out", "Quint", 0.4, true)
+			end
 		end
 	end
 end)
