@@ -2916,9 +2916,9 @@ end
 
 function Teleport(Player)
 	if game.Players:FindFirstChild(Player.Name) then
+		Notify("Teleporting you to "..Player.Name,"GothamBold")
 		local targetplayer = game.Workspace:FindFirstChild(Player.Name).HumanoidRootPart
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(targetplayer.Position.X, targetplayer.Position.Y, targetplayer.Position.Z)
-		Notify("Teleported you to "..Player.Name,"GothamBold")
 	else
 		Notify("Player is no longer in game","GothamBold")
 	end
@@ -2963,6 +2963,7 @@ function Kill(Player)
 	if game.Players:FindFirstChild(Player.Name) then
 		local LocalPlayer = game.Players.LocalPlayer
 		if checktools(LocalPlayer) then
+			Notify("Attempting to kill "..Player.Name,"GothamBold")
 			if Player ~= nil then
 
 				local NormPos = FindRoot(LocalPlayer.Character).CFrame
@@ -2975,7 +2976,7 @@ function Kill(Player)
 				wait(1)
 				LocalPlayer.CharacterAdded:Wait():WaitForChild("HumanoidRootPart").CFrame = NormPos
 			end
-			Notify("Attempted to kill "..Player.Name,"GothamBold")
+			
 		else
 			Notify("You need to have an item in your inventory to kill this player","GothamBold")
 		end
