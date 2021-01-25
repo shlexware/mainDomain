@@ -2495,7 +2495,7 @@ function PromptExecute(ExploitName,ExploitLoadstring)
 	if mainDomain.No.TextTransparency == 0 then
 		if IsNKeyDown() then
 			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
-			local tween = game:GetService("TweenService"):Create(mainDomain.Question, transitionInfo, {TextTransparency = 1})
+			local tween = game:GetService("TweenService"):Create(mainDomain.PromptExploit.Question, transitionInfo, {TextTransparency = 1})
 			tween:Play()
 			mainDomain.Yes:TweenSize(UDim2.new(0, 0, 0.205, 0),"Out", "Quint", 0.3)
 			mainDomain.No:TweenSize(UDim2.new(0, 0, 0.205, 0),"Out", "Quint", 0.3)
@@ -2511,7 +2511,7 @@ function PromptExecute(ExploitName,ExploitLoadstring)
 			mainDomain.PromptExploit.Visible = false
 		elseif IsYKeyDown() then
 			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
-			local tween = game:GetService("TweenService"):Create(mainDomain.Question, transitionInfo, {TextTransparency = 1})
+				local tween = game:GetService("TweenService"):Create(mainDomain.PromptExploit.Question, transitionInfo, {TextTransparency = 1})
 			tween:Play()
 			mainDomain.Yes:TweenSize(UDim2.new(0, 0, 0.205, 0),"Out", "Quint", 0.3)
 			mainDomain.No:TweenSize(UDim2.new(0, 0, 0.205, 0),"Out", "Quint", 0.3)
@@ -3342,6 +3342,7 @@ function OpenAboutPlayer(PlayerName)
 		-- Animation
 		wait(0.1)
 		if mainDomain.AboutPlayer.DomainDev.Visible == false then
+			mainDomain.AboutPlayer.DomainDev.Visible = true
 			mainDomain.AboutPlayer.DomainDev.Text = "ESP ACTIVE"
 			mainDomain.AboutPlayer.DomainDev.TextColor3 = Color3.fromRGB(194, 194, 194)
 		else
