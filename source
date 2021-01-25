@@ -3346,7 +3346,6 @@ function OpenAboutPlayer(PlayerName)
 			mainDomain.AboutPlayer.DomainDev.Text = "ESP ACTIVE"
 			mainDomain.AboutPlayer.DomainDev.TextColor3 = Color3.fromRGB(194, 194, 194)
 		else
-			mainDomain.AboutPlayer.DomainDev.Text = "domain"
 			mainDomain.AboutPlayer.DomainDev.TextColor3 = Color3.fromRGB(255, 255, 255)
 		end
 		mainDomain.SearchBox.Visible = false
