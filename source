@@ -2164,6 +2164,7 @@ MusicOpen = false
 HomeOpen = false
 SettingsOpen = false
 InfoOpen = false
+local ESPenabled = false
 SettingPosition = 0
 local UserInputService = game:GetService("UserInputService")
 local YKey = Enum.KeyCode.Y
@@ -2932,6 +2933,106 @@ function FindRoot(Character)
 	return rootPart
 end
 
+function ESP(plr)
+	spawn(function()
+		for i,v in pairs(mainDomain.mainDomain:GetChildren()) do
+			if v.Name == plr.Name..'_ESP' then
+				v:Destroy()
+			end
+		end
+		wait()
+		if plr.Character and plr.Name ~= game.Players.LocalPlayer.Name and not mainDomain.mainDomain:FindFirstChild(plr.Name..'_ESP') then
+			local ESPholder = Instance.new("Folder")
+			ESPholder.Name = plr.Name..'_ESP'
+			ESPholder.Parent = mainDomain.mainDomain
+			repeat wait(1) until plr.Character and FindRoot(plr.Character) and plr.Character:FindFirstChild('Humanoid')
+			for b,n in pairs (plr.Character:GetChildren()) do
+				if (n:IsA("BasePart")) then
+					local a = Instance.new("BoxHandleAdornment")
+					a.Name = plr.Name
+					a.Parent = ESPholder
+					a.Adornee = n
+					a.AlwaysOnTop = true
+					a.ZIndex = 10
+					a.Size = n.Size
+					a.Transparency = 0.3
+					a.Color = plr.TeamColor
+				end
+			end
+			if plr.Character and plr.Character:FindFirstChild('Head') then
+				local BillboardGui = Instance.new("BillboardGui")
+				local TextLabel = Instance.new("TextLabel")
+				BillboardGui.Adornee = plr.Character.Head
+				BillboardGui.Name = plr.Name
+				BillboardGui.Parent = ESPholder
+				BillboardGui.Size = UDim2.new(0, 100, 0, 150)
+				BillboardGui.StudsOffset = Vector3.new(0, 1, 0)
+				BillboardGui.AlwaysOnTop = true
+				TextLabel.Parent = BillboardGui
+				TextLabel.BackgroundTransparency = 1
+				TextLabel.Position = UDim2.new(0, 0, 0, -50)
+				TextLabel.Size = UDim2.new(0, 100, 0, 100)
+				TextLabel.Font = Enum.Font.GothamBold
+				TextLabel.TextSize = 16
+				TextLabel.TextColor3 = Color3.new(1, 1, 1)
+				TextLabel.TextStrokeTransparency = 0.75
+				TextLabel.TextYAlignment = Enum.TextYAlignment.Bottom
+				TextLabel.Text = 'Name: '..plr.Name
+				TextLabel.ZIndex = 10
+				local espLoopFunc
+				local teamChange
+				local addedFunc
+				addedFunc = plr.CharacterAdded:Connect(function()
+					if ESPenabled then
+						espLoopFunc:Disconnect()
+						teamChange:Disconnect()
+						ESPholder:Destroy()
+						repeat wait(1) until FindRoot(plr.Character) and plr.Character:FindFirstChild('Humanoid')
+						ESP(plr)
+						addedFunc:Disconnect()
+					else
+						teamChange:Disconnect()
+						addedFunc:Disconnect()
+					end
+				end)
+				teamChange = plr:GetPropertyChangedSignal("TeamColor"):Connect(function()
+					if ESPenabled then
+						espLoopFunc:Disconnect()
+						addedFunc:Disconnect()
+						ESPholder:Destroy()
+						repeat wait(1) until FindRoot(plr.Character) and plr.Character:FindFirstChild('Humanoid')
+						ESP(plr)
+						teamChange:Disconnect()
+					else
+						teamChange:Disconnect()
+					end
+				end)
+				local function espLoop()
+					if mainDomain.mainDomain:FindFirstChild(plr.Name..'_ESP') then
+						if plr.Character and FindRoot(plr.Character) and plr.Character:FindFirstChild('Humanoid') and game.Players.LocalPlayer.Character and FindRoot(game.Players.LocalPlayer.Character) and game.Players.LocalPlayer.Character:FindFirstChild('Humanoid') then
+							local pos = math.floor((FindRoot(game.Players.LocalPlayer.Character).Position - FindRoot(plr.Character).Position).magnitude)
+							TextLabel.Text = 'Name: '..plr.Name..' | Studs: '..pos
+						end
+					else
+						teamChange:Disconnect()
+						addedFunc:Disconnect()
+						espLoopFunc:Disconnect()
+					end
+				end
+				espLoopFunc = game:GetService("RunService").RenderStepped:Connect(espLoop)
+			end
+		end
+	end)
+end
+
+function DisableESP()
+	ESPenabled = false
+	for i,c in pairs(mainDomain.mainDomain:GetChildren()) do
+		if string.sub(c.Name, -4) == '_ESP' then
+			c:Destroy()
+		end
+	end
+end
 
 function Attach(Player)
 	local LocalPlayer = game.Players.LocalPlayer
@@ -3184,6 +3285,7 @@ function OpenAboutPlayer(PlayerName)
 	wait(0.2)
 	mainDomain.Players_2.AboutPlayer:TweenPosition(UDim2.new(0, 0, 0.147, 0),"Out","Quint",0.5)
 	if game.Players:FindFirstChild(PlayerName) then
+		ESP(game.Players[PlayerName])
 		local Player = game.Players:FindFirstChild(PlayerName)
 		if game.CreatorType == Enum.CreatorType.Group then
 			mainDomain.Rank.Text = Player:GetRoleInGroup(game.CreatorId)
@@ -3235,9 +3337,17 @@ function OpenAboutPlayer(PlayerName)
 				mainDomain.AboutPlayer.DomainDev.Visible = false
 			end
 		end
+		
 		mainDomain.Title_6.Text = Player.Name
 		-- Animation
 		wait(0.1)
+		if mainDomain.AboutPlayer.DomainDev.Visible == false then
+			mainDomain.AboutPlayer.DomainDev.Text = "ESP ACTIVE"
+			mainDomain.AboutPlayer.DomainDev.TextColor3 = Color3.fromRGB(194, 194, 194)
+		else
+			mainDomain.AboutPlayer.DomainDev.Text = "domain"
+			mainDomain.AboutPlayer.DomainDev.TextColor3 = Color3.fromRGB(255, 255, 255)
+		end
 		mainDomain.SearchBox.Visible = false
 		wait(0.05)
 		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
@@ -3354,7 +3464,7 @@ function OpenAboutPlayer(PlayerName)
 
 
 	mainDomain.Close.MouseButton1Click:Connect(function()
-
+		DisableESP()
 		mainDomain.List.Position = UDim2.new(0,0,1,0)
 		mainDomain.SearchList.Position = UDim2.new(0,0,1,0)
 		mainDomain.Players_2.AboutPlayer:TweenPosition(UDim2.new(0, 0, -1, 0),"In","Quint",0.5)
