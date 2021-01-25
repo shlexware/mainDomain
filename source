@@ -3286,6 +3286,64 @@ function OpenAboutPlayer(PlayerName)
 		Notify("Player left game, error","GothamBold")
 		if PlayersOpen then
 			ClosePlayers()
+			mainDomain.List.Position = UDim2.new(0,0,1,0)
+			mainDomain.SearchList.Position = UDim2.new(0,0,1,0)
+			mainDomain.Players_2.AboutPlayer:TweenPosition(UDim2.new(0, 0, -1, 0),"In","Quint",0.5)
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.Close, transitionInfo, {ImageTransparency = 1})
+			tween:Play()
+			wait(0.1)
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.DomainDev, transitionInfo, {TextTransparency = 1})
+			tween:Play()
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.UserId, transitionInfo, {TextTransparency = 1})
+			tween:Play()
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.RankDisplay, transitionInfo, {TextTransparency = 1})
+			tween:Play()
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.Kill, transitionInfo, {TextTransparency = 1})
+			tween:Play()
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.Rank, transitionInfo, {TextTransparency = 1})
+			tween:Play()
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.TeleportTo, transitionInfo, {TextTransparency = 1})
+			tween:Play()
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.CopyUsr, transitionInfo, {TextTransparency = 1})
+			tween:Play()
+			wait(0.05)
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.CopyUsr, transitionInfo, {BackgroundTransparency = 1})
+			tween:Play()
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.TeleportTo, transitionInfo, {BackgroundTransparency = 1})
+			tween:Play()
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.Kill, transitionInfo, {BackgroundTransparency = 1})
+			tween:Play()
+			wait(0.01)
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.Premium, transitionInfo, {ImageTransparency = 1})
+			tween:Play()
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.Avatar, transitionInfo, {ImageTransparency = 1})
+			tween:Play()
+			wait(0.25)
+			mainDomain.Title_6.Text = "Players"
+			mainDomain.List:TweenPosition(UDim2.new(0, 0, 0.147, 0),"Out","Quint",0.5)
+			mainDomain.SearchList:TweenPosition(UDim2.new(0, 0, 0.147, 0),"Out","Quint",0.5)
+			mainDomain.SearchBox.Visible = true
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.SearchBox, transitionInfo, {BackgroundTransparency = 0})
+			tween:Play()
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.SearchBox, transitionInfo, {TextTransparency = 0})
+			tween:Play()
+			wait(0.3)
+			mainDomain.AboutPlayer.Visible = false
 		end
 	end
 
@@ -3628,9 +3686,17 @@ mainDomain.RemBG.MouseButton1Click:Connect(function()
 end)
 
 game.Players.LocalPlayer.Backpack.ChildAdded:Connect(function(item)
+	if item.ClassName == "Tool" then
 	if checktools(game.Players.LocalPlayer) then
 		if uiopened == false then
 			mainDomain.Toggle:TweenPosition(UDim2.new(0.488, 0, 0.77, 0),"Out", "Quint", 0.4, true)
+			else
+				if item.Name then
+					Notify(item.Name.." added to backpack")
+					else
+					Notify("Tool added to backpack")
+				end
+		end
 		end
 	end
 end)
