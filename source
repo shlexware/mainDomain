@@ -2345,6 +2345,9 @@ function Start()
 	end
 	wait(0.4)
 	Notify("Successfully booted Domain v"..tostring(VersionNum),"GothamBold")
+	if game.PlaceId == 292439477 then
+		Notify("If the toggle button is not visible, reinject.")
+	end
 	for _, Player in ipairs(game.Players:GetChildren()) do
 		AddToList(Player,"Quick")
 	end
