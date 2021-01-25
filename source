@@ -21,6 +21,8 @@ end
 
 
 
+
+
 local mainDomain = {
 	mainDomain = Instance.new("ScreenGui"),
 	MediaMain = Instance.new("Frame"),
@@ -1881,11 +1883,11 @@ mainDomain.Yes.Name = "Yes"
 mainDomain.Yes.Parent = mainDomain.PromptExploit
 mainDomain.Yes.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
 mainDomain.Yes.BorderSizePixel = 0
-mainDomain.Yes.Position = UDim2.new(0.04133185, 0, 0.723753333, 0)
-mainDomain.Yes.Size = UDim2.new(0.273084134, 0, 0.204753682, 0)
+mainDomain.Yes.Position = UDim2.new(0.04133185, 0, 0.723753154, 0)
+mainDomain.Yes.Size = UDim2.new(0.354300916, 0, 0.204753682, 0)
 mainDomain.Yes.ZIndex = 1001
 mainDomain.Yes.Font = Enum.Font.GothamSemibold
-mainDomain.Yes.Text = "Yes"
+mainDomain.Yes.Text = "Yes [Y]"
 mainDomain.Yes.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Yes.TextScaled = true
 mainDomain.Yes.TextSize = 14.000
@@ -1901,11 +1903,11 @@ mainDomain.No.Name = "No"
 mainDomain.No.Parent = mainDomain.PromptExploit
 mainDomain.No.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
 mainDomain.No.BorderSizePixel = 0
-mainDomain.No.Position = UDim2.new(0.343246609, 0, 0.723753333, 0)
-mainDomain.No.Size = UDim2.new(0.24931173, 0, 0.204753682, 0)
+mainDomain.No.Position = UDim2.new(0.432798952, 0, 0.723753154, 0)
+mainDomain.No.Size = UDim2.new(0.331519336, 0, 0.204753682, 0)
 mainDomain.No.ZIndex = 1001
 mainDomain.No.Font = Enum.Font.GothamSemibold
-mainDomain.No.Text = "No"
+mainDomain.No.Text = "No [N]"
 mainDomain.No.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.No.TextScaled = true
 mainDomain.No.TextSize = 14.000
@@ -1994,7 +1996,7 @@ mainDomain.UICorner_48.Parent = mainDomain.No_2
 
 
 SaveSettings = false
-VersionNum = 0.637
+VersionNum = 0.638
 VersionFull = tostring(VersionNum).." | Background Exploits"
 VFeature = "Additional exploits added."
 
@@ -2163,6 +2165,9 @@ HomeOpen = false
 SettingsOpen = false
 InfoOpen = false
 SettingPosition = 0
+local UserInputService = game:GetService("UserInputService")
+local YKey = Enum.KeyCode.Y
+local NKey = Enum.KeyCode.N
 CurrentListPosition = 1
 CurrentSearchPosition = 1
 uiopened = false
@@ -2176,7 +2181,12 @@ NotifStack = {}
 
 
 
-
+function IsNKeyDown()
+	return UserInputService:IsKeyDown(NKey)
+end
+function IsYKeyDown()
+	return UserInputService:IsKeyDown(YKey)
+end
 
 function Start()
 	if game.CreatorId ~= 0 then
@@ -2478,6 +2488,46 @@ function PromptExecute(ExploitName,ExploitLoadstring)
 	local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
 	local tween = game:GetService("TweenService"):Create(mainDomain.No, transitionInfo, {TextTransparency = 0})
 	tween:Play()
+	
+	
+	local function Input(input, gameProcessedEvent)
+		if IsNKeyDown() then
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.Question, transitionInfo, {TextTransparency = 1})
+			tween:Play()
+			mainDomain.Yes:TweenSize(UDim2.new(0, 0, 0.205, 0),"Out", "Quint", 0.3)
+			mainDomain.No:TweenSize(UDim2.new(0, 0, 0.205, 0),"Out", "Quint", 0.3)
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.Yes, transitionInfo, {TextTransparency = 1})
+			tween:Play()
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.No, transitionInfo, {TextTransparency = 1})
+			tween:Play()
+			wait(0.2)
+			mainDomain.PromptExploit:TweenSize(UDim2.new(0.18, 0, 0, 0),"Out", "Quint", 0.6)
+			wait(0.61)
+			mainDomain.PromptExploit.Visible = false
+		elseif IsYKeyDown() then
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.Question, transitionInfo, {TextTransparency = 1})
+			tween:Play()
+			mainDomain.Yes:TweenSize(UDim2.new(0, 0, 0.205, 0),"Out", "Quint", 0.3)
+			mainDomain.No:TweenSize(UDim2.new(0, 0, 0.205, 0),"Out", "Quint", 0.3)
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.Yes, transitionInfo, {TextTransparency = 1})
+			tween:Play()
+			local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.No, transitionInfo, {TextTransparency = 1})
+			tween:Play()
+			wait(0.2)
+			mainDomain.PromptExploit:TweenSize(UDim2.new(0.18, 0, 0, 0),"Out", "Quint", 0.6)
+			wait(0.61)
+			mainDomain.PromptExploit.Visible = false
+			ExecuteExploit(ExploitLoadstring)
+		end
+	end
+
+	UserInputService.InputBegan:Connect(Input)
 	mainDomain.Yes.MouseButton1Click:Connect(function()
 		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
 		local tween = game:GetService("TweenService"):Create(mainDomain.Question, transitionInfo, {TextTransparency = 1})
@@ -2514,6 +2564,14 @@ function PromptExecute(ExploitName,ExploitLoadstring)
 		mainDomain.PromptExploit.Visible = false
 	end)
 end
+
+
+
+
+
+
+
+
 
 function LoadExploitSection()
 	for _, FeaturedExploit in pairs(FeaturedExploits) do
