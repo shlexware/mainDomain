@@ -2164,6 +2164,7 @@ MusicOpen = false
 HomeOpen = false
 SettingsOpen = false
 InfoOpen = false
+beforehand = false
 local ESPenabled = false
 SettingPosition = 0
 local UserInputService = game:GetService("UserInputService")
@@ -2288,6 +2289,7 @@ function Start()
 			if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain.mainDomain then
 				Notify("Removed previous interface","GothamBold")
 				UiInstance:Destroy()
+				beforehand = true
 			end
 		end
 	end
@@ -2362,7 +2364,20 @@ function Start()
 	end
 	wait(0.4)
 	Notify("Successfully booted Domain v"..tostring(VersionNum),"GothamBold")
-	if game.PlaceId == 292439477 then
+	
+
+
+print(" _____ ")
+print("|  __ \ ")
+print("| |  | |")
+print("| |  | |")
+print("| |__| |")
+print("|_____/   by Shlex Softworks")
+
+warn("DOMAIN CLIENT v"..tostring(VersionNum))
+
+
+	if game.PlaceId == 292439477 and beforehand == false then
 		Notify("If the toggle button is not visible, reinject.")
 	end
 	for _, Player in ipairs(game.Players:GetChildren()) do
