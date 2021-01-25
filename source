@@ -6,9 +6,11 @@ local UsingAutoExecute = false
 if not game:IsLoaded() then
 	UsingAutoExecute = true
 	local NLoaded = Instance.new("Hint",workspace)
-	NLoaded.Text = 'Domain is waiting for the game to load'
+	NLoaded.Text = 'Domain - Waiting'
 	game.Loaded:Wait()
-	NLoaded:Destroy()
+	NLoaded.Text = 'Domain - Loaded'
+	wait(1)
+	NLoaded;Destroy()
 	repeat wait(1) until game:IsLoaded() 
 end
 if game.PlaceId == 292439477 then
@@ -2104,8 +2106,8 @@ BackgroundExploits = {
 		PlaceIds = {292439477},
 		Loadstring = "https://pastebin.com/raw/1sDVeQfs",
 	},
-	
-	
+
+
 }
 
 AWords = {"hate ","stupid","idiot","dumb","serverhop","change server","change game","in a different game","other game"}
@@ -2312,11 +2314,11 @@ function Start()
 		end
 		uiopened = true
 	else
-		
+
 		mainDomain.Toggle.ImageTransparency = 0
 		mainDomain.Toggle.Rotation = 180
 		mainDomain.Toggle.Position = UDim2.new(1,0,1,0)
-		
+
 	end
 	if  mainDomain.Time.TextTransparency ~= 0 then
 		local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
@@ -2367,8 +2369,8 @@ end
 function checktools(player)
 	wait(0.05)
 	if player then
-	if player:FindFirstChildOfClass("Backpack"):FindFirstChildOfClass('Tool') or player.Character:FindFirstChildOfClass('Tool') then
-		return true
+		if player:FindFirstChildOfClass("Backpack"):FindFirstChildOfClass('Tool') or player.Character:FindFirstChildOfClass('Tool') then
+			return true
 		end
 	end
 end
@@ -3660,7 +3662,7 @@ if game.CreatorId ~= 0 then
 			end
 		end
 	else
-		Notify("Your exploit does not support this command (missing getconnections)")
+		Notify("Your exploit does not support AntiAfk (missing getconnections)")
 	end
 end
 
