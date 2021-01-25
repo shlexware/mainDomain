@@ -7,6 +7,8 @@ if not game:IsLoaded() then
 	UsingAutoExecute = true
 	local NLoaded = Instance.new("Hint",workspace)
 	NLoaded.Text = 'Domain is waiting for the game to load'
+	game.Loaded:Wait()
+	NLoaded:Destroy()
 	repeat wait(1) until game:IsLoaded() 
 end
 if game.PlaceId == 292439477 then
