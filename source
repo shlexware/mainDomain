@@ -2057,11 +2057,16 @@ SettingsTb = {
 }
 
 BackgroundExploits = {
-
+	
 	WizardTycoon = {
 		Name = "Wizard Tycoon Doors",
 		PlaceIds = {281489669},
 		Loadstring = "https://pastebin.com/raw/zv81LudV",
+	},
+	sis = {
+		Name = "StopItSlender UI",
+		PlaceIds = {30869879},
+		Loadstring = "https://pastebin.com/raw/hFxynXvs",
 	},
 	doomspire = {
 		Name = "Doomspire UI",
