@@ -2088,6 +2088,16 @@ BackgroundExploits = {
 		PlaceIds = {286090429},
 		Loadstring = "https://raw.githubusercontent.com/NougatBitz/DuckHub/master/Main.lua",
 	},
+	madcity = {
+		Name = "Mad City UI",
+		PlaceIds = {1224212277},
+		Loadstring = "https://raw.githubusercontent.com/Sumithebestak/MadChicken/main/README.md",
+	},
+	dday = {
+		Name = "D-DAY UI",
+		PlaceIds = {901793731},
+		Loadstring = "https://raw.githubusercontent.com/iQAIRHUB/Project-Ripple/main/D-DAY/V3.0.3",
+	},
 	murdermystery = {
 		Name = "MM2 Customised ESP",
 		PlaceIds = {142823291},
