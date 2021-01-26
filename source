@@ -2127,7 +2127,7 @@ BackgroundExploits = {
 
 }
 
-AWords = {"hate ","stupid","idiot","dumb","serverhop","change server","change game","in a different game","other game"}
+AWords = {"hate ","serverhop","change server","change game","in a different game","other game"}
 
 WriteFileFixPlayers = {
 
@@ -2148,7 +2148,7 @@ FeaturedExploits = {
 		Name = "Infinite Yield",
 		Author = "Yiffer",
 		ImageID = 0,
-		Colour = Color3.fromRGB(28, 107, 255),
+		Colour = Color3.fromRGB(34, 133, 255),
 		Code = "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",	
 	},
 	ezhub = {
