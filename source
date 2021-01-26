@@ -2123,6 +2123,12 @@ BackgroundExploits = {
 		PlaceIds = {292439477},
 		Loadstring = "https://pastebin.com/raw/1sDVeQfs",
 	},
+	autorapbatt = {
+		Name = "Auto RB UI",
+		PlaceIds = {579955134},
+		Loadstring = "https://pastebin.com/raw/bHQ8dyX8",
+		
+	}
 
 
 }
