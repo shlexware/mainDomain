@@ -2205,6 +2205,41 @@ function IsYKeyDown()
 	return UserInputService:IsKeyDown(YKey)
 end
 
+function AntiKick()
+	mt = getrawmetatable(game)
+	old = mt.__namecall
+	protect = newcclosure or protect_function
+
+	if not protect then
+		protect = function(f) return f end
+	end
+
+	setreadonly(mt, false)
+	mt.__namecall = protect(function(self, ...)
+		method = getnamecallmethod()
+		if method == "Kick" then
+			Notify("We stopped this game from kicking you locally","GothamBold")
+			wait(9e9)
+			return
+		end
+		return old(self, ...)
+	end)
+
+	hookfunction(game.Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
+end
+function AntiAfk()
+	GC = getconnections or get_signal_cons
+	if GC then
+		for i,v in pairs(GC(game.Players.LocalPlayer.Idled)) do
+			if v["Disable"] then
+				v["Disable"](v)
+			elseif v["Disconnect"] then
+				v["Disconnect"](v)
+			end
+		end
+	end
+end
+
 function Start()
 	if game.CreatorId ~= 0 then
 		mainDomain.mainDomain.Parent = game:GetService("CoreGui")
@@ -2370,7 +2405,7 @@ function Start()
 	mainDomain.Exploits:TweenPosition(UDim2.new(0.3, 0, 0.2, 0),"Out","Quint",0.6)
 	wait(0.3)
 	mainDomain.Info:TweenPosition(UDim2.new(0.9, 0, 0.2, 0),"Out","Quint",0.6)
-	
+if game.CreatorId ~= 0 then
 	AntiAfk()
 	AntiKick()
 if getconnections or get_signal_cons then
@@ -2378,6 +2413,7 @@ if getconnections or get_signal_cons then
 	else
 		Notify("DomainClient Anti-Kick active","GothamBold")
 	end
+end
 	for _, BGExploits in pairs(BackgroundExploits) do
 		if table.find(BGExploits.PlaceIds,game.PlaceId) then
 			-- This exploit supports this game.
@@ -3886,40 +3922,7 @@ UserInputService.InputChanged:Connect(function(input)
 	end
 end)
 
-function AntiKick()
-	mt = getrawmetatable(game)
-	old = mt.__namecall
-	protect = newcclosure or protect_function
 
-	if not protect then
-		protect = function(f) return f end
-	end
-
-	setreadonly(mt, false)
-	mt.__namecall = protect(function(self, ...)
-		method = getnamecallmethod()
-		if method == "Kick" then
-			Notify("We stopped this game from kicking you locally","GothamBold")
-			wait(9e9)
-			return
-		end
-		return old(self, ...)
-	end)
-
-	hookfunction(game.Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
-end
-function AntiAfk()
-	GC = getconnections or get_signal_cons
-	if GC then
-		for i,v in pairs(GC(game.Players.LocalPlayer.Idled)) do
-			if v["Disable"] then
-				v["Disable"](v)
-			elseif v["Disconnect"] then
-				v["Disconnect"](v)
-			end
-		end
-	end
-end
 
 
 while wait(1) do
