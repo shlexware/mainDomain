@@ -2063,6 +2063,11 @@ BackgroundExploits = {
 		PlaceIds = {281489669},
 		Loadstring = "https://pastebin.com/raw/zv81LudV",
 	},
+	doomspire = {
+		Name = "Doomspire UI",
+		PlaceIds = {1215581239},
+		Loadstring = "https://pastebin.com/raw/NguHCk5t",
+	},
 	animebattlearena = {
 		Name = "ABA UI",
 		PlaceIds = {1458767429},
