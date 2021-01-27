@@ -2057,7 +2057,11 @@ SettingsTb = {
 }
 
 BackgroundExploits = {
-	
+	towerofhell = {
+		Name = "TOH Teleportation UI",
+		PlaceIds = {1962086868},
+		Loadstring = "https://pastebin.com/raw/J1BJH1ER",
+	},
 	WizardTycoon = {
 		Name = "Wizard Tycoon Doors",
 		PlaceIds = {281489669},
