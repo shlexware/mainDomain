@@ -1572,7 +1572,7 @@ mainDomain.DomainDev.Position = UDim2.new(0.516834974, 0, -0.13840194, 0)
 mainDomain.DomainDev.Size = UDim2.new(0.451336235, 0, 0.0426678397, 0)
 mainDomain.DomainDev.ZIndex = 1010
 mainDomain.DomainDev.Font = Enum.Font.GothamSemibold
-mainDomain.DomainDev.Text = "Domain Developer"
+mainDomain.DomainDev.Text = "esp"
 mainDomain.DomainDev.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.DomainDev.TextScaled = true
 mainDomain.DomainDev.TextSize = 14.000
@@ -3420,7 +3420,7 @@ function OpenAboutPlayer(PlayerName)
 		mainDomain.Title_6.Text = Player.Name
 		-- Animation
 		wait(0.1)
-		if mainDomain.AboutPlayer.DomainDev.Visible == false and mainDomain.AboutPlayer.Text == "Domain Developer" then
+		if mainDomain.AboutPlayer.DomainDev.Visible == false and mainDomain.AboutPlayer.DomainDev.Text ~= "Domain Developer" and mainDomain.AboutPlayer.DomainDev.Text ~= "Domain Admin" and mainDomain.AboutPlayer.DomainDev.Text ~= "Domain Showcaser" then
 			mainDomain.AboutPlayer.DomainDev.Visible = true
 			mainDomain.AboutPlayer.DomainDev.Text = "ESP ACTIVE"
 			mainDomain.AboutPlayer.DomainDev.TextColor3 = Color3.fromRGB(194, 194, 194)
