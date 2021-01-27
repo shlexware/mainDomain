@@ -3390,7 +3390,7 @@ function OpenAboutPlayer(PlayerName)
 			mainDomain.Premium.Visible = false
 		end
 		for _, adm in pairs(Admins) do
-			if adm == UserIdVal.Value then
+			if adm == Player.UserId then
 				mainDomain.AboutPlayer.DomainDev.Visible = true
 				mainDomain.AboutPlayer.DomainDev.Text = "Domain Admin"
 				mainDomain.DomainDev.Visible = true
@@ -3399,7 +3399,7 @@ function OpenAboutPlayer(PlayerName)
 			end
 		end
 		for _, shw in pairs(DomainShowcase) do
-			if shw == UserIdVal.Value then
+			if shw == Player.UserId then
 				mainDomain.AboutPlayer.DomainDev.Visible = true
 				mainDomain.AboutPlayer.DomainDev.Text = "Domain Showcaser"
 				mainDomain.DomainDev.Visible = true
@@ -3408,7 +3408,7 @@ function OpenAboutPlayer(PlayerName)
 			end
 		end
 		for _, dev in pairs(Developers) do
-			if dev == UserIdVal.Value then
+			if dev == Player.UserId then
 				mainDomain.AboutPlayer.DomainDev.Visible = true
 				mainDomain.AboutPlayer.DomainDev.Text = "Domain Developer"
 				mainDomain.DomainDev.Visible = true
@@ -3420,7 +3420,7 @@ function OpenAboutPlayer(PlayerName)
 		mainDomain.Title_6.Text = Player.Name
 		-- Animation
 		wait(0.1)
-		if mainDomain.AboutPlayer.DomainDev.Visible == false then
+		if mainDomain.AboutPlayer.DomainDev.Visible == false and mainDomain.AboutPlayer.Text == "Domain Developer" then
 			mainDomain.AboutPlayer.DomainDev.Visible = true
 			mainDomain.AboutPlayer.DomainDev.Text = "ESP ACTIVE"
 			mainDomain.AboutPlayer.DomainDev.TextColor3 = Color3.fromRGB(194, 194, 194)
