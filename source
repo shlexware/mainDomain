@@ -23,218 +23,235 @@ end
 
 
 
+
+
 local mainDomain = {
 	mainDomain = Instance.new("ScreenGui"),
 	MediaMain = Instance.new("Frame"),
-	ShadowBG = Instance.new("ImageLabel"),
-	UICorner = Instance.new("UICorner"),
 	Functions = Instance.new("Frame"),
-	UICorner_2 = Instance.new("UICorner"),
+	UICorner = Instance.new("UICorner"),
 	Music = Instance.new("TextButton"),
-	UICorner_3 = Instance.new("UICorner"),
+	UICorner_2 = Instance.new("UICorner"),
 	UITextSizeConstraint = Instance.new("UITextSizeConstraint"),
 	Icon = Instance.new("ImageLabel"),
 	Exploits = Instance.new("TextButton"),
-	UICorner_4 = Instance.new("UICorner"),
+	UICorner_3 = Instance.new("UICorner"),
 	UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint"),
 	Icon_2 = Instance.new("ImageLabel"),
 	Time = Instance.new("TextLabel"),
 	Home = Instance.new("TextButton"),
-	UICorner_5 = Instance.new("UICorner"),
+	UICorner_4 = Instance.new("UICorner"),
 	UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint"),
 	Icon_3 = Instance.new("ImageLabel"),
 	Info = Instance.new("TextButton"),
-	UICorner_6 = Instance.new("UICorner"),
+	UICorner_5 = Instance.new("UICorner"),
 	UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint"),
 	Icon_4 = Instance.new("ImageLabel"),
 	Shadow = Instance.new("ImageLabel"),
 	Players = Instance.new("TextButton"),
-	UICorner_7 = Instance.new("UICorner"),
+	UICorner_6 = Instance.new("UICorner"),
 	UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint"),
 	Icon_5 = Instance.new("ImageLabel"),
 	Settings = Instance.new("TextButton"),
-	UICorner_8 = Instance.new("UICorner"),
+	UICorner_7 = Instance.new("UICorner"),
 	UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint"),
 	Icon_6 = Instance.new("ImageLabel"),
 	Exploits_2 = Instance.new("Frame"),
-	UICorner_9 = Instance.new("UICorner"),
+	UICorner_8 = Instance.new("UICorner"),
 	TemplateBanner = Instance.new("Frame"),
+	UICorner_9 = Instance.new("UICorner"),
+	ShadowBG = Instance.new("ImageLabel"),
 	UICorner_10 = Instance.new("UICorner"),
-	ShadowBG_2 = Instance.new("ImageLabel"),
-	UICorner_11 = Instance.new("UICorner"),
 	Title = Instance.new("TextLabel"),
 	UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint"),
 	CustomBG = Instance.new("ImageLabel"),
-	UICorner_12 = Instance.new("UICorner"),
+	UICorner_11 = Instance.new("UICorner"),
 	Action = Instance.new("TextButton"),
-	UICorner_13 = Instance.new("UICorner"),
+	UICorner_12 = Instance.new("UICorner"),
 	UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint"),
 	Author = Instance.new("TextLabel"),
 	UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint"),
-	Title_2 = Instance.new("TextLabel"),
+	ButtonText = Instance.new("TextLabel"),
 	UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint"),
+	Title_2 = Instance.new("TextLabel"),
+	UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint"),
 	Shadow_2 = Instance.new("ImageLabel"),
 	nContainer = Instance.new("Frame"),
 	Template = Instance.new("Frame"),
 	Content = Instance.new("TextLabel"),
-	UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint"),
-	UICorner_14 = Instance.new("UICorner"),
-	Music_2 = Instance.new("Frame"),
-	UICorner_15 = Instance.new("UICorner"),
-	Title_3 = Instance.new("TextLabel"),
 	UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint"),
-	SoundId = Instance.new("TextBox"),
-	UICorner_16 = Instance.new("UICorner"),
+	UICorner_13 = Instance.new("UICorner"),
+	Music_2 = Instance.new("Frame"),
+	UICorner_14 = Instance.new("UICorner"),
+	Title_3 = Instance.new("TextLabel"),
 	UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint"),
-	Play = Instance.new("TextButton"),
+	SoundId = Instance.new("TextBox"),
+	UICorner_15 = Instance.new("UICorner"),
 	UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint"),
-	UICorner_17 = Instance.new("UICorner"),
-	RemBG = Instance.new("TextButton"),
+	Play = Instance.new("TextButton"),
 	UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint"),
-	UICorner_18 = Instance.new("UICorner"),
-	Stop = Instance.new("TextButton"),
+	UICorner_16 = Instance.new("UICorner"),
+	RemBG = Instance.new("TextButton"),
 	UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint"),
-	UICorner_19 = Instance.new("UICorner"),
-	Shadow_3 = Instance.new("ImageLabel"),
-	Home_2 = Instance.new("Frame"),
-	UICorner_20 = Instance.new("UICorner"),
-	Title_4 = Instance.new("TextLabel"),
+	UICorner_17 = Instance.new("UICorner"),
+	Stop = Instance.new("TextButton"),
 	UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint"),
+	UICorner_18 = Instance.new("UICorner"),
+	Shadow_3 = Instance.new("ImageLabel"),
+	StopButtonText = Instance.new("TextLabel"),
+	UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint"),
+	PlayButtonText = Instance.new("TextLabel"),
+	UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint"),
+	FindButtonText = Instance.new("TextLabel"),
+	UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint"),
+	Home_2 = Instance.new("Frame"),
+	UICorner_19 = Instance.new("UICorner"),
+	Title_4 = Instance.new("TextLabel"),
+	UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint"),
 	WelcomePanel = Instance.new("Frame"),
-	UICorner_21 = Instance.new("UICorner"),
+	UICorner_20 = Instance.new("UICorner"),
 	Text = Instance.new("TextLabel"),
 	Shadow_4 = Instance.new("ImageLabel"),
 	UpdatePanel = Instance.new("Frame"),
-	UICorner_22 = Instance.new("UICorner"),
+	UICorner_21 = Instance.new("UICorner"),
 	Text_2 = Instance.new("TextLabel"),
 	upd = Instance.new("TextLabel"),
 	feat = Instance.new("TextLabel"),
+	UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint"),
 	Shadow_5 = Instance.new("ImageLabel"),
 	DisPanel = Instance.new("Frame"),
-	UICorner_23 = Instance.new("UICorner"),
+	UICorner_22 = Instance.new("UICorner"),
 	Text_3 = Instance.new("TextLabel"),
 	dlink = Instance.new("TextLabel"),
 	Shadow_6 = Instance.new("ImageLabel"),
 	VersioPanel = Instance.new("Frame"),
-	UICorner_24 = Instance.new("UICorner"),
+	UICorner_23 = Instance.new("UICorner"),
 	Text_4 = Instance.new("TextLabel"),
 	Shadow_7 = Instance.new("ImageLabel"),
 	PlayersPanel = Instance.new("Frame"),
-	UICorner_25 = Instance.new("UICorner"),
+	UICorner_24 = Instance.new("UICorner"),
 	Text_5 = Instance.new("TextLabel"),
 	Shadow_8 = Instance.new("ImageLabel"),
 	Panel = Instance.new("Frame"),
-	UICorner_26 = Instance.new("UICorner"),
+	UICorner_25 = Instance.new("UICorner"),
 	Text_6 = Instance.new("TextLabel"),
 	Shadow_9 = Instance.new("ImageLabel"),
 	Shadow_10 = Instance.new("ImageLabel"),
 	Info_2 = Instance.new("Frame"),
-	UICorner_27 = Instance.new("UICorner"),
+	UICorner_26 = Instance.new("UICorner"),
 	Title_5 = Instance.new("TextLabel"),
-	UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint"),
+	UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint"),
 	Shadow_11 = Instance.new("ImageLabel"),
 	Title1 = Instance.new("TextLabel"),
-	UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint"),
-	About = Instance.new("TextLabel"),
-	UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint"),
-	About_2 = Instance.new("TextLabel"),
-	UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint"),
-	Copy = Instance.new("TextButton"),
-	UICorner_28 = Instance.new("UICorner"),
-	UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint"),
-	link = Instance.new("TextLabel"),
-	UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint"),
-	Title2 = Instance.new("TextLabel"),
 	UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint"),
+	About = Instance.new("TextLabel"),
+	UITextSizeConstraint_25 = Instance.new("UITextSizeConstraint"),
+	About_2 = Instance.new("TextLabel"),
+	UITextSizeConstraint_26 = Instance.new("UITextSizeConstraint"),
+	Copy = Instance.new("TextButton"),
+	UICorner_27 = Instance.new("UICorner"),
+	UITextSizeConstraint_27 = Instance.new("UITextSizeConstraint"),
+	link = Instance.new("TextLabel"),
+	UITextSizeConstraint_28 = Instance.new("UITextSizeConstraint"),
+	Title2 = Instance.new("TextLabel"),
+	UITextSizeConstraint_29 = Instance.new("UITextSizeConstraint"),
+	CopyToClipText = Instance.new("TextLabel"),
+	UITextSizeConstraint_30 = Instance.new("UITextSizeConstraint"),
 	Toggle = Instance.new("ImageButton"),
 	Players_2 = Instance.new("Frame"),
 	Title_6 = Instance.new("TextLabel"),
-	UITextSizeConstraint_25 = Instance.new("UITextSizeConstraint"),
-	UICorner_29 = Instance.new("UICorner"),
+	UITextSizeConstraint_31 = Instance.new("UITextSizeConstraint"),
+	UICorner_28 = Instance.new("UICorner"),
 	Divider = Instance.new("Frame"),
-	UICorner_30 = Instance.new("UICorner"),
+	UICorner_29 = Instance.new("UICorner"),
 	Divider_2 = Instance.new("Frame"),
 	List = Instance.new("ScrollingFrame"),
 	Template_2 = Instance.new("Frame"),
 	Avatar = Instance.new("ImageLabel"),
+	UICorner_30 = Instance.new("UICorner"),
 	UICorner_31 = Instance.new("UICorner"),
-	UICorner_32 = Instance.new("UICorner"),
 	Username = Instance.new("TextLabel"),
-	UITextSizeConstraint_26 = Instance.new("UITextSizeConstraint"),
+	UITextSizeConstraint_32 = Instance.new("UITextSizeConstraint"),
 	More = Instance.new("ImageButton"),
 	Shadow_12 = Instance.new("ImageLabel"),
 	Shadow_13 = Instance.new("ImageLabel"),
 	AboutPlayer = Instance.new("Frame"),
 	Avatar_2 = Instance.new("ImageLabel"),
-	UICorner_33 = Instance.new("UICorner"),
+	UICorner_32 = Instance.new("UICorner"),
 	Premium = Instance.new("ImageLabel"),
 	Divider_3 = Instance.new("Frame"),
 	UserId = Instance.new("TextLabel"),
-	UITextSizeConstraint_27 = Instance.new("UITextSizeConstraint"),
+	UITextSizeConstraint_33 = Instance.new("UITextSizeConstraint"),
 	CopyUsr = Instance.new("TextButton"),
-	UITextSizeConstraint_28 = Instance.new("UITextSizeConstraint"),
-	UICorner_34 = Instance.new("UICorner"),
+	UITextSizeConstraint_34 = Instance.new("UITextSizeConstraint"),
+	UICorner_33 = Instance.new("UICorner"),
 	Close = Instance.new("ImageButton"),
 	TeleportTo = Instance.new("TextButton"),
-	UITextSizeConstraint_29 = Instance.new("UITextSizeConstraint"),
-	UICorner_35 = Instance.new("UICorner"),
+	UICorner_34 = Instance.new("UICorner"),
+	UITextSizeConstraint_35 = Instance.new("UITextSizeConstraint"),
 	Rank = Instance.new("TextLabel"),
-	UITextSizeConstraint_30 = Instance.new("UITextSizeConstraint"),
+	UITextSizeConstraint_36 = Instance.new("UITextSizeConstraint"),
 	DomainDev = Instance.new("TextLabel"),
-	UITextSizeConstraint_31 = Instance.new("UITextSizeConstraint"),
+	UITextSizeConstraint_37 = Instance.new("UITextSizeConstraint"),
 	RankDisplay = Instance.new("TextLabel"),
-	UITextSizeConstraint_32 = Instance.new("UITextSizeConstraint"),
+	UITextSizeConstraint_38 = Instance.new("UITextSizeConstraint"),
 	Kill = Instance.new("TextButton"),
-	UITextSizeConstraint_33 = Instance.new("UITextSizeConstraint"),
-	UICorner_36 = Instance.new("UICorner"),
+	UITextSizeConstraint_39 = Instance.new("UITextSizeConstraint"),
+	UICorner_35 = Instance.new("UICorner"),
+	KillButtonText = Instance.new("TextLabel"),
+	UITextSizeConstraint_40 = Instance.new("UITextSizeConstraint"),
+	TPButtonText = Instance.new("TextLabel"),
+	UITextSizeConstraint_41 = Instance.new("UITextSizeConstraint"),
+	CopyButtonText = Instance.new("TextLabel"),
+	UITextSizeConstraint_42 = Instance.new("UITextSizeConstraint"),
 	SearchBox = Instance.new("TextBox"),
-	UICorner_37 = Instance.new("UICorner"),
-	UITextSizeConstraint_34 = Instance.new("UITextSizeConstraint"),
+	UICorner_36 = Instance.new("UICorner"),
+	UITextSizeConstraint_43 = Instance.new("UITextSizeConstraint"),
 	SearchList = Instance.new("ScrollingFrame"),
 	Template_3 = Instance.new("Frame"),
 	Avatar_3 = Instance.new("ImageLabel"),
+	UICorner_37 = Instance.new("UICorner"),
 	UICorner_38 = Instance.new("UICorner"),
-	UICorner_39 = Instance.new("UICorner"),
 	Username_2 = Instance.new("TextLabel"),
-	UITextSizeConstraint_35 = Instance.new("UITextSizeConstraint"),
+	UITextSizeConstraint_44 = Instance.new("UITextSizeConstraint"),
 	More_2 = Instance.new("ImageButton"),
 	Shadow_14 = Instance.new("ImageLabel"),
 	UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint"),
 	SettingsArea = Instance.new("Frame"),
-	UICorner_40 = Instance.new("UICorner"),
+	UICorner_39 = Instance.new("UICorner"),
 	Title_7 = Instance.new("TextLabel"),
-	UITextSizeConstraint_36 = Instance.new("UITextSizeConstraint"),
+	UITextSizeConstraint_45 = Instance.new("UITextSizeConstraint"),
 	Shadow_15 = Instance.new("ImageLabel"),
 	List_2 = Instance.new("ScrollingFrame"),
 	SettingTemplate = Instance.new("Frame"),
 	Slider = Instance.new("Frame"),
-	UICorner_41 = Instance.new("UICorner"),
+	UICorner_40 = Instance.new("UICorner"),
 	Dot = Instance.new("Frame"),
-	UICorner_42 = Instance.new("UICorner"),
+	UICorner_41 = Instance.new("UICorner"),
 	SettingTitle = Instance.new("TextLabel"),
-	UITextSizeConstraint_37 = Instance.new("UITextSizeConstraint"),
+	UITextSizeConstraint_46 = Instance.new("UITextSizeConstraint"),
 	SettingDesc = Instance.new("TextLabel"),
-	UITextSizeConstraint_38 = Instance.new("UITextSizeConstraint"),
+	UITextSizeConstraint_47 = Instance.new("UITextSizeConstraint"),
 	PromptExploit = Instance.new("Frame"),
 	Question = Instance.new("TextLabel"),
-	UITextSizeConstraint_39 = Instance.new("UITextSizeConstraint"),
-	UICorner_43 = Instance.new("UICorner"),
+	UITextSizeConstraint_48 = Instance.new("UITextSizeConstraint"),
+	UICorner_42 = Instance.new("UICorner"),
 	Yes = Instance.new("TextButton"),
-	UITextSizeConstraint_40 = Instance.new("UITextSizeConstraint"),
-	UICorner_44 = Instance.new("UICorner"),
+	UITextSizeConstraint_49 = Instance.new("UITextSizeConstraint"),
+	UICorner_43 = Instance.new("UICorner"),
 	No = Instance.new("TextButton"),
-	UITextSizeConstraint_41 = Instance.new("UITextSizeConstraint"),
-	UICorner_45 = Instance.new("UICorner"),
+	UITextSizeConstraint_50 = Instance.new("UITextSizeConstraint"),
+	UICorner_44 = Instance.new("UICorner"),
 	PromptV2 = Instance.new("Frame"),
 	Question_2 = Instance.new("TextLabel"),
-	UITextSizeConstraint_42 = Instance.new("UITextSizeConstraint"),
-	UICorner_46 = Instance.new("UICorner"),
+	UITextSizeConstraint_51 = Instance.new("UITextSizeConstraint"),
+	UICorner_45 = Instance.new("UICorner"),
 	Yes_2 = Instance.new("TextButton"),
-	UITextSizeConstraint_43 = Instance.new("UITextSizeConstraint"),
-	UICorner_47 = Instance.new("UICorner"),
+	UITextSizeConstraint_52 = Instance.new("UITextSizeConstraint"),
+	UICorner_46 = Instance.new("UICorner"),
 	No_2 = Instance.new("TextButton"),
-	UITextSizeConstraint_44 = Instance.new("UITextSizeConstraint"),
-	UICorner_48 = Instance.new("UICorner"),
+	UITextSizeConstraint_53 = Instance.new("UITextSizeConstraint"),
+	UICorner_47 = Instance.new("UICorner"),
 }
 
 --Properties:
@@ -252,20 +269,6 @@ mainDomain.MediaMain.Position = UDim2.new(0.0786458403, 0, 0.138699248, 0)
 mainDomain.MediaMain.Size = UDim2.new(0.841465175, 0, 0.993685126, 0)
 mainDomain.MediaMain.ZIndex = 1000
 
-mainDomain.ShadowBG.Name = "ShadowBG"
-mainDomain.ShadowBG.Parent = mainDomain.MediaMain
-mainDomain.ShadowBG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-mainDomain.ShadowBG.BackgroundTransparency = 1.000
-mainDomain.ShadowBG.BorderSizePixel = 0
-mainDomain.ShadowBG.Position = UDim2.new(0, 0, 0.326565266, 0)
-mainDomain.ShadowBG.Size = UDim2.new(1, 0, 0.783774376, 0)
-mainDomain.ShadowBG.Visible = false
-mainDomain.ShadowBG.Image = "http://www.roblox.com/asset/?id=5602558289"
-mainDomain.ShadowBG.ImageColor3 = Color3.fromRGB(20, 20, 20)
-
-mainDomain.UICorner.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner.Parent = mainDomain.ShadowBG
-
 mainDomain.Functions.Name = "Functions"
 mainDomain.Functions.Parent = mainDomain.MediaMain
 mainDomain.Functions.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
@@ -274,8 +277,8 @@ mainDomain.Functions.Position = UDim2.new(0.27700001, 0, 0.781000018, 0)
 mainDomain.Functions.Size = UDim2.new(0.448024958, 0, 0.0968273655, 0)
 mainDomain.Functions.ZIndex = 1000
 
-mainDomain.UICorner_2.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_2.Parent = mainDomain.Functions
+mainDomain.UICorner.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner.Parent = mainDomain.Functions
 
 mainDomain.Music.Name = "Music"
 mainDomain.Music.Parent = mainDomain.Functions
@@ -291,8 +294,8 @@ mainDomain.Music.TextScaled = true
 mainDomain.Music.TextSize = 14.000
 mainDomain.Music.TextWrapped = true
 
-mainDomain.UICorner_3.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_3.Parent = mainDomain.Music
+mainDomain.UICorner_2.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_2.Parent = mainDomain.Music
 
 mainDomain.UITextSizeConstraint.Parent = mainDomain.Music
 mainDomain.UITextSizeConstraint.MaxTextSize = 21
@@ -321,8 +324,8 @@ mainDomain.Exploits.TextScaled = true
 mainDomain.Exploits.TextSize = 14.000
 mainDomain.Exploits.TextWrapped = true
 
-mainDomain.UICorner_4.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_4.Parent = mainDomain.Exploits
+mainDomain.UICorner_3.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_3.Parent = mainDomain.Exploits
 
 mainDomain.UITextSizeConstraint_2.Parent = mainDomain.Exploits
 mainDomain.UITextSizeConstraint_2.MaxTextSize = 21
@@ -368,8 +371,8 @@ mainDomain.Home.TextScaled = true
 mainDomain.Home.TextSize = 14.000
 mainDomain.Home.TextWrapped = true
 
-mainDomain.UICorner_5.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_5.Parent = mainDomain.Home
+mainDomain.UICorner_4.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_4.Parent = mainDomain.Home
 
 mainDomain.UITextSizeConstraint_3.Parent = mainDomain.Home
 mainDomain.UITextSizeConstraint_3.MaxTextSize = 21
@@ -400,8 +403,8 @@ mainDomain.Info.TextScaled = true
 mainDomain.Info.TextSize = 14.000
 mainDomain.Info.TextWrapped = true
 
-mainDomain.UICorner_6.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_6.Parent = mainDomain.Info
+mainDomain.UICorner_5.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_5.Parent = mainDomain.Info
 
 mainDomain.UITextSizeConstraint_4.Parent = mainDomain.Info
 mainDomain.UITextSizeConstraint_4.MaxTextSize = 21
@@ -445,8 +448,8 @@ mainDomain.Players.TextSize = 14.000
 mainDomain.Players.TextTransparency = 1.000
 mainDomain.Players.TextWrapped = true
 
-mainDomain.UICorner_7.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_7.Parent = mainDomain.Players
+mainDomain.UICorner_6.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_6.Parent = mainDomain.Players
 
 mainDomain.UITextSizeConstraint_5.Parent = mainDomain.Players
 mainDomain.UITextSizeConstraint_5.MaxTextSize = 21
@@ -478,8 +481,8 @@ mainDomain.Settings.TextSize = 14.000
 mainDomain.Settings.TextTransparency = 1.000
 mainDomain.Settings.TextWrapped = true
 
-mainDomain.UICorner_8.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_8.Parent = mainDomain.Settings
+mainDomain.UICorner_7.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_7.Parent = mainDomain.Settings
 
 mainDomain.UITextSizeConstraint_6.Parent = mainDomain.Settings
 mainDomain.UITextSizeConstraint_6.MaxTextSize = 21
@@ -505,8 +508,8 @@ mainDomain.Exploits_2.Position = UDim2.new(0.500331104, 0, 0.568300247, 0)
 mainDomain.Exploits_2.Size = UDim2.new(0.956206441, 0, 0.360386193, 0)
 mainDomain.Exploits_2.Visible = false
 
-mainDomain.UICorner_9.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_9.Parent = mainDomain.Exploits_2
+mainDomain.UICorner_8.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_8.Parent = mainDomain.Exploits_2
 
 mainDomain.TemplateBanner.Name = "TemplateBanner"
 mainDomain.TemplateBanner.Parent = mainDomain.Exploits_2
@@ -515,22 +518,22 @@ mainDomain.TemplateBanner.BorderSizePixel = 0
 mainDomain.TemplateBanner.Position = UDim2.new(0.0250000004, 0, 0.0649999976, 0)
 mainDomain.TemplateBanner.Size = UDim2.new(0.123989441, 0, 0.870303035, 0)
 
+mainDomain.UICorner_9.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_9.Parent = mainDomain.TemplateBanner
+
+mainDomain.ShadowBG.Name = "ShadowBG"
+mainDomain.ShadowBG.Parent = mainDomain.TemplateBanner
+mainDomain.ShadowBG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.ShadowBG.BackgroundTransparency = 1.000
+mainDomain.ShadowBG.BorderSizePixel = 0
+mainDomain.ShadowBG.Size = UDim2.new(1, 0, 1, 0)
+mainDomain.ShadowBG.ZIndex = 3
+mainDomain.ShadowBG.Image = "http://www.roblox.com/asset/?id=5602558289"
+mainDomain.ShadowBG.ImageColor3 = Color3.fromRGB(20, 20, 20)
+mainDomain.ShadowBG.ImageTransparency = 0.100
+
 mainDomain.UICorner_10.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_10.Parent = mainDomain.TemplateBanner
-
-mainDomain.ShadowBG_2.Name = "ShadowBG"
-mainDomain.ShadowBG_2.Parent = mainDomain.TemplateBanner
-mainDomain.ShadowBG_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-mainDomain.ShadowBG_2.BackgroundTransparency = 1.000
-mainDomain.ShadowBG_2.BorderSizePixel = 0
-mainDomain.ShadowBG_2.Size = UDim2.new(1, 0, 1, 0)
-mainDomain.ShadowBG_2.ZIndex = 3
-mainDomain.ShadowBG_2.Image = "http://www.roblox.com/asset/?id=5602558289"
-mainDomain.ShadowBG_2.ImageColor3 = Color3.fromRGB(20, 20, 20)
-mainDomain.ShadowBG_2.ImageTransparency = 0.100
-
-mainDomain.UICorner_11.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_11.Parent = mainDomain.ShadowBG_2
+mainDomain.UICorner_10.Parent = mainDomain.ShadowBG
 
 mainDomain.Title.Name = "Title"
 mainDomain.Title.Parent = mainDomain.TemplateBanner
@@ -558,8 +561,8 @@ mainDomain.CustomBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
 mainDomain.CustomBG.BorderSizePixel = 0
 mainDomain.CustomBG.Size = UDim2.new(1, 0, 1, 0)
 
-mainDomain.UICorner_12.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_12.Parent = mainDomain.CustomBG
+mainDomain.UICorner_11.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_11.Parent = mainDomain.CustomBG
 
 mainDomain.Action.Name = "Action"
 mainDomain.Action.Parent = mainDomain.TemplateBanner
@@ -574,10 +577,11 @@ mainDomain.Action.Text = "Execute"
 mainDomain.Action.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Action.TextScaled = true
 mainDomain.Action.TextSize = 14.000
+mainDomain.Action.TextTransparency = 1.000
 mainDomain.Action.TextWrapped = true
 
-mainDomain.UICorner_13.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_13.Parent = mainDomain.Action
+mainDomain.UICorner_12.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_12.Parent = mainDomain.Action
 
 mainDomain.UITextSizeConstraint_8.Parent = mainDomain.Action
 mainDomain.UITextSizeConstraint_8.MaxTextSize = 20
@@ -601,13 +605,31 @@ mainDomain.Author.TextXAlignment = Enum.TextXAlignment.Left
 mainDomain.UITextSizeConstraint_9.Parent = mainDomain.Author
 mainDomain.UITextSizeConstraint_9.MaxTextSize = 18
 
+mainDomain.ButtonText.Name = "ButtonText"
+mainDomain.ButtonText.Parent = mainDomain.TemplateBanner
+mainDomain.ButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.ButtonText.BackgroundTransparency = 1.000
+mainDomain.ButtonText.BorderSizePixel = 0
+mainDomain.ButtonText.Position = UDim2.new(0.30561161, 0, 0.849900305, 0)
+mainDomain.ButtonText.Size = UDim2.new(0.381223291, 0, 0.0679614544, 0)
+mainDomain.ButtonText.ZIndex = 5
+mainDomain.ButtonText.Font = Enum.Font.GothamBold
+mainDomain.ButtonText.Text = "Execute"
+mainDomain.ButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.ButtonText.TextScaled = true
+mainDomain.ButtonText.TextSize = 14.000
+mainDomain.ButtonText.TextWrapped = true
+
+mainDomain.UITextSizeConstraint_10.Parent = mainDomain.ButtonText
+mainDomain.UITextSizeConstraint_10.MaxTextSize = 21
+
 mainDomain.Title_2.Name = "Title"
 mainDomain.Title_2.Parent = mainDomain.Exploits_2
 mainDomain.Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Title_2.BackgroundTransparency = 1.000
 mainDomain.Title_2.BorderSizePixel = 0
-mainDomain.Title_2.Position = UDim2.new(-0.000245215575, 0, -0.128507346, 0)
-mainDomain.Title_2.Size = UDim2.new(0.234618038, 0, 0.128473058, 0)
+mainDomain.Title_2.Position = UDim2.new(-0.000245209754, 0, -0.0905502215, 0)
+mainDomain.Title_2.Size = UDim2.new(0.234618038, 0, 0.0516961701, 0)
 mainDomain.Title_2.ZIndex = 3
 mainDomain.Title_2.Font = Enum.Font.GothamBlack
 mainDomain.Title_2.Text = "Featured Exploits"
@@ -617,8 +639,8 @@ mainDomain.Title_2.TextSize = 14.000
 mainDomain.Title_2.TextWrapped = true
 mainDomain.Title_2.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_10.Parent = mainDomain.Title_2
-mainDomain.UITextSizeConstraint_10.MaxTextSize = 21
+mainDomain.UITextSizeConstraint_11.Parent = mainDomain.Title_2
+mainDomain.UITextSizeConstraint_11.MaxTextSize = 21
 
 mainDomain.Shadow_2.Name = "Shadow"
 mainDomain.Shadow_2.Parent = mainDomain.Exploits_2
@@ -656,22 +678,22 @@ mainDomain.Content.AnchorPoint = Vector2.new(0.5, 0.5)
 mainDomain.Content.BackgroundColor3 = Color3.fromRGB(0, 115, 84)
 mainDomain.Content.BackgroundTransparency = 1.000
 mainDomain.Content.BorderSizePixel = 0
-mainDomain.Content.Position = UDim2.new(0.5, 0, 0.5, 0)
-mainDomain.Content.Size = UDim2.new(0.964835048, 0, 1, 0)
+mainDomain.Content.Position = UDim2.new(0.494060695, 0, 0.483100235, 0)
+mainDomain.Content.Size = UDim2.new(0.964835107, 0, 0.596204698, 0)
 mainDomain.Content.ZIndex = 100
 mainDomain.Content.Font = Enum.Font.GothamBold
-mainDomain.Content.Text = ""
+mainDomain.Content.Text = "br"
 mainDomain.Content.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Content.TextScaled = true
 mainDomain.Content.TextSize = 16.000
 mainDomain.Content.TextTransparency = 1.000
 mainDomain.Content.TextWrapped = true
 
-mainDomain.UITextSizeConstraint_11.Parent = mainDomain.Content
-mainDomain.UITextSizeConstraint_11.MaxTextSize = 16
+mainDomain.UITextSizeConstraint_12.Parent = mainDomain.Content
+mainDomain.UITextSizeConstraint_12.MaxTextSize = 16
 
-mainDomain.UICorner_14.CornerRadius = UDim.new(0, 10)
-mainDomain.UICorner_14.Parent = mainDomain.Content
+mainDomain.UICorner_13.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_13.Parent = mainDomain.Content
 
 mainDomain.Music_2.Name = "Music"
 mainDomain.Music_2.Parent = mainDomain.MediaMain
@@ -682,16 +704,16 @@ mainDomain.Music_2.Position = UDim2.new(0.500331104, 0, 0.635861814, 0)
 mainDomain.Music_2.Size = UDim2.new(0.956206441, 0, 0.223806754, 0)
 mainDomain.Music_2.Visible = false
 
-mainDomain.UICorner_15.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_15.Parent = mainDomain.Music_2
+mainDomain.UICorner_14.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_14.Parent = mainDomain.Music_2
 
 mainDomain.Title_3.Name = "Title"
 mainDomain.Title_3.Parent = mainDomain.Music_2
 mainDomain.Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Title_3.BackgroundTransparency = 1.000
 mainDomain.Title_3.BorderSizePixel = 0
-mainDomain.Title_3.Position = UDim2.new(-0.000245213509, 0, -0.20351918, 0)
-mainDomain.Title_3.Size = UDim2.new(0.234618038, 0, 0.202951029, 0)
+mainDomain.Title_3.Position = UDim2.new(-0.000245209754, 0, -0.150029019, 0)
+mainDomain.Title_3.Size = UDim2.new(0.234618038, 0, 0.0911183879, 0)
 mainDomain.Title_3.ZIndex = 3
 mainDomain.Title_3.Font = Enum.Font.GothamBlack
 mainDomain.Title_3.Text = "Music System"
@@ -701,8 +723,8 @@ mainDomain.Title_3.TextSize = 14.000
 mainDomain.Title_3.TextWrapped = true
 mainDomain.Title_3.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_12.Parent = mainDomain.Title_3
-mainDomain.UITextSizeConstraint_12.MaxTextSize = 21
+mainDomain.UITextSizeConstraint_13.Parent = mainDomain.Title_3
+mainDomain.UITextSizeConstraint_13.MaxTextSize = 21
 
 mainDomain.SoundId.Name = "SoundId"
 mainDomain.SoundId.Parent = mainDomain.Music_2
@@ -718,11 +740,11 @@ mainDomain.SoundId.TextScaled = true
 mainDomain.SoundId.TextSize = 14.000
 mainDomain.SoundId.TextWrapped = true
 
-mainDomain.UICorner_16.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_16.Parent = mainDomain.SoundId
+mainDomain.UICorner_15.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_15.Parent = mainDomain.SoundId
 
-mainDomain.UITextSizeConstraint_13.Parent = mainDomain.SoundId
-mainDomain.UITextSizeConstraint_13.MaxTextSize = 20
+mainDomain.UITextSizeConstraint_14.Parent = mainDomain.SoundId
+mainDomain.UITextSizeConstraint_14.MaxTextSize = 20
 
 mainDomain.Play.Name = "Play"
 mainDomain.Play.Parent = mainDomain.Music_2
@@ -731,17 +753,18 @@ mainDomain.Play.BorderSizePixel = 0
 mainDomain.Play.Position = UDim2.new(0.555112123, 0, 0.255434364, 0)
 mainDomain.Play.Size = UDim2.new(0.129394159, 0, 0.204603508, 0)
 mainDomain.Play.Font = Enum.Font.GothamBold
-mainDomain.Play.Text = "Play"
+mainDomain.Play.Text = ""
 mainDomain.Play.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Play.TextScaled = true
 mainDomain.Play.TextSize = 14.000
+mainDomain.Play.TextTransparency = 1.000
 mainDomain.Play.TextWrapped = true
 
-mainDomain.UITextSizeConstraint_14.Parent = mainDomain.Play
-mainDomain.UITextSizeConstraint_14.MaxTextSize = 20
+mainDomain.UITextSizeConstraint_15.Parent = mainDomain.Play
+mainDomain.UITextSizeConstraint_15.MaxTextSize = 20
 
-mainDomain.UICorner_17.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_17.Parent = mainDomain.Play
+mainDomain.UICorner_16.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_16.Parent = mainDomain.Play
 
 mainDomain.RemBG.Name = "RemBG"
 mainDomain.RemBG.Parent = mainDomain.Music_2
@@ -750,17 +773,18 @@ mainDomain.RemBG.BorderSizePixel = 0
 mainDomain.RemBG.Position = UDim2.new(0.316637278, 0, 0.533695102, 0)
 mainDomain.RemBG.Size = UDim2.new(0.222563714, 0, 0.204603508, 0)
 mainDomain.RemBG.Font = Enum.Font.GothamBold
-mainDomain.RemBG.Text = "Find and remove game music"
+mainDomain.RemBG.Text = ""
 mainDomain.RemBG.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.RemBG.TextScaled = true
 mainDomain.RemBG.TextSize = 14.000
+mainDomain.RemBG.TextTransparency = 1.000
 mainDomain.RemBG.TextWrapped = true
 
-mainDomain.UITextSizeConstraint_15.Parent = mainDomain.RemBG
-mainDomain.UITextSizeConstraint_15.MaxTextSize = 20
+mainDomain.UITextSizeConstraint_16.Parent = mainDomain.RemBG
+mainDomain.UITextSizeConstraint_16.MaxTextSize = 20
 
-mainDomain.UICorner_18.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_18.Parent = mainDomain.RemBG
+mainDomain.UICorner_17.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_17.Parent = mainDomain.RemBG
 
 mainDomain.Stop.Name = "Stop"
 mainDomain.Stop.Parent = mainDomain.Music_2
@@ -769,17 +793,18 @@ mainDomain.Stop.BorderSizePixel = 0
 mainDomain.Stop.Position = UDim2.new(0.555112123, 0, 0.533695102, 0)
 mainDomain.Stop.Size = UDim2.new(0.129394159, 0, 0.204603508, 0)
 mainDomain.Stop.Font = Enum.Font.GothamBold
-mainDomain.Stop.Text = "Stop"
+mainDomain.Stop.Text = ""
 mainDomain.Stop.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Stop.TextScaled = true
 mainDomain.Stop.TextSize = 14.000
+mainDomain.Stop.TextTransparency = 1.000
 mainDomain.Stop.TextWrapped = true
 
-mainDomain.UITextSizeConstraint_16.Parent = mainDomain.Stop
-mainDomain.UITextSizeConstraint_16.MaxTextSize = 20
+mainDomain.UITextSizeConstraint_17.Parent = mainDomain.Stop
+mainDomain.UITextSizeConstraint_17.MaxTextSize = 20
 
-mainDomain.UICorner_19.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_19.Parent = mainDomain.Stop
+mainDomain.UICorner_18.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_18.Parent = mainDomain.Stop
 
 mainDomain.Shadow_3.Name = "Shadow"
 mainDomain.Shadow_3.Parent = mainDomain.Music_2
@@ -793,6 +818,63 @@ mainDomain.Shadow_3.Image = "rbxassetid://3523728077"
 mainDomain.Shadow_3.ImageColor3 = Color3.fromRGB(33, 33, 33)
 mainDomain.Shadow_3.ImageTransparency = 0.750
 
+mainDomain.StopButtonText.Name = "StopButtonText"
+mainDomain.StopButtonText.Parent = mainDomain.Music_2
+mainDomain.StopButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.StopButtonText.BackgroundTransparency = 1.000
+mainDomain.StopButtonText.BorderSizePixel = 0
+mainDomain.StopButtonText.Position = UDim2.new(0.604340434, 0, 0.587586164, 0)
+mainDomain.StopButtonText.Size = UDim2.new(0.0287741423, 0, 0.0911183879, 0)
+mainDomain.StopButtonText.ZIndex = 3
+mainDomain.StopButtonText.Font = Enum.Font.GothamBold
+mainDomain.StopButtonText.Text = "Stop"
+mainDomain.StopButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.StopButtonText.TextScaled = true
+mainDomain.StopButtonText.TextSize = 14.000
+mainDomain.StopButtonText.TextWrapped = true
+mainDomain.StopButtonText.TextXAlignment = Enum.TextXAlignment.Left
+
+mainDomain.UITextSizeConstraint_18.Parent = mainDomain.StopButtonText
+mainDomain.UITextSizeConstraint_18.MaxTextSize = 20
+
+mainDomain.PlayButtonText.Name = "PlayButtonText"
+mainDomain.PlayButtonText.Parent = mainDomain.Music_2
+mainDomain.PlayButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.PlayButtonText.BackgroundTransparency = 1.000
+mainDomain.PlayButtonText.BorderSizePixel = 0
+mainDomain.PlayButtonText.Position = UDim2.new(0.605635047, 0, 0.308375895, 0)
+mainDomain.PlayButtonText.Size = UDim2.new(0.0281268358, 0, 0.0911183879, 0)
+mainDomain.PlayButtonText.ZIndex = 3
+mainDomain.PlayButtonText.Font = Enum.Font.GothamBold
+mainDomain.PlayButtonText.Text = "Play"
+mainDomain.PlayButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.PlayButtonText.TextScaled = true
+mainDomain.PlayButtonText.TextSize = 14.000
+mainDomain.PlayButtonText.TextWrapped = true
+mainDomain.PlayButtonText.TextXAlignment = Enum.TextXAlignment.Left
+
+mainDomain.UITextSizeConstraint_19.Parent = mainDomain.PlayButtonText
+mainDomain.UITextSizeConstraint_19.MaxTextSize = 20
+
+mainDomain.FindButtonText.Name = "FindButtonText"
+mainDomain.FindButtonText.Parent = mainDomain.Music_2
+mainDomain.FindButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.FindButtonText.BackgroundTransparency = 1.000
+mainDomain.FindButtonText.BorderSizePixel = 0
+mainDomain.FindButtonText.Position = UDim2.new(0.348653793, 0, 0.587586164, 0)
+mainDomain.FindButtonText.Size = UDim2.new(0.164357632, 0, 0.0911183879, 0)
+mainDomain.FindButtonText.ZIndex = 3
+mainDomain.FindButtonText.Font = Enum.Font.GothamBold
+mainDomain.FindButtonText.Text = "Find and mute game music"
+mainDomain.FindButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.FindButtonText.TextScaled = true
+mainDomain.FindButtonText.TextSize = 14.000
+mainDomain.FindButtonText.TextWrapped = true
+mainDomain.FindButtonText.TextXAlignment = Enum.TextXAlignment.Left
+
+mainDomain.UITextSizeConstraint_20.Parent = mainDomain.FindButtonText
+mainDomain.UITextSizeConstraint_20.MaxTextSize = 20
+
 mainDomain.Home_2.Name = "Home"
 mainDomain.Home_2.Parent = mainDomain.MediaMain
 mainDomain.Home_2.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -803,16 +885,16 @@ mainDomain.Home_2.Size = UDim2.new(0.956206441, 0, 0.360386193, 0)
 mainDomain.Home_2.Visible = false
 mainDomain.Home_2.ZIndex = 1000
 
-mainDomain.UICorner_20.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_20.Parent = mainDomain.Home_2
+mainDomain.UICorner_19.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_19.Parent = mainDomain.Home_2
 
 mainDomain.Title_4.Name = "Title"
 mainDomain.Title_4.Parent = mainDomain.Home_2
 mainDomain.Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Title_4.BackgroundTransparency = 1.000
 mainDomain.Title_4.BorderSizePixel = 0
-mainDomain.Title_4.Position = UDim2.new(-0.000245215575, 0, -0.128507346, 0)
-mainDomain.Title_4.Size = UDim2.new(0.234618038, 0, 0.128473058, 0)
+mainDomain.Title_4.Position = UDim2.new(0.00104940613, 0, -0.0951278433, 0)
+mainDomain.Title_4.Size = UDim2.new(0.234618038, 0, 0.0640377402, 0)
 mainDomain.Title_4.ZIndex = 1005
 mainDomain.Title_4.Font = Enum.Font.GothamBlack
 mainDomain.Title_4.Text = "Home"
@@ -822,8 +904,8 @@ mainDomain.Title_4.TextSize = 14.000
 mainDomain.Title_4.TextWrapped = true
 mainDomain.Title_4.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_17.Parent = mainDomain.Title_4
-mainDomain.UITextSizeConstraint_17.MaxTextSize = 21
+mainDomain.UITextSizeConstraint_21.Parent = mainDomain.Title_4
+mainDomain.UITextSizeConstraint_21.MaxTextSize = 21
 
 mainDomain.WelcomePanel.Name = "WelcomePanel"
 mainDomain.WelcomePanel.Parent = mainDomain.Home_2
@@ -833,16 +915,16 @@ mainDomain.WelcomePanel.Position = UDim2.new(0.0219970066, 0, 0.0906633809, 0)
 mainDomain.WelcomePanel.Size = UDim2.new(0.402122289, 0, 0.3889229, 0)
 mainDomain.WelcomePanel.ZIndex = 1002
 
-mainDomain.UICorner_21.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_21.Parent = mainDomain.WelcomePanel
+mainDomain.UICorner_20.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_20.Parent = mainDomain.WelcomePanel
 
 mainDomain.Text.Name = "Text"
 mainDomain.Text.Parent = mainDomain.WelcomePanel
 mainDomain.Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Text.BackgroundTransparency = 1.000
 mainDomain.Text.BorderSizePixel = 0
-mainDomain.Text.Position = UDim2.new(0.0273511428, 0, 0.133592173, 0)
-mainDomain.Text.Size = UDim2.new(0.903388321, 0, 0.186107069, 0)
+mainDomain.Text.Position = UDim2.new(0.0321803391, 0, 0.112699196, 0)
+mainDomain.Text.Size = UDim2.new(0.903388321, 0, 0.147111714, 0)
 mainDomain.Text.ZIndex = 1003
 mainDomain.Text.Font = Enum.Font.GothamBold
 mainDomain.Text.Text = "Welcome to Domain"
@@ -873,16 +955,16 @@ mainDomain.UpdatePanel.Position = UDim2.new(0.442528039, 0, 0.0906633809, 0)
 mainDomain.UpdatePanel.Size = UDim2.new(0.211852968, 0, 0.849885046, 0)
 mainDomain.UpdatePanel.ZIndex = 1002
 
-mainDomain.UICorner_22.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_22.Parent = mainDomain.UpdatePanel
+mainDomain.UICorner_21.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_21.Parent = mainDomain.UpdatePanel
 
 mainDomain.Text_2.Name = "Text"
 mainDomain.Text_2.Parent = mainDomain.UpdatePanel
 mainDomain.Text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Text_2.BackgroundTransparency = 1.000
 mainDomain.Text_2.BorderSizePixel = 0
-mainDomain.Text_2.Position = UDim2.new(0.0487248637, 0, 0.0459417105, 0)
-mainDomain.Text_2.Size = UDim2.new(0.621630788, 0, 0.113289267, 0)
+mainDomain.Text_2.Position = UDim2.new(0.0517803617, 0, 0.0515730195, 0)
+mainDomain.Text_2.Size = UDim2.new(0.621630788, 0, 0.0772069544, 0)
 mainDomain.Text_2.ZIndex = 1003
 mainDomain.Text_2.Font = Enum.Font.GothamBold
 mainDomain.Text_2.Text = "Latest Release"
@@ -897,7 +979,7 @@ mainDomain.upd.Parent = mainDomain.UpdatePanel
 mainDomain.upd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.upd.BackgroundTransparency = 1.000
 mainDomain.upd.BorderSizePixel = 0
-mainDomain.upd.Position = UDim2.new(0.0487249047, 0, 0.158610359, 0)
+mainDomain.upd.Position = UDim2.new(0.0517803617, 0, 0.131204471, 0)
 mainDomain.upd.Size = UDim2.new(0.91293782, 0, 0.0701911822, 0)
 mainDomain.upd.ZIndex = 1003
 mainDomain.upd.Font = Enum.Font.GothamSemibold
@@ -913,16 +995,20 @@ mainDomain.feat.Parent = mainDomain.UpdatePanel
 mainDomain.feat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.feat.BackgroundTransparency = 1.000
 mainDomain.feat.BorderSizePixel = 0
-mainDomain.feat.Position = UDim2.new(0.0426139869, 0, 0.280414313, 0)
-mainDomain.feat.Size = UDim2.new(0.91293782, 0, 0.0701911822, 0)
+mainDomain.feat.Position = UDim2.new(0.0426139869, 0, 0.225602552, 0)
+mainDomain.feat.Size = UDim2.new(0.913, 0, 0.063, 0)
 mainDomain.feat.ZIndex = 1003
 mainDomain.feat.Font = Enum.Font.Gotham
 mainDomain.feat.Text = "- feature"
 mainDomain.feat.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.feat.TextScaled = true
-mainDomain.feat.TextSize = 14.000
+mainDomain.feat.TextSize = 20.000
 mainDomain.feat.TextWrapped = true
 mainDomain.feat.TextXAlignment = Enum.TextXAlignment.Left
+mainDomain.feat.TextYAlignment = Enum.TextYAlignment.Top
+
+mainDomain.UITextSizeConstraint_22.Parent = mainDomain.feat
+mainDomain.UITextSizeConstraint_22.MaxTextSize = 20
 
 mainDomain.Shadow_5.Name = "Shadow"
 mainDomain.Shadow_5.Parent = mainDomain.UpdatePanel
@@ -945,8 +1031,8 @@ mainDomain.DisPanel.Position = UDim2.new(0.672849536, 0, 0.0906633213, 0)
 mainDomain.DisPanel.Size = UDim2.new(0.311141819, 0, 0.3889229, 0)
 mainDomain.DisPanel.ZIndex = 1002
 
-mainDomain.UICorner_23.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_23.Parent = mainDomain.DisPanel
+mainDomain.UICorner_22.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_22.Parent = mainDomain.DisPanel
 
 mainDomain.Text_3.Name = "Text"
 mainDomain.Text_3.Parent = mainDomain.DisPanel
@@ -1000,16 +1086,16 @@ mainDomain.VersioPanel.Position = UDim2.new(0.200808257, 0, 0.549161136, 0)
 mainDomain.VersioPanel.Size = UDim2.new(0.223311067, 0, 0.3889229, 0)
 mainDomain.VersioPanel.ZIndex = 1002
 
-mainDomain.UICorner_24.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_24.Parent = mainDomain.VersioPanel
+mainDomain.UICorner_23.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_23.Parent = mainDomain.VersioPanel
 
 mainDomain.Text_4.Name = "Text"
 mainDomain.Text_4.Parent = mainDomain.VersioPanel
 mainDomain.Text_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Text_4.BackgroundTransparency = 1.000
 mainDomain.Text_4.BorderSizePixel = 0
-mainDomain.Text_4.Position = UDim2.new(0.0481988899, 0, 0.693065882, 0)
-mainDomain.Text_4.Size = UDim2.new(0.903388441, 0, 0.186107069, 0)
+mainDomain.Text_4.Position = UDim2.new(0.048198916, 0, 0.726458907, 0)
+mainDomain.Text_4.Size = UDim2.new(0.903388441, 0, 0.152714044, 0)
 mainDomain.Text_4.ZIndex = 1003
 mainDomain.Text_4.Font = Enum.Font.GothamBold
 mainDomain.Text_4.Text = "Domain v0.00"
@@ -1040,8 +1126,8 @@ mainDomain.PlayersPanel.Position = UDim2.new(0.0219969973, 0, 0.549161077, 0)
 mainDomain.PlayersPanel.Size = UDim2.new(0.162478819, 0, 0.3889229, 0)
 mainDomain.PlayersPanel.ZIndex = 1002
 
-mainDomain.UICorner_25.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_25.Parent = mainDomain.PlayersPanel
+mainDomain.UICorner_24.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_24.Parent = mainDomain.PlayersPanel
 
 mainDomain.Text_5.Name = "Text"
 mainDomain.Text_5.Parent = mainDomain.PlayersPanel
@@ -1080,8 +1166,8 @@ mainDomain.Panel.Position = UDim2.new(0.672849536, 0, 0.567718089, 0)
 mainDomain.Panel.Size = UDim2.new(0.311141789, 0, 0.372299641, 0)
 mainDomain.Panel.ZIndex = 1002
 
-mainDomain.UICorner_26.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_26.Parent = mainDomain.Panel
+mainDomain.UICorner_25.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_25.Parent = mainDomain.Panel
 
 mainDomain.Text_6.Name = "Text"
 mainDomain.Text_6.Parent = mainDomain.Panel
@@ -1133,16 +1219,16 @@ mainDomain.Info_2.Position = UDim2.new(0.500331104, 0, 0.635861814, 0)
 mainDomain.Info_2.Size = UDim2.new(0.956206441, 0, 0.223806754, 0)
 mainDomain.Info_2.Visible = false
 
-mainDomain.UICorner_27.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_27.Parent = mainDomain.Info_2
+mainDomain.UICorner_26.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_26.Parent = mainDomain.Info_2
 
 mainDomain.Title_5.Name = "Title"
 mainDomain.Title_5.Parent = mainDomain.Info_2
 mainDomain.Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Title_5.BackgroundTransparency = 1.000
 mainDomain.Title_5.BorderSizePixel = 0
-mainDomain.Title_5.Position = UDim2.new(-0.000245213509, 0, -0.20351918, 0)
-mainDomain.Title_5.Size = UDim2.new(0.234618038, 0, 0.202951029, 0)
+mainDomain.Title_5.Position = UDim2.new(-0.000245209754, 0, -0.150029019, 0)
+mainDomain.Title_5.Size = UDim2.new(0.234618038, 0, 0.0911183879, 0)
 mainDomain.Title_5.ZIndex = 3
 mainDomain.Title_5.Font = Enum.Font.GothamBlack
 mainDomain.Title_5.Text = "About"
@@ -1152,8 +1238,8 @@ mainDomain.Title_5.TextSize = 14.000
 mainDomain.Title_5.TextWrapped = true
 mainDomain.Title_5.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_18.Parent = mainDomain.Title_5
-mainDomain.UITextSizeConstraint_18.MaxTextSize = 21
+mainDomain.UITextSizeConstraint_23.Parent = mainDomain.Title_5
+mainDomain.UITextSizeConstraint_23.MaxTextSize = 21
 
 mainDomain.Shadow_11.Name = "Shadow"
 mainDomain.Shadow_11.Parent = mainDomain.Info_2
@@ -1172,8 +1258,8 @@ mainDomain.Title1.Parent = mainDomain.Info_2
 mainDomain.Title1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Title1.BackgroundTransparency = 1.000
 mainDomain.Title1.BorderSizePixel = 0
-mainDomain.Title1.Position = UDim2.new(0.0131504778, 0, 0.0541751273, 0)
-mainDomain.Title1.Size = UDim2.new(0.10922996, 0, 0.12478552, 0)
+mainDomain.Title1.Position = UDim2.new(0.0125031592, 0, 0.0726711601, 0)
+mainDomain.Title1.Size = UDim2.new(0.10922996, 0, 0.081285581, 0)
 mainDomain.Title1.Font = Enum.Font.GothamSemibold
 mainDomain.Title1.Text = "DOMAIN, by shlex"
 mainDomain.Title1.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -1182,8 +1268,8 @@ mainDomain.Title1.TextSize = 14.000
 mainDomain.Title1.TextWrapped = true
 mainDomain.Title1.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_19.Parent = mainDomain.Title1
-mainDomain.UITextSizeConstraint_19.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_24.Parent = mainDomain.Title1
+mainDomain.UITextSizeConstraint_24.MaxTextSize = 18
 
 mainDomain.About.Name = "About"
 mainDomain.About.Parent = mainDomain.Info_2
@@ -1201,8 +1287,8 @@ mainDomain.About.TextWrapped = true
 mainDomain.About.TextXAlignment = Enum.TextXAlignment.Left
 mainDomain.About.TextYAlignment = Enum.TextYAlignment.Top
 
-mainDomain.UITextSizeConstraint_20.Parent = mainDomain.About
-mainDomain.UITextSizeConstraint_20.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_25.Parent = mainDomain.About
+mainDomain.UITextSizeConstraint_25.MaxTextSize = 18
 
 mainDomain.About_2.Name = "About"
 mainDomain.About_2.Parent = mainDomain.Info_2
@@ -1220,8 +1306,8 @@ mainDomain.About_2.TextWrapped = true
 mainDomain.About_2.TextXAlignment = Enum.TextXAlignment.Left
 mainDomain.About_2.TextYAlignment = Enum.TextYAlignment.Top
 
-mainDomain.UITextSizeConstraint_21.Parent = mainDomain.About_2
-mainDomain.UITextSizeConstraint_21.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_26.Parent = mainDomain.About_2
+mainDomain.UITextSizeConstraint_26.MaxTextSize = 18
 
 mainDomain.Copy.Name = "Copy"
 mainDomain.Copy.Parent = mainDomain.Info_2
@@ -1230,17 +1316,18 @@ mainDomain.Copy.BorderSizePixel = 0
 mainDomain.Copy.Position = UDim2.new(0.838911116, 0, 0.312548816, 0)
 mainDomain.Copy.Size = UDim2.new(0.126810566, 0, 0.149538115, 0)
 mainDomain.Copy.Font = Enum.Font.GothamSemibold
-mainDomain.Copy.Text = "Copy to Clipboard"
+mainDomain.Copy.Text = ""
 mainDomain.Copy.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Copy.TextScaled = true
 mainDomain.Copy.TextSize = 14.000
+mainDomain.Copy.TextTransparency = 1.000
 mainDomain.Copy.TextWrapped = true
 
-mainDomain.UICorner_28.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_28.Parent = mainDomain.Copy
+mainDomain.UICorner_27.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_27.Parent = mainDomain.Copy
 
-mainDomain.UITextSizeConstraint_22.Parent = mainDomain.Copy
-mainDomain.UITextSizeConstraint_22.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_27.Parent = mainDomain.Copy
+mainDomain.UITextSizeConstraint_27.MaxTextSize = 18
 
 mainDomain.link.Name = "link"
 mainDomain.link.Parent = mainDomain.Info_2
@@ -1250,7 +1337,7 @@ mainDomain.link.BorderSizePixel = 0
 mainDomain.link.Position = UDim2.new(0.838911116, 0, 0.175615638, 0)
 mainDomain.link.Size = UDim2.new(0.132487968, 0, 0.0994273052, 0)
 mainDomain.link.Font = Enum.Font.Gotham
-mainDomain.link.Text = "d.gg/2"
+mainDomain.link.Text = "discordlink"
 mainDomain.link.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.link.TextScaled = true
 mainDomain.link.TextSize = 14.000
@@ -1258,8 +1345,8 @@ mainDomain.link.TextWrapped = true
 mainDomain.link.TextXAlignment = Enum.TextXAlignment.Left
 mainDomain.link.TextYAlignment = Enum.TextYAlignment.Top
 
-mainDomain.UITextSizeConstraint_23.Parent = mainDomain.link
-mainDomain.UITextSizeConstraint_23.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_28.Parent = mainDomain.link
+mainDomain.UITextSizeConstraint_28.MaxTextSize = 18
 
 mainDomain.Title2.Name = "Title2"
 mainDomain.Title2.Parent = mainDomain.Info_2
@@ -1276,8 +1363,25 @@ mainDomain.Title2.TextSize = 14.000
 mainDomain.Title2.TextWrapped = true
 mainDomain.Title2.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_24.Parent = mainDomain.Title2
-mainDomain.UITextSizeConstraint_24.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_29.Parent = mainDomain.Title2
+mainDomain.UITextSizeConstraint_29.MaxTextSize = 18
+
+mainDomain.CopyToClipText.Name = "CopyToClipText"
+mainDomain.CopyToClipText.Parent = mainDomain.Info_2
+mainDomain.CopyToClipText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.CopyToClipText.BackgroundTransparency = 1.000
+mainDomain.CopyToClipText.BorderSizePixel = 0
+mainDomain.CopyToClipText.Position = UDim2.new(0.848824978, 0, 0.346924335, 0)
+mainDomain.CopyToClipText.Size = UDim2.new(0.106509261, 0, 0.0896133482, 0)
+mainDomain.CopyToClipText.Font = Enum.Font.GothamBold
+mainDomain.CopyToClipText.Text = "Copy to Clipboard"
+mainDomain.CopyToClipText.TextColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.CopyToClipText.TextScaled = true
+mainDomain.CopyToClipText.TextSize = 14.000
+mainDomain.CopyToClipText.TextWrapped = true
+
+mainDomain.UITextSizeConstraint_30.Parent = mainDomain.CopyToClipText
+mainDomain.UITextSizeConstraint_30.MaxTextSize = 18
 
 mainDomain.Toggle.Name = "Toggle"
 mainDomain.Toggle.Parent = mainDomain.MediaMain
@@ -1286,7 +1390,7 @@ mainDomain.Toggle.BorderSizePixel = 0
 mainDomain.Toggle.LayoutOrder = 9
 mainDomain.Toggle.Position = UDim2.new(0.488061011, 0, 0.741958499, 0)
 mainDomain.Toggle.Size = UDim2.new(0.0250568893, 0, 0.0377567224, 0)
-mainDomain.Toggle.ZIndex = 2
+mainDomain.Toggle.ZIndex = 30000
 mainDomain.Toggle.Image = "rbxassetid://3926305904"
 mainDomain.Toggle.ImageRectOffset = Vector2.new(564, 284)
 mainDomain.Toggle.ImageRectSize = Vector2.new(36, 36)
@@ -1307,8 +1411,8 @@ mainDomain.Title_6.Parent = mainDomain.Players_2
 mainDomain.Title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Title_6.BackgroundTransparency = 1.000
 mainDomain.Title_6.BorderSizePixel = 0
-mainDomain.Title_6.Position = UDim2.new(0.0668845251, 0, 0.0229069199, 0)
-mainDomain.Title_6.Size = UDim2.new(0.473920852, 0, 0.0593702905, 0)
+mainDomain.Title_6.Position = UDim2.new(0.0635403022, 0, 0.0290677659, 0)
+mainDomain.Title_6.Size = UDim2.new(0.45716843, 0, 0.0440466739, 0)
 mainDomain.Title_6.ZIndex = 10001
 mainDomain.Title_6.Font = Enum.Font.GothamBold
 mainDomain.Title_6.Text = "Players"
@@ -1318,11 +1422,11 @@ mainDomain.Title_6.TextSize = 14.000
 mainDomain.Title_6.TextWrapped = true
 mainDomain.Title_6.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_25.Parent = mainDomain.Title_6
-mainDomain.UITextSizeConstraint_25.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_31.Parent = mainDomain.Title_6
+mainDomain.UITextSizeConstraint_31.MaxTextSize = 18
 
-mainDomain.UICorner_29.CornerRadius = UDim.new(0, 10)
-mainDomain.UICorner_29.Parent = mainDomain.Players_2
+mainDomain.UICorner_28.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_28.Parent = mainDomain.Players_2
 
 mainDomain.Divider.Name = "Divider"
 mainDomain.Divider.Parent = mainDomain.Players_2
@@ -1331,8 +1435,8 @@ mainDomain.Divider.BorderSizePixel = 0
 mainDomain.Divider.Size = UDim2.new(1, 0, 0.105457805, 0)
 mainDomain.Divider.ZIndex = 1000
 
-mainDomain.UICorner_30.CornerRadius = UDim.new(0, 10)
-mainDomain.UICorner_30.Parent = mainDomain.Divider
+mainDomain.UICorner_29.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_29.Parent = mainDomain.Divider
 
 mainDomain.Divider_2.Name = "Divider"
 mainDomain.Divider_2.Parent = mainDomain.Divider
@@ -1360,6 +1464,7 @@ mainDomain.Template_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
 mainDomain.Template_2.BorderSizePixel = 0
 mainDomain.Template_2.Position = UDim2.new(0.0300000608, 0, 0, 0)
 mainDomain.Template_2.Size = UDim2.new(0.939803898, 0, 0.145663947, 0)
+mainDomain.Template_2.Visible = false
 mainDomain.Template_2.ZIndex = 1001
 
 mainDomain.Avatar.Name = "Avatar"
@@ -1372,19 +1477,19 @@ mainDomain.Avatar.Size = UDim2.new(0.131542444, 0, 0.720558524, 0)
 mainDomain.Avatar.ZIndex = 1002
 mainDomain.Avatar.Image = "rbxassetid://6246676191"
 
-mainDomain.UICorner_31.CornerRadius = UDim.new(0, 60)
-mainDomain.UICorner_31.Parent = mainDomain.Avatar
+mainDomain.UICorner_30.CornerRadius = UDim.new(0, 60)
+mainDomain.UICorner_30.Parent = mainDomain.Avatar
 
-mainDomain.UICorner_32.CornerRadius = UDim.new(0, 10)
-mainDomain.UICorner_32.Parent = mainDomain.Template_2
+mainDomain.UICorner_31.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_31.Parent = mainDomain.Template_2
 
 mainDomain.Username.Name = "Username"
 mainDomain.Username.Parent = mainDomain.Template_2
 mainDomain.Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Username.BackgroundTransparency = 1.000
 mainDomain.Username.BorderSizePixel = 0
-mainDomain.Username.Position = UDim2.new(0.217064217, 0, 0.245321169, 0)
-mainDomain.Username.Size = UDim2.new(0.55756104, 0, 0.51131016, 0)
+mainDomain.Username.Position = UDim2.new(0.217064217, 0, 0.34790656, 0)
+mainDomain.Username.Size = UDim2.new(0.55756104, 0, 0.331121534, 0)
 mainDomain.Username.ZIndex = 1003
 mainDomain.Username.Font = Enum.Font.GothamSemibold
 mainDomain.Username.Text = "Username"
@@ -1394,8 +1499,8 @@ mainDomain.Username.TextSize = 14.000
 mainDomain.Username.TextWrapped = true
 mainDomain.Username.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_26.Parent = mainDomain.Username
-mainDomain.UITextSizeConstraint_26.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_32.Parent = mainDomain.Username
+mainDomain.UITextSizeConstraint_32.MaxTextSize = 18
 
 mainDomain.More.Name = "More"
 mainDomain.More.Parent = mainDomain.Template_2
@@ -1440,7 +1545,6 @@ mainDomain.AboutPlayer.BackgroundTransparency = 1.000
 mainDomain.AboutPlayer.BorderSizePixel = 0
 mainDomain.AboutPlayer.Position = UDim2.new(0, 0, 0.147, 0)
 mainDomain.AboutPlayer.Size = UDim2.new(1, 0, 0.81099999, 0)
-mainDomain.AboutPlayer.Visible = false
 mainDomain.AboutPlayer.ZIndex = 1000
 
 mainDomain.Avatar_2.Name = "Avatar"
@@ -1452,8 +1556,8 @@ mainDomain.Avatar_2.Size = UDim2.new(0.311459661, 0, 0.263058275, 0)
 mainDomain.Avatar_2.ZIndex = 1001
 mainDomain.Avatar_2.Image = "rbxassetid://6246676191"
 
-mainDomain.UICorner_33.CornerRadius = UDim.new(0, 60)
-mainDomain.UICorner_33.Parent = mainDomain.Avatar_2
+mainDomain.UICorner_32.CornerRadius = UDim.new(0, 60)
+mainDomain.UICorner_32.Parent = mainDomain.Avatar_2
 
 mainDomain.Premium.Name = "Premium"
 mainDomain.Premium.Parent = mainDomain.AboutPlayer
@@ -1489,8 +1593,8 @@ mainDomain.UserId.TextSize = 14.000
 mainDomain.UserId.TextWrapped = true
 mainDomain.UserId.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_27.Parent = mainDomain.UserId
-mainDomain.UITextSizeConstraint_27.MaxTextSize = 20
+mainDomain.UITextSizeConstraint_33.Parent = mainDomain.UserId
+mainDomain.UITextSizeConstraint_33.MaxTextSize = 20
 
 mainDomain.CopyUsr.Name = "CopyUsr"
 mainDomain.CopyUsr.Parent = mainDomain.AboutPlayer
@@ -1500,17 +1604,18 @@ mainDomain.CopyUsr.Position = UDim2.new(0.692254841, 0, 0.341030687, 0)
 mainDomain.CopyUsr.Size = UDim2.new(0.268609315, 0, 0.101479739, 0)
 mainDomain.CopyUsr.ZIndex = 1000
 mainDomain.CopyUsr.Font = Enum.Font.GothamSemibold
-mainDomain.CopyUsr.Text = "Copy"
+mainDomain.CopyUsr.Text = ""
 mainDomain.CopyUsr.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.CopyUsr.TextScaled = true
 mainDomain.CopyUsr.TextSize = 14.000
+mainDomain.CopyUsr.TextTransparency = 1.000
 mainDomain.CopyUsr.TextWrapped = true
 
-mainDomain.UITextSizeConstraint_28.Parent = mainDomain.CopyUsr
-mainDomain.UITextSizeConstraint_28.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_34.Parent = mainDomain.CopyUsr
+mainDomain.UITextSizeConstraint_34.MaxTextSize = 18
 
-mainDomain.UICorner_34.CornerRadius = UDim.new(0, 10)
-mainDomain.UICorner_34.Parent = mainDomain.CopyUsr
+mainDomain.UICorner_33.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_33.Parent = mainDomain.CopyUsr
 
 mainDomain.Close.Name = "Close"
 mainDomain.Close.Parent = mainDomain.AboutPlayer
@@ -1532,17 +1637,18 @@ mainDomain.TeleportTo.Position = UDim2.new(0.591928005, 0, 0.911585271, 0)
 mainDomain.TeleportTo.Size = UDim2.new(0.365820289, 0, 0.101479739, 0)
 mainDomain.TeleportTo.ZIndex = 1000
 mainDomain.TeleportTo.Font = Enum.Font.GothamSemibold
-mainDomain.TeleportTo.Text = "Teleport"
+mainDomain.TeleportTo.Text = ""
 mainDomain.TeleportTo.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.TeleportTo.TextScaled = true
 mainDomain.TeleportTo.TextSize = 14.000
+mainDomain.TeleportTo.TextTransparency = 1.000
 mainDomain.TeleportTo.TextWrapped = true
 
-mainDomain.UITextSizeConstraint_29.Parent = mainDomain.TeleportTo
-mainDomain.UITextSizeConstraint_29.MaxTextSize = 18
+mainDomain.UICorner_34.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_34.Parent = mainDomain.TeleportTo
 
-mainDomain.UICorner_35.CornerRadius = UDim.new(0, 10)
-mainDomain.UICorner_35.Parent = mainDomain.TeleportTo
+mainDomain.UITextSizeConstraint_35.Parent = mainDomain.TeleportTo
+mainDomain.UITextSizeConstraint_35.MaxTextSize = 18
 
 mainDomain.Rank.Name = "Rank"
 mainDomain.Rank.Parent = mainDomain.AboutPlayer
@@ -1560,8 +1666,8 @@ mainDomain.Rank.TextSize = 14.000
 mainDomain.Rank.TextWrapped = true
 mainDomain.Rank.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_30.Parent = mainDomain.Rank
-mainDomain.UITextSizeConstraint_30.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_36.Parent = mainDomain.Rank
+mainDomain.UITextSizeConstraint_36.MaxTextSize = 18
 
 mainDomain.DomainDev.Name = "DomainDev"
 mainDomain.DomainDev.Parent = mainDomain.AboutPlayer
@@ -1579,8 +1685,8 @@ mainDomain.DomainDev.TextSize = 14.000
 mainDomain.DomainDev.TextWrapped = true
 mainDomain.DomainDev.TextXAlignment = Enum.TextXAlignment.Right
 
-mainDomain.UITextSizeConstraint_31.Parent = mainDomain.DomainDev
-mainDomain.UITextSizeConstraint_31.MaxTextSize = 20
+mainDomain.UITextSizeConstraint_37.Parent = mainDomain.DomainDev
+mainDomain.UITextSizeConstraint_37.MaxTextSize = 20
 
 mainDomain.RankDisplay.Name = "RankDisplay"
 mainDomain.RankDisplay.Parent = mainDomain.AboutPlayer
@@ -1598,8 +1704,8 @@ mainDomain.RankDisplay.TextSize = 14.000
 mainDomain.RankDisplay.TextWrapped = true
 mainDomain.RankDisplay.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_32.Parent = mainDomain.RankDisplay
-mainDomain.UITextSizeConstraint_32.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_38.Parent = mainDomain.RankDisplay
+mainDomain.UITextSizeConstraint_38.MaxTextSize = 18
 
 mainDomain.Kill.Name = "Kill"
 mainDomain.Kill.Parent = mainDomain.AboutPlayer
@@ -1609,38 +1715,93 @@ mainDomain.Kill.Position = UDim2.new(0.307668775, 0, 0.911585271, 0)
 mainDomain.Kill.Size = UDim2.new(0.253229737, 0, 0.101479739, 0)
 mainDomain.Kill.ZIndex = 1000
 mainDomain.Kill.Font = Enum.Font.GothamSemibold
-mainDomain.Kill.Text = "Kill"
+mainDomain.Kill.Text = ""
 mainDomain.Kill.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Kill.TextScaled = true
 mainDomain.Kill.TextSize = 14.000
+mainDomain.Kill.TextTransparency = 1.000
 mainDomain.Kill.TextWrapped = true
 
-mainDomain.UITextSizeConstraint_33.Parent = mainDomain.Kill
-mainDomain.UITextSizeConstraint_33.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_39.Parent = mainDomain.Kill
+mainDomain.UITextSizeConstraint_39.MaxTextSize = 18
 
-mainDomain.UICorner_36.CornerRadius = UDim.new(0, 10)
-mainDomain.UICorner_36.Parent = mainDomain.Kill
+mainDomain.UICorner_35.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_35.Parent = mainDomain.Kill
+
+mainDomain.KillButtonText.Name = "KillButtonText"
+mainDomain.KillButtonText.Parent = mainDomain.AboutPlayer
+mainDomain.KillButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.KillButtonText.BackgroundTransparency = 1.000
+mainDomain.KillButtonText.BorderSizePixel = 0
+mainDomain.KillButtonText.Position = UDim2.new(0.38028419, 0, 0.932704747, 0)
+mainDomain.KillButtonText.Size = UDim2.new(0.111124948, 0, 0.057478603, 0)
+mainDomain.KillButtonText.ZIndex = 1000
+mainDomain.KillButtonText.Font = Enum.Font.GothamSemibold
+mainDomain.KillButtonText.Text = "Kill"
+mainDomain.KillButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.KillButtonText.TextScaled = true
+mainDomain.KillButtonText.TextSize = 14.000
+mainDomain.KillButtonText.TextWrapped = true
+
+mainDomain.UITextSizeConstraint_40.Parent = mainDomain.KillButtonText
+mainDomain.UITextSizeConstraint_40.MaxTextSize = 18
+
+mainDomain.TPButtonText.Name = "TPButtonText"
+mainDomain.TPButtonText.Parent = mainDomain.AboutPlayer
+mainDomain.TPButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.TPButtonText.BackgroundTransparency = 1.000
+mainDomain.TPButtonText.BorderSizePixel = 0
+mainDomain.TPButtonText.Position = UDim2.new(0.644678831, 0, 0.932704747, 0)
+mainDomain.TPButtonText.Size = UDim2.new(0.258604378, 0, 0.057478603, 0)
+mainDomain.TPButtonText.ZIndex = 1000
+mainDomain.TPButtonText.Font = Enum.Font.GothamSemibold
+mainDomain.TPButtonText.Text = "Teleport"
+mainDomain.TPButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.TPButtonText.TextScaled = true
+mainDomain.TPButtonText.TextSize = 14.000
+mainDomain.TPButtonText.TextWrapped = true
+
+mainDomain.UITextSizeConstraint_41.Parent = mainDomain.TPButtonText
+mainDomain.UITextSizeConstraint_41.MaxTextSize = 18
+
+mainDomain.CopyButtonText.Name = "CopyButtonText"
+mainDomain.CopyButtonText.Parent = mainDomain.AboutPlayer
+mainDomain.CopyButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.CopyButtonText.BackgroundTransparency = 1.000
+mainDomain.CopyButtonText.BorderSizePixel = 0
+mainDomain.CopyButtonText.Position = UDim2.new(0.754837513, 0, 0.362150222, 0)
+mainDomain.CopyButtonText.Size = UDim2.new(0.14175728, 0, 0.057478603, 0)
+mainDomain.CopyButtonText.ZIndex = 1000
+mainDomain.CopyButtonText.Font = Enum.Font.GothamSemibold
+mainDomain.CopyButtonText.Text = "Copy"
+mainDomain.CopyButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.CopyButtonText.TextScaled = true
+mainDomain.CopyButtonText.TextSize = 14.000
+mainDomain.CopyButtonText.TextWrapped = true
+
+mainDomain.UITextSizeConstraint_42.Parent = mainDomain.CopyButtonText
+mainDomain.UITextSizeConstraint_42.MaxTextSize = 18
 
 mainDomain.SearchBox.Name = "SearchBox"
 mainDomain.SearchBox.Parent = mainDomain.Players_2
 mainDomain.SearchBox.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 mainDomain.SearchBox.BorderSizePixel = 0
-mainDomain.SearchBox.Position = UDim2.new(0.448126316, 0, 0.0105643906, 0)
+mainDomain.SearchBox.Position = UDim2.new(0.449999988, 0, 0.0109999999, 0)
 mainDomain.SearchBox.Size = UDim2.new(0.521677613, 0, 0.0810632855, 0)
 mainDomain.SearchBox.ZIndex = 10001
 mainDomain.SearchBox.Font = Enum.Font.GothamSemibold
-mainDomain.SearchBox.PlaceholderText = "Search"
+mainDomain.SearchBox.PlaceholderText = "Search Player"
 mainDomain.SearchBox.Text = ""
 mainDomain.SearchBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.SearchBox.TextScaled = true
 mainDomain.SearchBox.TextSize = 14.000
 mainDomain.SearchBox.TextWrapped = true
 
-mainDomain.UICorner_37.CornerRadius = UDim.new(0, 10)
-mainDomain.UICorner_37.Parent = mainDomain.SearchBox
+mainDomain.UICorner_36.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_36.Parent = mainDomain.SearchBox
 
-mainDomain.UITextSizeConstraint_34.Parent = mainDomain.SearchBox
-mainDomain.UITextSizeConstraint_34.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_43.Parent = mainDomain.SearchBox
+mainDomain.UITextSizeConstraint_43.MaxTextSize = 18
 
 mainDomain.SearchList.Name = "SearchList"
 mainDomain.SearchList.Parent = mainDomain.Players_2
@@ -1673,11 +1834,11 @@ mainDomain.Avatar_3.Size = UDim2.new(0.131542444, 0, 0.720558524, 0)
 mainDomain.Avatar_3.ZIndex = 1002
 mainDomain.Avatar_3.Image = "rbxassetid://6246676191"
 
-mainDomain.UICorner_38.CornerRadius = UDim.new(0, 60)
-mainDomain.UICorner_38.Parent = mainDomain.Avatar_3
+mainDomain.UICorner_37.CornerRadius = UDim.new(0, 60)
+mainDomain.UICorner_37.Parent = mainDomain.Avatar_3
 
-mainDomain.UICorner_39.CornerRadius = UDim.new(0, 10)
-mainDomain.UICorner_39.Parent = mainDomain.Template_3
+mainDomain.UICorner_38.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_38.Parent = mainDomain.Template_3
 
 mainDomain.Username_2.Name = "Username"
 mainDomain.Username_2.Parent = mainDomain.Template_3
@@ -1695,8 +1856,8 @@ mainDomain.Username_2.TextSize = 14.000
 mainDomain.Username_2.TextWrapped = true
 mainDomain.Username_2.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_35.Parent = mainDomain.Username_2
-mainDomain.UITextSizeConstraint_35.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_44.Parent = mainDomain.Username_2
+mainDomain.UITextSizeConstraint_44.MaxTextSize = 18
 
 mainDomain.More_2.Name = "More"
 mainDomain.More_2.Parent = mainDomain.Template_3
@@ -1735,16 +1896,16 @@ mainDomain.SettingsArea.Size = UDim2.new(0.956206441, 0, 0.223806754, 0)
 mainDomain.SettingsArea.Visible = false
 mainDomain.SettingsArea.ZIndex = 999
 
-mainDomain.UICorner_40.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_40.Parent = mainDomain.SettingsArea
+mainDomain.UICorner_39.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_39.Parent = mainDomain.SettingsArea
 
 mainDomain.Title_7.Name = "Title"
 mainDomain.Title_7.Parent = mainDomain.SettingsArea
 mainDomain.Title_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainDomain.Title_7.BackgroundTransparency = 1.000
 mainDomain.Title_7.BorderSizePixel = 0
-mainDomain.Title_7.Position = UDim2.new(-0.000245213509, 0, -0.20351918, 0)
-mainDomain.Title_7.Size = UDim2.new(0.234618038, 0, 0.202951029, 0)
+mainDomain.Title_7.Position = UDim2.new(-0.000245209754, 0, -0.150029019, 0)
+mainDomain.Title_7.Size = UDim2.new(0.234618038, 0, 0.103620343, 0)
 mainDomain.Title_7.ZIndex = 999
 mainDomain.Title_7.Font = Enum.Font.GothamBlack
 mainDomain.Title_7.Text = "Settings"
@@ -1754,8 +1915,8 @@ mainDomain.Title_7.TextSize = 14.000
 mainDomain.Title_7.TextWrapped = true
 mainDomain.Title_7.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_36.Parent = mainDomain.Title_7
-mainDomain.UITextSizeConstraint_36.MaxTextSize = 21
+mainDomain.UITextSizeConstraint_45.Parent = mainDomain.Title_7
+mainDomain.UITextSizeConstraint_45.MaxTextSize = 21
 
 mainDomain.Shadow_15.Name = "Shadow"
 mainDomain.Shadow_15.Parent = mainDomain.SettingsArea
@@ -1796,18 +1957,18 @@ mainDomain.Slider.Position = UDim2.new(0.961252332, 0, 0.222609073, 0)
 mainDomain.Slider.Size = UDim2.new(0.0297574569, 0, 0.545202196, 0)
 mainDomain.Slider.ZIndex = 1005
 
-mainDomain.UICorner_41.CornerRadius = UDim.new(5, 0)
-mainDomain.UICorner_41.Parent = mainDomain.Slider
+mainDomain.UICorner_40.CornerRadius = UDim.new(5, 0)
+mainDomain.UICorner_40.Parent = mainDomain.Slider
 
 mainDomain.Dot.Name = "Dot"
 mainDomain.Dot.Parent = mainDomain.Slider
-mainDomain.Dot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainDomain.Dot.BackgroundColor3 = Color3.fromRGB(234, 234, 234)
 mainDomain.Dot.BorderSizePixel = 0
 mainDomain.Dot.Size = UDim2.new(0.488657594, 0, 1, 0)
 mainDomain.Dot.ZIndex = 1005
 
-mainDomain.UICorner_42.CornerRadius = UDim.new(5, 0)
-mainDomain.UICorner_42.Parent = mainDomain.Dot
+mainDomain.UICorner_41.CornerRadius = UDim.new(5, 0)
+mainDomain.UICorner_41.Parent = mainDomain.Dot
 
 mainDomain.SettingTitle.Name = "SettingTitle"
 mainDomain.SettingTitle.Parent = mainDomain.SettingTemplate
@@ -1825,8 +1986,8 @@ mainDomain.SettingTitle.TextSize = 14.000
 mainDomain.SettingTitle.TextWrapped = true
 mainDomain.SettingTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_37.Parent = mainDomain.SettingTitle
-mainDomain.UITextSizeConstraint_37.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_46.Parent = mainDomain.SettingTitle
+mainDomain.UITextSizeConstraint_46.MaxTextSize = 18
 
 mainDomain.SettingDesc.Name = "SettingDesc"
 mainDomain.SettingDesc.Parent = mainDomain.SettingTemplate
@@ -1844,8 +2005,8 @@ mainDomain.SettingDesc.TextSize = 14.000
 mainDomain.SettingDesc.TextWrapped = true
 mainDomain.SettingDesc.TextXAlignment = Enum.TextXAlignment.Left
 
-mainDomain.UITextSizeConstraint_38.Parent = mainDomain.SettingDesc
-mainDomain.UITextSizeConstraint_38.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_47.Parent = mainDomain.SettingDesc
+mainDomain.UITextSizeConstraint_47.MaxTextSize = 18
 
 mainDomain.PromptExploit.Name = "PromptExploit"
 mainDomain.PromptExploit.Parent = mainDomain.MediaMain
@@ -1873,11 +2034,11 @@ mainDomain.Question.TextWrapped = true
 mainDomain.Question.TextXAlignment = Enum.TextXAlignment.Left
 mainDomain.Question.TextYAlignment = Enum.TextYAlignment.Top
 
-mainDomain.UITextSizeConstraint_39.Parent = mainDomain.Question
-mainDomain.UITextSizeConstraint_39.MaxTextSize = 19
+mainDomain.UITextSizeConstraint_48.Parent = mainDomain.Question
+mainDomain.UITextSizeConstraint_48.MaxTextSize = 19
 
-mainDomain.UICorner_43.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_43.Parent = mainDomain.PromptExploit
+mainDomain.UICorner_42.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_42.Parent = mainDomain.PromptExploit
 
 mainDomain.Yes.Name = "Yes"
 mainDomain.Yes.Parent = mainDomain.PromptExploit
@@ -1893,11 +2054,11 @@ mainDomain.Yes.TextScaled = true
 mainDomain.Yes.TextSize = 14.000
 mainDomain.Yes.TextWrapped = true
 
-mainDomain.UITextSizeConstraint_40.Parent = mainDomain.Yes
-mainDomain.UITextSizeConstraint_40.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_49.Parent = mainDomain.Yes
+mainDomain.UITextSizeConstraint_49.MaxTextSize = 18
 
-mainDomain.UICorner_44.CornerRadius = UDim.new(0, 10)
-mainDomain.UICorner_44.Parent = mainDomain.Yes
+mainDomain.UICorner_43.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_43.Parent = mainDomain.Yes
 
 mainDomain.No.Name = "No"
 mainDomain.No.Parent = mainDomain.PromptExploit
@@ -1913,11 +2074,11 @@ mainDomain.No.TextScaled = true
 mainDomain.No.TextSize = 14.000
 mainDomain.No.TextWrapped = true
 
-mainDomain.UITextSizeConstraint_41.Parent = mainDomain.No
-mainDomain.UITextSizeConstraint_41.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_50.Parent = mainDomain.No
+mainDomain.UITextSizeConstraint_50.MaxTextSize = 18
 
-mainDomain.UICorner_45.CornerRadius = UDim.new(0, 10)
-mainDomain.UICorner_45.Parent = mainDomain.No
+mainDomain.UICorner_44.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_44.Parent = mainDomain.No
 
 mainDomain.PromptV2.Name = "PromptV2"
 mainDomain.PromptV2.Parent = mainDomain.MediaMain
@@ -1945,11 +2106,11 @@ mainDomain.Question_2.TextWrapped = true
 mainDomain.Question_2.TextXAlignment = Enum.TextXAlignment.Left
 mainDomain.Question_2.TextYAlignment = Enum.TextYAlignment.Top
 
-mainDomain.UITextSizeConstraint_42.Parent = mainDomain.Question_2
-mainDomain.UITextSizeConstraint_42.MaxTextSize = 19
+mainDomain.UITextSizeConstraint_51.Parent = mainDomain.Question_2
+mainDomain.UITextSizeConstraint_51.MaxTextSize = 19
 
-mainDomain.UICorner_46.CornerRadius = UDim.new(0, 12)
-mainDomain.UICorner_46.Parent = mainDomain.PromptV2
+mainDomain.UICorner_45.CornerRadius = UDim.new(0, 12)
+mainDomain.UICorner_45.Parent = mainDomain.PromptV2
 
 mainDomain.Yes_2.Name = "Yes"
 mainDomain.Yes_2.Parent = mainDomain.PromptV2
@@ -1965,11 +2126,11 @@ mainDomain.Yes_2.TextScaled = true
 mainDomain.Yes_2.TextSize = 14.000
 mainDomain.Yes_2.TextWrapped = true
 
-mainDomain.UITextSizeConstraint_43.Parent = mainDomain.Yes_2
-mainDomain.UITextSizeConstraint_43.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_52.Parent = mainDomain.Yes_2
+mainDomain.UITextSizeConstraint_52.MaxTextSize = 18
 
-mainDomain.UICorner_47.CornerRadius = UDim.new(0, 10)
-mainDomain.UICorner_47.Parent = mainDomain.Yes_2
+mainDomain.UICorner_46.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_46.Parent = mainDomain.Yes_2
 
 mainDomain.No_2.Name = "No"
 mainDomain.No_2.Parent = mainDomain.PromptV2
@@ -1985,20 +2146,20 @@ mainDomain.No_2.TextScaled = true
 mainDomain.No_2.TextSize = 14.000
 mainDomain.No_2.TextWrapped = true
 
-mainDomain.UITextSizeConstraint_44.Parent = mainDomain.No_2
-mainDomain.UITextSizeConstraint_44.MaxTextSize = 18
+mainDomain.UITextSizeConstraint_53.Parent = mainDomain.No_2
+mainDomain.UITextSizeConstraint_53.MaxTextSize = 18
 
-mainDomain.UICorner_48.CornerRadius = UDim.new(0, 10)
-mainDomain.UICorner_48.Parent = mainDomain.No_2
+mainDomain.UICorner_47.CornerRadius = UDim.new(0, 10)
+mainDomain.UICorner_47.Parent = mainDomain.No_2
 
 
 
 
 
 SaveSettings = false
-VersionNum = 0.638
-VersionFull = tostring(VersionNum).." | Background Exploits"
-VFeature = "Additional exploits added."
+VersionNum = 0.64
+VersionFull = tostring(VersionNum).." | 720p Update"
+VFeature = "Created a nicer aesthetic for laptop and lower resoloution screens."
 
 Admins = {
 
@@ -2273,6 +2434,7 @@ function Start()
 				if IsFile then
 					DomainData = readfile("Data.dmn")
 					if SaveSettings == false then
+						mainDomain.Functions.Settings.Visible = false
 						DomainData = writefile("Data.dmn","")
 						for name, Setting in pairs(SettingsTb) do
 							appendfile("Data.dmn",name.." = {Name = '"..Setting.Name.."',Value = "..tostring(Setting.Value)..",Desc = '"..Setting.Desc.."'},")
@@ -2395,7 +2557,7 @@ function Start()
 		uiopened = true
 	else
 
-		mainDomain.Toggle.ImageTransparency = 0
+		mainDomain.Toggle.ImageTransparency = 1
 		mainDomain.Toggle.Rotation = 180
 		mainDomain.Toggle.Position = UDim2.new(1,0,1,0)
 
@@ -2448,8 +2610,14 @@ print("DOMAIN CLIENT v"..tostring(VersionNum))
 	if UsingAutoExecute == true then
 		wait(1.3)
 		if checktools(game.Players.LocalPlayer) then
+			local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.Toggle, transitionInfo, {ImageTransparency = 0})
+			tween:Play()
 			mainDomain.Toggle.Position = UDim2.new(0.488, 0, 0.77, 0)
 		else
+			local transitionInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quint)
+			local tween = game:GetService("TweenService"):Create(mainDomain.Toggle, transitionInfo, {ImageTransparency = 0})
+			tween:Play()
 			mainDomain.Toggle.Position = UDim2.new(0.488, 0, 0.829, 0)
 		end
 	end
@@ -3334,12 +3502,13 @@ function OpenAboutPlayer(PlayerName)
 
 	--
 	mainDomain.AboutPlayer.Close.ImageTransparency = 1
-	mainDomain.AboutPlayer.CopyUsr.TextTransparency = 1
+	mainDomain.AboutPlayer.CopyButtonText.TextTransparency = 1
 	mainDomain.AboutPlayer.CopyUsr.BackgroundTransparency = 1
 	mainDomain.AboutPlayer.TeleportTo.BackgroundTransparency = 1
-	mainDomain.AboutPlayer.TeleportTo.TextTransparency = 1
+	mainDomain.AboutPlayer.TPButtonText.TextTransparency = 1
 	mainDomain.AboutPlayer.Kill.BackgroundTransparency = 1
 	mainDomain.AboutPlayer.Kill.TextTransparency = 1
+	mainDomain.AboutPlayer.KillButtonText.TextTransparency = 1
 	mainDomain.AboutPlayer.Avatar.ImageTransparency = 1
 	mainDomain.AboutPlayer.Rank.TextTransparency = 1
 	mainDomain.AboutPlayer.RankDisplay.TextTransparency = 1
@@ -3457,16 +3626,16 @@ function OpenAboutPlayer(PlayerName)
 		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.RankDisplay, transitionInfo, {TextTransparency = 0})
 		tween:Play()
 		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
-		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.Kill, transitionInfo, {TextTransparency = 0})
+		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.KillButtonText, transitionInfo, {TextTransparency = 0})
 		tween:Play()
 		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
 		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.Rank, transitionInfo, {TextTransparency = 0})
 		tween:Play()
 		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
-		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.TeleportTo, transitionInfo, {TextTransparency = 0})
+		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.TPButtonText, transitionInfo, {TextTransparency = 0})
 		tween:Play()
 		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
-		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.CopyUsr, transitionInfo, {TextTransparency = 0})
+		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.CopyButtonText, transitionInfo, {TextTransparency = 0})
 		tween:Play()
 		wait(0.15)
 		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
@@ -3561,16 +3730,16 @@ function OpenAboutPlayer(PlayerName)
 		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.RankDisplay, transitionInfo, {TextTransparency = 1})
 		tween:Play()
 		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
-		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.Kill, transitionInfo, {TextTransparency = 1})
+		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.KillButtonText, transitionInfo, {TextTransparency = 1})
 		tween:Play()
 		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
 		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.Rank, transitionInfo, {TextTransparency = 1})
 		tween:Play()
 		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
-		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.TeleportTo, transitionInfo, {TextTransparency = 1})
+		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.TPButtonText, transitionInfo, {TextTransparency = 1})
 		tween:Play()
 		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
-		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.CopyUsr, transitionInfo, {TextTransparency = 1})
+		local tween = game:GetService("TweenService"):Create(mainDomain.AboutPlayer.CopyButtonText, transitionInfo, {TextTransparency = 1})
 		tween:Play()
 		wait(0.05)
 		local transitionInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quint)
