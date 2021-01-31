@@ -2157,9 +2157,9 @@ mainDomain.UICorner_47.Parent = mainDomain.No_2
 
 
 SaveSettings = false
-VersionNum = 0.64
-VersionFull = tostring(VersionNum).." | 720p Update"
-VFeature = "Created a nicer aesthetic for laptop and lower resoloution screens."
+VersionNum = 0.645
+VersionFull = tostring(VersionNum).." | Minor update"
+VFeature = "Music now loops, bug fixes, changed trigger words for serverhop"
 
 Admins = {
 
@@ -2175,9 +2175,7 @@ DomainShowcase = {
 
 
 Developers = {
-
 	rivertropic = 304343782,
-
 }
 
 AntiExploits = {
@@ -2303,7 +2301,7 @@ BackgroundExploits = {
 
 }
 
-AWords = {"hate ","serverhop","change server","change game","in a different game","other game"}
+AWords = {"serverhop","change server","change game","in a different game","other game"}
 
 WriteFileFixPlayers = {
 
@@ -4003,10 +4001,12 @@ mainDomain.Play.MouseButton1Click:Connect(function()
 			MusicSound.SoundId = "rbxassetid://"..tonumber(mainDomain.SoundId.Text)
 			mainDomain.SoundId.Text = ""
 			MusicSound.TimePosition = 0
+			MusicSound.Looped = true
 			MusicSound:Play()
 			Notify("Now Playing Music, tap Stop to end","GothamBold")
 		elseif mainDomain.MediaMain:FindFirstChildWhichIsA("Sound") then
 			mainDomain.MediaMain:FindFirstChildWhichIsA("Sound").Volume = 0.5
+			mainDomain.MediaMain:FindFirstChildWhichIsA("Sound").Looped = true
 			mainDomain.MediaMain:FindFirstChildWhichIsA("Sound").SoundId = "rbxassetid://"..tonumber(mainDomain.SoundId.Text)
 			mainDomain.MediaMain:FindFirstChildWhichIsA("Sound").TimePosition = 0
 			mainDomain.MediaMain:FindFirstChildWhichIsA("Sound"):Play()
@@ -4039,7 +4039,7 @@ mainDomain.RemBG.MouseButton1Click:Connect(function()
 		end
 	end
 	if FoundInstance == false then
-		Notify("Error finding music instance","GothamBold")
+		Notify("Domain couldn't find a music instance","GothamBold")
 	else
 		Notify("Found music instance, and changed volume to 0","GothamBold")
 		FoundInstance = false
