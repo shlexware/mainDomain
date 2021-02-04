@@ -2157,9 +2157,9 @@ mainDomain.UICorner_47.Parent = mainDomain.No_2
 
 
 SaveSettings = false
-VersionNum = 0.645
+VersionNum = 0.646
 VersionFull = tostring(VersionNum).." | Minor update"
-VFeature = "Music now loops, bug fixes, changed trigger words for serverhop"
+VFeature = "New featured exploit"
 
 Admins = {
 
@@ -2316,6 +2316,13 @@ FeaturedExploits = {
 		ImageID = 0,
 		Colour = Color3.fromRGB(0, 170, 127),
 		Code = "https://pastebin.com/raw/HqFgVGXn",
+	},
+	CLOVR = {
+		Name = "CloVR",
+		Author = "Abacaxl",
+		ImageID = 0,
+		Colour = Color3.fromRGB(85, 85, 127),
+		Code = "https://pastebin.com/raw/4iTCQwHd",
 	},
 
 	InfiniteYield = {
