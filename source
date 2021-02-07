@@ -2587,15 +2587,6 @@ function Start()
 	mainDomain.Exploits:TweenPosition(UDim2.new(0.3, 0, 0.2, 0),"Out","Quint",0.6)
 	wait(0.3)
 	mainDomain.Info:TweenPosition(UDim2.new(0.9, 0, 0.2, 0),"Out","Quint",0.6)
-if game.CreatorId ~= 0 then
-	AntiAfk()
-	AntiKick()
-if getconnections or get_signal_cons then
-		Notify("DomainClient Anti-Kick and Anti-Afk active","GothamBold")
-	else
-		Notify("DomainClient Anti-Kick active","GothamBold")
-	end
-end
 	for _, BGExploits in pairs(BackgroundExploits) do
 		if table.find(BGExploits.PlaceIds,game.PlaceId) then
 			-- This exploit supports this game.
@@ -2624,6 +2615,15 @@ print("DOMAIN CLIENT v"..tostring(VersionNum))
 			local tween = game:GetService("TweenService"):Create(mainDomain.Toggle, transitionInfo, {ImageTransparency = 0})
 			tween:Play()
 			mainDomain.Toggle.Position = UDim2.new(0.488, 0, 0.829, 0)
+		end
+	end
+	if game.CreatorId ~= 0 then
+		AntiAfk()
+		AntiKick()
+		if getconnections or get_signal_cons then
+			Notify("DomainClient Anti-Kick and Anti-Afk active","GothamBold")
+		else
+			Notify("DomainClient Anti-Kick active","GothamBold")
 		end
 	end
 end
