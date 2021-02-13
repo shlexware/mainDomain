@@ -13,7 +13,7 @@ if not game:IsLoaded() then
 	NLoaded:Destroy()
 	repeat wait(1) until game:IsLoaded() 
 end
-if game.PlaceId == 292439477 then
+if game.PlaceId == 292439477 then -- f u phantom forces loading screen
 	wait(5)
 end
 
@@ -2217,6 +2217,8 @@ SettingsTb = {
 
 }
 
+DangerousGames = {6358843321,3522042406,286090429} -- games that will ban you if caught with the anticheat
+
 BackgroundExploits = {
 	towerofhell = {
 		Name = "TOH Teleportation UI",
@@ -2224,7 +2226,7 @@ BackgroundExploits = {
 		Loadstring = "https://pastebin.com/raw/J1BJH1ER",
 	},
 	WizardTycoon = {
-		Name = "Wizard Tycoon Doors",
+		Name = "Wizard Tycoon Doors + Inferno Script",
 		PlaceIds = {281489669},
 		Loadstring = "https://pastebin.com/raw/zv81LudV",
 	},
@@ -2429,6 +2431,13 @@ function Start()
 	else
 		mainDomain.mainDomain.Parent = game.Players.LocalPlayer.PlayerGui
 	end
+	if table.find(DangerousGames,game.PlaceId) then
+		Notify("This game is dangerous, this anti cheat will ban you if caught","GothamBlack")
+	end
+	wait(1)
+	Notify("Initializing boot process","GothamBold")
+	wait(0.5)
+	Notify("Welcome, "..game.Players.LocalPlayer.Name,"GothamBold")
 	mainDomain.Players_2.SearchList.Template.Visible = false
 	mainDomain.MediaMain.Players.AboutPlayer.Visible = false
 	mainDomain.MediaMain.Players.List.Visible = true
@@ -2524,15 +2533,12 @@ function Start()
 	else
 		mainDomain.Text.Text = "Hi "..game.Players.LocalPlayer.Name..","
 	end
-	if game.Players.LocalPlayer.UserId == Developers.rivertropic then
-		Notify("This is version "..tostring(VersionNum),"GothamBold")		
-	end
 	mainDomain.More.ImageTransparency = 0.7
 	mainDomain.More_2.ImageTransparency = 0.7
 	if game.CreatorId ~= 0 then
 		for _, UiInstance in ipairs(game:GetService("CoreGui"):GetChildren()) do
 			if UiInstance.Name == "mainDomain" and UiInstance ~= mainDomain.mainDomain then
-				Notify("Removed previous interface","GothamBold")
+				Notify("Removed previous instance of Domain","GothamBold")
 				UiInstance:Destroy()
 				beforehand = true
 			end
@@ -2540,7 +2546,6 @@ function Start()
 	end
 	mainDomain.Template_2.Visible = false
 	mainDomain.Time.TextTransparency = 1
-	Notify("Welcome, "..game.Players.LocalPlayer.Name,"GothamBold")
 	mainDomain.UpdatePanel.feat.Text = VFeature
 	mainDomain.VersioPanel.Text.Text = "Domain "..tostring(VersionNum)
 	mainDomain.UpdatePanel.upd.Text = VersionFull 
@@ -2554,9 +2559,6 @@ function Start()
 	mainDomain.Info.Position = UDim2.new(0.9,0,1,0)
 	mainDomain.Functions.Position = UDim2.new(0.277, 0, 1, 0)
 	mainDomain.Toggle.ImageTransparency = 1
-	for _, Player in ipairs(game.Players:GetChildren()) do
-		AddToList(Player,"Quick")
-	end
 	if UsingAutoExecute == false then
 		wait(1.5)
 		mainDomain.Functions:TweenPosition(UDim2.new(0.277, 0, 0.781, 0),"Out", "Quint", 0.7)
@@ -2609,8 +2611,6 @@ function Start()
 	end
 	wait(0.4)
 	Notify("Successfully booted Domain v"..tostring(VersionNum),"GothamBold")
-	print("DOMAIN CLIENT v"..tostring(VersionNum))
-
 
 	if game.PlaceId == 292439477 and beforehand == false then
 		Notify("If the toggle button is not visible, reinject.")
@@ -2629,7 +2629,10 @@ function Start()
 			tween:Play()
 			mainDomain.Toggle.Position = UDim2.new(0.488, 0, 0.829, 0)
 		end
-	end
+		end
+		for _, Player in ipairs(game.Players:GetChildren()) do
+			AddToList(Player,"Quick")
+		end
 	if game.CreatorId ~= 0 then
 		AntiAfk()
 		AntiKick()
