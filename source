@@ -2640,11 +2640,6 @@ function Start()
 	if game.CreatorId ~= 0 then
 		AntiAfk()
 		AntiKick()
-		if getconnections or get_signal_cons then
-			Notify("DomainClient Anti-Kick and Anti-Afk active","GothamBold")
-		else
-			Notify("DomainClient Anti-Kick active","GothamBold")
-		end
 		end
 		
 	end
