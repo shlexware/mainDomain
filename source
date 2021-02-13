@@ -2431,6 +2431,8 @@ function Start()
 	else
 		mainDomain.mainDomain.Parent = game.Players.LocalPlayer.PlayerGui
 	end
+	mainDomain.Functions.Position = UDim2.new(0.277, 0, 1, 0)
+	mainDomain.Toggle.ImageTransparency = 1
 	if table.find(DangerousGames,game.PlaceId) then
 		Notify("This game is dangerous, this anti cheat will ban you if caught","GothamBlack")
 	end
@@ -2557,8 +2559,7 @@ function Start()
 	mainDomain.Players.Position = mainDomain.Home.Position
 	mainDomain.Time.Position = UDim2.new(0.029,0,1,0)
 	mainDomain.Info.Position = UDim2.new(0.9,0,1,0)
-	mainDomain.Functions.Position = UDim2.new(0.277, 0, 1, 0)
-	mainDomain.Toggle.ImageTransparency = 1
+		
 	if UsingAutoExecute == false then
 		wait(1.5)
 		mainDomain.Functions:TweenPosition(UDim2.new(0.277, 0, 0.781, 0),"Out", "Quint", 0.7)
