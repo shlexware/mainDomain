@@ -2157,9 +2157,9 @@ mainDomain.UICorner_47.Parent = mainDomain.No_2
 
 
 SaveSettings = false
-VersionNum = 0.646
-VersionFull = tostring(VersionNum).." | Minor update"
-VFeature = "New featured exploit"
+VersionNum = 0.65
+VersionFull = tostring(VersionNum).." | Quality of life"
+VFeature = "Small tweaks to enchance your experience"
 
 Admins = {
 
@@ -2452,7 +2452,7 @@ function Start()
 		mainDomain.mainDomain:Destroy()
 		else
 	
-	
+		LoadExploitSection()
 	if game.CreatorId ~= 0 then
 		if writefileCheck() and not table.find(WriteFileFixPlayers,game.Players.LocalPlayer.Name) then
 			if isfile then
@@ -2633,6 +2633,9 @@ function Start()
 		for _, Player in ipairs(game.Players:GetChildren()) do
 			AddToList(Player,"Quick")
 		end
+		if #mainDomain.MediaMain.Exploits:GetChildren() <= 4 then
+			Notify("The exploits section is not working for some reason, try reinjecting or using another injector!","GothamBold")
+		end
 	if game.CreatorId ~= 0 then
 		AntiAfk()
 		AntiKick()
@@ -2642,6 +2645,7 @@ function Start()
 			Notify("DomainClient Anti-Kick active","GothamBold")
 		end
 		end
+		
 	end
 end
 function checktools(player)
@@ -4089,7 +4093,7 @@ game.Players.LocalPlayer.Backpack.ChildRemoved:Connect(function()
 end)
 
 Start()
-LoadExploitSection()
+
 
 UserInputService = game:GetService("UserInputService")
 
