@@ -2204,6 +2204,10 @@ AntiExploits = {
 		PlaceId = 2609668898,
 		Locations = {game.Players.LocalPlayer.PlayerScripts:FindFirstChild("LocalScript"),game.Players.LocalPlayer.PlayerGui:FindFirstChild("LocalScript2")}
 	},
+	fencing = {
+		PlaceId = 12109643,
+		Locations = {workspace:FindFirstChild("AntiExploitScript")}
+	},
 
 }
 
