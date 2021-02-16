@@ -2171,6 +2171,8 @@ Admins = {
 }
 DomainShowcase = {
 	FO10 = 434928087,
+	ossy = 254782537,
+	nate = 261882701,
 }
 
 
@@ -2229,6 +2231,11 @@ BackgroundExploits = {
 		Name = "Wizard Tycoon Doors + Inferno Script",
 		PlaceIds = {281489669},
 		Loadstring = "https://pastebin.com/raw/zv81LudV",
+	},
+	fencingscripts = {
+		Name = "Example script (for showcases)",
+		PlaceIds = {5793474642,12109643},
+		Loadstring = "https://pastebin.com/raw/ymMn4UdR",
 	},
 	sis = {
 		Name = "StopItSlender UI",
