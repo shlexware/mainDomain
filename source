@@ -2655,7 +2655,7 @@ function Start()
 		
 	end
 	wait(2)
-	Notify("Domain V2 is coming soon! Check the discord for more info! (and be a beta tester!)","GothamBlack")
+	Notify("Domain V2 is out! Check the discord for more info.","GothamBlack")
 end
 function checktools(player)
 	wait(0.05)
