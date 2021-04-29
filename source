@@ -2157,9 +2157,9 @@ mainDomain.UICorner_47.Parent = mainDomain.No_2
 
 
 SaveSettings = false
-VersionNum = 0.65
-VersionFull = tostring(VersionNum).." | Quality of life"
-VFeature = "Small tweaks to enchance your experience"
+VersionNum = 0.69
+VersionFull = tostring(VersionNum).." | last update?"
+VFeature = "Changed discord link, added dmn v2 to exploits"
 
 Admins = {
 
@@ -2324,13 +2324,19 @@ WriteFileFixPlayers = {
 }
 
 FeaturedExploits = {
-
-	BarrierRemover = {
+	barr = {
 		Name = "BarrierRemover",
 		Author = "shlex",
 		ImageID = 0,
 		Colour = Color3.fromRGB(0, 170, 127),
 		Code = "https://pastebin.com/raw/HqFgVGXn",
+	},
+	dmnv2 = {
+		Name = "Domain Hub V2",
+		Author = "shlex",
+		ImageID = 0,
+		Colour = Color3.fromRGB(31, 31, 31),
+		Code = "https://raw.githubusercontent.com/shlexsoftworks/Domain/main/source",
 	},
 	CLOVR = {
 		Name = "CloVR",
@@ -2387,7 +2393,7 @@ uiopened = false
 UserIdVal = Instance.new("NumberValue")
 UserIdVal.Parent = mainDomain.AboutPlayer
 db = false
-DiscordLink = "https://discord.gg/jyySpgkFSp"
+DiscordLink = "https://discord.gg/XrHqjy6tBc"
 MusicSound = {}
 DomainData = {}
 NotifStack = {}
@@ -2655,7 +2661,7 @@ function Start()
 		
 	end
 	wait(2)
-	Notify("Domain V2 is out! Check the discord for more info.","GothamBlack")
+	Notify("Domain V2 is coming soon! Check the discord for more info! (and be a beta tester!)","GothamBlack")
 end
 function checktools(player)
 	wait(0.05)
